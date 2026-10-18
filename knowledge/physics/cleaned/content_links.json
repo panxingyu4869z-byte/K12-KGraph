@@ -1,0 +1,734 @@
+{
+  "physics_8a_rjb_cpt101": [
+    "focal_length"
+  ],
+  "physics_8a_rjb_cpt11": [
+    "average_speed",
+    "average_velocity_vector"
+  ],
+  "physics_8a_rjb_cpt118": [
+    "thin_lens_power"
+  ],
+  "physics_8a_rjb_cpt12": [
+    "average_speed"
+  ],
+  "physics_8a_rjb_cpt124": [
+    "mass_quantity"
+  ],
+  "physics_8a_rjb_cpt129": [
+    "bulk_average_density"
+  ],
+  "physics_8a_rjb_cpt2": [
+    "length_unit_relations"
+  ],
+  "physics_8a_rjb_cpt20": [
+    "sound_path_speed"
+  ],
+  "physics_8a_rjb_cpt24": [
+    "cycle_frequency"
+  ],
+  "physics_8a_rjb_cpt4": [
+    "time_unit_relations"
+  ],
+  "physics_8a_rjb_cpt71": [
+    "vacuum_light_speed"
+  ],
+  "physics_8b_rjb_cpt16": [
+    "local_weight"
+  ],
+  "physics_8b_rjb_cpt17": [
+    "local_weight"
+  ],
+  "physics_8b_rjb_cpt29": [
+    "kinetic_friction"
+  ],
+  "physics_8b_rjb_cpt33": [
+    "average_pressure"
+  ],
+  "physics_8b_rjb_cpt37": [
+    "hydrostatic_gauge_pressure"
+  ],
+  "physics_8b_rjb_cpt40": [
+    "standard_atmosphere"
+  ],
+  "physics_8b_rjb_cpt44": [
+    "hydrostatic_gauge_pressure"
+  ],
+  "physics_8b_rjb_cpt48": [
+    "hydrostatic_gauge_pressure"
+  ],
+  "physics_8b_rjb_cpt51": [
+    "archimedes_buoyancy"
+  ],
+  "physics_8b_rjb_cpt58": [
+    "displaced_fluid_weight"
+  ],
+  "physics_8b_rjb_cpt59": [
+    "archimedes_buoyancy"
+  ],
+  "physics_8b_rjb_cpt60": [
+    "density_volume_direction"
+  ],
+  "physics_8b_rjb_cpt66": [
+    "work_parallel_constant_force"
+  ],
+  "physics_8b_rjb_cpt68": [
+    "average_power"
+  ],
+  "physics_8b_rjb_cpt69": [
+    "work_parallel_constant_force",
+    "work_dot_constant_force"
+  ],
+  "physics_8b_rjb_cpt72": [
+    "kinetic_energy"
+  ],
+  "physics_8b_rjb_cpt75": [
+    "near_surface_potential_energy"
+  ],
+  "physics_8b_rjb_cpt84": [
+    "two_force_lever_balance"
+  ],
+  "physics_8b_rjb_cpt93": [
+    "work_parallel_constant_force"
+  ],
+  "physics_8b_rjb_cpt95": [
+    "total_work_accounting"
+  ],
+  "physics_8b_rjb_cpt96": [
+    "mechanical_efficiency"
+  ],
+  "physics_9_rjb_cpt109": [
+    "electrical_power",
+    "current_from_power"
+  ],
+  "physics_9_rjb_cpt113": [
+    "short_circuit_current"
+  ],
+  "physics_9_rjb_cpt13": [
+    "specific_heat_capacity"
+  ],
+  "physics_9_rjb_cpt14": [
+    "sensible_heat_exchange",
+    "released_sensible_heat"
+  ],
+  "physics_9_rjb_cpt166": [
+    "wavelength_quantity"
+  ],
+  "physics_9_rjb_cpt167": [
+    "wave_phase_speed"
+  ],
+  "physics_9_rjb_cpt22": [
+    "complete_combustion_heat"
+  ],
+  "physics_9_rjb_cpt23": [
+    "heat_engine_efficiency"
+  ],
+  "physics_9_rjb_cpt31": [
+    "charge_quantity"
+  ],
+  "physics_9_rjb_cpt52": [
+    "current_unit_relations"
+  ],
+  "physics_9_rjb_cpt60": [
+    "voltage_unit_relations"
+  ],
+  "physics_9_rjb_cpt62": [
+    "ohmic_current"
+  ],
+  "physics_9_rjb_cpt63": [
+    "series_voltage_sum"
+  ],
+  "physics_9_rjb_cpt64": [
+    "parallel_voltage_equal"
+  ],
+  "physics_9_rjb_cpt66": [
+    "measured_resistance"
+  ],
+  "physics_9_rjb_cpt74": [
+    "ohmic_current"
+  ],
+  "physics_9_rjb_cpt75": [
+    "measured_resistance"
+  ],
+  "physics_9_rjb_cpt76": [
+    "ohmic_current"
+  ],
+  "physics_9_rjb_cpt78": [
+    "measured_resistance"
+  ],
+  "physics_9_rjb_cpt83": [
+    "series_current"
+  ],
+  "physics_9_rjb_cpt86": [
+    "kwh_unit_relation"
+  ],
+  "physics_9_rjb_cpt88": [
+    "electrical_work_dc"
+  ],
+  "physics_9_rjb_cpt89": [
+    "electrical_work_dc"
+  ],
+  "physics_9_rjb_cpt90": [
+    "average_power",
+    "electrical_power"
+  ],
+  "physics_9_rjb_cpt95": [
+    "electrical_power"
+  ],
+  "physics_9_rjb_cpt99": [
+    "joule_heat"
+  ],
+  "physics_bx1_rjb_cpt10": [
+    "signed_displacement"
+  ],
+  "physics_bx1_rjb_cpt21": [
+    "average_acceleration_vector"
+  ],
+  "physics_bx1_rjb_cpt22": [
+    "velocity_change_vector"
+  ],
+  "physics_bx1_rjb_cpt31": [
+    "constant_a_velocity"
+  ],
+  "physics_bx1_rjb_cpt32": [
+    "constant_a_position"
+  ],
+  "physics_bx1_rjb_cpt34": [
+    "constant_a_speed_squared"
+  ],
+  "physics_bx1_rjb_cpt36": [
+    "free_fall_from_rest"
+  ],
+  "physics_bx1_rjb_cpt38": [
+    "hooke_restoring_component"
+  ],
+  "physics_bx1_rjb_cpt41": [
+    "kinetic_friction"
+  ],
+  "physics_bx1_rjb_cpt42": [
+    "static_friction_balance"
+  ],
+  "physics_bx1_rjb_cpt46": [
+    "newton_third_law"
+  ],
+  "physics_bx1_rjb_cpt56": [
+    "equilibrium_force_balance"
+  ],
+  "physics_bx1_rjb_cpt58": [
+    "force_components_angle_from_y"
+  ],
+  "physics_bx1_rjb_cpt64": [
+    "newton2_point_mass"
+  ],
+  "physics_bx1_rjb_cpt76": [
+    "constant_a_position",
+    "constant_a_speed_squared"
+  ],
+  "physics_bx1_rjb_cpt77": [
+    "local_weight"
+  ],
+  "physics_bx2_rjb_cpt15": [
+    "horizontal_projectile"
+  ],
+  "physics_bx2_rjb_cpt16": [
+    "horizontal_projectile"
+  ],
+  "physics_bx2_rjb_cpt17": [
+    "projectile_trajectory"
+  ],
+  "physics_bx2_rjb_cpt19": [
+    "average_speed"
+  ],
+  "physics_bx2_rjb_cpt22": [
+    "average_angular_velocity"
+  ],
+  "physics_bx2_rjb_cpt23": [
+    "period_from_frequency",
+    "frequency_from_period"
+  ],
+  "physics_bx2_rjb_cpt25": [
+    "circular_speed"
+  ],
+  "physics_bx2_rjb_cpt26": [
+    "centripetal_force",
+    "centripetal_force_angular"
+  ],
+  "physics_bx2_rjb_cpt29": [
+    "centripetal_force",
+    "centripetal_force_angular"
+  ],
+  "physics_bx2_rjb_cpt30": [
+    "centripetal_acceleration",
+    "centripetal_acceleration_angular"
+  ],
+  "physics_bx2_rjb_cpt40": [
+    "kepler_orbit_constant"
+  ],
+  "physics_bx2_rjb_cpt42": [
+    "universal_gravitation"
+  ],
+  "physics_bx2_rjb_cpt44": [
+    "mass_from_surface_gravity"
+  ],
+  "physics_bx2_rjb_cpt46": [
+    "central_mass_from_orbit"
+  ],
+  "physics_bx2_rjb_cpt48": [
+    "circular_orbit_speed",
+    "surface_circular_orbit_speed"
+  ],
+  "physics_bx2_rjb_cpt51": [
+    "circular_orbit_speed"
+  ],
+  "physics_bx2_rjb_cpt52": [
+    "escape_speed"
+  ],
+  "physics_bx2_rjb_cpt59": [
+    "time_dilation"
+  ],
+  "physics_bx2_rjb_cpt60": [
+    "length_contraction"
+  ],
+  "physics_bx2_rjb_cpt64": [
+    "instantaneous_mechanical_power"
+  ],
+  "physics_bx2_rjb_cpt65": [
+    "gravity_work"
+  ],
+  "physics_bx2_rjb_cpt67": [
+    "work_kinetic_energy"
+  ],
+  "physics_bx2_rjb_cpt68": [
+    "mechanical_energy_conservation"
+  ],
+  "physics_bx2_rjb_cpt69": [
+    "centripetal_acceleration"
+  ],
+  "physics_bx2_rjb_cpt8": [
+    "planar_speed_norm",
+    "planar_velocity_direction"
+  ],
+  "physics_bx3_rjb_cpt100": [
+    "resistivity_measurement"
+  ],
+  "physics_bx3_rjb_cpt108": [
+    "circle_cross_section"
+  ],
+  "physics_bx3_rjb_cpt110": [
+    "conductivity_reciprocal"
+  ],
+  "physics_bx3_rjb_cpt115": [
+    "series_current_equal"
+  ],
+  "physics_bx3_rjb_cpt116": [
+    "parallel_current_sum"
+  ],
+  "physics_bx3_rjb_cpt117": [
+    "series_voltage_sum"
+  ],
+  "physics_bx3_rjb_cpt118": [
+    "parallel_voltage_equal"
+  ],
+  "physics_bx3_rjb_cpt119": [
+    "series_resistance"
+  ],
+  "physics_bx3_rjb_cpt120": [
+    "parallel_resistance"
+  ],
+  "physics_bx3_rjb_cpt122": [
+    "meter_resistance_quantity"
+  ],
+  "physics_bx3_rjb_cpt123": [
+    "full_scale_current_quantity"
+  ],
+  "physics_bx3_rjb_cpt124": [
+    "full_scale_voltage_quantity"
+  ],
+  "physics_bx3_rjb_cpt125": [
+    "meter_full_scale_voltage"
+  ],
+  "physics_bx3_rjb_cpt13": [
+    "charge_quantization"
+  ],
+  "physics_bx3_rjb_cpt132": [
+    "ohmmeter_scale_reading"
+  ],
+  "physics_bx3_rjb_cpt137": [
+    "dc_charge_transfer"
+  ],
+  "physics_bx3_rjb_cpt138": [
+    "joule_power"
+  ],
+  "physics_bx3_rjb_cpt14": [
+    "charge_quantization"
+  ],
+  "physics_bx3_rjb_cpt140": [
+    "motor_output_power"
+  ],
+  "physics_bx3_rjb_cpt145": [
+    "emf_work_per_charge"
+  ],
+  "physics_bx3_rjb_cpt146": [
+    "ohmic_current"
+  ],
+  "physics_bx3_rjb_cpt147": [
+    "terminal_voltage",
+    "internal_resistance_short_current",
+    "internal_resistance_iv_slope"
+  ],
+  "physics_bx3_rjb_cpt148": [
+    "closed_circuit_current"
+  ],
+  "physics_bx3_rjb_cpt15": [
+    "electron_charge_mass_rounded"
+  ],
+  "physics_bx3_rjb_cpt150": [
+    "terminal_voltage"
+  ],
+  "physics_bx3_rjb_cpt152": [
+    "open_circuit_voltage"
+  ],
+  "physics_bx3_rjb_cpt153": [
+    "source_work"
+  ],
+  "physics_bx3_rjb_cpt154": [
+    "joule_heat"
+  ],
+  "physics_bx3_rjb_cpt155": [
+    "ohmmeter_unknown_resistance",
+    "ohmmeter_current"
+  ],
+  "physics_bx3_rjb_cpt156": [
+    "terminal_voltage",
+    "internal_resistance_iv_slope"
+  ],
+  "physics_bx3_rjb_cpt157": [
+    "short_circuit_current",
+    "internal_resistance_short_current"
+  ],
+  "physics_bx3_rjb_cpt17": [
+    "coulomb_force_magnitude"
+  ],
+  "physics_bx3_rjb_cpt173": [
+    "current_element_magnitude"
+  ],
+  "physics_bx3_rjb_cpt174": [
+    "magnetic_field_measurement"
+  ],
+  "physics_bx3_rjb_cpt175": [
+    "perpendicular_wire_force"
+  ],
+  "physics_bx3_rjb_cpt177": [
+    "magnetic_flux_uniform"
+  ],
+  "physics_bx3_rjb_cpt178": [
+    "normal_magnetic_field_from_flux"
+  ],
+  "physics_bx3_rjb_cpt188": [
+    "vacuum_light_speed"
+  ],
+  "physics_bx3_rjb_cpt19": [
+    "coulomb_constant_rounded"
+  ],
+  "physics_bx3_rjb_cpt191": [
+    "wave_phase_speed"
+  ],
+  "physics_bx3_rjb_cpt199": [
+    "photon_energy"
+  ],
+  "physics_bx3_rjb_cpt20": [
+    "coulomb_force_magnitude"
+  ],
+  "physics_bx3_rjb_cpt200": [
+    "planck_constant"
+  ],
+  "physics_bx3_rjb_cpt202": [
+    "photon_energy"
+  ],
+  "physics_bx3_rjb_cpt21": [
+    "coulomb_force_magnitude"
+  ],
+  "physics_bx3_rjb_cpt23": [
+    "electrostatic_force_sum"
+  ],
+  "physics_bx3_rjb_cpt29": [
+    "electric_field_definition"
+  ],
+  "physics_bx3_rjb_cpt3": [
+    "coulomb_ampere_second"
+  ],
+  "physics_bx3_rjb_cpt31": [
+    "point_charge_radial_field"
+  ],
+  "physics_bx3_rjb_cpt32": [
+    "electric_field_sum"
+  ],
+  "physics_bx3_rjb_cpt34": [
+    "conducting_sphere_external_field"
+  ],
+  "physics_bx3_rjb_cpt38": [
+    "conductor_interior_field"
+  ],
+  "physics_bx3_rjb_cpt44": [
+    "empty_conductor_cavity_field"
+  ],
+  "physics_bx3_rjb_cpt49": [
+    "uniform_field_voltage"
+  ],
+  "physics_bx3_rjb_cpt50": [
+    "electric_potential_energy_change"
+  ],
+  "physics_bx3_rjb_cpt52": [
+    "electric_potential"
+  ],
+  "physics_bx3_rjb_cpt53": [
+    "volt_joule_per_coulomb"
+  ],
+  "physics_bx3_rjb_cpt56": [
+    "potential_difference"
+  ],
+  "physics_bx3_rjb_cpt57": [
+    "electrostatic_work"
+  ],
+  "physics_bx3_rjb_cpt61": [
+    "uniform_field_voltage",
+    "uniform_field_from_potential_spacing"
+  ],
+  "physics_bx3_rjb_cpt63": [
+    "uniform_field_from_potential_spacing"
+  ],
+  "physics_bx3_rjb_cpt64": [
+    "electrostatic_acceleration_from_rest"
+  ],
+  "physics_bx3_rjb_cpt70": [
+    "capacitor_capacitance"
+  ],
+  "physics_bx3_rjb_cpt72": [
+    "microfarad_unit_relation"
+  ],
+  "physics_bx3_rjb_cpt73": [
+    "picofarad_unit_relation"
+  ],
+  "physics_bx3_rjb_cpt76": [
+    "parallel_plate_capacitance"
+  ],
+  "physics_bx3_rjb_cpt77": [
+    "parallel_plate_capacitance"
+  ],
+  "physics_bx3_rjb_cpt82": [
+    "electric_force"
+  ],
+  "physics_bx3_rjb_cpt83": [
+    "work_kinetic_energy"
+  ],
+  "physics_bx3_rjb_cpt92": [
+    "average_current"
+  ],
+  "physics_bx3_rjb_cpt93": [
+    "coulomb_ampere_second"
+  ],
+  "physics_bx3_rjb_cpt95": [
+    "microscopic_current"
+  ],
+  "physics_bx3_rjb_cpt97": [
+    "linear_iv_resistance"
+  ],
+  "physics_bx3_rjb_cpt99": [
+    "resistance_geometry"
+  ],
+  "physics_xzxbx1_rjb_cpt1": [
+    "classical_momentum"
+  ],
+  "physics_xzxbx1_rjb_cpt10": [
+    "two_body_momentum_balance"
+  ],
+  "physics_xzxbx1_rjb_cpt15": [
+    "elastic_collision_energy_balance"
+  ],
+  "physics_xzxbx1_rjb_cpt16": [
+    "two_body_momentum_balance"
+  ],
+  "physics_xzxbx1_rjb_cpt18": [
+    "ideal_rocket_velocity"
+  ],
+  "physics_xzxbx1_rjb_cpt24": [
+    "harmonic_motion_initial_state",
+    "harmonic_motion_phase"
+  ],
+  "physics_xzxbx1_rjb_cpt25": [
+    "angular_frequency"
+  ],
+  "physics_xzxbx1_rjb_cpt28": [
+    "phase_difference"
+  ],
+  "physics_xzxbx1_rjb_cpt29": [
+    "pendulum_linear_restoring_force"
+  ],
+  "physics_xzxbx1_rjb_cpt30": [
+    "hooke_restoring_component"
+  ],
+  "physics_xzxbx1_rjb_cpt33": [
+    "small_pendulum_period"
+  ],
+  "physics_xzxbx1_rjb_cpt36": [
+    "small_pendulum_period"
+  ],
+  "physics_xzxbx1_rjb_cpt5": [
+    "constant_force_impulse"
+  ],
+  "physics_xzxbx1_rjb_cpt69": [
+    "snell_transmitted_sine"
+  ],
+  "physics_xzxbx1_rjb_cpt70": [
+    "refractive_index"
+  ],
+  "physics_xzxbx1_rjb_cpt74": [
+    "total_internal_reflection_angle"
+  ],
+  "physics_xzxbx1_rjb_cpt82": [
+    "double_slit_fringe_spacing"
+  ],
+  "physics_xzxbx1_rjb_cpt84": [
+    "double_slit_fringe_spacing",
+    "fringe_spacing_measurement"
+  ],
+  "physics_xzxbx1_rjb_cpt85": [
+    "wavelength_from_double_slit"
+  ],
+  "physics_xzxbx2_rjb_cpt1": [
+    "magnetic_force_wire_magnitude"
+  ],
+  "physics_xzxbx2_rjb_cpt10": [
+    "electrostatic_acceleration_from_rest"
+  ],
+  "physics_xzxbx2_rjb_cpt19": [
+    "rotating_coil_emf"
+  ],
+  "physics_xzxbx2_rjb_cpt20": [
+    "faraday_average_emf"
+  ],
+  "physics_xzxbx2_rjb_cpt21": [
+    "faraday_average_emf"
+  ],
+  "physics_xzxbx2_rjb_cpt23": [
+    "motional_emf_perpendicular"
+  ],
+  "physics_xzxbx2_rjb_cpt24": [
+    "motional_emf_oblique"
+  ],
+  "physics_xzxbx2_rjb_cpt31": [
+    "self_induction_average_emf"
+  ],
+  "physics_xzxbx2_rjb_cpt35": [
+    "sinusoidal_current",
+    "sinusoidal_voltage"
+  ],
+  "physics_xzxbx2_rjb_cpt38": [
+    "angular_frequency"
+  ],
+  "physics_xzxbx2_rjb_cpt39": [
+    "sinusoidal_rms_current",
+    "sinusoidal_rms_voltage"
+  ],
+  "physics_xzxbx2_rjb_cpt4": [
+    "lorentz_force_magnitude",
+    "lorentz_force_vector"
+  ],
+  "physics_xzxbx2_rjb_cpt48": [
+    "ideal_transformer_voltage"
+  ],
+  "physics_xzxbx2_rjb_cpt51": [
+    "joule_power"
+  ],
+  "physics_xzxbx2_rjb_cpt58": [
+    "lc_period",
+    "frequency_from_period"
+  ],
+  "physics_xzxbx2_rjb_cpt61": [
+    "lc_period",
+    "frequency_from_period"
+  ],
+  "physics_xzxbx2_rjb_cpt7": [
+    "charged_particle_gyroradius"
+  ],
+  "physics_xzxbx2_rjb_cpt8": [
+    "charged_particle_gyroperiod"
+  ],
+  "physics_xzxbx2_rjb_cpt9": [
+    "charged_particle_gyroradius",
+    "charged_particle_gyroperiod"
+  ],
+  "physics_xzxbx3_rjb_cpt100": [
+    "emission_transition_frequency"
+  ],
+  "physics_xzxbx3_rjb_cpt104": [
+    "de_broglie_wavelength",
+    "matter_wave_frequency"
+  ],
+  "physics_xzxbx3_rjb_cpt124": [
+    "alpha_decay_numbers"
+  ],
+  "physics_xzxbx3_rjb_cpt125": [
+    "beta_minus_decay_numbers"
+  ],
+  "physics_xzxbx3_rjb_cpt134": [
+    "strong_interaction_scale"
+  ],
+  "physics_xzxbx3_rjb_cpt135": [
+    "weak_interaction_scale"
+  ],
+  "physics_xzxbx3_rjb_cpt139": [
+    "rest_energy"
+  ],
+  "physics_xzxbx3_rjb_cpt25": [
+    "temperature_to_kelvin"
+  ],
+  "physics_xzxbx3_rjb_cpt27": [
+    "isothermal_gas_pressure"
+  ],
+  "physics_xzxbx3_rjb_cpt28": [
+    "isothermal_gas_pressure"
+  ],
+  "physics_xzxbx3_rjb_cpt30": [
+    "isobaric_gas_volume"
+  ],
+  "physics_xzxbx3_rjb_cpt31": [
+    "isobaric_gas_volume"
+  ],
+  "physics_xzxbx3_rjb_cpt32": [
+    "isochoric_gas_pressure"
+  ],
+  "physics_xzxbx3_rjb_cpt33": [
+    "isochoric_gas_pressure"
+  ],
+  "physics_xzxbx3_rjb_cpt35": [
+    "ideal_gas_state_change"
+  ],
+  "physics_xzxbx3_rjb_cpt50": [
+    "adiabatic_internal_energy"
+  ],
+  "physics_xzxbx3_rjb_cpt51": [
+    "isochoric_internal_energy"
+  ],
+  "physics_xzxbx3_rjb_cpt55": [
+    "first_law_thermodynamics"
+  ],
+  "physics_xzxbx3_rjb_cpt6": [
+    "oil_film_molecular_size"
+  ],
+  "physics_xzxbx3_rjb_cpt77": [
+    "work_function_quantity"
+  ],
+  "physics_xzxbx3_rjb_cpt78": [
+    "photon_energy"
+  ],
+  "physics_xzxbx3_rjb_cpt79": [
+    "photoelectric_maximum_energy"
+  ],
+  "physics_xzxbx3_rjb_cpt80": [
+    "photon_momentum"
+  ],
+  "physics_xzxbx3_rjb_cpt96": [
+    "balmer_wavelength"
+  ]
+}

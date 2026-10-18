@@ -1,0 +1,5508 @@
+[
+  {
+    "id": "physics_bx1_rjb_cpt1",
+    "first_observed_location": "physics_bx1_rjb_ch1_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx1_rjb_cpt2",
+    "first_observed_location": "physics_bx1_rjb_ch1_s1",
+    "later_references": [
+      "physics_bx1_rjb_ch1_s2"
+    ]
+  },
+  {
+    "id": "physics_bx1_rjb_cpt3",
+    "first_observed_location": "physics_bx1_rjb_ch1_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx1_rjb_skl1",
+    "first_observed_location": "physics_bx1_rjb_ch1_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx1_rjb_exe1",
+    "first_observed_location": "physics_bx1_rjb_ch1_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx1_rjb_cpt4",
+    "first_observed_location": "physics_bx1_rjb_ch1_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx1_rjb_cpt5",
+    "first_observed_location": "physics_bx1_rjb_ch1_s2",
+    "later_references": [
+      "physics_bx1_rjb_ch1_s4"
+    ]
+  },
+  {
+    "id": "physics_bx1_rjb_cpt6",
+    "first_observed_location": "physics_bx1_rjb_ch1_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx1_rjb_cpt7",
+    "first_observed_location": "physics_bx1_rjb_ch1_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx1_rjb_cpt8",
+    "first_observed_location": "physics_bx1_rjb_ch1_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx1_rjb_cpt9",
+    "first_observed_location": "physics_bx1_rjb_ch1_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx1_rjb_cpt10",
+    "first_observed_location": "physics_bx1_rjb_ch1_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx1_rjb_cpt11",
+    "first_observed_location": "physics_bx1_rjb_ch1_s2",
+    "later_references": [
+      "physics_bx1_rjb_ch3_s4"
+    ]
+  },
+  {
+    "id": "physics_bx1_rjb_cpt12",
+    "first_observed_location": "physics_bx1_rjb_ch1_s2",
+    "later_references": [
+      "physics_bx1_rjb_ch3_s4"
+    ]
+  },
+  {
+    "id": "physics_bx1_rjb_cpt13",
+    "first_observed_location": "physics_bx1_rjb_ch1_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx1_rjb_cpt14",
+    "first_observed_location": "physics_bx1_rjb_ch1_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx1_rjb_cpt15",
+    "first_observed_location": "physics_bx1_rjb_ch1_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx1_rjb_cpt16",
+    "first_observed_location": "physics_bx1_rjb_ch1_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx1_rjb_skl2",
+    "first_observed_location": "physics_bx1_rjb_ch1_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx1_rjb_skl3",
+    "first_observed_location": "physics_bx1_rjb_ch1_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx1_rjb_skl4",
+    "first_observed_location": "physics_bx1_rjb_ch1_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx1_rjb_exp1",
+    "first_observed_location": "physics_bx1_rjb_ch1_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx1_rjb_exe2",
+    "first_observed_location": "physics_bx1_rjb_ch1_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx1_rjb_cpt17",
+    "first_observed_location": "physics_bx1_rjb_ch1_s3",
+    "later_references": [
+      "physics_bx1_rjb_ch2_s1"
+    ]
+  },
+  {
+    "id": "physics_bx1_rjb_cpt18",
+    "first_observed_location": "physics_bx1_rjb_ch1_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx1_rjb_cpt19",
+    "first_observed_location": "physics_bx1_rjb_ch1_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx1_rjb_cpt20",
+    "first_observed_location": "physics_bx1_rjb_ch1_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx1_rjb_exp2",
+    "first_observed_location": "physics_bx1_rjb_ch1_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx1_rjb_exp3",
+    "first_observed_location": "physics_bx1_rjb_ch1_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx1_rjb_skl5",
+    "first_observed_location": "physics_bx1_rjb_ch1_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx1_rjb_cpt21",
+    "first_observed_location": "physics_bx1_rjb_ch1_s4",
+    "later_references": [
+      "physics_bx1_rjb_ch2_s2",
+      "physics_bx1_rjb_ch4_s2"
+    ]
+  },
+  {
+    "id": "physics_bx1_rjb_cpt22",
+    "first_observed_location": "physics_bx1_rjb_ch1_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx1_rjb_cpt23",
+    "first_observed_location": "physics_bx1_rjb_ch1_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx1_rjb_cpt24",
+    "first_observed_location": "physics_bx1_rjb_ch1_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx1_rjb_cpt25",
+    "first_observed_location": "physics_bx1_rjb_ch1_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx1_rjb_skl6",
+    "first_observed_location": "physics_bx1_rjb_ch1_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx1_rjb_skl7",
+    "first_observed_location": "physics_bx1_rjb_ch1_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx1_rjb_cpt26",
+    "first_observed_location": "physics_bx1_rjb_ch2_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx1_rjb_cpt27",
+    "first_observed_location": "physics_bx1_rjb_ch2_s1",
+    "later_references": [
+      "physics_bx1_rjb_ch2_s2"
+    ]
+  },
+  {
+    "id": "physics_bx1_rjb_skl8",
+    "first_observed_location": "physics_bx1_rjb_ch2_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx1_rjb_skl9",
+    "first_observed_location": "physics_bx1_rjb_ch2_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx1_rjb_exp4",
+    "first_observed_location": "physics_bx1_rjb_ch2_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx1_rjb_exe3",
+    "first_observed_location": "physics_bx1_rjb_ch2_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx1_rjb_cpt28",
+    "first_observed_location": "physics_bx1_rjb_ch2_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx1_rjb_cpt29",
+    "first_observed_location": "physics_bx1_rjb_ch2_s2",
+    "later_references": [
+      "physics_bx1_rjb_ch2_s4"
+    ]
+  },
+  {
+    "id": "physics_bx1_rjb_cpt30",
+    "first_observed_location": "physics_bx1_rjb_ch2_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx1_rjb_cpt31",
+    "first_observed_location": "physics_bx1_rjb_ch2_s2",
+    "later_references": [
+      "physics_bx1_rjb_ch2_s3"
+    ]
+  },
+  {
+    "id": "physics_bx1_rjb_skl10",
+    "first_observed_location": "physics_bx1_rjb_ch2_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx1_rjb_exe4",
+    "first_observed_location": "physics_bx1_rjb_ch2_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx1_rjb_cpt32",
+    "first_observed_location": "physics_bx1_rjb_ch2_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx1_rjb_cpt34",
+    "first_observed_location": "physics_bx1_rjb_ch2_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx1_rjb_cpt35",
+    "first_observed_location": "physics_bx1_rjb_ch2_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx1_rjb_skl11",
+    "first_observed_location": "physics_bx1_rjb_ch2_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx1_rjb_skl12",
+    "first_observed_location": "physics_bx1_rjb_ch2_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx1_rjb_exe5",
+    "first_observed_location": "physics_bx1_rjb_ch2_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx1_rjb_exe6",
+    "first_observed_location": "physics_bx1_rjb_ch2_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx1_rjb_cpt36",
+    "first_observed_location": "physics_bx1_rjb_ch2_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx1_rjb_cpt37",
+    "first_observed_location": "physics_bx1_rjb_ch2_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx1_rjb_skl13",
+    "first_observed_location": "physics_bx1_rjb_ch2_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx1_rjb_exp5",
+    "first_observed_location": "physics_bx1_rjb_ch2_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx1_rjb_exp6",
+    "first_observed_location": "physics_bx1_rjb_ch2_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx1_rjb_exe7",
+    "first_observed_location": "physics_bx1_rjb_ch2_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx1_rjb_cpt38",
+    "first_observed_location": "physics_bx1_rjb_ch3_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx1_rjb_cpt39",
+    "first_observed_location": "physics_bx1_rjb_ch3_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx1_rjb_skl14",
+    "first_observed_location": "physics_bx1_rjb_ch3_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx1_rjb_exp7",
+    "first_observed_location": "physics_bx1_rjb_ch3_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx1_rjb_exp8",
+    "first_observed_location": "physics_bx1_rjb_ch3_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx1_rjb_cpt40",
+    "first_observed_location": "physics_bx1_rjb_ch3_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx1_rjb_cpt41",
+    "first_observed_location": "physics_bx1_rjb_ch3_s2",
+    "later_references": [
+      "physics_bx1_rjb_ch4_s5"
+    ]
+  },
+  {
+    "id": "physics_bx1_rjb_cpt42",
+    "first_observed_location": "physics_bx1_rjb_ch3_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx1_rjb_cpt43",
+    "first_observed_location": "physics_bx1_rjb_ch3_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx1_rjb_cpt44",
+    "first_observed_location": "physics_bx1_rjb_ch3_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx1_rjb_exp9",
+    "first_observed_location": "physics_bx1_rjb_ch3_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx1_rjb_exp10",
+    "first_observed_location": "physics_bx1_rjb_ch3_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx1_rjb_exe8",
+    "first_observed_location": "physics_bx1_rjb_ch3_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx1_rjb_cpt45",
+    "first_observed_location": "physics_bx1_rjb_ch3_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx1_rjb_cpt46",
+    "first_observed_location": "physics_bx1_rjb_ch3_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx1_rjb_cpt47",
+    "first_observed_location": "physics_bx1_rjb_ch3_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx1_rjb_cpt48",
+    "first_observed_location": "physics_bx1_rjb_ch3_s3",
+    "later_references": [
+      "physics_bx1_rjb_ch4_s5"
+    ]
+  },
+  {
+    "id": "physics_bx1_rjb_skl15",
+    "first_observed_location": "physics_bx1_rjb_ch3_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx1_rjb_exp11",
+    "first_observed_location": "physics_bx1_rjb_ch3_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx1_rjb_exp12",
+    "first_observed_location": "physics_bx1_rjb_ch3_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx1_rjb_exe9",
+    "first_observed_location": "physics_bx1_rjb_ch3_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx1_rjb_exe10",
+    "first_observed_location": "physics_bx1_rjb_ch3_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx1_rjb_cpt49",
+    "first_observed_location": "physics_bx1_rjb_ch3_s4",
+    "later_references": [
+      "physics_bx1_rjb_ch3_s5"
+    ]
+  },
+  {
+    "id": "physics_bx1_rjb_cpt50",
+    "first_observed_location": "physics_bx1_rjb_ch3_s4",
+    "later_references": [
+      "physics_bx1_rjb_ch4_s3",
+      "physics_bx1_rjb_ch4_s5"
+    ]
+  },
+  {
+    "id": "physics_bx1_rjb_cpt51",
+    "first_observed_location": "physics_bx1_rjb_ch3_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx1_rjb_cpt52",
+    "first_observed_location": "physics_bx1_rjb_ch3_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx1_rjb_cpt53",
+    "first_observed_location": "physics_bx1_rjb_ch3_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx1_rjb_cpt54",
+    "first_observed_location": "physics_bx1_rjb_ch3_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx1_rjb_skl16",
+    "first_observed_location": "physics_bx1_rjb_ch3_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx1_rjb_exp13",
+    "first_observed_location": "physics_bx1_rjb_ch3_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx1_rjb_exe11",
+    "first_observed_location": "physics_bx1_rjb_ch3_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx1_rjb_cpt55",
+    "first_observed_location": "physics_bx1_rjb_ch3_s5",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx1_rjb_cpt56",
+    "first_observed_location": "physics_bx1_rjb_ch3_s5",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx1_rjb_cpt57",
+    "first_observed_location": "physics_bx1_rjb_ch3_s5",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx1_rjb_cpt58",
+    "first_observed_location": "physics_bx1_rjb_ch3_s5",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx1_rjb_skl17",
+    "first_observed_location": "physics_bx1_rjb_ch3_s5",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx1_rjb_skl18",
+    "first_observed_location": "physics_bx1_rjb_ch3_s5",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx1_rjb_exe12",
+    "first_observed_location": "physics_bx1_rjb_ch3_s5",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx1_rjb_cpt59",
+    "first_observed_location": "physics_bx1_rjb_ch4_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx1_rjb_cpt60",
+    "first_observed_location": "physics_bx1_rjb_ch4_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx1_rjb_skl19",
+    "first_observed_location": "physics_bx1_rjb_ch4_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx1_rjb_exp14",
+    "first_observed_location": "physics_bx1_rjb_ch4_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx1_rjb_cpt61",
+    "first_observed_location": "physics_bx1_rjb_ch4_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx1_rjb_cpt62",
+    "first_observed_location": "physics_bx1_rjb_ch4_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx1_rjb_cpt63",
+    "first_observed_location": "physics_bx1_rjb_ch4_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx1_rjb_skl20",
+    "first_observed_location": "physics_bx1_rjb_ch4_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx1_rjb_skl21",
+    "first_observed_location": "physics_bx1_rjb_ch4_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx1_rjb_exp15",
+    "first_observed_location": "physics_bx1_rjb_ch4_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx1_rjb_cpt64",
+    "first_observed_location": "physics_bx1_rjb_ch4_s3",
+    "later_references": [
+      "physics_bx1_rjb_ch4_s5",
+      "physics_bx2_rjb_ch6_s3",
+      "physics_bx2_rjb_ch8_s3"
+    ]
+  },
+  {
+    "id": "physics_bx1_rjb_cpt65",
+    "first_observed_location": "physics_bx1_rjb_ch4_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx1_rjb_cpt66",
+    "first_observed_location": "physics_bx1_rjb_ch4_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx1_rjb_skl22",
+    "first_observed_location": "physics_bx1_rjb_ch4_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx1_rjb_exe13",
+    "first_observed_location": "physics_bx1_rjb_ch4_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx1_rjb_cpt67",
+    "first_observed_location": "physics_bx1_rjb_ch4_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx1_rjb_cpt68",
+    "first_observed_location": "physics_bx1_rjb_ch4_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx1_rjb_cpt69",
+    "first_observed_location": "physics_bx1_rjb_ch4_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx1_rjb_cpt70",
+    "first_observed_location": "physics_bx1_rjb_ch4_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx1_rjb_cpt71",
+    "first_observed_location": "physics_bx1_rjb_ch4_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx1_rjb_cpt72",
+    "first_observed_location": "physics_bx1_rjb_ch4_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx1_rjb_cpt73",
+    "first_observed_location": "physics_bx1_rjb_ch4_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx1_rjb_cpt74",
+    "first_observed_location": "physics_bx1_rjb_ch4_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx1_rjb_cpt75",
+    "first_observed_location": "physics_bx1_rjb_ch4_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx1_rjb_exe14",
+    "first_observed_location": "physics_bx1_rjb_ch4_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx1_rjb_cpt76",
+    "first_observed_location": "physics_bx1_rjb_ch4_s5",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx1_rjb_skl23",
+    "first_observed_location": "physics_bx1_rjb_ch4_s5",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx1_rjb_skl24",
+    "first_observed_location": "physics_bx1_rjb_ch4_s5",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx1_rjb_exe15",
+    "first_observed_location": "physics_bx1_rjb_ch4_s5",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx1_rjb_cpt77",
+    "first_observed_location": "physics_bx1_rjb_ch4_s6",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx1_rjb_cpt78",
+    "first_observed_location": "physics_bx1_rjb_ch4_s6",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx1_rjb_cpt79",
+    "first_observed_location": "physics_bx1_rjb_ch4_s6",
+    "later_references": [
+      "physics_bx2_rjb_ch6_s4"
+    ]
+  },
+  {
+    "id": "physics_bx1_rjb_cpt80",
+    "first_observed_location": "physics_bx1_rjb_ch4_s6",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx1_rjb_cpt81",
+    "first_observed_location": "physics_bx1_rjb_ch4_s6",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx1_rjb_cpt82",
+    "first_observed_location": "physics_bx1_rjb_ch4_s6",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx1_rjb_exe16",
+    "first_observed_location": "physics_bx1_rjb_ch4_s6",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx2_rjb_cpt1",
+    "first_observed_location": "physics_bx2_rjb_ch5_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx2_rjb_cpt2",
+    "first_observed_location": "physics_bx2_rjb_ch5_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx2_rjb_cpt3",
+    "first_observed_location": "physics_bx2_rjb_ch5_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx2_rjb_cpt4",
+    "first_observed_location": "physics_bx2_rjb_ch5_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx2_rjb_cpt5",
+    "first_observed_location": "physics_bx2_rjb_ch5_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx2_rjb_skl1",
+    "first_observed_location": "physics_bx2_rjb_ch5_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx2_rjb_exp1",
+    "first_observed_location": "physics_bx2_rjb_ch5_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx2_rjb_exp2",
+    "first_observed_location": "physics_bx2_rjb_ch5_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx2_rjb_cpt6",
+    "first_observed_location": "physics_bx2_rjb_ch5_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx2_rjb_cpt7",
+    "first_observed_location": "physics_bx2_rjb_ch5_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx2_rjb_cpt8",
+    "first_observed_location": "physics_bx2_rjb_ch5_s2",
+    "later_references": [
+      "physics_bx2_rjb_ch5_s4"
+    ]
+  },
+  {
+    "id": "physics_bx2_rjb_cpt9",
+    "first_observed_location": "physics_bx2_rjb_ch5_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx2_rjb_exp3",
+    "first_observed_location": "physics_bx2_rjb_ch5_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx2_rjb_skl2",
+    "first_observed_location": "physics_bx2_rjb_ch5_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx2_rjb_exe1",
+    "first_observed_location": "physics_bx2_rjb_ch5_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx2_rjb_cpt10",
+    "first_observed_location": "physics_bx2_rjb_ch5_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx2_rjb_cpt11",
+    "first_observed_location": "physics_bx2_rjb_ch5_s3",
+    "later_references": [
+      "physics_bx2_rjb_ch5_s4"
+    ]
+  },
+  {
+    "id": "physics_bx2_rjb_cpt12",
+    "first_observed_location": "physics_bx2_rjb_ch5_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx2_rjb_cpt13",
+    "first_observed_location": "physics_bx2_rjb_ch5_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx2_rjb_cpt14",
+    "first_observed_location": "physics_bx2_rjb_ch5_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx2_rjb_skl3",
+    "first_observed_location": "physics_bx2_rjb_ch5_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx2_rjb_exp4",
+    "first_observed_location": "physics_bx2_rjb_ch5_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx2_rjb_exp5",
+    "first_observed_location": "physics_bx2_rjb_ch5_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx2_rjb_cpt15",
+    "first_observed_location": "physics_bx2_rjb_ch5_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx2_rjb_cpt16",
+    "first_observed_location": "physics_bx2_rjb_ch5_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx2_rjb_cpt17",
+    "first_observed_location": "physics_bx2_rjb_ch5_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx2_rjb_cpt18",
+    "first_observed_location": "physics_bx2_rjb_ch5_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx2_rjb_skl4",
+    "first_observed_location": "physics_bx2_rjb_ch5_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx2_rjb_exe2",
+    "first_observed_location": "physics_bx2_rjb_ch5_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx2_rjb_cpt19",
+    "first_observed_location": "physics_bx2_rjb_ch6_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx2_rjb_cpt20",
+    "first_observed_location": "physics_bx2_rjb_ch6_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx2_rjb_cpt21",
+    "first_observed_location": "physics_bx2_rjb_ch6_s1",
+    "later_references": [
+      "physics_bx2_rjb_ch6_s2",
+      "physics_bx2_rjb_ch6_s3"
+    ]
+  },
+  {
+    "id": "physics_bx2_rjb_cpt22",
+    "first_observed_location": "physics_bx2_rjb_ch6_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx2_rjb_cpt23",
+    "first_observed_location": "physics_bx2_rjb_ch6_s1",
+    "later_references": [
+      "physics_xzxbx1_rjb_ch2_s2",
+      "physics_xzxbx2_rjb_ch3_s2"
+    ]
+  },
+  {
+    "id": "physics_bx2_rjb_cpt24",
+    "first_observed_location": "physics_bx2_rjb_ch6_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx2_rjb_cpt25",
+    "first_observed_location": "physics_bx2_rjb_ch6_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx2_rjb_cpt26",
+    "first_observed_location": "physics_bx2_rjb_ch6_s2",
+    "later_references": [
+      "physics_bx2_rjb_ch6_s3",
+      "physics_bx2_rjb_ch6_s4",
+      "physics_bx2_rjb_ch7_s2"
+    ]
+  },
+  {
+    "id": "physics_bx2_rjb_cpt27",
+    "first_observed_location": "physics_bx2_rjb_ch6_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx2_rjb_cpt28",
+    "first_observed_location": "physics_bx2_rjb_ch6_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx2_rjb_cpt29",
+    "first_observed_location": "physics_bx2_rjb_ch6_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx2_rjb_skl5",
+    "first_observed_location": "physics_bx2_rjb_ch6_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx2_rjb_exp6",
+    "first_observed_location": "physics_bx2_rjb_ch6_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx2_rjb_exp7",
+    "first_observed_location": "physics_bx2_rjb_ch6_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx2_rjb_exe3",
+    "first_observed_location": "physics_bx2_rjb_ch6_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx2_rjb_cpt30",
+    "first_observed_location": "physics_bx2_rjb_ch6_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx2_rjb_skl6",
+    "first_observed_location": "physics_bx2_rjb_ch6_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx2_rjb_exe4",
+    "first_observed_location": "physics_bx2_rjb_ch6_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx2_rjb_cpt31",
+    "first_observed_location": "physics_bx2_rjb_ch6_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx2_rjb_cpt32",
+    "first_observed_location": "physics_bx2_rjb_ch6_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx2_rjb_cpt33",
+    "first_observed_location": "physics_bx2_rjb_ch6_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx2_rjb_cpt34",
+    "first_observed_location": "physics_bx2_rjb_ch6_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx2_rjb_skl7",
+    "first_observed_location": "physics_bx2_rjb_ch6_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx2_rjb_exe5",
+    "first_observed_location": "physics_bx2_rjb_ch6_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx2_rjb_cpt35",
+    "first_observed_location": "physics_bx2_rjb_ch7_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx2_rjb_cpt36",
+    "first_observed_location": "physics_bx2_rjb_ch7_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx2_rjb_cpt37",
+    "first_observed_location": "physics_bx2_rjb_ch7_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx2_rjb_cpt38",
+    "first_observed_location": "physics_bx2_rjb_ch7_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx2_rjb_cpt39",
+    "first_observed_location": "physics_bx2_rjb_ch7_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx2_rjb_cpt40",
+    "first_observed_location": "physics_bx2_rjb_ch7_s1",
+    "later_references": [
+      "physics_bx2_rjb_ch7_s2",
+      "physics_bx2_rjb_ch7_s3"
+    ]
+  },
+  {
+    "id": "physics_bx2_rjb_cpt41",
+    "first_observed_location": "physics_bx2_rjb_ch7_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx2_rjb_skl8",
+    "first_observed_location": "physics_bx2_rjb_ch7_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx2_rjb_exp8",
+    "first_observed_location": "physics_bx2_rjb_ch7_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx2_rjb_cpt42",
+    "first_observed_location": "physics_bx2_rjb_ch7_s2",
+    "later_references": [
+      "physics_bx2_rjb_ch7_s3"
+    ]
+  },
+  {
+    "id": "physics_bx2_rjb_cpt43",
+    "first_observed_location": "physics_bx2_rjb_ch7_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx2_rjb_exp9",
+    "first_observed_location": "physics_bx2_rjb_ch7_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx2_rjb_cpt44",
+    "first_observed_location": "physics_bx2_rjb_ch7_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx2_rjb_cpt45",
+    "first_observed_location": "physics_bx2_rjb_ch7_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx2_rjb_cpt46",
+    "first_observed_location": "physics_bx2_rjb_ch7_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx2_rjb_cpt47",
+    "first_observed_location": "physics_bx2_rjb_ch7_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx2_rjb_skl9",
+    "first_observed_location": "physics_bx2_rjb_ch7_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx2_rjb_exe6",
+    "first_observed_location": "physics_bx2_rjb_ch7_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx2_rjb_cpt48",
+    "first_observed_location": "physics_bx2_rjb_ch7_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx2_rjb_cpt49",
+    "first_observed_location": "physics_bx2_rjb_ch7_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx2_rjb_cpt50",
+    "first_observed_location": "physics_bx2_rjb_ch7_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx2_rjb_cpt51",
+    "first_observed_location": "physics_bx2_rjb_ch7_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx2_rjb_cpt52",
+    "first_observed_location": "physics_bx2_rjb_ch7_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx2_rjb_cpt53",
+    "first_observed_location": "physics_bx2_rjb_ch7_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx2_rjb_cpt54",
+    "first_observed_location": "physics_bx2_rjb_ch7_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx2_rjb_skl10",
+    "first_observed_location": "physics_bx2_rjb_ch7_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx2_rjb_exe7",
+    "first_observed_location": "physics_bx2_rjb_ch7_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx2_rjb_cpt55",
+    "first_observed_location": "physics_bx2_rjb_ch7_s5",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx2_rjb_cpt56",
+    "first_observed_location": "physics_bx2_rjb_ch7_s5",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx2_rjb_cpt57",
+    "first_observed_location": "physics_bx2_rjb_ch7_s5",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx2_rjb_cpt58",
+    "first_observed_location": "physics_bx2_rjb_ch7_s5",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx2_rjb_cpt59",
+    "first_observed_location": "physics_bx2_rjb_ch7_s5",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx2_rjb_cpt60",
+    "first_observed_location": "physics_bx2_rjb_ch7_s5",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx2_rjb_cpt61",
+    "first_observed_location": "physics_bx2_rjb_ch7_s5",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx2_rjb_cpt62",
+    "first_observed_location": "physics_bx2_rjb_ch7_s5",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx2_rjb_exe8",
+    "first_observed_location": "physics_bx2_rjb_ch7_s5",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx2_rjb_cpt63",
+    "first_observed_location": "physics_bx2_rjb_ch8_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx2_rjb_cpt64",
+    "first_observed_location": "physics_bx2_rjb_ch8_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx2_rjb_skl11",
+    "first_observed_location": "physics_bx2_rjb_ch8_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx2_rjb_exe9",
+    "first_observed_location": "physics_bx2_rjb_ch8_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx2_rjb_cpt65",
+    "first_observed_location": "physics_bx2_rjb_ch8_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx2_rjb_cpt66",
+    "first_observed_location": "physics_bx2_rjb_ch8_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx2_rjb_skl12",
+    "first_observed_location": "physics_bx2_rjb_ch8_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx2_rjb_skl13",
+    "first_observed_location": "physics_bx2_rjb_ch8_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx2_rjb_exe10",
+    "first_observed_location": "physics_bx2_rjb_ch8_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx2_rjb_cpt67",
+    "first_observed_location": "physics_bx2_rjb_ch8_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx2_rjb_skl14",
+    "first_observed_location": "physics_bx2_rjb_ch8_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx2_rjb_exe11",
+    "first_observed_location": "physics_bx2_rjb_ch8_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx2_rjb_cpt68",
+    "first_observed_location": "physics_bx2_rjb_ch8_s4",
+    "later_references": [
+      "physics_bx2_rjb_ch8_s5"
+    ]
+  },
+  {
+    "id": "physics_bx2_rjb_skl15",
+    "first_observed_location": "physics_bx2_rjb_ch8_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx2_rjb_exp10",
+    "first_observed_location": "physics_bx2_rjb_ch8_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx2_rjb_exe12",
+    "first_observed_location": "physics_bx2_rjb_ch8_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx2_rjb_cpt69",
+    "first_observed_location": "physics_bx2_rjb_ch8_s5",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx2_rjb_skl16",
+    "first_observed_location": "physics_bx2_rjb_ch8_s5",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx2_rjb_exp11",
+    "first_observed_location": "physics_bx2_rjb_ch8_s5",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx2_rjb_exp12",
+    "first_observed_location": "physics_bx2_rjb_ch8_s5",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx2_rjb_exe13",
+    "first_observed_location": "physics_bx2_rjb_ch8_s5",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt1",
+    "first_observed_location": "physics_bx3_rjb_ch9_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt2",
+    "first_observed_location": "physics_bx3_rjb_ch9_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt3",
+    "first_observed_location": "physics_bx3_rjb_ch9_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt4",
+    "first_observed_location": "physics_bx3_rjb_ch9_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt5",
+    "first_observed_location": "physics_bx3_rjb_ch9_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt6",
+    "first_observed_location": "physics_bx3_rjb_ch9_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt7",
+    "first_observed_location": "physics_bx3_rjb_ch9_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt8",
+    "first_observed_location": "physics_bx3_rjb_ch9_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt9",
+    "first_observed_location": "physics_bx3_rjb_ch9_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt10",
+    "first_observed_location": "physics_bx3_rjb_ch9_s1",
+    "later_references": [
+      "physics_bx3_rjb_ch9_s4"
+    ]
+  },
+  {
+    "id": "physics_bx3_rjb_cpt11",
+    "first_observed_location": "physics_bx3_rjb_ch9_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt12",
+    "first_observed_location": "physics_bx3_rjb_ch9_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt13",
+    "first_observed_location": "physics_bx3_rjb_ch9_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt14",
+    "first_observed_location": "physics_bx3_rjb_ch9_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt15",
+    "first_observed_location": "physics_bx3_rjb_ch9_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_skl1",
+    "first_observed_location": "physics_bx3_rjb_ch9_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_skl2",
+    "first_observed_location": "physics_bx3_rjb_ch9_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_exp1",
+    "first_observed_location": "physics_bx3_rjb_ch9_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_exp2",
+    "first_observed_location": "physics_bx3_rjb_ch9_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_exe1",
+    "first_observed_location": "physics_bx3_rjb_ch9_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_exe2",
+    "first_observed_location": "physics_bx3_rjb_ch9_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt16",
+    "first_observed_location": "physics_bx3_rjb_ch9_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt17",
+    "first_observed_location": "physics_bx3_rjb_ch9_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt18",
+    "first_observed_location": "physics_bx3_rjb_ch9_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt19",
+    "first_observed_location": "physics_bx3_rjb_ch9_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt20",
+    "first_observed_location": "physics_bx3_rjb_ch9_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt21",
+    "first_observed_location": "physics_bx3_rjb_ch9_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt22",
+    "first_observed_location": "physics_bx3_rjb_ch9_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt23",
+    "first_observed_location": "physics_bx3_rjb_ch9_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt24",
+    "first_observed_location": "physics_bx3_rjb_ch9_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_skl3",
+    "first_observed_location": "physics_bx3_rjb_ch9_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_skl4",
+    "first_observed_location": "physics_bx3_rjb_ch9_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_skl5",
+    "first_observed_location": "physics_bx3_rjb_ch9_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_exp3",
+    "first_observed_location": "physics_bx3_rjb_ch9_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_exe3",
+    "first_observed_location": "physics_bx3_rjb_ch9_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_exe4",
+    "first_observed_location": "physics_bx3_rjb_ch9_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt25",
+    "first_observed_location": "physics_bx3_rjb_ch9_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt26",
+    "first_observed_location": "physics_bx3_rjb_ch9_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt27",
+    "first_observed_location": "physics_bx3_rjb_ch9_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt28",
+    "first_observed_location": "physics_bx3_rjb_ch9_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt29",
+    "first_observed_location": "physics_bx3_rjb_ch9_s3",
+    "later_references": [
+      "physics_bx3_rjb_ch10_s3"
+    ]
+  },
+  {
+    "id": "physics_bx3_rjb_cpt30",
+    "first_observed_location": "physics_bx3_rjb_ch9_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt31",
+    "first_observed_location": "physics_bx3_rjb_ch9_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt32",
+    "first_observed_location": "physics_bx3_rjb_ch9_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt33",
+    "first_observed_location": "physics_bx3_rjb_ch9_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt34",
+    "first_observed_location": "physics_bx3_rjb_ch9_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt35",
+    "first_observed_location": "physics_bx3_rjb_ch9_s3",
+    "later_references": [
+      "physics_bx3_rjb_ch10_s2",
+      "physics_bx3_rjb_ch10_s3"
+    ]
+  },
+  {
+    "id": "physics_bx3_rjb_cpt36",
+    "first_observed_location": "physics_bx3_rjb_ch9_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt37",
+    "first_observed_location": "physics_bx3_rjb_ch9_s3",
+    "later_references": [
+      "physics_bx3_rjb_ch10_s5"
+    ]
+  },
+  {
+    "id": "physics_bx3_rjb_skl6",
+    "first_observed_location": "physics_bx3_rjb_ch9_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_skl7",
+    "first_observed_location": "physics_bx3_rjb_ch9_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_exp4",
+    "first_observed_location": "physics_bx3_rjb_ch9_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_exe5",
+    "first_observed_location": "physics_bx3_rjb_ch9_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_exe6",
+    "first_observed_location": "physics_bx3_rjb_ch9_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt38",
+    "first_observed_location": "physics_bx3_rjb_ch9_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt39",
+    "first_observed_location": "physics_bx3_rjb_ch9_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt40",
+    "first_observed_location": "physics_bx3_rjb_ch9_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt41",
+    "first_observed_location": "physics_bx3_rjb_ch9_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt42",
+    "first_observed_location": "physics_bx3_rjb_ch9_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt43",
+    "first_observed_location": "physics_bx3_rjb_ch9_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt44",
+    "first_observed_location": "physics_bx3_rjb_ch9_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt45",
+    "first_observed_location": "physics_bx3_rjb_ch9_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt46",
+    "first_observed_location": "physics_bx3_rjb_ch9_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt47",
+    "first_observed_location": "physics_bx3_rjb_ch9_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt48",
+    "first_observed_location": "physics_bx3_rjb_ch9_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_skl8",
+    "first_observed_location": "physics_bx3_rjb_ch9_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_exp5",
+    "first_observed_location": "physics_bx3_rjb_ch9_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_exe7",
+    "first_observed_location": "physics_bx3_rjb_ch9_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_exe8",
+    "first_observed_location": "physics_bx3_rjb_ch9_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt49",
+    "first_observed_location": "physics_bx3_rjb_ch10_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt50",
+    "first_observed_location": "physics_bx3_rjb_ch10_s1",
+    "later_references": [
+      "physics_bx3_rjb_ch10_s2"
+    ]
+  },
+  {
+    "id": "physics_bx3_rjb_cpt51",
+    "first_observed_location": "physics_bx3_rjb_ch10_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt52",
+    "first_observed_location": "physics_bx3_rjb_ch10_s1",
+    "later_references": [
+      "physics_bx3_rjb_ch10_s2"
+    ]
+  },
+  {
+    "id": "physics_bx3_rjb_cpt53",
+    "first_observed_location": "physics_bx3_rjb_ch10_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt54",
+    "first_observed_location": "physics_bx3_rjb_ch10_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt55",
+    "first_observed_location": "physics_bx3_rjb_ch10_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_skl9",
+    "first_observed_location": "physics_bx3_rjb_ch10_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_skl10",
+    "first_observed_location": "physics_bx3_rjb_ch10_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_exe9",
+    "first_observed_location": "physics_bx3_rjb_ch10_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_exe10",
+    "first_observed_location": "physics_bx3_rjb_ch10_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt56",
+    "first_observed_location": "physics_bx3_rjb_ch10_s2",
+    "later_references": [
+      "physics_bx3_rjb_ch10_s3",
+      "physics_bx3_rjb_ch11_s1"
+    ]
+  },
+  {
+    "id": "physics_bx3_rjb_cpt57",
+    "first_observed_location": "physics_bx3_rjb_ch10_s2",
+    "later_references": [
+      "physics_bx3_rjb_ch10_s5"
+    ]
+  },
+  {
+    "id": "physics_bx3_rjb_cpt58",
+    "first_observed_location": "physics_bx3_rjb_ch10_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt59",
+    "first_observed_location": "physics_bx3_rjb_ch10_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt60",
+    "first_observed_location": "physics_bx3_rjb_ch10_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_skl11",
+    "first_observed_location": "physics_bx3_rjb_ch10_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_skl12",
+    "first_observed_location": "physics_bx3_rjb_ch10_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_skl13",
+    "first_observed_location": "physics_bx3_rjb_ch10_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_exe11",
+    "first_observed_location": "physics_bx3_rjb_ch10_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_exe12",
+    "first_observed_location": "physics_bx3_rjb_ch10_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_exe13",
+    "first_observed_location": "physics_bx3_rjb_ch10_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt61",
+    "first_observed_location": "physics_bx3_rjb_ch10_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt62",
+    "first_observed_location": "physics_bx3_rjb_ch10_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt63",
+    "first_observed_location": "physics_bx3_rjb_ch10_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt64",
+    "first_observed_location": "physics_bx3_rjb_ch10_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt65",
+    "first_observed_location": "physics_bx3_rjb_ch10_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_skl14",
+    "first_observed_location": "physics_bx3_rjb_ch10_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_skl15",
+    "first_observed_location": "physics_bx3_rjb_ch10_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_skl16",
+    "first_observed_location": "physics_bx3_rjb_ch10_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_exe14",
+    "first_observed_location": "physics_bx3_rjb_ch10_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_exe15",
+    "first_observed_location": "physics_bx3_rjb_ch10_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt66",
+    "first_observed_location": "physics_bx3_rjb_ch10_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt67",
+    "first_observed_location": "physics_bx3_rjb_ch10_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt68",
+    "first_observed_location": "physics_bx3_rjb_ch10_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt69",
+    "first_observed_location": "physics_bx3_rjb_ch10_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt70",
+    "first_observed_location": "physics_bx3_rjb_ch10_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt71",
+    "first_observed_location": "physics_bx3_rjb_ch10_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt72",
+    "first_observed_location": "physics_bx3_rjb_ch10_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt73",
+    "first_observed_location": "physics_bx3_rjb_ch10_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt74",
+    "first_observed_location": "physics_bx3_rjb_ch10_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt75",
+    "first_observed_location": "physics_bx3_rjb_ch10_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt76",
+    "first_observed_location": "physics_bx3_rjb_ch10_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt77",
+    "first_observed_location": "physics_bx3_rjb_ch10_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt78",
+    "first_observed_location": "physics_bx3_rjb_ch10_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt79",
+    "first_observed_location": "physics_bx3_rjb_ch10_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt80",
+    "first_observed_location": "physics_bx3_rjb_ch10_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_skl17",
+    "first_observed_location": "physics_bx3_rjb_ch10_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_skl18",
+    "first_observed_location": "physics_bx3_rjb_ch10_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_exp6",
+    "first_observed_location": "physics_bx3_rjb_ch10_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_exp7",
+    "first_observed_location": "physics_bx3_rjb_ch10_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_exp8",
+    "first_observed_location": "physics_bx3_rjb_ch10_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_exp9",
+    "first_observed_location": "physics_bx3_rjb_ch10_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_exe16",
+    "first_observed_location": "physics_bx3_rjb_ch10_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_exe17",
+    "first_observed_location": "physics_bx3_rjb_ch10_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt81",
+    "first_observed_location": "physics_bx3_rjb_ch10_s5",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt82",
+    "first_observed_location": "physics_bx3_rjb_ch10_s5",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt83",
+    "first_observed_location": "physics_bx3_rjb_ch10_s5",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt84",
+    "first_observed_location": "physics_bx3_rjb_ch10_s5",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt85",
+    "first_observed_location": "physics_bx3_rjb_ch10_s5",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt86",
+    "first_observed_location": "physics_bx3_rjb_ch10_s5",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt87",
+    "first_observed_location": "physics_bx3_rjb_ch10_s5",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_skl19",
+    "first_observed_location": "physics_bx3_rjb_ch10_s5",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_skl20",
+    "first_observed_location": "physics_bx3_rjb_ch10_s5",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_skl21",
+    "first_observed_location": "physics_bx3_rjb_ch10_s5",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_exe18",
+    "first_observed_location": "physics_bx3_rjb_ch10_s5",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_exe19",
+    "first_observed_location": "physics_bx3_rjb_ch10_s5",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt88",
+    "first_observed_location": "physics_bx3_rjb_ch11_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt89",
+    "first_observed_location": "physics_bx3_rjb_ch11_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt90",
+    "first_observed_location": "physics_bx3_rjb_ch11_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt91",
+    "first_observed_location": "physics_bx3_rjb_ch11_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt92",
+    "first_observed_location": "physics_bx3_rjb_ch11_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt93",
+    "first_observed_location": "physics_bx3_rjb_ch11_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt94",
+    "first_observed_location": "physics_bx3_rjb_ch11_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt95",
+    "first_observed_location": "physics_bx3_rjb_ch11_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt96",
+    "first_observed_location": "physics_bx3_rjb_ch11_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_skl22",
+    "first_observed_location": "physics_bx3_rjb_ch11_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_skl23",
+    "first_observed_location": "physics_bx3_rjb_ch11_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_exe20",
+    "first_observed_location": "physics_bx3_rjb_ch11_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_exe21",
+    "first_observed_location": "physics_bx3_rjb_ch11_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt97",
+    "first_observed_location": "physics_bx3_rjb_ch11_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt98",
+    "first_observed_location": "physics_bx3_rjb_ch11_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt99",
+    "first_observed_location": "physics_bx3_rjb_ch11_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt100",
+    "first_observed_location": "physics_bx3_rjb_ch11_s2",
+    "later_references": [
+      "physics_bx3_rjb_ch11_s3"
+    ]
+  },
+  {
+    "id": "physics_bx3_rjb_cpt101",
+    "first_observed_location": "physics_bx3_rjb_ch11_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt102",
+    "first_observed_location": "physics_bx3_rjb_ch11_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt103",
+    "first_observed_location": "physics_bx3_rjb_ch11_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt104",
+    "first_observed_location": "physics_bx3_rjb_ch11_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt105",
+    "first_observed_location": "physics_bx3_rjb_ch11_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_skl24",
+    "first_observed_location": "physics_bx3_rjb_ch11_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_skl25",
+    "first_observed_location": "physics_bx3_rjb_ch11_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_skl26",
+    "first_observed_location": "physics_bx3_rjb_ch11_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_exp10",
+    "first_observed_location": "physics_bx3_rjb_ch11_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_exp11",
+    "first_observed_location": "physics_bx3_rjb_ch11_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_exe22",
+    "first_observed_location": "physics_bx3_rjb_ch11_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_exe23",
+    "first_observed_location": "physics_bx3_rjb_ch11_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt106",
+    "first_observed_location": "physics_bx3_rjb_ch11_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt107",
+    "first_observed_location": "physics_bx3_rjb_ch11_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt108",
+    "first_observed_location": "physics_bx3_rjb_ch11_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt109",
+    "first_observed_location": "physics_bx3_rjb_ch11_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt110",
+    "first_observed_location": "physics_bx3_rjb_ch11_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt111",
+    "first_observed_location": "physics_bx3_rjb_ch11_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt112",
+    "first_observed_location": "physics_bx3_rjb_ch11_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt113",
+    "first_observed_location": "physics_bx3_rjb_ch11_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt114",
+    "first_observed_location": "physics_bx3_rjb_ch11_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_skl27",
+    "first_observed_location": "physics_bx3_rjb_ch11_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_skl28",
+    "first_observed_location": "physics_bx3_rjb_ch11_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_skl29",
+    "first_observed_location": "physics_bx3_rjb_ch11_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_skl30",
+    "first_observed_location": "physics_bx3_rjb_ch11_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_exp12",
+    "first_observed_location": "physics_bx3_rjb_ch11_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_exp13",
+    "first_observed_location": "physics_bx3_rjb_ch11_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_exe24",
+    "first_observed_location": "physics_bx3_rjb_ch11_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_exe25",
+    "first_observed_location": "physics_bx3_rjb_ch11_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt115",
+    "first_observed_location": "physics_bx3_rjb_ch11_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt116",
+    "first_observed_location": "physics_bx3_rjb_ch11_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt117",
+    "first_observed_location": "physics_bx3_rjb_ch11_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt118",
+    "first_observed_location": "physics_bx3_rjb_ch11_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt119",
+    "first_observed_location": "physics_bx3_rjb_ch11_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt120",
+    "first_observed_location": "physics_bx3_rjb_ch11_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt121",
+    "first_observed_location": "physics_bx3_rjb_ch11_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt122",
+    "first_observed_location": "physics_bx3_rjb_ch11_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt123",
+    "first_observed_location": "physics_bx3_rjb_ch11_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt124",
+    "first_observed_location": "physics_bx3_rjb_ch11_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt125",
+    "first_observed_location": "physics_bx3_rjb_ch11_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt126",
+    "first_observed_location": "physics_bx3_rjb_ch11_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt127",
+    "first_observed_location": "physics_bx3_rjb_ch11_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_skl31",
+    "first_observed_location": "physics_bx3_rjb_ch11_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_skl32",
+    "first_observed_location": "physics_bx3_rjb_ch11_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_exe26",
+    "first_observed_location": "physics_bx3_rjb_ch11_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt128",
+    "first_observed_location": "physics_bx3_rjb_ch11_s5",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt129",
+    "first_observed_location": "physics_bx3_rjb_ch11_s5",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt130",
+    "first_observed_location": "physics_bx3_rjb_ch11_s5",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt131",
+    "first_observed_location": "physics_bx3_rjb_ch11_s5",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt132",
+    "first_observed_location": "physics_bx3_rjb_ch11_s5",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt133",
+    "first_observed_location": "physics_bx3_rjb_ch11_s5",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt134",
+    "first_observed_location": "physics_bx3_rjb_ch11_s5",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt135",
+    "first_observed_location": "physics_bx3_rjb_ch11_s5",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt136",
+    "first_observed_location": "physics_bx3_rjb_ch11_s5",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_skl33",
+    "first_observed_location": "physics_bx3_rjb_ch11_s5",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_skl34",
+    "first_observed_location": "physics_bx3_rjb_ch11_s5",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_exp14",
+    "first_observed_location": "physics_bx3_rjb_ch11_s5",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_exe27",
+    "first_observed_location": "physics_bx3_rjb_ch11_s5",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_exe28",
+    "first_observed_location": "physics_bx3_rjb_ch11_s5",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt137",
+    "first_observed_location": "physics_bx3_rjb_ch12_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt138",
+    "first_observed_location": "physics_bx3_rjb_ch12_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt139",
+    "first_observed_location": "physics_bx3_rjb_ch12_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt140",
+    "first_observed_location": "physics_bx3_rjb_ch12_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_skl35",
+    "first_observed_location": "physics_bx3_rjb_ch12_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_skl36",
+    "first_observed_location": "physics_bx3_rjb_ch12_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_exe29",
+    "first_observed_location": "physics_bx3_rjb_ch12_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt141",
+    "first_observed_location": "physics_bx3_rjb_ch12_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt142",
+    "first_observed_location": "physics_bx3_rjb_ch12_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt143",
+    "first_observed_location": "physics_bx3_rjb_ch12_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt144",
+    "first_observed_location": "physics_bx3_rjb_ch12_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt145",
+    "first_observed_location": "physics_bx3_rjb_ch12_s2",
+    "later_references": [
+      "physics_bx3_rjb_ch12_s3"
+    ]
+  },
+  {
+    "id": "physics_bx3_rjb_cpt146",
+    "first_observed_location": "physics_bx3_rjb_ch12_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt147",
+    "first_observed_location": "physics_bx3_rjb_ch12_s2",
+    "later_references": [
+      "physics_bx3_rjb_ch12_s3"
+    ]
+  },
+  {
+    "id": "physics_bx3_rjb_cpt148",
+    "first_observed_location": "physics_bx3_rjb_ch12_s2",
+    "later_references": [
+      "physics_bx3_rjb_ch12_s3"
+    ]
+  },
+  {
+    "id": "physics_bx3_rjb_cpt149",
+    "first_observed_location": "physics_bx3_rjb_ch12_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt150",
+    "first_observed_location": "physics_bx3_rjb_ch12_s2",
+    "later_references": [
+      "physics_bx3_rjb_ch12_s3"
+    ]
+  },
+  {
+    "id": "physics_bx3_rjb_cpt151",
+    "first_observed_location": "physics_bx3_rjb_ch12_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt152",
+    "first_observed_location": "physics_bx3_rjb_ch12_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt153",
+    "first_observed_location": "physics_bx3_rjb_ch12_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt154",
+    "first_observed_location": "physics_bx3_rjb_ch12_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_skl37",
+    "first_observed_location": "physics_bx3_rjb_ch12_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_skl38",
+    "first_observed_location": "physics_bx3_rjb_ch12_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt155",
+    "first_observed_location": "physics_bx3_rjb_ch12_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_exe30",
+    "first_observed_location": "physics_bx3_rjb_ch12_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_exe31",
+    "first_observed_location": "physics_bx3_rjb_ch12_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt156",
+    "first_observed_location": "physics_bx3_rjb_ch12_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt157",
+    "first_observed_location": "physics_bx3_rjb_ch12_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_skl39",
+    "first_observed_location": "physics_bx3_rjb_ch12_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_skl40",
+    "first_observed_location": "physics_bx3_rjb_ch12_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_skl41",
+    "first_observed_location": "physics_bx3_rjb_ch12_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_exp15",
+    "first_observed_location": "physics_bx3_rjb_ch12_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_exp16",
+    "first_observed_location": "physics_bx3_rjb_ch12_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_exe32",
+    "first_observed_location": "physics_bx3_rjb_ch12_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt158",
+    "first_observed_location": "physics_bx3_rjb_ch12_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt159",
+    "first_observed_location": "physics_bx3_rjb_ch12_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt160",
+    "first_observed_location": "physics_bx3_rjb_ch12_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt161",
+    "first_observed_location": "physics_bx3_rjb_ch12_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt162",
+    "first_observed_location": "physics_bx3_rjb_ch12_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt163",
+    "first_observed_location": "physics_bx3_rjb_ch12_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt164",
+    "first_observed_location": "physics_bx3_rjb_ch12_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt165",
+    "first_observed_location": "physics_bx3_rjb_ch12_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt166",
+    "first_observed_location": "physics_bx3_rjb_ch12_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt167",
+    "first_observed_location": "physics_bx3_rjb_ch12_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_skl42",
+    "first_observed_location": "physics_bx3_rjb_ch12_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_skl43",
+    "first_observed_location": "physics_bx3_rjb_ch12_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_exe33",
+    "first_observed_location": "physics_bx3_rjb_ch12_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_exe34",
+    "first_observed_location": "physics_bx3_rjb_ch12_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt168",
+    "first_observed_location": "physics_bx3_rjb_ch13_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt169",
+    "first_observed_location": "physics_bx3_rjb_ch13_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt170",
+    "first_observed_location": "physics_bx3_rjb_ch13_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt171",
+    "first_observed_location": "physics_bx3_rjb_ch13_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt172",
+    "first_observed_location": "physics_bx3_rjb_ch13_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_skl44",
+    "first_observed_location": "physics_bx3_rjb_ch13_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_exp17",
+    "first_observed_location": "physics_bx3_rjb_ch13_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_exp18",
+    "first_observed_location": "physics_bx3_rjb_ch13_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_exe35",
+    "first_observed_location": "physics_bx3_rjb_ch13_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_exe36",
+    "first_observed_location": "physics_bx3_rjb_ch13_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt173",
+    "first_observed_location": "physics_bx3_rjb_ch13_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt174",
+    "first_observed_location": "physics_bx3_rjb_ch13_s2",
+    "later_references": [
+      "physics_xzxbx2_rjb_ch1_s1"
+    ]
+  },
+  {
+    "id": "physics_bx3_rjb_cpt175",
+    "first_observed_location": "physics_bx3_rjb_ch13_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt176",
+    "first_observed_location": "physics_bx3_rjb_ch13_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt177",
+    "first_observed_location": "physics_bx3_rjb_ch13_s2",
+    "later_references": [
+      "physics_bx3_rjb_ch13_s3",
+      "physics_xzxbx2_rjb_ch2_s1",
+      "physics_xzxbx2_rjb_ch2_s2"
+    ]
+  },
+  {
+    "id": "physics_bx3_rjb_cpt178",
+    "first_observed_location": "physics_bx3_rjb_ch13_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt179",
+    "first_observed_location": "physics_bx3_rjb_ch13_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_skl45",
+    "first_observed_location": "physics_bx3_rjb_ch13_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_skl46",
+    "first_observed_location": "physics_bx3_rjb_ch13_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_exp19",
+    "first_observed_location": "physics_bx3_rjb_ch13_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_exe37",
+    "first_observed_location": "physics_bx3_rjb_ch13_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_exe38",
+    "first_observed_location": "physics_bx3_rjb_ch13_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt180",
+    "first_observed_location": "physics_bx3_rjb_ch13_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt181",
+    "first_observed_location": "physics_bx3_rjb_ch13_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt182",
+    "first_observed_location": "physics_bx3_rjb_ch13_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_skl47",
+    "first_observed_location": "physics_bx3_rjb_ch13_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_exp20",
+    "first_observed_location": "physics_bx3_rjb_ch13_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_exe39",
+    "first_observed_location": "physics_bx3_rjb_ch13_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_exe40",
+    "first_observed_location": "physics_bx3_rjb_ch13_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_exe41",
+    "first_observed_location": "physics_bx3_rjb_ch13_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt183",
+    "first_observed_location": "physics_bx3_rjb_ch13_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt184",
+    "first_observed_location": "physics_bx3_rjb_ch13_s4",
+    "later_references": [
+      "physics_xzxbx2_rjb_ch4_s2"
+    ]
+  },
+  {
+    "id": "physics_bx3_rjb_cpt185",
+    "first_observed_location": "physics_bx3_rjb_ch13_s4",
+    "later_references": [
+      "physics_xzxbx2_rjb_ch4_s2"
+    ]
+  },
+  {
+    "id": "physics_bx3_rjb_cpt186",
+    "first_observed_location": "physics_bx3_rjb_ch13_s4",
+    "later_references": [
+      "physics_xzxbx2_rjb_ch4_s2"
+    ]
+  },
+  {
+    "id": "physics_bx3_rjb_cpt187",
+    "first_observed_location": "physics_bx3_rjb_ch13_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt188",
+    "first_observed_location": "physics_bx3_rjb_ch13_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt189",
+    "first_observed_location": "physics_bx3_rjb_ch13_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt190",
+    "first_observed_location": "physics_bx3_rjb_ch13_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt191",
+    "first_observed_location": "physics_bx3_rjb_ch13_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt192",
+    "first_observed_location": "physics_bx3_rjb_ch13_s4",
+    "later_references": [
+      "physics_xzxbx2_rjb_ch4_s4"
+    ]
+  },
+  {
+    "id": "physics_bx3_rjb_cpt193",
+    "first_observed_location": "physics_bx3_rjb_ch13_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt194",
+    "first_observed_location": "physics_bx3_rjb_ch13_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_skl48",
+    "first_observed_location": "physics_bx3_rjb_ch13_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_skl49",
+    "first_observed_location": "physics_bx3_rjb_ch13_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_exp21",
+    "first_observed_location": "physics_bx3_rjb_ch13_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_exe42",
+    "first_observed_location": "physics_bx3_rjb_ch13_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_exe43",
+    "first_observed_location": "physics_bx3_rjb_ch13_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_exe44",
+    "first_observed_location": "physics_bx3_rjb_ch13_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_exe45",
+    "first_observed_location": "physics_bx3_rjb_ch13_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt195",
+    "first_observed_location": "physics_bx3_rjb_ch13_s5",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt196",
+    "first_observed_location": "physics_bx3_rjb_ch13_s5",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt197",
+    "first_observed_location": "physics_bx3_rjb_ch13_s5",
+    "later_references": [
+      "physics_xzxbx3_rjb_ch4_s1"
+    ]
+  },
+  {
+    "id": "physics_bx3_rjb_cpt198",
+    "first_observed_location": "physics_bx3_rjb_ch13_s5",
+    "later_references": [
+      "physics_xzxbx3_rjb_ch4_s1"
+    ]
+  },
+  {
+    "id": "physics_bx3_rjb_cpt199",
+    "first_observed_location": "physics_bx3_rjb_ch13_s5",
+    "later_references": [
+      "physics_xzxbx3_rjb_ch4_s1"
+    ]
+  },
+  {
+    "id": "physics_bx3_rjb_cpt200",
+    "first_observed_location": "physics_bx3_rjb_ch13_s5",
+    "later_references": [
+      "physics_xzxbx3_rjb_ch4_s1"
+    ]
+  },
+  {
+    "id": "physics_bx3_rjb_cpt201",
+    "first_observed_location": "physics_bx3_rjb_ch13_s5",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt202",
+    "first_observed_location": "physics_bx3_rjb_ch13_s5",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt203",
+    "first_observed_location": "physics_bx3_rjb_ch13_s5",
+    "later_references": [
+      "physics_xzxbx3_rjb_ch4_s4"
+    ]
+  },
+  {
+    "id": "physics_bx3_rjb_cpt204",
+    "first_observed_location": "physics_bx3_rjb_ch13_s5",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt205",
+    "first_observed_location": "physics_bx3_rjb_ch13_s5",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt206",
+    "first_observed_location": "physics_bx3_rjb_ch13_s5",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_cpt207",
+    "first_observed_location": "physics_bx3_rjb_ch13_s5",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_skl50",
+    "first_observed_location": "physics_bx3_rjb_ch13_s5",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_skl51",
+    "first_observed_location": "physics_bx3_rjb_ch13_s5",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_exp22",
+    "first_observed_location": "physics_bx3_rjb_ch13_s5",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_exe46",
+    "first_observed_location": "physics_bx3_rjb_ch13_s5",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_exe47",
+    "first_observed_location": "physics_bx3_rjb_ch13_s5",
+    "later_references": []
+  },
+  {
+    "id": "physics_bx3_rjb_exe48",
+    "first_observed_location": "physics_bx3_rjb_ch13_s5",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx1_rjb_cpt1",
+    "first_observed_location": "physics_xzxbx1_rjb_ch1_s1",
+    "later_references": [
+      "physics_xzxbx1_rjb_ch1_s2",
+      "physics_xzxbx1_rjb_ch1_s4"
+    ]
+  },
+  {
+    "id": "physics_xzxbx1_rjb_cpt2",
+    "first_observed_location": "physics_xzxbx1_rjb_ch1_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx1_rjb_skl1",
+    "first_observed_location": "physics_xzxbx1_rjb_ch1_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx1_rjb_exp1",
+    "first_observed_location": "physics_xzxbx1_rjb_ch1_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx1_rjb_exe1",
+    "first_observed_location": "physics_xzxbx1_rjb_ch1_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx1_rjb_cpt3",
+    "first_observed_location": "physics_xzxbx1_rjb_ch1_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx1_rjb_cpt4",
+    "first_observed_location": "physics_xzxbx1_rjb_ch1_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx1_rjb_cpt5",
+    "first_observed_location": "physics_xzxbx1_rjb_ch1_s2",
+    "later_references": [
+      "physics_xzxbx1_rjb_ch1_s3"
+    ]
+  },
+  {
+    "id": "physics_xzxbx1_rjb_cpt6",
+    "first_observed_location": "physics_xzxbx1_rjb_ch1_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx1_rjb_skl2",
+    "first_observed_location": "physics_xzxbx1_rjb_ch1_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx1_rjb_exe2",
+    "first_observed_location": "physics_xzxbx1_rjb_ch1_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx1_rjb_cpt7",
+    "first_observed_location": "physics_xzxbx1_rjb_ch1_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx1_rjb_cpt8",
+    "first_observed_location": "physics_xzxbx1_rjb_ch1_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx1_rjb_cpt9",
+    "first_observed_location": "physics_xzxbx1_rjb_ch1_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx1_rjb_cpt10",
+    "first_observed_location": "physics_xzxbx1_rjb_ch1_s3",
+    "later_references": [
+      "physics_xzxbx1_rjb_ch1_s4",
+      "physics_xzxbx1_rjb_ch1_s6"
+    ]
+  },
+  {
+    "id": "physics_xzxbx1_rjb_skl3",
+    "first_observed_location": "physics_xzxbx1_rjb_ch1_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx1_rjb_skl4",
+    "first_observed_location": "physics_xzxbx1_rjb_ch1_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx1_rjb_exe3",
+    "first_observed_location": "physics_xzxbx1_rjb_ch1_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx1_rjb_exe4",
+    "first_observed_location": "physics_xzxbx1_rjb_ch1_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx1_rjb_cpt11",
+    "first_observed_location": "physics_xzxbx1_rjb_ch1_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx1_rjb_skl5",
+    "first_observed_location": "physics_xzxbx1_rjb_ch1_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx1_rjb_skl6",
+    "first_observed_location": "physics_xzxbx1_rjb_ch1_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx1_rjb_exp2",
+    "first_observed_location": "physics_xzxbx1_rjb_ch1_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx1_rjb_exp3",
+    "first_observed_location": "physics_xzxbx1_rjb_ch1_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx1_rjb_exe5",
+    "first_observed_location": "physics_xzxbx1_rjb_ch1_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx1_rjb_cpt12",
+    "first_observed_location": "physics_xzxbx1_rjb_ch1_s5",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx1_rjb_cpt13",
+    "first_observed_location": "physics_xzxbx1_rjb_ch1_s5",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx1_rjb_cpt14",
+    "first_observed_location": "physics_xzxbx1_rjb_ch1_s5",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx1_rjb_cpt15",
+    "first_observed_location": "physics_xzxbx1_rjb_ch1_s5",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx1_rjb_cpt16",
+    "first_observed_location": "physics_xzxbx1_rjb_ch1_s5",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx1_rjb_skl7",
+    "first_observed_location": "physics_xzxbx1_rjb_ch1_s5",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx1_rjb_exp4",
+    "first_observed_location": "physics_xzxbx1_rjb_ch1_s5",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx1_rjb_exe6",
+    "first_observed_location": "physics_xzxbx1_rjb_ch1_s5",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx1_rjb_cpt17",
+    "first_observed_location": "physics_xzxbx1_rjb_ch1_s6",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx1_rjb_cpt18",
+    "first_observed_location": "physics_xzxbx1_rjb_ch1_s6",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx1_rjb_cpt19",
+    "first_observed_location": "physics_xzxbx1_rjb_ch1_s6",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx1_rjb_exp5",
+    "first_observed_location": "physics_xzxbx1_rjb_ch1_s6",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx1_rjb_exp6",
+    "first_observed_location": "physics_xzxbx1_rjb_ch1_s6",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx1_rjb_skl8",
+    "first_observed_location": "physics_xzxbx1_rjb_ch1_s6",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx1_rjb_exe7",
+    "first_observed_location": "physics_xzxbx1_rjb_ch1_s6",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx1_rjb_cpt20",
+    "first_observed_location": "physics_xzxbx1_rjb_ch2_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx1_rjb_cpt21",
+    "first_observed_location": "physics_xzxbx1_rjb_ch2_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx1_rjb_cpt22",
+    "first_observed_location": "physics_xzxbx1_rjb_ch2_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx1_rjb_cpt23",
+    "first_observed_location": "physics_xzxbx1_rjb_ch2_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx1_rjb_cpt24",
+    "first_observed_location": "physics_xzxbx1_rjb_ch2_s1",
+    "later_references": [
+      "physics_xzxbx1_rjb_ch2_s2",
+      "physics_xzxbx1_rjb_ch2_s3",
+      "physics_xzxbx1_rjb_ch2_s4"
+    ]
+  },
+  {
+    "id": "physics_xzxbx1_rjb_skl9",
+    "first_observed_location": "physics_xzxbx1_rjb_ch2_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx1_rjb_exp7",
+    "first_observed_location": "physics_xzxbx1_rjb_ch2_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx1_rjb_cpt25",
+    "first_observed_location": "physics_xzxbx1_rjb_ch2_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx1_rjb_cpt26",
+    "first_observed_location": "physics_xzxbx1_rjb_ch2_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx1_rjb_cpt27",
+    "first_observed_location": "physics_xzxbx1_rjb_ch2_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx1_rjb_cpt28",
+    "first_observed_location": "physics_xzxbx1_rjb_ch2_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx1_rjb_exp8",
+    "first_observed_location": "physics_xzxbx1_rjb_ch2_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx1_rjb_exe8",
+    "first_observed_location": "physics_xzxbx1_rjb_ch2_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx1_rjb_cpt29",
+    "first_observed_location": "physics_xzxbx1_rjb_ch2_s3",
+    "later_references": [
+      "physics_xzxbx1_rjb_ch2_s4"
+    ]
+  },
+  {
+    "id": "physics_xzxbx1_rjb_cpt30",
+    "first_observed_location": "physics_xzxbx1_rjb_ch2_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx1_rjb_skl10",
+    "first_observed_location": "physics_xzxbx1_rjb_ch2_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx1_rjb_exe9",
+    "first_observed_location": "physics_xzxbx1_rjb_ch2_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx1_rjb_cpt31",
+    "first_observed_location": "physics_xzxbx1_rjb_ch2_s4",
+    "later_references": [
+      "physics_xzxbx1_rjb_ch2_s5"
+    ]
+  },
+  {
+    "id": "physics_xzxbx1_rjb_cpt32",
+    "first_observed_location": "physics_xzxbx1_rjb_ch2_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx1_rjb_cpt33",
+    "first_observed_location": "physics_xzxbx1_rjb_ch2_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx1_rjb_cpt34",
+    "first_observed_location": "physics_xzxbx1_rjb_ch2_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx1_rjb_skl11",
+    "first_observed_location": "physics_xzxbx1_rjb_ch2_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx1_rjb_exp9",
+    "first_observed_location": "physics_xzxbx1_rjb_ch2_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx1_rjb_exe10",
+    "first_observed_location": "physics_xzxbx1_rjb_ch2_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx1_rjb_cpt35",
+    "first_observed_location": "physics_xzxbx1_rjb_ch2_s5",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx1_rjb_cpt36",
+    "first_observed_location": "physics_xzxbx1_rjb_ch2_s5",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx1_rjb_cpt37",
+    "first_observed_location": "physics_xzxbx1_rjb_ch2_s5",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx1_rjb_cpt38",
+    "first_observed_location": "physics_xzxbx1_rjb_ch2_s5",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx1_rjb_skl12",
+    "first_observed_location": "physics_xzxbx1_rjb_ch2_s5",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx1_rjb_exp10",
+    "first_observed_location": "physics_xzxbx1_rjb_ch2_s5",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx1_rjb_exe11",
+    "first_observed_location": "physics_xzxbx1_rjb_ch2_s5",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx1_rjb_cpt39",
+    "first_observed_location": "physics_xzxbx1_rjb_ch2_s6",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx1_rjb_cpt40",
+    "first_observed_location": "physics_xzxbx1_rjb_ch2_s6",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx1_rjb_cpt41",
+    "first_observed_location": "physics_xzxbx1_rjb_ch2_s6",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx1_rjb_cpt42",
+    "first_observed_location": "physics_xzxbx1_rjb_ch2_s6",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx1_rjb_cpt43",
+    "first_observed_location": "physics_xzxbx1_rjb_ch2_s6",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx1_rjb_cpt44",
+    "first_observed_location": "physics_xzxbx1_rjb_ch2_s6",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx1_rjb_exp11",
+    "first_observed_location": "physics_xzxbx1_rjb_ch2_s6",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx1_rjb_exp12",
+    "first_observed_location": "physics_xzxbx1_rjb_ch2_s6",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx1_rjb_cpt45",
+    "first_observed_location": "physics_xzxbx1_rjb_ch3_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx1_rjb_cpt46",
+    "first_observed_location": "physics_xzxbx1_rjb_ch3_s1",
+    "later_references": [
+      "physics_xzxbx1_rjb_ch3_s2"
+    ]
+  },
+  {
+    "id": "physics_xzxbx1_rjb_cpt47",
+    "first_observed_location": "physics_xzxbx1_rjb_ch3_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx1_rjb_cpt48",
+    "first_observed_location": "physics_xzxbx1_rjb_ch3_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx1_rjb_cpt49",
+    "first_observed_location": "physics_xzxbx1_rjb_ch3_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx1_rjb_cpt50",
+    "first_observed_location": "physics_xzxbx1_rjb_ch3_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx1_rjb_cpt51",
+    "first_observed_location": "physics_xzxbx1_rjb_ch3_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx1_rjb_exp13",
+    "first_observed_location": "physics_xzxbx1_rjb_ch3_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx1_rjb_exp14",
+    "first_observed_location": "physics_xzxbx1_rjb_ch3_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx1_rjb_cpt52",
+    "first_observed_location": "physics_xzxbx1_rjb_ch3_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx1_rjb_cpt53",
+    "first_observed_location": "physics_xzxbx1_rjb_ch3_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx1_rjb_cpt54",
+    "first_observed_location": "physics_xzxbx1_rjb_ch3_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx1_rjb_cpt55",
+    "first_observed_location": "physics_xzxbx1_rjb_ch3_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx1_rjb_skl13",
+    "first_observed_location": "physics_xzxbx1_rjb_ch3_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx1_rjb_exe12",
+    "first_observed_location": "physics_xzxbx1_rjb_ch3_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx1_rjb_cpt56",
+    "first_observed_location": "physics_xzxbx1_rjb_ch3_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx1_rjb_cpt57",
+    "first_observed_location": "physics_xzxbx1_rjb_ch3_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx1_rjb_cpt58",
+    "first_observed_location": "physics_xzxbx1_rjb_ch3_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx1_rjb_cpt59",
+    "first_observed_location": "physics_xzxbx1_rjb_ch3_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx1_rjb_cpt60",
+    "first_observed_location": "physics_xzxbx1_rjb_ch3_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx1_rjb_exp15",
+    "first_observed_location": "physics_xzxbx1_rjb_ch3_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx1_rjb_exp16",
+    "first_observed_location": "physics_xzxbx1_rjb_ch3_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx1_rjb_exp17",
+    "first_observed_location": "physics_xzxbx1_rjb_ch3_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx1_rjb_exe13",
+    "first_observed_location": "physics_xzxbx1_rjb_ch3_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx1_rjb_cpt61",
+    "first_observed_location": "physics_xzxbx1_rjb_ch3_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx1_rjb_cpt62",
+    "first_observed_location": "physics_xzxbx1_rjb_ch3_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx1_rjb_cpt63",
+    "first_observed_location": "physics_xzxbx1_rjb_ch3_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx1_rjb_cpt64",
+    "first_observed_location": "physics_xzxbx1_rjb_ch3_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx1_rjb_cpt65",
+    "first_observed_location": "physics_xzxbx1_rjb_ch3_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx1_rjb_exp18",
+    "first_observed_location": "physics_xzxbx1_rjb_ch3_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx1_rjb_exp19",
+    "first_observed_location": "physics_xzxbx1_rjb_ch3_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx1_rjb_exe14",
+    "first_observed_location": "physics_xzxbx1_rjb_ch3_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx1_rjb_cpt66",
+    "first_observed_location": "physics_xzxbx1_rjb_ch3_s5",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx1_rjb_cpt67",
+    "first_observed_location": "physics_xzxbx1_rjb_ch3_s5",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx1_rjb_cpt68",
+    "first_observed_location": "physics_xzxbx1_rjb_ch3_s5",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx1_rjb_exp20",
+    "first_observed_location": "physics_xzxbx1_rjb_ch3_s5",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx1_rjb_exp21",
+    "first_observed_location": "physics_xzxbx1_rjb_ch3_s5",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx1_rjb_skl14",
+    "first_observed_location": "physics_xzxbx1_rjb_ch3_s5",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx1_rjb_exe15",
+    "first_observed_location": "physics_xzxbx1_rjb_ch3_s5",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx1_rjb_cpt69",
+    "first_observed_location": "physics_xzxbx1_rjb_ch4_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx1_rjb_cpt70",
+    "first_observed_location": "physics_xzxbx1_rjb_ch4_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx1_rjb_skl15",
+    "first_observed_location": "physics_xzxbx1_rjb_ch4_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx1_rjb_exp22",
+    "first_observed_location": "physics_xzxbx1_rjb_ch4_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx1_rjb_exe16",
+    "first_observed_location": "physics_xzxbx1_rjb_ch4_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx1_rjb_cpt71",
+    "first_observed_location": "physics_xzxbx1_rjb_ch4_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx1_rjb_cpt72",
+    "first_observed_location": "physics_xzxbx1_rjb_ch4_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx1_rjb_cpt73",
+    "first_observed_location": "physics_xzxbx1_rjb_ch4_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx1_rjb_cpt74",
+    "first_observed_location": "physics_xzxbx1_rjb_ch4_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx1_rjb_cpt75",
+    "first_observed_location": "physics_xzxbx1_rjb_ch4_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx1_rjb_cpt76",
+    "first_observed_location": "physics_xzxbx1_rjb_ch4_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx1_rjb_skl16",
+    "first_observed_location": "physics_xzxbx1_rjb_ch4_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx1_rjb_exp23",
+    "first_observed_location": "physics_xzxbx1_rjb_ch4_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx1_rjb_exp24",
+    "first_observed_location": "physics_xzxbx1_rjb_ch4_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx1_rjb_exe17",
+    "first_observed_location": "physics_xzxbx1_rjb_ch4_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx1_rjb_cpt77",
+    "first_observed_location": "physics_xzxbx1_rjb_ch4_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx1_rjb_cpt78",
+    "first_observed_location": "physics_xzxbx1_rjb_ch4_s3",
+    "later_references": [
+      "physics_xzxbx1_rjb_ch4_s4"
+    ]
+  },
+  {
+    "id": "physics_xzxbx1_rjb_cpt79",
+    "first_observed_location": "physics_xzxbx1_rjb_ch4_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx1_rjb_cpt80",
+    "first_observed_location": "physics_xzxbx1_rjb_ch4_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx1_rjb_cpt81",
+    "first_observed_location": "physics_xzxbx1_rjb_ch4_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx1_rjb_cpt82",
+    "first_observed_location": "physics_xzxbx1_rjb_ch4_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx1_rjb_cpt83",
+    "first_observed_location": "physics_xzxbx1_rjb_ch4_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx1_rjb_exp25",
+    "first_observed_location": "physics_xzxbx1_rjb_ch4_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx1_rjb_exp26",
+    "first_observed_location": "physics_xzxbx1_rjb_ch4_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx1_rjb_exe18",
+    "first_observed_location": "physics_xzxbx1_rjb_ch4_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx1_rjb_cpt84",
+    "first_observed_location": "physics_xzxbx1_rjb_ch4_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx1_rjb_cpt85",
+    "first_observed_location": "physics_xzxbx1_rjb_ch4_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx1_rjb_cpt86",
+    "first_observed_location": "physics_xzxbx1_rjb_ch4_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx1_rjb_cpt87",
+    "first_observed_location": "physics_xzxbx1_rjb_ch4_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx1_rjb_skl17",
+    "first_observed_location": "physics_xzxbx1_rjb_ch4_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx1_rjb_exp27",
+    "first_observed_location": "physics_xzxbx1_rjb_ch4_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx1_rjb_exp28",
+    "first_observed_location": "physics_xzxbx1_rjb_ch4_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx1_rjb_exe19",
+    "first_observed_location": "physics_xzxbx1_rjb_ch4_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx1_rjb_cpt88",
+    "first_observed_location": "physics_xzxbx1_rjb_ch4_s5",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx1_rjb_cpt89",
+    "first_observed_location": "physics_xzxbx1_rjb_ch4_s5",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx1_rjb_cpt90",
+    "first_observed_location": "physics_xzxbx1_rjb_ch4_s5",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx1_rjb_cpt91",
+    "first_observed_location": "physics_xzxbx1_rjb_ch4_s5",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx1_rjb_cpt92",
+    "first_observed_location": "physics_xzxbx1_rjb_ch4_s5",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx1_rjb_cpt93",
+    "first_observed_location": "physics_xzxbx1_rjb_ch4_s5",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx1_rjb_cpt94",
+    "first_observed_location": "physics_xzxbx1_rjb_ch4_s6",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx1_rjb_cpt95",
+    "first_observed_location": "physics_xzxbx1_rjb_ch4_s6",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx1_rjb_cpt96",
+    "first_observed_location": "physics_xzxbx1_rjb_ch4_s6",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx1_rjb_cpt97",
+    "first_observed_location": "physics_xzxbx1_rjb_ch4_s6",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx1_rjb_cpt98",
+    "first_observed_location": "physics_xzxbx1_rjb_ch4_s6",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx1_rjb_cpt99",
+    "first_observed_location": "physics_xzxbx1_rjb_ch4_s6",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx1_rjb_cpt100",
+    "first_observed_location": "physics_xzxbx1_rjb_ch4_s6",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx1_rjb_cpt101",
+    "first_observed_location": "physics_xzxbx1_rjb_ch4_s6",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx1_rjb_exp29",
+    "first_observed_location": "physics_xzxbx1_rjb_ch4_s6",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx2_rjb_cpt1",
+    "first_observed_location": "physics_xzxbx2_rjb_ch1_s1",
+    "later_references": [
+      "physics_xzxbx2_rjb_ch1_s2"
+    ]
+  },
+  {
+    "id": "physics_xzxbx2_rjb_cpt2",
+    "first_observed_location": "physics_xzxbx2_rjb_ch1_s1",
+    "later_references": [
+      "physics_xzxbx2_rjb_ch1_s2"
+    ]
+  },
+  {
+    "id": "physics_xzxbx2_rjb_cpt3",
+    "first_observed_location": "physics_xzxbx2_rjb_ch1_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx2_rjb_skl1",
+    "first_observed_location": "physics_xzxbx2_rjb_ch1_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx2_rjb_exp1",
+    "first_observed_location": "physics_xzxbx2_rjb_ch1_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx2_rjb_cpt4",
+    "first_observed_location": "physics_xzxbx2_rjb_ch1_s2",
+    "later_references": [
+      "physics_xzxbx2_rjb_ch1_s3"
+    ]
+  },
+  {
+    "id": "physics_xzxbx2_rjb_cpt5",
+    "first_observed_location": "physics_xzxbx2_rjb_ch1_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx2_rjb_exp2",
+    "first_observed_location": "physics_xzxbx2_rjb_ch1_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx2_rjb_skl2",
+    "first_observed_location": "physics_xzxbx2_rjb_ch1_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx2_rjb_exe1",
+    "first_observed_location": "physics_xzxbx2_rjb_ch1_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx2_rjb_cpt6",
+    "first_observed_location": "physics_xzxbx2_rjb_ch1_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx2_rjb_cpt7",
+    "first_observed_location": "physics_xzxbx2_rjb_ch1_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx2_rjb_cpt8",
+    "first_observed_location": "physics_xzxbx2_rjb_ch1_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx2_rjb_exp3",
+    "first_observed_location": "physics_xzxbx2_rjb_ch1_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx2_rjb_exe2",
+    "first_observed_location": "physics_xzxbx2_rjb_ch1_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx2_rjb_cpt9",
+    "first_observed_location": "physics_xzxbx2_rjb_ch1_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx2_rjb_cpt10",
+    "first_observed_location": "physics_xzxbx2_rjb_ch1_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx2_rjb_cpt11",
+    "first_observed_location": "physics_xzxbx2_rjb_ch1_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx2_rjb_cpt12",
+    "first_observed_location": "physics_xzxbx2_rjb_ch1_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx2_rjb_cpt13",
+    "first_observed_location": "physics_xzxbx2_rjb_ch1_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx2_rjb_cpt14",
+    "first_observed_location": "physics_xzxbx2_rjb_ch1_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx2_rjb_cpt15",
+    "first_observed_location": "physics_xzxbx2_rjb_ch1_s4",
+    "later_references": [
+      "physics_xzxbx3_rjb_ch5_s1"
+    ]
+  },
+  {
+    "id": "physics_xzxbx2_rjb_skl3",
+    "first_observed_location": "physics_xzxbx2_rjb_ch1_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx2_rjb_skl4",
+    "first_observed_location": "physics_xzxbx2_rjb_ch1_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx2_rjb_exe3",
+    "first_observed_location": "physics_xzxbx2_rjb_ch1_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx2_rjb_cpt16",
+    "first_observed_location": "physics_xzxbx2_rjb_ch2_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx2_rjb_cpt17",
+    "first_observed_location": "physics_xzxbx2_rjb_ch2_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx2_rjb_cpt18",
+    "first_observed_location": "physics_xzxbx2_rjb_ch2_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx2_rjb_skl5",
+    "first_observed_location": "physics_xzxbx2_rjb_ch2_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx2_rjb_exp4",
+    "first_observed_location": "physics_xzxbx2_rjb_ch2_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx2_rjb_exe4",
+    "first_observed_location": "physics_xzxbx2_rjb_ch2_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx2_rjb_exe5",
+    "first_observed_location": "physics_xzxbx2_rjb_ch2_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx2_rjb_cpt19",
+    "first_observed_location": "physics_xzxbx2_rjb_ch2_s2",
+    "later_references": [
+      "physics_xzxbx2_rjb_ch2_s3",
+      "physics_xzxbx2_rjb_ch3_s1"
+    ]
+  },
+  {
+    "id": "physics_xzxbx2_rjb_cpt20",
+    "first_observed_location": "physics_xzxbx2_rjb_ch2_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx2_rjb_cpt21",
+    "first_observed_location": "physics_xzxbx2_rjb_ch2_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx2_rjb_cpt22",
+    "first_observed_location": "physics_xzxbx2_rjb_ch2_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx2_rjb_cpt23",
+    "first_observed_location": "physics_xzxbx2_rjb_ch2_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx2_rjb_cpt24",
+    "first_observed_location": "physics_xzxbx2_rjb_ch2_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx2_rjb_skl6",
+    "first_observed_location": "physics_xzxbx2_rjb_ch2_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx2_rjb_exp5",
+    "first_observed_location": "physics_xzxbx2_rjb_ch2_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx2_rjb_exe6",
+    "first_observed_location": "physics_xzxbx2_rjb_ch2_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx2_rjb_cpt25",
+    "first_observed_location": "physics_xzxbx2_rjb_ch2_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx2_rjb_cpt26",
+    "first_observed_location": "physics_xzxbx2_rjb_ch2_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx2_rjb_cpt27",
+    "first_observed_location": "physics_xzxbx2_rjb_ch2_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx2_rjb_cpt28",
+    "first_observed_location": "physics_xzxbx2_rjb_ch2_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx2_rjb_cpt29",
+    "first_observed_location": "physics_xzxbx2_rjb_ch2_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx2_rjb_cpt30",
+    "first_observed_location": "physics_xzxbx2_rjb_ch2_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx2_rjb_cpt31",
+    "first_observed_location": "physics_xzxbx2_rjb_ch2_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx2_rjb_cpt32",
+    "first_observed_location": "physics_xzxbx2_rjb_ch2_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx2_rjb_cpt33",
+    "first_observed_location": "physics_xzxbx2_rjb_ch2_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx2_rjb_skl7",
+    "first_observed_location": "physics_xzxbx2_rjb_ch2_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx2_rjb_exp6",
+    "first_observed_location": "physics_xzxbx2_rjb_ch2_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx2_rjb_exp7",
+    "first_observed_location": "physics_xzxbx2_rjb_ch2_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx2_rjb_cpt34",
+    "first_observed_location": "physics_xzxbx2_rjb_ch3_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx2_rjb_cpt35",
+    "first_observed_location": "physics_xzxbx2_rjb_ch3_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx2_rjb_cpt36",
+    "first_observed_location": "physics_xzxbx2_rjb_ch3_s1",
+    "later_references": [
+      "physics_xzxbx2_rjb_ch3_s2"
+    ]
+  },
+  {
+    "id": "physics_xzxbx2_rjb_cpt37",
+    "first_observed_location": "physics_xzxbx2_rjb_ch3_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx2_rjb_skl8",
+    "first_observed_location": "physics_xzxbx2_rjb_ch3_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx2_rjb_exp8",
+    "first_observed_location": "physics_xzxbx2_rjb_ch3_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx2_rjb_cpt38",
+    "first_observed_location": "physics_xzxbx2_rjb_ch3_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx2_rjb_cpt39",
+    "first_observed_location": "physics_xzxbx2_rjb_ch3_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx2_rjb_cpt40",
+    "first_observed_location": "physics_xzxbx2_rjb_ch3_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx2_rjb_cpt41",
+    "first_observed_location": "physics_xzxbx2_rjb_ch3_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx2_rjb_cpt42",
+    "first_observed_location": "physics_xzxbx2_rjb_ch3_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx2_rjb_cpt43",
+    "first_observed_location": "physics_xzxbx2_rjb_ch3_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx2_rjb_cpt44",
+    "first_observed_location": "physics_xzxbx2_rjb_ch3_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx2_rjb_cpt45",
+    "first_observed_location": "physics_xzxbx2_rjb_ch3_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx2_rjb_cpt46",
+    "first_observed_location": "physics_xzxbx2_rjb_ch3_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx2_rjb_cpt47",
+    "first_observed_location": "physics_xzxbx2_rjb_ch3_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx2_rjb_cpt48",
+    "first_observed_location": "physics_xzxbx2_rjb_ch3_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx2_rjb_cpt49",
+    "first_observed_location": "physics_xzxbx2_rjb_ch3_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx2_rjb_cpt50",
+    "first_observed_location": "physics_xzxbx2_rjb_ch3_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx2_rjb_exp9",
+    "first_observed_location": "physics_xzxbx2_rjb_ch3_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx2_rjb_exe7",
+    "first_observed_location": "physics_xzxbx2_rjb_ch3_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx2_rjb_cpt51",
+    "first_observed_location": "physics_xzxbx2_rjb_ch3_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx2_rjb_cpt52",
+    "first_observed_location": "physics_xzxbx2_rjb_ch3_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx2_rjb_cpt53",
+    "first_observed_location": "physics_xzxbx2_rjb_ch3_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx2_rjb_cpt54",
+    "first_observed_location": "physics_xzxbx2_rjb_ch3_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx2_rjb_cpt55",
+    "first_observed_location": "physics_xzxbx2_rjb_ch3_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx2_rjb_skl9",
+    "first_observed_location": "physics_xzxbx2_rjb_ch3_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx2_rjb_exe8",
+    "first_observed_location": "physics_xzxbx2_rjb_ch3_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx2_rjb_cpt56",
+    "first_observed_location": "physics_xzxbx2_rjb_ch4_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx2_rjb_cpt57",
+    "first_observed_location": "physics_xzxbx2_rjb_ch4_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx2_rjb_cpt58",
+    "first_observed_location": "physics_xzxbx2_rjb_ch4_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx2_rjb_cpt59",
+    "first_observed_location": "physics_xzxbx2_rjb_ch4_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx2_rjb_cpt60",
+    "first_observed_location": "physics_xzxbx2_rjb_ch4_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx2_rjb_cpt61",
+    "first_observed_location": "physics_xzxbx2_rjb_ch4_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx2_rjb_exp10",
+    "first_observed_location": "physics_xzxbx2_rjb_ch4_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx2_rjb_exe9",
+    "first_observed_location": "physics_xzxbx2_rjb_ch4_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx2_rjb_cpt62",
+    "first_observed_location": "physics_xzxbx2_rjb_ch4_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx2_rjb_exp11",
+    "first_observed_location": "physics_xzxbx2_rjb_ch4_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx2_rjb_skl10",
+    "first_observed_location": "physics_xzxbx2_rjb_ch4_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx2_rjb_exe10",
+    "first_observed_location": "physics_xzxbx2_rjb_ch4_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx2_rjb_cpt63",
+    "first_observed_location": "physics_xzxbx2_rjb_ch4_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx2_rjb_cpt64",
+    "first_observed_location": "physics_xzxbx2_rjb_ch4_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx2_rjb_cpt65",
+    "first_observed_location": "physics_xzxbx2_rjb_ch4_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx2_rjb_cpt66",
+    "first_observed_location": "physics_xzxbx2_rjb_ch4_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx2_rjb_cpt67",
+    "first_observed_location": "physics_xzxbx2_rjb_ch4_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx2_rjb_cpt68",
+    "first_observed_location": "physics_xzxbx2_rjb_ch4_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx2_rjb_cpt69",
+    "first_observed_location": "physics_xzxbx2_rjb_ch4_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx2_rjb_cpt70",
+    "first_observed_location": "physics_xzxbx2_rjb_ch4_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx2_rjb_skl11",
+    "first_observed_location": "physics_xzxbx2_rjb_ch4_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx2_rjb_exe11",
+    "first_observed_location": "physics_xzxbx2_rjb_ch4_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx2_rjb_cpt71",
+    "first_observed_location": "physics_xzxbx2_rjb_ch4_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx2_rjb_cpt72",
+    "first_observed_location": "physics_xzxbx2_rjb_ch4_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx2_rjb_cpt73",
+    "first_observed_location": "physics_xzxbx2_rjb_ch4_s4",
+    "later_references": [
+      "physics_xzxbx3_rjb_ch5_s1",
+      "physics_xzxbx3_rjb_ch5_s2"
+    ]
+  },
+  {
+    "id": "physics_xzxbx2_rjb_skl12",
+    "first_observed_location": "physics_xzxbx2_rjb_ch4_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx2_rjb_exe12",
+    "first_observed_location": "physics_xzxbx2_rjb_ch4_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx2_rjb_cpt74",
+    "first_observed_location": "physics_xzxbx2_rjb_ch5_s1",
+    "later_references": [
+      "physics_xzxbx2_rjb_ch5_s2",
+      "physics_xzxbx2_rjb_ch5_s3"
+    ]
+  },
+  {
+    "id": "physics_xzxbx2_rjb_cpt75",
+    "first_observed_location": "physics_xzxbx2_rjb_ch5_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx2_rjb_cpt76",
+    "first_observed_location": "physics_xzxbx2_rjb_ch5_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx2_rjb_cpt77",
+    "first_observed_location": "physics_xzxbx2_rjb_ch5_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx2_rjb_cpt78",
+    "first_observed_location": "physics_xzxbx2_rjb_ch5_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx2_rjb_cpt79",
+    "first_observed_location": "physics_xzxbx2_rjb_ch5_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx2_rjb_cpt80",
+    "first_observed_location": "physics_xzxbx2_rjb_ch5_s1",
+    "later_references": [
+      "physics_xzxbx2_rjb_ch5_s3"
+    ]
+  },
+  {
+    "id": "physics_xzxbx2_rjb_cpt81",
+    "first_observed_location": "physics_xzxbx2_rjb_ch5_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx2_rjb_exe13",
+    "first_observed_location": "physics_xzxbx2_rjb_ch5_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx2_rjb_cpt82",
+    "first_observed_location": "physics_xzxbx2_rjb_ch5_s2",
+    "later_references": [
+      "physics_xzxbx2_rjb_ch5_s3"
+    ]
+  },
+  {
+    "id": "physics_xzxbx2_rjb_cpt83",
+    "first_observed_location": "physics_xzxbx2_rjb_ch5_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx2_rjb_cpt84",
+    "first_observed_location": "physics_xzxbx2_rjb_ch5_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx2_rjb_cpt85",
+    "first_observed_location": "physics_xzxbx2_rjb_ch5_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx2_rjb_cpt86",
+    "first_observed_location": "physics_xzxbx2_rjb_ch5_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx2_rjb_cpt87",
+    "first_observed_location": "physics_xzxbx2_rjb_ch5_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx2_rjb_cpt88",
+    "first_observed_location": "physics_xzxbx2_rjb_ch5_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx2_rjb_skl13",
+    "first_observed_location": "physics_xzxbx2_rjb_ch5_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx2_rjb_exp12",
+    "first_observed_location": "physics_xzxbx2_rjb_ch5_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx2_rjb_exp13",
+    "first_observed_location": "physics_xzxbx2_rjb_ch5_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx2_rjb_cpt89",
+    "first_observed_location": "physics_xzxbx2_rjb_ch5_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx2_rjb_cpt90",
+    "first_observed_location": "physics_xzxbx2_rjb_ch5_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx2_rjb_cpt91",
+    "first_observed_location": "physics_xzxbx2_rjb_ch5_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx2_rjb_cpt92",
+    "first_observed_location": "physics_xzxbx2_rjb_ch5_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx2_rjb_exp14",
+    "first_observed_location": "physics_xzxbx2_rjb_ch5_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx2_rjb_exp15",
+    "first_observed_location": "physics_xzxbx2_rjb_ch5_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_cpt1",
+    "first_observed_location": "physics_xzxbx3_rjb_ch1_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_cpt2",
+    "first_observed_location": "physics_xzxbx3_rjb_ch1_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_cpt3",
+    "first_observed_location": "physics_xzxbx3_rjb_ch1_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_cpt4",
+    "first_observed_location": "physics_xzxbx3_rjb_ch1_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_cpt5",
+    "first_observed_location": "physics_xzxbx3_rjb_ch1_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_exp1",
+    "first_observed_location": "physics_xzxbx3_rjb_ch1_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_cpt6",
+    "first_observed_location": "physics_xzxbx3_rjb_ch1_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_cpt7",
+    "first_observed_location": "physics_xzxbx3_rjb_ch1_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_cpt8",
+    "first_observed_location": "physics_xzxbx3_rjb_ch1_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_cpt9",
+    "first_observed_location": "physics_xzxbx3_rjb_ch1_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_skl1",
+    "first_observed_location": "physics_xzxbx3_rjb_ch1_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_exp2",
+    "first_observed_location": "physics_xzxbx3_rjb_ch1_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_exe1",
+    "first_observed_location": "physics_xzxbx3_rjb_ch1_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_cpt10",
+    "first_observed_location": "physics_xzxbx3_rjb_ch1_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_cpt11",
+    "first_observed_location": "physics_xzxbx3_rjb_ch1_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_cpt12",
+    "first_observed_location": "physics_xzxbx3_rjb_ch1_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_cpt13",
+    "first_observed_location": "physics_xzxbx3_rjb_ch1_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_cpt14",
+    "first_observed_location": "physics_xzxbx3_rjb_ch1_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_skl2",
+    "first_observed_location": "physics_xzxbx3_rjb_ch1_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_exp3",
+    "first_observed_location": "physics_xzxbx3_rjb_ch1_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_cpt15",
+    "first_observed_location": "physics_xzxbx3_rjb_ch1_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_cpt16",
+    "first_observed_location": "physics_xzxbx3_rjb_ch1_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_cpt17",
+    "first_observed_location": "physics_xzxbx3_rjb_ch1_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_skl3",
+    "first_observed_location": "physics_xzxbx3_rjb_ch1_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_exe2",
+    "first_observed_location": "physics_xzxbx3_rjb_ch1_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_cpt18",
+    "first_observed_location": "physics_xzxbx3_rjb_ch2_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_cpt19",
+    "first_observed_location": "physics_xzxbx3_rjb_ch2_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_cpt20",
+    "first_observed_location": "physics_xzxbx3_rjb_ch2_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_cpt21",
+    "first_observed_location": "physics_xzxbx3_rjb_ch2_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_cpt22",
+    "first_observed_location": "physics_xzxbx3_rjb_ch2_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_cpt23",
+    "first_observed_location": "physics_xzxbx3_rjb_ch2_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_cpt24",
+    "first_observed_location": "physics_xzxbx3_rjb_ch2_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_cpt25",
+    "first_observed_location": "physics_xzxbx3_rjb_ch2_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_cpt26",
+    "first_observed_location": "physics_xzxbx3_rjb_ch2_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_cpt27",
+    "first_observed_location": "physics_xzxbx3_rjb_ch2_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_cpt28",
+    "first_observed_location": "physics_xzxbx3_rjb_ch2_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_cpt29",
+    "first_observed_location": "physics_xzxbx3_rjb_ch2_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_skl4",
+    "first_observed_location": "physics_xzxbx3_rjb_ch2_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_exp4",
+    "first_observed_location": "physics_xzxbx3_rjb_ch2_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_exp5",
+    "first_observed_location": "physics_xzxbx3_rjb_ch2_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_exe3",
+    "first_observed_location": "physics_xzxbx3_rjb_ch2_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_cpt30",
+    "first_observed_location": "physics_xzxbx3_rjb_ch2_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_cpt31",
+    "first_observed_location": "physics_xzxbx3_rjb_ch2_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_cpt32",
+    "first_observed_location": "physics_xzxbx3_rjb_ch2_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_cpt33",
+    "first_observed_location": "physics_xzxbx3_rjb_ch2_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_cpt34",
+    "first_observed_location": "physics_xzxbx3_rjb_ch2_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_cpt35",
+    "first_observed_location": "physics_xzxbx3_rjb_ch2_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_cpt36",
+    "first_observed_location": "physics_xzxbx3_rjb_ch2_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_skl5",
+    "first_observed_location": "physics_xzxbx3_rjb_ch2_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_cpt37",
+    "first_observed_location": "physics_xzxbx3_rjb_ch2_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_cpt38",
+    "first_observed_location": "physics_xzxbx3_rjb_ch2_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_cpt39",
+    "first_observed_location": "physics_xzxbx3_rjb_ch2_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_cpt40",
+    "first_observed_location": "physics_xzxbx3_rjb_ch2_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_cpt41",
+    "first_observed_location": "physics_xzxbx3_rjb_ch2_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_cpt42",
+    "first_observed_location": "physics_xzxbx3_rjb_ch2_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_cpt43",
+    "first_observed_location": "physics_xzxbx3_rjb_ch2_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_exp6",
+    "first_observed_location": "physics_xzxbx3_rjb_ch2_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_exe4",
+    "first_observed_location": "physics_xzxbx3_rjb_ch2_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_cpt44",
+    "first_observed_location": "physics_xzxbx3_rjb_ch2_s5",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_cpt45",
+    "first_observed_location": "physics_xzxbx3_rjb_ch2_s5",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_cpt46",
+    "first_observed_location": "physics_xzxbx3_rjb_ch2_s5",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_cpt47",
+    "first_observed_location": "physics_xzxbx3_rjb_ch2_s5",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_cpt48",
+    "first_observed_location": "physics_xzxbx3_rjb_ch2_s5",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_exp7",
+    "first_observed_location": "physics_xzxbx3_rjb_ch2_s5",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_exp8",
+    "first_observed_location": "physics_xzxbx3_rjb_ch2_s5",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_cpt49",
+    "first_observed_location": "physics_xzxbx3_rjb_ch3_s1",
+    "later_references": [
+      "physics_xzxbx3_rjb_ch3_s2"
+    ]
+  },
+  {
+    "id": "physics_xzxbx3_rjb_cpt50",
+    "first_observed_location": "physics_xzxbx3_rjb_ch3_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_cpt51",
+    "first_observed_location": "physics_xzxbx3_rjb_ch3_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_cpt52",
+    "first_observed_location": "physics_xzxbx3_rjb_ch3_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_exp9",
+    "first_observed_location": "physics_xzxbx3_rjb_ch3_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_exp10",
+    "first_observed_location": "physics_xzxbx3_rjb_ch3_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_exp11",
+    "first_observed_location": "physics_xzxbx3_rjb_ch3_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_skl6",
+    "first_observed_location": "physics_xzxbx3_rjb_ch3_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_cpt53",
+    "first_observed_location": "physics_xzxbx3_rjb_ch3_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_cpt54",
+    "first_observed_location": "physics_xzxbx3_rjb_ch3_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_cpt55",
+    "first_observed_location": "physics_xzxbx3_rjb_ch3_s2",
+    "later_references": [
+      "physics_xzxbx3_rjb_ch3_s3"
+    ]
+  },
+  {
+    "id": "physics_xzxbx3_rjb_cpt56",
+    "first_observed_location": "physics_xzxbx3_rjb_ch3_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_cpt57",
+    "first_observed_location": "physics_xzxbx3_rjb_ch3_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_exp12",
+    "first_observed_location": "physics_xzxbx3_rjb_ch3_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_exp13",
+    "first_observed_location": "physics_xzxbx3_rjb_ch3_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_exe5",
+    "first_observed_location": "physics_xzxbx3_rjb_ch3_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_cpt58",
+    "first_observed_location": "physics_xzxbx3_rjb_ch3_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_cpt59",
+    "first_observed_location": "physics_xzxbx3_rjb_ch3_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_cpt60",
+    "first_observed_location": "physics_xzxbx3_rjb_ch3_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_skl7",
+    "first_observed_location": "physics_xzxbx3_rjb_ch3_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_exe6",
+    "first_observed_location": "physics_xzxbx3_rjb_ch3_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_cpt61",
+    "first_observed_location": "physics_xzxbx3_rjb_ch3_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_cpt62",
+    "first_observed_location": "physics_xzxbx3_rjb_ch3_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_cpt63",
+    "first_observed_location": "physics_xzxbx3_rjb_ch3_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_cpt64",
+    "first_observed_location": "physics_xzxbx3_rjb_ch3_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_cpt65",
+    "first_observed_location": "physics_xzxbx3_rjb_ch3_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_cpt66",
+    "first_observed_location": "physics_xzxbx3_rjb_ch3_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_cpt67",
+    "first_observed_location": "physics_xzxbx3_rjb_ch3_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_cpt68",
+    "first_observed_location": "physics_xzxbx3_rjb_ch3_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_cpt69",
+    "first_observed_location": "physics_xzxbx3_rjb_ch4_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_cpt70",
+    "first_observed_location": "physics_xzxbx3_rjb_ch4_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_cpt71",
+    "first_observed_location": "physics_xzxbx3_rjb_ch4_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_skl8",
+    "first_observed_location": "physics_xzxbx3_rjb_ch4_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_exe7",
+    "first_observed_location": "physics_xzxbx3_rjb_ch4_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_cpt72",
+    "first_observed_location": "physics_xzxbx3_rjb_ch4_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_cpt73",
+    "first_observed_location": "physics_xzxbx3_rjb_ch4_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_cpt74",
+    "first_observed_location": "physics_xzxbx3_rjb_ch4_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_cpt75",
+    "first_observed_location": "physics_xzxbx3_rjb_ch4_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_cpt76",
+    "first_observed_location": "physics_xzxbx3_rjb_ch4_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_cpt77",
+    "first_observed_location": "physics_xzxbx3_rjb_ch4_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_cpt78",
+    "first_observed_location": "physics_xzxbx3_rjb_ch4_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_cpt79",
+    "first_observed_location": "physics_xzxbx3_rjb_ch4_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_cpt80",
+    "first_observed_location": "physics_xzxbx3_rjb_ch4_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_cpt81",
+    "first_observed_location": "physics_xzxbx3_rjb_ch4_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_cpt82",
+    "first_observed_location": "physics_xzxbx3_rjb_ch4_s2",
+    "later_references": [
+      "physics_xzxbx3_rjb_ch4_s5"
+    ]
+  },
+  {
+    "id": "physics_xzxbx3_rjb_exp14",
+    "first_observed_location": "physics_xzxbx3_rjb_ch4_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_exp15",
+    "first_observed_location": "physics_xzxbx3_rjb_ch4_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_skl9",
+    "first_observed_location": "physics_xzxbx3_rjb_ch4_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_exe8",
+    "first_observed_location": "physics_xzxbx3_rjb_ch4_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_cpt83",
+    "first_observed_location": "physics_xzxbx3_rjb_ch4_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_cpt84",
+    "first_observed_location": "physics_xzxbx3_rjb_ch4_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_cpt85",
+    "first_observed_location": "physics_xzxbx3_rjb_ch4_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_cpt86",
+    "first_observed_location": "physics_xzxbx3_rjb_ch4_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_cpt87",
+    "first_observed_location": "physics_xzxbx3_rjb_ch4_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_cpt88",
+    "first_observed_location": "physics_xzxbx3_rjb_ch4_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_cpt89",
+    "first_observed_location": "physics_xzxbx3_rjb_ch4_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_cpt90",
+    "first_observed_location": "physics_xzxbx3_rjb_ch4_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_skl10",
+    "first_observed_location": "physics_xzxbx3_rjb_ch4_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_exp16",
+    "first_observed_location": "physics_xzxbx3_rjb_ch4_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_cpt91",
+    "first_observed_location": "physics_xzxbx3_rjb_ch4_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_cpt92",
+    "first_observed_location": "physics_xzxbx3_rjb_ch4_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_cpt93",
+    "first_observed_location": "physics_xzxbx3_rjb_ch4_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_cpt94",
+    "first_observed_location": "physics_xzxbx3_rjb_ch4_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_cpt95",
+    "first_observed_location": "physics_xzxbx3_rjb_ch4_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_cpt96",
+    "first_observed_location": "physics_xzxbx3_rjb_ch4_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_cpt97",
+    "first_observed_location": "physics_xzxbx3_rjb_ch4_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_cpt98",
+    "first_observed_location": "physics_xzxbx3_rjb_ch4_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_cpt99",
+    "first_observed_location": "physics_xzxbx3_rjb_ch4_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_cpt100",
+    "first_observed_location": "physics_xzxbx3_rjb_ch4_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_cpt101",
+    "first_observed_location": "physics_xzxbx3_rjb_ch4_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_cpt102",
+    "first_observed_location": "physics_xzxbx3_rjb_ch4_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_skl11",
+    "first_observed_location": "physics_xzxbx3_rjb_ch4_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_cpt103",
+    "first_observed_location": "physics_xzxbx3_rjb_ch4_s5",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_cpt104",
+    "first_observed_location": "physics_xzxbx3_rjb_ch4_s5",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_cpt105",
+    "first_observed_location": "physics_xzxbx3_rjb_ch4_s5",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_cpt106",
+    "first_observed_location": "physics_xzxbx3_rjb_ch4_s5",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_exp17",
+    "first_observed_location": "physics_xzxbx3_rjb_ch4_s5",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_cpt107",
+    "first_observed_location": "physics_xzxbx3_rjb_ch4_s5",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_cpt108",
+    "first_observed_location": "physics_xzxbx3_rjb_ch4_s5",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_cpt109",
+    "first_observed_location": "physics_xzxbx3_rjb_ch4_s5",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_cpt110",
+    "first_observed_location": "physics_xzxbx3_rjb_ch4_s5",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_cpt111",
+    "first_observed_location": "physics_xzxbx3_rjb_ch4_s5",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_cpt112",
+    "first_observed_location": "physics_xzxbx3_rjb_ch5_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_cpt113",
+    "first_observed_location": "physics_xzxbx3_rjb_ch5_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_cpt114",
+    "first_observed_location": "physics_xzxbx3_rjb_ch5_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_cpt115",
+    "first_observed_location": "physics_xzxbx3_rjb_ch5_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_cpt116",
+    "first_observed_location": "physics_xzxbx3_rjb_ch5_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_cpt117",
+    "first_observed_location": "physics_xzxbx3_rjb_ch5_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_cpt118",
+    "first_observed_location": "physics_xzxbx3_rjb_ch5_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_cpt119",
+    "first_observed_location": "physics_xzxbx3_rjb_ch5_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_cpt120",
+    "first_observed_location": "physics_xzxbx3_rjb_ch5_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_cpt121",
+    "first_observed_location": "physics_xzxbx3_rjb_ch5_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_cpt122",
+    "first_observed_location": "physics_xzxbx3_rjb_ch5_s1",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_cpt123",
+    "first_observed_location": "physics_xzxbx3_rjb_ch5_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_cpt124",
+    "first_observed_location": "physics_xzxbx3_rjb_ch5_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_cpt125",
+    "first_observed_location": "physics_xzxbx3_rjb_ch5_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_cpt126",
+    "first_observed_location": "physics_xzxbx3_rjb_ch5_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_cpt127",
+    "first_observed_location": "physics_xzxbx3_rjb_ch5_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_cpt128",
+    "first_observed_location": "physics_xzxbx3_rjb_ch5_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_cpt129",
+    "first_observed_location": "physics_xzxbx3_rjb_ch5_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_cpt130",
+    "first_observed_location": "physics_xzxbx3_rjb_ch5_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_cpt131",
+    "first_observed_location": "physics_xzxbx3_rjb_ch5_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_cpt132",
+    "first_observed_location": "physics_xzxbx3_rjb_ch5_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_skl12",
+    "first_observed_location": "physics_xzxbx3_rjb_ch5_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_exe9",
+    "first_observed_location": "physics_xzxbx3_rjb_ch5_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_exe10",
+    "first_observed_location": "physics_xzxbx3_rjb_ch5_s2",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_cpt133",
+    "first_observed_location": "physics_xzxbx3_rjb_ch5_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_cpt134",
+    "first_observed_location": "physics_xzxbx3_rjb_ch5_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_cpt135",
+    "first_observed_location": "physics_xzxbx3_rjb_ch5_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_cpt136",
+    "first_observed_location": "physics_xzxbx3_rjb_ch5_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_cpt137",
+    "first_observed_location": "physics_xzxbx3_rjb_ch5_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_cpt138",
+    "first_observed_location": "physics_xzxbx3_rjb_ch5_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_cpt139",
+    "first_observed_location": "physics_xzxbx3_rjb_ch5_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_exe11",
+    "first_observed_location": "physics_xzxbx3_rjb_ch5_s3",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_cpt140",
+    "first_observed_location": "physics_xzxbx3_rjb_ch5_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_cpt141",
+    "first_observed_location": "physics_xzxbx3_rjb_ch5_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_cpt142",
+    "first_observed_location": "physics_xzxbx3_rjb_ch5_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_cpt143",
+    "first_observed_location": "physics_xzxbx3_rjb_ch5_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_cpt144",
+    "first_observed_location": "physics_xzxbx3_rjb_ch5_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_cpt145",
+    "first_observed_location": "physics_xzxbx3_rjb_ch5_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_cpt146",
+    "first_observed_location": "physics_xzxbx3_rjb_ch5_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_cpt147",
+    "first_observed_location": "physics_xzxbx3_rjb_ch5_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_exe12",
+    "first_observed_location": "physics_xzxbx3_rjb_ch5_s4",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_cpt148",
+    "first_observed_location": "physics_xzxbx3_rjb_ch5_s5",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_cpt149",
+    "first_observed_location": "physics_xzxbx3_rjb_ch5_s5",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_cpt150",
+    "first_observed_location": "physics_xzxbx3_rjb_ch5_s5",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_cpt151",
+    "first_observed_location": "physics_xzxbx3_rjb_ch5_s5",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_cpt152",
+    "first_observed_location": "physics_xzxbx3_rjb_ch5_s5",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_cpt153",
+    "first_observed_location": "physics_xzxbx3_rjb_ch5_s5",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_cpt154",
+    "first_observed_location": "physics_xzxbx3_rjb_ch5_s5",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_cpt155",
+    "first_observed_location": "physics_xzxbx3_rjb_ch5_s5",
+    "later_references": []
+  },
+  {
+    "id": "physics_xzxbx3_rjb_cpt156",
+    "first_observed_location": "physics_xzxbx3_rjb_ch5_s5",
+    "later_references": []
+  }
+]

@@ -1,0 +1,4743 @@
+[
+  {
+    "rule_id": "average_speed",
+    "bindings": {
+      "distance": {
+        "value": 1.2,
+        "unit": "km"
+      },
+      "duration": {
+        "value": 2,
+        "unit": "min"
+      }
+    },
+    "context": {
+      "object_model": "point_particle",
+      "reference_frame": "declared"
+    },
+    "expected": {
+      "speed": 10
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "bulk_average_density",
+    "bindings": {
+      "mass": {
+        "value": 200,
+        "unit": "g"
+      },
+      "volume": {
+        "value": 100,
+        "unit": "cm^3"
+      }
+    },
+    "context": {
+      "object_model": "bulk_body"
+    },
+    "expected": {
+      "density": 2000
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "newton2_point_mass",
+    "bindings": {
+      "external_forces": {
+        "value": [
+          [
+            12,
+            0,
+            0
+          ],
+          [
+            -2,
+            0,
+            0
+          ]
+        ],
+        "unit": "N"
+      },
+      "mass": {
+        "value": 2,
+        "unit": "kg"
+      }
+    },
+    "context": {
+      "object_model": "point_particle",
+      "reference_frame": "inertial",
+      "frame_id": "lab",
+      "mass_constant": true,
+      "classical_regime": true,
+      "force": {
+        "behavior": "constant",
+        "depends_on": []
+      }
+    },
+    "expected": {
+      "acceleration": [
+        5,
+        0,
+        0
+      ]
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "constant_a_velocity",
+    "bindings": {
+      "v0": {
+        "value": 10.8,
+        "unit": "km/h"
+      },
+      "a": {
+        "value": 2,
+        "unit": "m/s^2"
+      },
+      "t0": {
+        "value": 5,
+        "unit": "s"
+      },
+      "t": {
+        "value": 7,
+        "unit": "s"
+      }
+    },
+    "context": {
+      "object_model": "point_particle",
+      "reference_frame": "inertial",
+      "frame_id": "lab",
+      "acceleration_constant": true,
+      "axis": [
+        1,
+        0,
+        0
+      ]
+    },
+    "expected": {
+      "v": 7
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "constant_a_position",
+    "bindings": {
+      "v0": {
+        "value": 3,
+        "unit": "m/s"
+      },
+      "a": {
+        "value": 2,
+        "unit": "m/s^2"
+      },
+      "t0": {
+        "value": 5,
+        "unit": "s"
+      },
+      "t": {
+        "value": 7,
+        "unit": "s"
+      },
+      "x0": {
+        "value": 10,
+        "unit": "m"
+      }
+    },
+    "context": {
+      "object_model": "point_particle",
+      "reference_frame": "inertial",
+      "frame_id": "lab",
+      "acceleration_constant": true,
+      "axis": [
+        1,
+        0,
+        0
+      ]
+    },
+    "expected": {
+      "x": 20
+    },
+    "boundary_conditions": [
+      {
+        "quantity": "x",
+        "value": 20,
+        "unit": "m"
+      }
+    ]
+  },
+  {
+    "rule_id": "constant_a_speed_squared",
+    "bindings": {
+      "v0": {
+        "value": 3,
+        "unit": "m/s"
+      },
+      "a": {
+        "value": 2,
+        "unit": "m/s^2"
+      },
+      "t0": {
+        "value": 5,
+        "unit": "s"
+      },
+      "x0": {
+        "value": 10,
+        "unit": "m"
+      },
+      "x": {
+        "value": 20,
+        "unit": "m"
+      }
+    },
+    "context": {
+      "object_model": "point_particle",
+      "reference_frame": "inertial",
+      "frame_id": "lab",
+      "acceleration_constant": true,
+      "axis": [
+        1,
+        0,
+        0
+      ]
+    },
+    "expected": {
+      "v_squared": 49
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "work_parallel_constant_force",
+    "bindings": {
+      "force": {
+        "value": 5,
+        "unit": "N"
+      },
+      "distance": {
+        "value": 2,
+        "unit": "m"
+      }
+    },
+    "context": {
+      "object_model": "point_particle",
+      "reference_frame": "inertial",
+      "frame_id": "lab",
+      "force_constant": true,
+      "parallel_same_direction": true,
+      "force": {
+        "behavior": "constant",
+        "depends_on": []
+      }
+    },
+    "expected": {
+      "work": 10
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "work_dot_constant_force",
+    "bindings": {
+      "force": {
+        "value": [
+          2,
+          0,
+          0
+        ],
+        "unit": "N"
+      },
+      "displacement": {
+        "value": [
+          -3,
+          4,
+          0
+        ],
+        "unit": "m"
+      }
+    },
+    "context": {
+      "object_model": "point_particle",
+      "reference_frame": "inertial",
+      "frame_id": "lab",
+      "force_constant": true,
+      "force": {
+        "behavior": "constant",
+        "depends_on": []
+      }
+    },
+    "expected": {
+      "work": -6
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "sound_path_speed",
+    "bindings": {
+      "distance": {
+        "value": 340,
+        "unit": "m"
+      },
+      "duration": {
+        "value": 1,
+        "unit": "s"
+      }
+    },
+    "context": {
+      "object_model": "wave",
+      "reference_frame": "declared",
+      "uniform_medium": true
+    },
+    "expected": {
+      "speed": 340
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "cycle_frequency",
+    "bindings": {
+      "cycles": {
+        "value": 100,
+        "unit": "1"
+      },
+      "duration": {
+        "value": 2,
+        "unit": "s"
+      }
+    },
+    "context": {
+      "object_model": "wave",
+      "reference_frame": "declared",
+      "complete_cycles": true
+    },
+    "expected": {
+      "frequency": 50
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "thin_lens_power",
+    "bindings": {
+      "focal_length": {
+        "value": 0.5,
+        "unit": "m"
+      }
+    },
+    "context": {
+      "object_model": "ray_optics",
+      "reference_frame": "declared",
+      "thin_lens": true
+    },
+    "expected": {
+      "power": 2
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "local_weight",
+    "bindings": {
+      "mass": {
+        "value": 2,
+        "unit": "kg"
+      },
+      "g": {
+        "value": 9.8,
+        "unit": "m/s^2"
+      }
+    },
+    "context": {
+      "object_model": "point_particle",
+      "reference_frame": "declared",
+      "uniform_gravity": true,
+      "near_surface": true
+    },
+    "expected": {
+      "weight": 19.6
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "kinetic_friction",
+    "bindings": {
+      "mu": {
+        "value": 0.3,
+        "unit": "1"
+      },
+      "normal_force": {
+        "value": 20,
+        "unit": "N"
+      }
+    },
+    "context": {
+      "object_model": "point_particle",
+      "reference_frame": "declared",
+      "sliding_contact": true,
+      "kinetic_friction_model": true
+    },
+    "expected": {
+      "friction": 6
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "average_pressure",
+    "bindings": {
+      "normal_force": {
+        "value": 20,
+        "unit": "N"
+      },
+      "area": {
+        "value": 0.01,
+        "unit": "m^2"
+      }
+    },
+    "context": {
+      "object_model": "bulk_body",
+      "reference_frame": "declared"
+    },
+    "expected": {
+      "pressure": 2000
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "hydrostatic_gauge_pressure",
+    "bindings": {
+      "density": {
+        "value": 1000,
+        "unit": "kg/m^3"
+      },
+      "g": {
+        "value": 10,
+        "unit": "m/s^2"
+      },
+      "depth": {
+        "value": 2,
+        "unit": "m"
+      }
+    },
+    "context": {
+      "object_model": "uniform_fluid",
+      "reference_frame": "declared",
+      "fluid_static": true,
+      "density_constant": true,
+      "uniform_gravity": true,
+      "pressure_is_gauge": true
+    },
+    "expected": {
+      "pressure": 20000
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "archimedes_buoyancy",
+    "bindings": {
+      "density": {
+        "value": 1000,
+        "unit": "kg/m^3"
+      },
+      "g": {
+        "value": 10,
+        "unit": "m/s^2"
+      },
+      "displaced_volume": {
+        "value": 0.002,
+        "unit": "m^3"
+      }
+    },
+    "context": {
+      "object_model": "uniform_fluid",
+      "reference_frame": "declared",
+      "fluid_static": true,
+      "density_constant": true,
+      "uniform_gravity": true
+    },
+    "expected": {
+      "buoyancy": 20
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "displaced_fluid_weight",
+    "bindings": {
+      "density": {
+        "value": 1000,
+        "unit": "kg/m^3"
+      },
+      "g": {
+        "value": 10,
+        "unit": "m/s^2"
+      },
+      "displaced_volume": {
+        "value": 0.003,
+        "unit": "m^3"
+      }
+    },
+    "context": {
+      "object_model": "uniform_fluid",
+      "reference_frame": "declared",
+      "density_constant": true,
+      "uniform_gravity": true
+    },
+    "expected": {
+      "weight": 30
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "density_volume_direction",
+    "bindings": {
+      "mass": {
+        "value": 2,
+        "unit": "kg"
+      },
+      "density": {
+        "value": 1000,
+        "unit": "kg/m^3"
+      }
+    },
+    "context": {
+      "object_model": "bulk_body",
+      "reference_frame": "declared"
+    },
+    "expected": {
+      "volume": 0.002
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "average_power",
+    "bindings": {
+      "work": {
+        "value": 600,
+        "unit": "J"
+      },
+      "duration": {
+        "value": 3,
+        "unit": "s"
+      }
+    },
+    "context": {
+      "object_model": "point_particle",
+      "reference_frame": "declared"
+    },
+    "expected": {
+      "power": 200
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "near_surface_potential_energy",
+    "bindings": {
+      "mass": {
+        "value": 2,
+        "unit": "kg"
+      },
+      "g": {
+        "value": 10,
+        "unit": "m/s^2"
+      },
+      "height": {
+        "value": -3,
+        "unit": "m"
+      }
+    },
+    "context": {
+      "object_model": "point_particle",
+      "reference_frame": "declared",
+      "near_surface": true,
+      "uniform_gravity": true,
+      "height_reference_declared": true
+    },
+    "expected": {
+      "energy": -60
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "two_force_lever_balance",
+    "bindings": {
+      "force1": {
+        "value": 10,
+        "unit": "N"
+      },
+      "arm1": {
+        "value": 2,
+        "unit": "m"
+      },
+      "arm2": {
+        "value": 0.5,
+        "unit": "m"
+      }
+    },
+    "context": {
+      "object_model": "rigid_lever",
+      "reference_frame": "declared",
+      "static_balance": true
+    },
+    "expected": {
+      "force2": 40
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "total_work_accounting",
+    "bindings": {
+      "useful_work": {
+        "value": 80,
+        "unit": "J"
+      },
+      "extra_work": {
+        "value": 20,
+        "unit": "J"
+      }
+    },
+    "context": {
+      "object_model": "bulk_body",
+      "reference_frame": "declared",
+      "input_output_same_interval": true
+    },
+    "expected": {
+      "total_work": 100
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "mechanical_efficiency",
+    "bindings": {
+      "useful_work": {
+        "value": 80,
+        "unit": "J"
+      },
+      "total_work": {
+        "value": 100,
+        "unit": "J"
+      }
+    },
+    "context": {
+      "object_model": "bulk_body",
+      "reference_frame": "declared",
+      "input_output_same_interval": true
+    },
+    "expected": {
+      "efficiency": 0.8
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "signed_displacement",
+    "bindings": {
+      "initial_position": {
+        "value": 5,
+        "unit": "m"
+      },
+      "final_position": {
+        "value": 2,
+        "unit": "m"
+      }
+    },
+    "context": {
+      "object_model": "point_particle",
+      "reference_frame": "inertial",
+      "axis_declared": true,
+      "axis": [
+        1,
+        0,
+        0
+      ]
+    },
+    "expected": {
+      "displacement": -3
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "average_acceleration_vector",
+    "bindings": {
+      "initial_velocity": {
+        "value": [
+          0,
+          1,
+          0
+        ],
+        "unit": "m/s"
+      },
+      "final_velocity": {
+        "value": [
+          6,
+          1,
+          0
+        ],
+        "unit": "m/s"
+      },
+      "duration": {
+        "value": 2,
+        "unit": "s"
+      }
+    },
+    "context": {
+      "object_model": "point_particle",
+      "reference_frame": "inertial",
+      "frame_id": "lab"
+    },
+    "expected": {
+      "acceleration": [
+        3,
+        0,
+        0
+      ]
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "velocity_change_vector",
+    "bindings": {
+      "initial_velocity": {
+        "value": [
+          1,
+          2,
+          0
+        ],
+        "unit": "m/s"
+      },
+      "final_velocity": {
+        "value": [
+          -1,
+          3,
+          0
+        ],
+        "unit": "m/s"
+      }
+    },
+    "context": {
+      "object_model": "point_particle",
+      "reference_frame": "inertial",
+      "frame_id": "lab"
+    },
+    "expected": {
+      "change": [
+        -2,
+        1,
+        0
+      ]
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "hooke_restoring_component",
+    "bindings": {
+      "stiffness": {
+        "value": 100,
+        "unit": "N/m"
+      },
+      "extension": {
+        "value": 0.02,
+        "unit": "m"
+      }
+    },
+    "context": {
+      "object_model": "oscillator",
+      "reference_frame": "declared",
+      "elastic_limit": true,
+      "axis_declared": true,
+      "axis": [
+        1,
+        0,
+        0
+      ]
+    },
+    "expected": {
+      "force": -2
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "classical_momentum",
+    "bindings": {
+      "mass": {
+        "value": 2,
+        "unit": "kg"
+      },
+      "velocity": {
+        "value": [
+          3,
+          -1,
+          0
+        ],
+        "unit": "m/s"
+      }
+    },
+    "context": {
+      "object_model": "point_particle",
+      "reference_frame": "inertial",
+      "frame_id": "lab",
+      "classical_regime": true,
+      "mass_constant": true
+    },
+    "expected": {
+      "momentum": [
+        6,
+        -2,
+        0
+      ]
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "constant_force_impulse",
+    "bindings": {
+      "force": {
+        "value": [
+          2,
+          -1,
+          0
+        ],
+        "unit": "N"
+      },
+      "duration": {
+        "value": 3,
+        "unit": "s"
+      }
+    },
+    "context": {
+      "object_model": "point_particle",
+      "reference_frame": "inertial",
+      "frame_id": "lab",
+      "force_constant": true,
+      "force": {
+        "behavior": "constant",
+        "depends_on": []
+      }
+    },
+    "expected": {
+      "impulse": [
+        6,
+        -3,
+        0
+      ]
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "specific_heat_capacity",
+    "bindings": {
+      "heat": {
+        "value": 8400,
+        "unit": "J"
+      },
+      "mass": {
+        "value": 2,
+        "unit": "kg"
+      },
+      "temperature_rise": {
+        "value": 1,
+        "unit": "delta_K"
+      }
+    },
+    "context": {
+      "object_model": "thermal_system",
+      "reference_frame": "declared",
+      "no_phase_change": true,
+      "specific_heat_constant": true
+    },
+    "expected": {
+      "specific_heat": 4200
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "sensible_heat_exchange",
+    "bindings": {
+      "mass": {
+        "value": 2,
+        "unit": "kg"
+      },
+      "specific_heat": {
+        "value": 4200,
+        "unit": "J/(kg*K)"
+      },
+      "temperature_change": {
+        "value": -2,
+        "unit": "delta_K"
+      }
+    },
+    "context": {
+      "object_model": "thermal_system",
+      "reference_frame": "declared",
+      "no_phase_change": true,
+      "specific_heat_constant": true,
+      "heat_into_system_positive": true
+    },
+    "expected": {
+      "heat": -16800
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "released_sensible_heat",
+    "bindings": {
+      "mass": {
+        "value": 1,
+        "unit": "kg"
+      },
+      "specific_heat": {
+        "value": 4200,
+        "unit": "J/(kg*K)"
+      },
+      "temperature_drop": {
+        "value": 5,
+        "unit": "delta_K"
+      }
+    },
+    "context": {
+      "object_model": "thermal_system",
+      "reference_frame": "declared",
+      "no_phase_change": true,
+      "specific_heat_constant": true
+    },
+    "expected": {
+      "released_heat": 21000
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "complete_combustion_heat",
+    "bindings": {
+      "fuel_mass": {
+        "value": 2,
+        "unit": "kg"
+      },
+      "heating_value": {
+        "value": 30000000,
+        "unit": "J/kg"
+      }
+    },
+    "context": {
+      "object_model": "thermal_system",
+      "reference_frame": "declared",
+      "complete_combustion": true,
+      "heating_value_basis_declared": true
+    },
+    "expected": {
+      "released_heat": 60000000
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "heat_engine_efficiency",
+    "bindings": {
+      "useful_work": {
+        "value": 30,
+        "unit": "J"
+      },
+      "input_heat": {
+        "value": 100,
+        "unit": "J"
+      }
+    },
+    "context": {
+      "object_model": "thermal_system",
+      "reference_frame": "declared",
+      "heat_engine_cycle": true,
+      "input_output_same_interval": true
+    },
+    "expected": {
+      "efficiency": 0.3
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "ohmic_current",
+    "bindings": {
+      "voltage": {
+        "value": 12,
+        "unit": "V"
+      },
+      "resistance": {
+        "value": 6,
+        "unit": "ohm"
+      }
+    },
+    "context": {
+      "object_model": "ohmic_resistor",
+      "reference_frame": "declared",
+      "ohmic_material": true,
+      "temperature_constant": true,
+      "passive_sign_convention": true
+    },
+    "expected": {
+      "current": 2
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "measured_resistance",
+    "bindings": {
+      "voltage": {
+        "value": 12,
+        "unit": "V"
+      },
+      "current": {
+        "value": 2,
+        "unit": "A"
+      }
+    },
+    "context": {
+      "object_model": "dc_circuit",
+      "reference_frame": "declared",
+      "passive_sign_convention": true,
+      "same_operating_point": true
+    },
+    "expected": {
+      "resistance": 6
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "series_voltage_sum",
+    "bindings": {
+      "drops": {
+        "value": [
+          2,
+          3,
+          4
+        ],
+        "unit": "V"
+      }
+    },
+    "context": {
+      "object_model": "dc_circuit",
+      "reference_frame": "declared",
+      "series_topology": true,
+      "oriented_voltage_drops": true
+    },
+    "expected": {
+      "total_voltage": 9
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "parallel_voltage_equal",
+    "bindings": {
+      "terminal_voltage": {
+        "value": 12,
+        "unit": "V"
+      }
+    },
+    "context": {
+      "object_model": "dc_circuit",
+      "reference_frame": "declared",
+      "parallel_same_two_nodes": true,
+      "ideal_wires": true
+    },
+    "expected": {
+      "branch_voltage": 12
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "series_resistance",
+    "bindings": {
+      "resistances": {
+        "value": [
+          2,
+          3
+        ],
+        "unit": "ohm"
+      }
+    },
+    "context": {
+      "object_model": "dc_circuit",
+      "reference_frame": "declared",
+      "series_topology": true,
+      "ohmic_material": true
+    },
+    "expected": {
+      "equivalent_resistance": 5
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "parallel_resistance",
+    "bindings": {
+      "resistances": {
+        "value": [
+          6,
+          3
+        ],
+        "unit": "ohm"
+      }
+    },
+    "context": {
+      "object_model": "dc_circuit",
+      "reference_frame": "declared",
+      "parallel_same_two_nodes": true,
+      "ohmic_material": true
+    },
+    "expected": {
+      "equivalent_resistance": 2
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "series_current",
+    "bindings": {
+      "voltage": {
+        "value": 12,
+        "unit": "V"
+      },
+      "resistances": {
+        "value": [
+          2,
+          4
+        ],
+        "unit": "ohm"
+      }
+    },
+    "context": {
+      "object_model": "dc_circuit",
+      "reference_frame": "declared",
+      "series_topology": true,
+      "ohmic_material": true,
+      "ideal_wires": true
+    },
+    "expected": {
+      "current": 2
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "series_current_equal",
+    "bindings": {
+      "path_current": {
+        "value": 2,
+        "unit": "A"
+      }
+    },
+    "context": {
+      "object_model": "dc_circuit",
+      "reference_frame": "declared",
+      "series_topology": true,
+      "steady_state_no_charge_accumulation": true
+    },
+    "expected": {
+      "element_current": 2
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "parallel_current_sum",
+    "bindings": {
+      "branch_currents": {
+        "value": [
+          1,
+          2,
+          -0.5
+        ],
+        "unit": "A"
+      }
+    },
+    "context": {
+      "object_model": "dc_circuit",
+      "reference_frame": "declared",
+      "parallel_same_two_nodes": true,
+      "oriented_currents": true,
+      "steady_state_no_charge_accumulation": true
+    },
+    "expected": {
+      "total_current": 2.5
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "electrical_work_dc",
+    "bindings": {
+      "voltage": {
+        "value": 12,
+        "unit": "V"
+      },
+      "current": {
+        "value": 2,
+        "unit": "A"
+      },
+      "duration": {
+        "value": 5,
+        "unit": "s"
+      }
+    },
+    "context": {
+      "object_model": "dc_circuit",
+      "reference_frame": "declared",
+      "voltage_current_constant": true,
+      "passive_sign_convention": true
+    },
+    "expected": {
+      "work": 120
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "electrical_power",
+    "bindings": {
+      "voltage": {
+        "value": 12,
+        "unit": "V"
+      },
+      "current": {
+        "value": 2,
+        "unit": "A"
+      }
+    },
+    "context": {
+      "object_model": "dc_circuit",
+      "reference_frame": "declared",
+      "same_instant": true,
+      "passive_sign_convention": true
+    },
+    "expected": {
+      "power": 24
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "current_from_power",
+    "bindings": {
+      "power": {
+        "value": 24,
+        "unit": "W"
+      },
+      "voltage": {
+        "value": 12,
+        "unit": "V"
+      }
+    },
+    "context": {
+      "object_model": "dc_circuit",
+      "reference_frame": "declared",
+      "same_instant": true,
+      "passive_sign_convention": true
+    },
+    "expected": {
+      "current": 2
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "joule_heat",
+    "bindings": {
+      "current": {
+        "value": 2,
+        "unit": "A"
+      },
+      "resistance": {
+        "value": 3,
+        "unit": "ohm"
+      },
+      "duration": {
+        "value": 4,
+        "unit": "s"
+      }
+    },
+    "context": {
+      "object_model": "ohmic_resistor",
+      "reference_frame": "declared",
+      "current_resistance_constant": true,
+      "resistive_heat_only": true
+    },
+    "expected": {
+      "heat": 48
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "joule_power",
+    "bindings": {
+      "current": {
+        "value": 2,
+        "unit": "A"
+      },
+      "resistance": {
+        "value": 3,
+        "unit": "ohm"
+      }
+    },
+    "context": {
+      "object_model": "ohmic_resistor",
+      "reference_frame": "declared",
+      "resistive_heat_only": true
+    },
+    "expected": {
+      "power": 12
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "dc_charge_transfer",
+    "bindings": {
+      "current": {
+        "value": 2,
+        "unit": "A"
+      },
+      "duration": {
+        "value": 3,
+        "unit": "s"
+      }
+    },
+    "context": {
+      "object_model": "dc_circuit",
+      "reference_frame": "declared",
+      "current_constant": true,
+      "oriented_currents": true
+    },
+    "expected": {
+      "charge": 6
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "average_current",
+    "bindings": {
+      "charge": {
+        "value": 6,
+        "unit": "C"
+      },
+      "duration": {
+        "value": 3,
+        "unit": "s"
+      }
+    },
+    "context": {
+      "object_model": "dc_circuit",
+      "reference_frame": "declared",
+      "oriented_currents": true
+    },
+    "expected": {
+      "current": 2
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "resistance_geometry",
+    "bindings": {
+      "resistivity": {
+        "value": 2e-08,
+        "unit": "ohm*m"
+      },
+      "length": {
+        "value": 10,
+        "unit": "m"
+      },
+      "area": {
+        "value": 1e-06,
+        "unit": "m^2"
+      }
+    },
+    "context": {
+      "object_model": "ohmic_resistor",
+      "reference_frame": "declared",
+      "uniform_material": true,
+      "uniform_cross_section": true,
+      "temperature_constant": true,
+      "ohmic_material": true
+    },
+    "expected": {
+      "resistance": 0.2
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "resistivity_measurement",
+    "bindings": {
+      "resistance": {
+        "value": 0.2,
+        "unit": "ohm"
+      },
+      "area": {
+        "value": 1e-06,
+        "unit": "m^2"
+      },
+      "length": {
+        "value": 10,
+        "unit": "m"
+      }
+    },
+    "context": {
+      "object_model": "ohmic_resistor",
+      "reference_frame": "declared",
+      "uniform_material": true,
+      "uniform_cross_section": true,
+      "temperature_constant": true,
+      "ohmic_material": true
+    },
+    "expected": {
+      "resistivity": 2e-08
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "conductivity_reciprocal",
+    "bindings": {
+      "resistivity": {
+        "value": 2e-08,
+        "unit": "ohm*m"
+      }
+    },
+    "context": {
+      "object_model": "ohmic_resistor",
+      "reference_frame": "declared",
+      "isotropic_material": true,
+      "same_operating_point": true
+    },
+    "expected": {
+      "conductivity": 50000000.0
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "circle_cross_section",
+    "bindings": {
+      "diameter": {
+        "value": 2,
+        "unit": "m"
+      }
+    },
+    "context": {
+      "object_model": "ohmic_resistor",
+      "reference_frame": "declared",
+      "circular_cross_section": true
+    },
+    "expected": {
+      "area": 3.141592653589793
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "closed_circuit_current",
+    "bindings": {
+      "emf": {
+        "value": 12,
+        "unit": "V"
+      },
+      "external_resistance": {
+        "value": 5,
+        "unit": "ohm"
+      },
+      "internal_resistance": {
+        "value": 1,
+        "unit": "ohm"
+      }
+    },
+    "context": {
+      "object_model": "dc_circuit",
+      "reference_frame": "declared",
+      "single_source": true,
+      "ohmic_material": true,
+      "steady_dc": true
+    },
+    "expected": {
+      "current": 2
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "terminal_voltage",
+    "bindings": {
+      "emf": {
+        "value": 12,
+        "unit": "V"
+      },
+      "current": {
+        "value": 2,
+        "unit": "A"
+      },
+      "internal_resistance": {
+        "value": 1,
+        "unit": "ohm"
+      }
+    },
+    "context": {
+      "object_model": "dc_circuit",
+      "reference_frame": "declared",
+      "single_source": true,
+      "current_out_of_positive_terminal": true,
+      "steady_dc": true
+    },
+    "expected": {
+      "terminal_voltage": 10
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "open_circuit_voltage",
+    "bindings": {
+      "emf": {
+        "value": 12,
+        "unit": "V"
+      }
+    },
+    "context": {
+      "object_model": "dc_circuit",
+      "reference_frame": "declared",
+      "single_source": true,
+      "open_circuit": true,
+      "ideal_voltage_measurement": true
+    },
+    "expected": {
+      "terminal_voltage": 12
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "short_circuit_current",
+    "bindings": {
+      "emf": {
+        "value": 12,
+        "unit": "V"
+      },
+      "internal_resistance": {
+        "value": 1,
+        "unit": "ohm"
+      }
+    },
+    "context": {
+      "object_model": "dc_circuit",
+      "reference_frame": "declared",
+      "single_source": true,
+      "external_resistance_zero": true,
+      "ohmic_material": true
+    },
+    "expected": {
+      "current": 12
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "emf_work_per_charge",
+    "bindings": {
+      "source_work": {
+        "value": 24,
+        "unit": "J"
+      },
+      "charge": {
+        "value": 2,
+        "unit": "C"
+      }
+    },
+    "context": {
+      "object_model": "dc_circuit",
+      "reference_frame": "declared",
+      "non_electrostatic_source_work": true,
+      "source_polarity_declared": true
+    },
+    "expected": {
+      "emf": 12
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "source_work",
+    "bindings": {
+      "emf": {
+        "value": 12,
+        "unit": "V"
+      },
+      "charge": {
+        "value": 2,
+        "unit": "C"
+      }
+    },
+    "context": {
+      "object_model": "dc_circuit",
+      "reference_frame": "declared",
+      "emf_constant": true,
+      "source_polarity_declared": true
+    },
+    "expected": {
+      "work": 24
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "motor_output_power",
+    "bindings": {
+      "voltage": {
+        "value": 12,
+        "unit": "V"
+      },
+      "current": {
+        "value": 2,
+        "unit": "A"
+      },
+      "winding_resistance": {
+        "value": 1,
+        "unit": "ohm"
+      }
+    },
+    "context": {
+      "object_model": "dc_circuit",
+      "reference_frame": "declared",
+      "steady_motor": true,
+      "copper_loss_only": true,
+      "passive_sign_convention": true
+    },
+    "expected": {
+      "mechanical_power": 20
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "charge_quantization",
+    "bindings": {
+      "count": {
+        "value": -2,
+        "unit": "1"
+      }
+    },
+    "context": {
+      "object_model": "electrostatic",
+      "reference_frame": "declared",
+      "elementary_charge_quantization": true
+    },
+    "expected": {
+      "charge": -3.204353268e-19
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "coulomb_force_magnitude",
+    "bindings": {
+      "k": {
+        "value": 9000000000.0,
+        "unit": "N*m^2/C^2"
+      },
+      "q1": {
+        "value": 1e-06,
+        "unit": "C"
+      },
+      "q2": {
+        "value": -2e-06,
+        "unit": "C"
+      },
+      "distance": {
+        "value": 0.3,
+        "unit": "m"
+      }
+    },
+    "context": {
+      "object_model": "electrostatic",
+      "reference_frame": "declared",
+      "point_charges": true,
+      "vacuum": true,
+      "electrostatic": true
+    },
+    "expected": {
+      "force": 0.2
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "electrostatic_force_sum",
+    "bindings": {
+      "forces": {
+        "value": [
+          [
+            1,
+            2,
+            0
+          ],
+          [
+            -1,
+            3,
+            0
+          ]
+        ],
+        "unit": "N"
+      }
+    },
+    "context": {
+      "object_model": "electrostatic",
+      "reference_frame": "declared",
+      "frame_id": "lab",
+      "electrostatic": true,
+      "same_test_charge": true
+    },
+    "expected": {
+      "net_force": [
+        0,
+        5,
+        0
+      ]
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "electric_field_definition",
+    "bindings": {
+      "force": {
+        "value": [
+          -2,
+          0,
+          0
+        ],
+        "unit": "N"
+      },
+      "test_charge": {
+        "value": -1,
+        "unit": "C"
+      }
+    },
+    "context": {
+      "object_model": "electrostatic",
+      "reference_frame": "declared",
+      "frame_id": "lab",
+      "test_charge_nonperturbing": true,
+      "electrostatic": true
+    },
+    "expected": {
+      "field": [
+        2,
+        0,
+        0
+      ]
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "point_charge_radial_field",
+    "bindings": {
+      "k": {
+        "value": 9000000000.0,
+        "unit": "N*m^2/C^2"
+      },
+      "source_charge": {
+        "value": -1e-06,
+        "unit": "C"
+      },
+      "distance": {
+        "value": 3,
+        "unit": "m"
+      }
+    },
+    "context": {
+      "object_model": "electrostatic",
+      "reference_frame": "declared",
+      "point_charges": true,
+      "vacuum": true,
+      "radial_outward_positive": true
+    },
+    "expected": {
+      "field": -1000
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "electric_field_sum",
+    "bindings": {
+      "fields": {
+        "value": [
+          [
+            1,
+            2,
+            0
+          ],
+          [
+            3,
+            -2,
+            0
+          ]
+        ],
+        "unit": "N/C"
+      }
+    },
+    "context": {
+      "object_model": "electrostatic",
+      "reference_frame": "declared",
+      "frame_id": "lab",
+      "electrostatic": true,
+      "same_field_point": true
+    },
+    "expected": {
+      "field": [
+        4,
+        0,
+        0
+      ]
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "conducting_sphere_external_field",
+    "bindings": {
+      "k": {
+        "value": 9000000000.0,
+        "unit": "N*m^2/C^2"
+      },
+      "charge": {
+        "value": 1e-06,
+        "unit": "C"
+      },
+      "radius": {
+        "value": 1,
+        "unit": "m"
+      },
+      "distance": {
+        "value": 3,
+        "unit": "m"
+      }
+    },
+    "context": {
+      "object_model": "electrostatic",
+      "reference_frame": "declared",
+      "isolated_conducting_sphere": true,
+      "vacuum": true,
+      "electrostatic": true,
+      "radial_outward_positive": true
+    },
+    "expected": {
+      "field": 1000
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "electric_potential",
+    "bindings": {
+      "potential_energy": {
+        "value": 6,
+        "unit": "J"
+      },
+      "test_charge": {
+        "value": 2,
+        "unit": "C"
+      }
+    },
+    "context": {
+      "object_model": "electrostatic",
+      "reference_frame": "declared",
+      "electrostatic": true,
+      "potential_zero_declared": true
+    },
+    "expected": {
+      "potential": 3
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "potential_difference",
+    "bindings": {
+      "potential_a": {
+        "value": 5,
+        "unit": "V"
+      },
+      "potential_b": {
+        "value": 8,
+        "unit": "V"
+      }
+    },
+    "context": {
+      "object_model": "electrostatic",
+      "reference_frame": "declared",
+      "common_potential_reference": true
+    },
+    "expected": {
+      "voltage_ab": -3,
+      "voltage_ba": 3
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "electrostatic_work",
+    "bindings": {
+      "charge": {
+        "value": -2,
+        "unit": "C"
+      },
+      "voltage_ab": {
+        "value": -3,
+        "unit": "V"
+      }
+    },
+    "context": {
+      "object_model": "electrostatic",
+      "reference_frame": "declared",
+      "electrostatic": true,
+      "voltage_a_minus_b": true,
+      "displacement_a_to_b": true
+    },
+    "expected": {
+      "work": 6
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "uniform_field_voltage",
+    "bindings": {
+      "field": {
+        "value": [
+          3,
+          0,
+          0
+        ],
+        "unit": "N/C"
+      },
+      "displacement": {
+        "value": [
+          2,
+          4,
+          0
+        ],
+        "unit": "m"
+      }
+    },
+    "context": {
+      "object_model": "electrostatic",
+      "reference_frame": "declared",
+      "frame_id": "lab",
+      "electrostatic": true,
+      "uniform_field": true,
+      "displacement_a_to_b": true
+    },
+    "expected": {
+      "voltage_ab": 6
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "electric_force",
+    "bindings": {
+      "charge": {
+        "value": -2,
+        "unit": "C"
+      },
+      "field": {
+        "value": [
+          3,
+          0,
+          0
+        ],
+        "unit": "N/C"
+      }
+    },
+    "context": {
+      "object_model": "electrostatic",
+      "reference_frame": "declared",
+      "frame_id": "lab",
+      "test_charge_nonperturbing": true
+    },
+    "expected": {
+      "force": [
+        -6,
+        0,
+        0
+      ]
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "capacitor_capacitance",
+    "bindings": {
+      "charge_magnitude": {
+        "value": 6e-06,
+        "unit": "C"
+      },
+      "voltage_magnitude": {
+        "value": 3,
+        "unit": "V"
+      }
+    },
+    "context": {
+      "object_model": "electrostatic",
+      "reference_frame": "declared",
+      "two_terminal_capacitor": true,
+      "opposite_plate_charges": true
+    },
+    "expected": {
+      "capacitance": 2e-06
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "parallel_plate_capacitance",
+    "bindings": {
+      "relative_permittivity": {
+        "value": 1,
+        "unit": "1"
+      },
+      "area": {
+        "value": 1,
+        "unit": "m^2"
+      },
+      "k": {
+        "value": 9000000000.0,
+        "unit": "N*m^2/C^2"
+      },
+      "separation": {
+        "value": 0.01,
+        "unit": "m"
+      }
+    },
+    "context": {
+      "object_model": "electrostatic",
+      "reference_frame": "declared",
+      "parallel_plates": true,
+      "uniform_linear_dielectric": true,
+      "fringing_negligible": true
+    },
+    "expected": {
+      "capacitance": 8.841941282883075e-10
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "magnetic_flux_uniform",
+    "bindings": {
+      "field": {
+        "value": 2,
+        "unit": "T"
+      },
+      "area": {
+        "value": 3,
+        "unit": "m^2"
+      },
+      "normal_angle": {
+        "value": 0,
+        "unit": "1"
+      }
+    },
+    "context": {
+      "object_model": "magnetostatic",
+      "reference_frame": "declared",
+      "uniform_magnetic_field": true,
+      "plane_surface": true,
+      "angle_to_oriented_normal": true
+    },
+    "expected": {
+      "flux": 6
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "magnetic_force_wire_magnitude",
+    "bindings": {
+      "field": {
+        "value": 2,
+        "unit": "T"
+      },
+      "current": {
+        "value": 3,
+        "unit": "A"
+      },
+      "length": {
+        "value": 4,
+        "unit": "m"
+      },
+      "angle": {
+        "value": 1.5707963267948966,
+        "unit": "1"
+      }
+    },
+    "context": {
+      "object_model": "magnetostatic",
+      "reference_frame": "declared",
+      "uniform_magnetic_field": true,
+      "straight_wire": true,
+      "angle_current_to_field": true
+    },
+    "expected": {
+      "force": 24
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "perpendicular_wire_force",
+    "bindings": {
+      "field": {
+        "value": 2,
+        "unit": "T"
+      },
+      "current": {
+        "value": -3,
+        "unit": "A"
+      },
+      "length": {
+        "value": 4,
+        "unit": "m"
+      }
+    },
+    "context": {
+      "object_model": "magnetostatic",
+      "reference_frame": "declared",
+      "uniform_magnetic_field": true,
+      "straight_wire": true,
+      "wire_perpendicular_field": true
+    },
+    "expected": {
+      "force": 24
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "magnetic_field_measurement",
+    "bindings": {
+      "force": {
+        "value": 24,
+        "unit": "N"
+      },
+      "current": {
+        "value": 3,
+        "unit": "A"
+      },
+      "length": {
+        "value": 4,
+        "unit": "m"
+      }
+    },
+    "context": {
+      "object_model": "magnetostatic",
+      "reference_frame": "declared",
+      "uniform_magnetic_field": true,
+      "straight_wire": true,
+      "wire_perpendicular_field": true
+    },
+    "expected": {
+      "field": 2
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "faraday_average_emf",
+    "bindings": {
+      "turns": {
+        "value": 10,
+        "unit": "1"
+      },
+      "flux_change": {
+        "value": 0.6,
+        "unit": "Wb"
+      },
+      "duration": {
+        "value": 2,
+        "unit": "s"
+      }
+    },
+    "context": {
+      "object_model": "electromagnetic",
+      "reference_frame": "declared",
+      "same_flux_each_turn": true,
+      "right_hand_loop_orientation": true,
+      "flux_change_final_minus_initial": true
+    },
+    "expected": {
+      "emf": -3
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "motional_emf_perpendicular",
+    "bindings": {
+      "field": {
+        "value": 2,
+        "unit": "T"
+      },
+      "length": {
+        "value": 3,
+        "unit": "m"
+      },
+      "speed": {
+        "value": 4,
+        "unit": "m/s"
+      }
+    },
+    "context": {
+      "object_model": "electromagnetic",
+      "reference_frame": "declared",
+      "uniform_magnetic_field": true,
+      "straight_moving_rod": true,
+      "rod_velocity_field_mutually_perpendicular": true
+    },
+    "expected": {
+      "emf": 24
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "self_induction_average_emf",
+    "bindings": {
+      "inductance": {
+        "value": 2,
+        "unit": "H"
+      },
+      "current_change": {
+        "value": 3,
+        "unit": "A"
+      },
+      "duration": {
+        "value": 4,
+        "unit": "s"
+      }
+    },
+    "context": {
+      "object_model": "electromagnetic",
+      "reference_frame": "declared",
+      "inductance_constant": true,
+      "passive_loop_orientation": true
+    },
+    "expected": {
+      "emf": -1.5
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "sinusoidal_rms_current",
+    "bindings": {
+      "peak": {
+        "value": 10,
+        "unit": "A"
+      }
+    },
+    "context": {
+      "object_model": "electromagnetic",
+      "reference_frame": "declared",
+      "pure_sinusoid": true,
+      "integer_period_average": true
+    },
+    "expected": {
+      "rms": 7.071067811865475
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "sinusoidal_rms_voltage",
+    "bindings": {
+      "peak": {
+        "value": 10,
+        "unit": "V"
+      }
+    },
+    "context": {
+      "object_model": "electromagnetic",
+      "reference_frame": "declared",
+      "pure_sinusoid": true,
+      "integer_period_average": true
+    },
+    "expected": {
+      "rms": 7.071067811865475
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "ideal_transformer_voltage",
+    "bindings": {
+      "primary_voltage": {
+        "value": 220,
+        "unit": "V"
+      },
+      "primary_turns": {
+        "value": 100,
+        "unit": "1"
+      },
+      "secondary_turns": {
+        "value": 5,
+        "unit": "1"
+      }
+    },
+    "context": {
+      "object_model": "ideal_transformer",
+      "reference_frame": "declared",
+      "ideal_transformer": true,
+      "alternating_linked_flux": true,
+      "same_voltage_measure": true
+    },
+    "expected": {
+      "secondary_voltage": 11
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "lc_period",
+    "bindings": {
+      "inductance": {
+        "value": 1,
+        "unit": "H"
+      },
+      "capacitance": {
+        "value": 1,
+        "unit": "F"
+      }
+    },
+    "context": {
+      "object_model": "electromagnetic",
+      "reference_frame": "declared",
+      "ideal_lc": true,
+      "resistance_negligible": true
+    },
+    "expected": {
+      "period": 6.283185307179586
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "first_law_thermodynamics",
+    "bindings": {
+      "heat_into_system": {
+        "value": 5,
+        "unit": "J"
+      },
+      "work_on_system": {
+        "value": -2,
+        "unit": "J"
+      }
+    },
+    "context": {
+      "object_model": "thermal_system",
+      "reference_frame": "declared",
+      "closed_thermodynamic_system": true,
+      "heat_into_system_positive": true,
+      "work_on_system_positive": true,
+      "bulk_kinetic_potential_unchanged": true
+    },
+    "expected": {
+      "internal_energy_change": 3
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "adiabatic_internal_energy",
+    "bindings": {
+      "work_on_system": {
+        "value": 5,
+        "unit": "J"
+      }
+    },
+    "context": {
+      "object_model": "thermal_system",
+      "reference_frame": "declared",
+      "closed_thermodynamic_system": true,
+      "adiabatic": true,
+      "work_on_system_positive": true,
+      "bulk_kinetic_potential_unchanged": true
+    },
+    "expected": {
+      "internal_energy_change": 5
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "isochoric_internal_energy",
+    "bindings": {
+      "heat_into_system": {
+        "value": 5,
+        "unit": "J"
+      }
+    },
+    "context": {
+      "object_model": "thermal_system",
+      "reference_frame": "declared",
+      "closed_thermodynamic_system": true,
+      "rigid_volume": true,
+      "pressure_volume_work_only": true,
+      "bulk_kinetic_potential_unchanged": true
+    },
+    "expected": {
+      "internal_energy_change": 5
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "ideal_gas_state_change",
+    "bindings": {
+      "p1": {
+        "value": 100000,
+        "unit": "Pa"
+      },
+      "v1": {
+        "value": 1,
+        "unit": "m^3"
+      },
+      "t1": {
+        "value": 300,
+        "unit": "K"
+      },
+      "v2": {
+        "value": 2,
+        "unit": "m^3"
+      },
+      "t2": {
+        "value": 600,
+        "unit": "K"
+      }
+    },
+    "context": {
+      "object_model": "ideal_gas",
+      "reference_frame": "declared",
+      "fixed_amount_gas": true,
+      "ideal_gas": true,
+      "equilibrium_end_states": true
+    },
+    "expected": {
+      "p2": 100000
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "isothermal_gas_pressure",
+    "bindings": {
+      "p1": {
+        "value": 100000,
+        "unit": "Pa"
+      },
+      "v1": {
+        "value": 1,
+        "unit": "m^3"
+      },
+      "v2": {
+        "value": 2,
+        "unit": "m^3"
+      }
+    },
+    "context": {
+      "object_model": "ideal_gas",
+      "reference_frame": "declared",
+      "fixed_amount_gas": true,
+      "ideal_gas": true,
+      "isothermal": true
+    },
+    "expected": {
+      "p2": 50000
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "isobaric_gas_volume",
+    "bindings": {
+      "v1": {
+        "value": 1,
+        "unit": "m^3"
+      },
+      "t1": {
+        "value": 300,
+        "unit": "K"
+      },
+      "t2": {
+        "value": 600,
+        "unit": "K"
+      }
+    },
+    "context": {
+      "object_model": "ideal_gas",
+      "reference_frame": "declared",
+      "fixed_amount_gas": true,
+      "ideal_gas": true,
+      "isobaric": true
+    },
+    "expected": {
+      "v2": 2
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "isochoric_gas_pressure",
+    "bindings": {
+      "p1": {
+        "value": 100000,
+        "unit": "Pa"
+      },
+      "t1": {
+        "value": 300,
+        "unit": "K"
+      },
+      "t2": {
+        "value": 600,
+        "unit": "K"
+      }
+    },
+    "context": {
+      "object_model": "ideal_gas",
+      "reference_frame": "declared",
+      "fixed_amount_gas": true,
+      "ideal_gas": true,
+      "rigid_volume": true
+    },
+    "expected": {
+      "p2": 200000
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "free_fall_from_rest",
+    "bindings": {
+      "g": {
+        "value": 10,
+        "unit": "m/s^2"
+      },
+      "v0": {
+        "value": 0,
+        "unit": "m/s"
+      },
+      "x0": {
+        "value": 3,
+        "unit": "m"
+      },
+      "t0": {
+        "value": 5,
+        "unit": "s"
+      },
+      "t": {
+        "value": 7,
+        "unit": "s"
+      }
+    },
+    "context": {
+      "object_model": "point_particle",
+      "reference_frame": "inertial",
+      "uniform_gravity": true,
+      "no_drag": true,
+      "axis_downward": true,
+      "axis_declared": true,
+      "force_constant": true,
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "force": {
+        "behavior": "constant",
+        "depends_on": []
+      }
+    },
+    "expected": {
+      "position": 23,
+      "velocity": 20
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "newton_third_law",
+    "bindings": {
+      "force_on_body": {
+        "value": [
+          2,
+          -3,
+          1
+        ],
+        "unit": "N"
+      }
+    },
+    "context": {
+      "object_model": "point_particle",
+      "reference_frame": "inertial",
+      "frame_id": "lab",
+      "same_interaction_pair": true,
+      "same_instant": true,
+      "classical_regime": true,
+      "objects": {
+        "body": "point_particle",
+        "partner": "point_particle"
+      }
+    },
+    "expected": {
+      "force_on_partner": [
+        -2,
+        3,
+        -1
+      ]
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "equilibrium_force_balance",
+    "bindings": {
+      "other_forces": {
+        "value": [
+          [
+            2,
+            0,
+            0
+          ],
+          [
+            0,
+            3,
+            0
+          ]
+        ],
+        "unit": "N"
+      }
+    },
+    "context": {
+      "object_model": "point_particle",
+      "reference_frame": "inertial",
+      "frame_id": "lab",
+      "translational_equilibrium": true,
+      "concurrent_forces": true
+    },
+    "expected": {
+      "balancing_force": [
+        -2,
+        -3,
+        0
+      ]
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "force_components_angle_from_y",
+    "bindings": {
+      "force": {
+        "value": 10,
+        "unit": "N"
+      },
+      "angle": {
+        "value": 0,
+        "unit": "1"
+      }
+    },
+    "context": {
+      "object_model": "point_particle",
+      "reference_frame": "declared",
+      "orthonormal_xy_axes": true,
+      "angle_from_positive_y_toward_x": true
+    },
+    "expected": {
+      "fx": 0,
+      "fy": 10
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "planar_speed_norm",
+    "bindings": {
+      "vx": {
+        "value": -3,
+        "unit": "m/s"
+      },
+      "vy": {
+        "value": 4,
+        "unit": "m/s"
+      }
+    },
+    "context": {
+      "object_model": "point_particle",
+      "reference_frame": "inertial",
+      "orthonormal_xy_axes": true
+    },
+    "expected": {
+      "speed": 5
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "horizontal_projectile",
+    "bindings": {
+      "x0": {
+        "value": 2,
+        "unit": "m"
+      },
+      "y0": {
+        "value": 3,
+        "unit": "m"
+      },
+      "vx0": {
+        "value": 4,
+        "unit": "m/s"
+      },
+      "vy0": {
+        "value": 0,
+        "unit": "m/s"
+      },
+      "g": {
+        "value": 10,
+        "unit": "m/s^2"
+      },
+      "t0": {
+        "value": 1,
+        "unit": "s"
+      },
+      "t": {
+        "value": 3,
+        "unit": "s"
+      }
+    },
+    "context": {
+      "object_model": "point_particle",
+      "reference_frame": "inertial",
+      "uniform_gravity": true,
+      "no_drag": true,
+      "horizontal_x_downward_y": true,
+      "force_constant": true,
+      "force": {
+        "behavior": "constant",
+        "depends_on": []
+      }
+    },
+    "expected": {
+      "x": 10,
+      "y": 23,
+      "vx": 4,
+      "vy": 20,
+      "speed": 20.396078054371138
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "projectile_trajectory",
+    "bindings": {
+      "horizontal_displacement": {
+        "value": 4,
+        "unit": "m"
+      },
+      "initial_horizontal_speed": {
+        "value": 4,
+        "unit": "m/s"
+      },
+      "g": {
+        "value": 10,
+        "unit": "m/s^2"
+      }
+    },
+    "context": {
+      "object_model": "point_particle",
+      "reference_frame": "inertial",
+      "uniform_gravity": true,
+      "no_drag": true,
+      "horizontal_launch": true,
+      "coordinates_relative_to_launch": true
+    },
+    "expected": {
+      "downward_displacement": 5
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "average_angular_velocity",
+    "bindings": {
+      "angle_change": {
+        "value": 2,
+        "unit": "rad"
+      },
+      "duration": {
+        "value": 4,
+        "unit": "s"
+      }
+    },
+    "context": {
+      "object_model": "point_particle",
+      "reference_frame": "declared",
+      "oriented_angle_radians": true
+    },
+    "expected": {
+      "angular_velocity": 0.5
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "period_from_frequency",
+    "bindings": {
+      "frequency": {
+        "value": 5,
+        "unit": "Hz"
+      }
+    },
+    "context": {
+      "object_model": "oscillator",
+      "reference_frame": "declared",
+      "periodic_motion": true
+    },
+    "expected": {
+      "period": 0.2
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "circular_speed",
+    "bindings": {
+      "angular_speed": {
+        "value": 2,
+        "unit": "rad/s"
+      },
+      "radius": {
+        "value": 3,
+        "unit": "m"
+      }
+    },
+    "context": {
+      "object_model": "point_particle",
+      "reference_frame": "declared",
+      "circular_motion": true,
+      "angular_speed_radians": true
+    },
+    "expected": {
+      "speed": 6
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "centripetal_force",
+    "bindings": {
+      "mass": {
+        "value": 2,
+        "unit": "kg"
+      },
+      "speed": {
+        "value": 3,
+        "unit": "m/s"
+      },
+      "radius": {
+        "value": 6,
+        "unit": "m"
+      }
+    },
+    "context": {
+      "object_model": "point_particle",
+      "reference_frame": "inertial",
+      "circular_motion": true,
+      "classical_regime": true
+    },
+    "expected": {
+      "force": 3
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "centripetal_acceleration",
+    "bindings": {
+      "speed": {
+        "value": 3,
+        "unit": "m/s"
+      },
+      "radius": {
+        "value": 6,
+        "unit": "m"
+      }
+    },
+    "context": {
+      "object_model": "point_particle",
+      "reference_frame": "inertial",
+      "circular_motion": true
+    },
+    "expected": {
+      "acceleration": 1.5
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "kepler_orbit_constant",
+    "bindings": {
+      "semi_major_axis": {
+        "value": 4,
+        "unit": "m"
+      },
+      "period": {
+        "value": 2,
+        "unit": "s"
+      }
+    },
+    "context": {
+      "object_model": "two_body_system",
+      "reference_frame": "declared",
+      "bound_kepler_orbit": true,
+      "same_central_mass": true,
+      "orbiter_mass_negligible": true
+    },
+    "expected": {
+      "constant": 16
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "universal_gravitation",
+    "bindings": {
+      "G": {
+        "value": 6.6743e-11,
+        "unit": "m^3/(kg*s^2)"
+      },
+      "mass1": {
+        "value": 2,
+        "unit": "kg"
+      },
+      "mass2": {
+        "value": 3,
+        "unit": "kg"
+      },
+      "distance": {
+        "value": 2,
+        "unit": "m"
+      }
+    },
+    "context": {
+      "object_model": "two_body_system",
+      "reference_frame": "declared",
+      "newtonian_gravity": true,
+      "point_masses_or_external_spherical_bodies": true
+    },
+    "expected": {
+      "force": 1.001145e-10
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "mass_from_surface_gravity",
+    "bindings": {
+      "g": {
+        "value": 10,
+        "unit": "m/s^2"
+      },
+      "radius": {
+        "value": 2,
+        "unit": "m"
+      },
+      "G": {
+        "value": 2,
+        "unit": "m^3/(kg*s^2)"
+      }
+    },
+    "context": {
+      "object_model": "two_body_system",
+      "reference_frame": "declared",
+      "spherical_central_body": true,
+      "rotation_correction_negligible": true,
+      "surface_gravity_due_to_body": true
+    },
+    "expected": {
+      "central_mass": 20
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "central_mass_from_orbit",
+    "bindings": {
+      "radius": {
+        "value": 2,
+        "unit": "m"
+      },
+      "period": {
+        "value": 2,
+        "unit": "s"
+      },
+      "G": {
+        "value": 2,
+        "unit": "m^3/(kg*s^2)"
+      }
+    },
+    "context": {
+      "object_model": "two_body_system",
+      "reference_frame": "declared",
+      "circular_gravity_orbit": true,
+      "orbiter_mass_negligible": true,
+      "newtonian_gravity": true
+    },
+    "expected": {
+      "central_mass": 39.47841760435743
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "circular_orbit_speed",
+    "bindings": {
+      "G": {
+        "value": 2,
+        "unit": "m^3/(kg*s^2)"
+      },
+      "central_mass": {
+        "value": 8,
+        "unit": "kg"
+      },
+      "radius": {
+        "value": 4,
+        "unit": "m"
+      }
+    },
+    "context": {
+      "object_model": "two_body_system",
+      "reference_frame": "declared",
+      "circular_gravity_orbit": true,
+      "orbiter_mass_negligible": true,
+      "newtonian_gravity": true,
+      "outside_central_body": true
+    },
+    "expected": {
+      "speed": 2
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "escape_speed",
+    "bindings": {
+      "G": {
+        "value": 2,
+        "unit": "m^3/(kg*s^2)"
+      },
+      "central_mass": {
+        "value": 8,
+        "unit": "kg"
+      },
+      "radius": {
+        "value": 8,
+        "unit": "m"
+      }
+    },
+    "context": {
+      "object_model": "two_body_system",
+      "reference_frame": "declared",
+      "isolated_spherical_central_body": true,
+      "no_drag": true,
+      "orbiter_mass_negligible": true,
+      "zero_speed_at_infinity": true,
+      "newtonian_gravity": true
+    },
+    "expected": {
+      "speed": 2
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "time_dilation",
+    "bindings": {
+      "proper_duration": {
+        "value": 3,
+        "unit": "s"
+      },
+      "relative_speed": {
+        "value": 6,
+        "unit": "m/s"
+      },
+      "c": {
+        "value": 10,
+        "unit": "m/s"
+      }
+    },
+    "context": {
+      "object_model": "relativistic_particle",
+      "reference_frame": "inertial",
+      "inertial_frames": true,
+      "proper_clock_same_place": true,
+      "uniform_relative_motion": true
+    },
+    "expected": {
+      "duration": 3.75
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "length_contraction",
+    "bindings": {
+      "proper_length": {
+        "value": 5,
+        "unit": "m"
+      },
+      "relative_speed": {
+        "value": 6,
+        "unit": "m/s"
+      },
+      "c": {
+        "value": 10,
+        "unit": "m/s"
+      }
+    },
+    "context": {
+      "object_model": "relativistic_particle",
+      "reference_frame": "inertial",
+      "inertial_frames": true,
+      "length_parallel_to_motion": true,
+      "simultaneous_endpoints_in_observer_frame": true
+    },
+    "expected": {
+      "length": 4
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "instantaneous_mechanical_power",
+    "bindings": {
+      "force": {
+        "value": [
+          2,
+          0,
+          0
+        ],
+        "unit": "N"
+      },
+      "velocity": {
+        "value": [
+          -3,
+          1,
+          0
+        ],
+        "unit": "m/s"
+      }
+    },
+    "context": {
+      "object_model": "point_particle",
+      "reference_frame": "inertial",
+      "frame_id": "lab",
+      "same_body": true,
+      "same_instant": true
+    },
+    "expected": {
+      "power": -6
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "gravity_work",
+    "bindings": {
+      "mass": {
+        "value": 2,
+        "unit": "kg"
+      },
+      "g": {
+        "value": 10,
+        "unit": "m/s^2"
+      },
+      "initial_height": {
+        "value": 3,
+        "unit": "m"
+      },
+      "final_height": {
+        "value": 5,
+        "unit": "m"
+      }
+    },
+    "context": {
+      "object_model": "point_particle",
+      "reference_frame": "declared",
+      "uniform_gravity": true,
+      "height_upward": true
+    },
+    "expected": {
+      "work": -40
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "kinetic_energy",
+    "bindings": {
+      "mass": {
+        "value": 2,
+        "unit": "kg"
+      },
+      "velocity": {
+        "value": [
+          3,
+          4,
+          0
+        ],
+        "unit": "m/s"
+      }
+    },
+    "context": {
+      "object_model": "point_particle",
+      "reference_frame": "inertial",
+      "frame_id": "lab",
+      "classical_regime": true,
+      "mass_constant": true
+    },
+    "expected": {
+      "energy": 25
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "work_kinetic_energy",
+    "bindings": {
+      "initial_energy": {
+        "value": 10,
+        "unit": "J"
+      },
+      "net_work": {
+        "value": -4,
+        "unit": "J"
+      }
+    },
+    "context": {
+      "object_model": "point_particle",
+      "reference_frame": "inertial",
+      "classical_regime": true,
+      "mass_constant": true,
+      "all_external_work_accounted": true
+    },
+    "expected": {
+      "final_energy": 6
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "mechanical_energy_conservation",
+    "bindings": {
+      "mass": {
+        "value": 2,
+        "unit": "kg"
+      },
+      "initial_speed": {
+        "value": 3,
+        "unit": "m/s"
+      },
+      "initial_height": {
+        "value": 5,
+        "unit": "m"
+      },
+      "final_height": {
+        "value": 1,
+        "unit": "m"
+      },
+      "g": {
+        "value": 10,
+        "unit": "m/s^2"
+      }
+    },
+    "context": {
+      "object_model": "point_particle",
+      "reference_frame": "inertial",
+      "uniform_gravity": true,
+      "only_gravity_does_work": true,
+      "classical_regime": true,
+      "mass_constant": true
+    },
+    "expected": {
+      "final_speed_squared": 89
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "two_body_momentum_balance",
+    "bindings": {
+      "m1": {
+        "value": 2,
+        "unit": "kg"
+      },
+      "m2": {
+        "value": 1,
+        "unit": "kg"
+      },
+      "v1_initial": {
+        "value": [
+          3,
+          0,
+          0
+        ],
+        "unit": "m/s"
+      },
+      "v2_initial": {
+        "value": [
+          0,
+          0,
+          0
+        ],
+        "unit": "m/s"
+      },
+      "v1_final": {
+        "value": [
+          1,
+          0,
+          0
+        ],
+        "unit": "m/s"
+      }
+    },
+    "context": {
+      "object_model": "two_body_system",
+      "reference_frame": "inertial",
+      "frame_id": "lab",
+      "net_external_impulse_zero": true,
+      "mass_constant": true,
+      "classical_regime": true,
+      "objects": {
+        "body": "point_particle",
+        "partner": "point_particle"
+      }
+    },
+    "expected": {
+      "v2_final": [
+        4,
+        0,
+        0
+      ]
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "elastic_collision_energy_balance",
+    "bindings": {
+      "initial_total_energy": {
+        "value": 20,
+        "unit": "J"
+      }
+    },
+    "context": {
+      "object_model": "two_body_system",
+      "reference_frame": "inertial",
+      "elastic_collision": true,
+      "closed_two_body_system": true,
+      "classical_regime": true
+    },
+    "expected": {
+      "final_total_energy": 20
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "harmonic_motion_initial_state",
+    "bindings": {
+      "x0": {
+        "value": 2,
+        "unit": "m"
+      },
+      "v0": {
+        "value": 0,
+        "unit": "m/s"
+      },
+      "omega": {
+        "value": 3,
+        "unit": "rad/s"
+      },
+      "t0": {
+        "value": 5,
+        "unit": "s"
+      },
+      "t": {
+        "value": 5,
+        "unit": "s"
+      }
+    },
+    "context": {
+      "object_model": "oscillator",
+      "reference_frame": "inertial",
+      "linear_restoring_force": true,
+      "undamped": true,
+      "mass_constant": true,
+      "force": {
+        "behavior": "variable",
+        "depends_on": [
+          "position"
+        ]
+      }
+    },
+    "expected": {
+      "x": 2
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "angular_frequency",
+    "bindings": {
+      "frequency": {
+        "value": 2,
+        "unit": "Hz"
+      }
+    },
+    "context": {
+      "object_model": "oscillator",
+      "reference_frame": "declared",
+      "periodic_motion": true
+    },
+    "expected": {
+      "omega": 12.566370614359172
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "phase_difference",
+    "bindings": {
+      "phase1": {
+        "value": 2,
+        "unit": "1"
+      },
+      "phase2": {
+        "value": 5,
+        "unit": "1"
+      }
+    },
+    "context": {
+      "object_model": "oscillator",
+      "reference_frame": "declared",
+      "same_frequency": true,
+      "common_phase_convention": true
+    },
+    "expected": {
+      "phase_difference": -3
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "pendulum_linear_restoring_force",
+    "bindings": {
+      "mass": {
+        "value": 2,
+        "unit": "kg"
+      },
+      "g": {
+        "value": 10,
+        "unit": "m/s^2"
+      },
+      "length": {
+        "value": 2,
+        "unit": "m"
+      },
+      "arc_displacement": {
+        "value": 0.1,
+        "unit": "m"
+      }
+    },
+    "context": {
+      "object_model": "oscillator",
+      "reference_frame": "declared",
+      "small_angle": true,
+      "massless_inextensible_string": true,
+      "uniform_gravity": true,
+      "displacement_along_arc": true
+    },
+    "expected": {
+      "force": -1
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "small_pendulum_period",
+    "bindings": {
+      "length": {
+        "value": 10,
+        "unit": "m"
+      },
+      "g": {
+        "value": 10,
+        "unit": "m/s^2"
+      }
+    },
+    "context": {
+      "object_model": "oscillator",
+      "reference_frame": "declared",
+      "small_angle": true,
+      "massless_inextensible_string": true,
+      "no_drag": true,
+      "uniform_gravity": true
+    },
+    "expected": {
+      "period": 6.283185307179586
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "wave_phase_speed",
+    "bindings": {
+      "wavelength": {
+        "value": 2,
+        "unit": "m"
+      },
+      "frequency": {
+        "value": 3,
+        "unit": "Hz"
+      }
+    },
+    "context": {
+      "object_model": "wave",
+      "reference_frame": "declared",
+      "single_frequency_wave": true,
+      "wavelength_and_frequency_same_medium": true
+    },
+    "expected": {
+      "speed": 6
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "refractive_index",
+    "bindings": {
+      "vacuum_speed": {
+        "value": 300000000.0,
+        "unit": "m/s"
+      },
+      "medium_phase_speed": {
+        "value": 200000000.0,
+        "unit": "m/s"
+      }
+    },
+    "context": {
+      "object_model": "ray_optics",
+      "reference_frame": "declared",
+      "same_frequency": true,
+      "phase_velocity": true
+    },
+    "expected": {
+      "index": 1.5
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "snell_transmitted_sine",
+    "bindings": {
+      "n1": {
+        "value": 1,
+        "unit": "1"
+      },
+      "n2": {
+        "value": 2,
+        "unit": "1"
+      },
+      "incident_angle": {
+        "value": 1.5707963267948966,
+        "unit": "1"
+      }
+    },
+    "context": {
+      "object_model": "ray_optics",
+      "reference_frame": "declared",
+      "planar_interface": true,
+      "angles_from_normal": true,
+      "geometric_optics": true
+    },
+    "expected": {
+      "transmitted_sine": 0.5
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "total_internal_reflection_angle",
+    "bindings": {
+      "incident_index": {
+        "value": 2,
+        "unit": "1"
+      },
+      "transmitted_index": {
+        "value": 1,
+        "unit": "1"
+      }
+    },
+    "context": {
+      "object_model": "ray_optics",
+      "reference_frame": "declared",
+      "planar_interface": true,
+      "angles_from_normal": true,
+      "geometric_optics": true
+    },
+    "expected": {
+      "critical_angle": 0.5235987755982988
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "double_slit_fringe_spacing",
+    "bindings": {
+      "screen_distance": {
+        "value": 2,
+        "unit": "m"
+      },
+      "wavelength": {
+        "value": 5e-07,
+        "unit": "m"
+      },
+      "slit_separation": {
+        "value": 0.001,
+        "unit": "m"
+      }
+    },
+    "context": {
+      "object_model": "wave",
+      "reference_frame": "declared",
+      "coherent_monochromatic_sources": true,
+      "far_field": true,
+      "small_angle": true
+    },
+    "expected": {
+      "spacing": 0.001
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "wavelength_from_double_slit",
+    "bindings": {
+      "spacing": {
+        "value": 0.001,
+        "unit": "m"
+      },
+      "slit_separation": {
+        "value": 0.001,
+        "unit": "m"
+      },
+      "screen_distance": {
+        "value": 2,
+        "unit": "m"
+      }
+    },
+    "context": {
+      "object_model": "wave",
+      "reference_frame": "declared",
+      "coherent_monochromatic_sources": true,
+      "far_field": true,
+      "small_angle": true
+    },
+    "expected": {
+      "wavelength": 5e-07
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "fringe_spacing_measurement",
+    "bindings": {
+      "span": {
+        "value": 0.004,
+        "unit": "m"
+      },
+      "fringe_count": {
+        "value": 5,
+        "unit": "1"
+      }
+    },
+    "context": {
+      "object_model": "measurement",
+      "reference_frame": "declared",
+      "count_includes_both_end_fringe_centers": true
+    },
+    "expected": {
+      "spacing": 0.001
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "lorentz_force_magnitude",
+    "bindings": {
+      "charge": {
+        "value": -2,
+        "unit": "C"
+      },
+      "speed": {
+        "value": 3,
+        "unit": "m/s"
+      },
+      "field": {
+        "value": 4,
+        "unit": "T"
+      },
+      "angle": {
+        "value": 1.5707963267948966,
+        "unit": "1"
+      }
+    },
+    "context": {
+      "object_model": "point_particle",
+      "reference_frame": "inertial",
+      "angle_velocity_to_field": true,
+      "magnetic_force_only": true
+    },
+    "expected": {
+      "force": 24
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "lorentz_force_vector",
+    "bindings": {
+      "charge": {
+        "value": -2,
+        "unit": "C"
+      },
+      "velocity": {
+        "value": [
+          3,
+          0,
+          0
+        ],
+        "unit": "m/s"
+      },
+      "field": {
+        "value": [
+          0,
+          0,
+          4
+        ],
+        "unit": "T"
+      }
+    },
+    "context": {
+      "object_model": "point_particle",
+      "reference_frame": "inertial",
+      "frame_id": "lab",
+      "magnetic_force_only": true,
+      "right_handed_coordinates": true
+    },
+    "expected": {
+      "force": [
+        0,
+        24,
+        0
+      ]
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "charged_particle_gyroradius",
+    "bindings": {
+      "mass": {
+        "value": 2,
+        "unit": "kg"
+      },
+      "speed": {
+        "value": 3,
+        "unit": "m/s"
+      },
+      "charge": {
+        "value": -2,
+        "unit": "C"
+      },
+      "field": {
+        "value": 3,
+        "unit": "T"
+      }
+    },
+    "context": {
+      "object_model": "point_particle",
+      "reference_frame": "inertial",
+      "uniform_magnetic_field": true,
+      "velocity_perpendicular_field": true,
+      "magnetic_force_only": true,
+      "classical_regime": true
+    },
+    "expected": {
+      "radius": 1
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "charged_particle_gyroperiod",
+    "bindings": {
+      "mass": {
+        "value": 3,
+        "unit": "kg"
+      },
+      "charge": {
+        "value": -2,
+        "unit": "C"
+      },
+      "field": {
+        "value": 3,
+        "unit": "T"
+      }
+    },
+    "context": {
+      "object_model": "point_particle",
+      "reference_frame": "inertial",
+      "uniform_magnetic_field": true,
+      "velocity_perpendicular_field": true,
+      "magnetic_force_only": true,
+      "classical_regime": true
+    },
+    "expected": {
+      "period": 3.141592653589793
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "electrostatic_acceleration_from_rest",
+    "bindings": {
+      "charge": {
+        "value": -2,
+        "unit": "C"
+      },
+      "voltage_ab": {
+        "value": -3,
+        "unit": "V"
+      },
+      "mass": {
+        "value": 3,
+        "unit": "kg"
+      }
+    },
+    "context": {
+      "object_model": "point_particle",
+      "reference_frame": "inertial",
+      "initially_at_rest": true,
+      "only_electrostatic_work": true,
+      "classical_regime": true,
+      "voltage_a_minus_b": true,
+      "displacement_a_to_b": true
+    },
+    "expected": {
+      "speed": 2
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "rotating_coil_emf",
+    "bindings": {
+      "turns": {
+        "value": 2,
+        "unit": "1"
+      },
+      "omega": {
+        "value": 3,
+        "unit": "rad/s"
+      },
+      "field": {
+        "value": 4,
+        "unit": "T"
+      },
+      "area": {
+        "value": 5,
+        "unit": "m^2"
+      },
+      "t0": {
+        "value": 1,
+        "unit": "s"
+      },
+      "t": {
+        "value": 1,
+        "unit": "s"
+      }
+    },
+    "context": {
+      "object_model": "electromagnetic",
+      "reference_frame": "declared",
+      "uniform_magnetic_field": true,
+      "uniform_coil_rotation": true,
+      "flux_maximum_at_initial_time": true,
+      "right_hand_loop_orientation": true
+    },
+    "expected": {
+      "emf": 0
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "motional_emf_oblique",
+    "bindings": {
+      "field": {
+        "value": 2,
+        "unit": "T"
+      },
+      "length": {
+        "value": 3,
+        "unit": "m"
+      },
+      "speed": {
+        "value": 4,
+        "unit": "m/s"
+      },
+      "angle": {
+        "value": 1.5707963267948966,
+        "unit": "1"
+      }
+    },
+    "context": {
+      "object_model": "electromagnetic",
+      "reference_frame": "declared",
+      "uniform_magnetic_field": true,
+      "straight_moving_rod": true,
+      "rod_parallel_velocity_cross_field": true
+    },
+    "expected": {
+      "emf": 24
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "sinusoidal_current",
+    "bindings": {
+      "peak": {
+        "value": 2,
+        "unit": "A"
+      },
+      "omega": {
+        "value": 3,
+        "unit": "rad/s"
+      },
+      "phase": {
+        "value": 0,
+        "unit": "1"
+      },
+      "t0": {
+        "value": 1,
+        "unit": "s"
+      },
+      "t": {
+        "value": 1,
+        "unit": "s"
+      }
+    },
+    "context": {
+      "object_model": "electromagnetic",
+      "reference_frame": "declared",
+      "pure_sinusoid": true,
+      "phase_at_initial_time": true
+    },
+    "expected": {
+      "current": 0
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "sinusoidal_voltage",
+    "bindings": {
+      "peak": {
+        "value": 2,
+        "unit": "V"
+      },
+      "omega": {
+        "value": 3,
+        "unit": "rad/s"
+      },
+      "phase": {
+        "value": 1.5707963267948966,
+        "unit": "1"
+      },
+      "t0": {
+        "value": 1,
+        "unit": "s"
+      },
+      "t": {
+        "value": 1,
+        "unit": "s"
+      }
+    },
+    "context": {
+      "object_model": "electromagnetic",
+      "reference_frame": "declared",
+      "pure_sinusoid": true,
+      "phase_at_initial_time": true
+    },
+    "expected": {
+      "voltage": 2
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "photon_energy",
+    "bindings": {
+      "frequency": {
+        "value": 100000000000000.0,
+        "unit": "Hz"
+      }
+    },
+    "context": {
+      "object_model": "photon",
+      "reference_frame": "declared",
+      "single_photon": true
+    },
+    "expected": {
+      "energy": 6.62607015e-20
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "photoelectric_maximum_energy",
+    "bindings": {
+      "frequency": {
+        "value": 1000000000000000.0,
+        "unit": "Hz"
+      },
+      "work_function": {
+        "value": 3e-19,
+        "unit": "J"
+      }
+    },
+    "context": {
+      "object_model": "atomic_system",
+      "reference_frame": "declared",
+      "single_photon_photoemission": true,
+      "material_work_function_specified": true
+    },
+    "expected": {
+      "kinetic_energy": 3.62607015e-19
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "photon_momentum",
+    "bindings": {
+      "wavelength": {
+        "value": 1e-06,
+        "unit": "m"
+      }
+    },
+    "context": {
+      "object_model": "photon",
+      "reference_frame": "declared",
+      "single_photon": true,
+      "vacuum_wavelength": true
+    },
+    "expected": {
+      "momentum": 6.62607015e-28
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "balmer_wavelength",
+    "bindings": {
+      "upper_n": {
+        "value": 3,
+        "unit": "1"
+      },
+      "rydberg": {
+        "value": 10967758.34,
+        "unit": "1/m"
+      }
+    },
+    "context": {
+      "object_model": "atomic_system",
+      "reference_frame": "declared",
+      "hydrogen_balmer_series": true,
+      "emission_to_n2": true,
+      "rydberg_mass_convention_declared": true
+    },
+    "expected": {
+      "wavelength": 6.564696063498422e-07
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "emission_transition_frequency",
+    "bindings": {
+      "initial_energy": {
+        "value": 1e-19,
+        "unit": "J"
+      },
+      "final_energy": {
+        "value": 0,
+        "unit": "J"
+      }
+    },
+    "context": {
+      "object_model": "atomic_system",
+      "reference_frame": "declared",
+      "single_photon_emission": true,
+      "isolated_energy_levels": true
+    },
+    "expected": {
+      "frequency": 150919017964215.2
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "de_broglie_wavelength",
+    "bindings": {
+      "momentum": {
+        "value": 6.62607015e-28,
+        "unit": "kg*m/s"
+      }
+    },
+    "context": {
+      "object_model": "point_particle",
+      "reference_frame": "declared",
+      "momentum_magnitude": true
+    },
+    "expected": {
+      "wavelength": 1e-06
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "matter_wave_frequency",
+    "bindings": {
+      "total_energy": {
+        "value": 6.62607015e-20,
+        "unit": "J"
+      }
+    },
+    "context": {
+      "object_model": "point_particle",
+      "reference_frame": "declared",
+      "energy_is_total_energy": true
+    },
+    "expected": {
+      "frequency": 100000000000000.0
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "rest_energy",
+    "bindings": {
+      "rest_mass": {
+        "value": 1,
+        "unit": "kg"
+      }
+    },
+    "context": {
+      "object_model": "relativistic_particle",
+      "reference_frame": "declared",
+      "mass_is_invariant_rest_mass": true
+    },
+    "expected": {
+      "rest_energy": 89875517873681764
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "average_velocity_vector",
+    "bindings": {
+      "displacement": {
+        "value": [
+          -6,
+          0,
+          0
+        ],
+        "unit": "m"
+      },
+      "duration": {
+        "value": 3,
+        "unit": "s"
+      }
+    },
+    "context": {
+      "object_model": "point_particle",
+      "reference_frame": "inertial",
+      "frame_id": "lab",
+      "same_body": true,
+      "same_reference_frame": true
+    },
+    "expected": {
+      "velocity": [
+        -2,
+        0,
+        0
+      ]
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "static_friction_balance",
+    "bindings": {
+      "other_tangential_force": {
+        "value": 0,
+        "unit": "N"
+      },
+      "maximum_static_friction": {
+        "value": 5,
+        "unit": "N"
+      }
+    },
+    "context": {
+      "object_model": "point_particle",
+      "reference_frame": "declared",
+      "no_relative_slip": true,
+      "tangential_equilibrium": true,
+      "signed_tangential_axis": true
+    },
+    "expected": {
+      "friction": 0
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "conductor_interior_field",
+    "bindings": {},
+    "context": {
+      "object_model": "electrostatic",
+      "reference_frame": "declared",
+      "frame_id": "lab",
+      "electrostatic_equilibrium": true,
+      "point_inside_conducting_material": true
+    },
+    "expected": {
+      "field": [
+        0,
+        0,
+        0
+      ]
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "empty_conductor_cavity_field",
+    "bindings": {},
+    "context": {
+      "object_model": "electrostatic",
+      "reference_frame": "declared",
+      "frame_id": "lab",
+      "electrostatic_equilibrium": true,
+      "closed_conducting_cavity": true,
+      "cavity_contains_no_charge": true
+    },
+    "expected": {
+      "field": [
+        0,
+        0,
+        0
+      ]
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "electric_potential_energy_change",
+    "bindings": {
+      "initial_energy": {
+        "value": 10,
+        "unit": "J"
+      },
+      "electric_work": {
+        "value": 3,
+        "unit": "J"
+      }
+    },
+    "context": {
+      "object_model": "electrostatic",
+      "reference_frame": "declared",
+      "electrostatic": true,
+      "same_test_charge": true
+    },
+    "expected": {
+      "final_energy": 7
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "uniform_field_from_potential_spacing",
+    "bindings": {
+      "potential_drop": {
+        "value": 10,
+        "unit": "V"
+      },
+      "normal_spacing": {
+        "value": 2,
+        "unit": "m"
+      }
+    },
+    "context": {
+      "object_model": "electrostatic",
+      "reference_frame": "declared",
+      "uniform_field": true,
+      "spacing_along_field_normal": true,
+      "oriented_potential_drop": true
+    },
+    "expected": {
+      "field_component": 5
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "microscopic_current",
+    "bindings": {
+      "number_density": {
+        "value": 1e+20,
+        "unit": "1/m^3"
+      },
+      "carrier_charge": {
+        "value": -1.602176634e-19,
+        "unit": "C"
+      },
+      "area": {
+        "value": 1e-06,
+        "unit": "m^2"
+      },
+      "drift_component": {
+        "value": -0.01,
+        "unit": "m/s"
+      }
+    },
+    "context": {
+      "object_model": "dc_circuit",
+      "reference_frame": "declared",
+      "single_carrier_species": true,
+      "uniform_carrier_density": true,
+      "uniform_cross_section": true,
+      "drift_component_along_oriented_normal": true
+    },
+    "expected": {
+      "current": 1.602176634e-07
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "meter_full_scale_voltage",
+    "bindings": {
+      "full_scale_current": {
+        "value": 0.001,
+        "unit": "A"
+      },
+      "meter_resistance": {
+        "value": 100,
+        "unit": "ohm"
+      }
+    },
+    "context": {
+      "object_model": "dc_circuit",
+      "reference_frame": "declared",
+      "linear_moving_coil_meter": true,
+      "steady_dc": true
+    },
+    "expected": {
+      "full_scale_voltage": 0.1
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "ohmmeter_scale_reading",
+    "bindings": {
+      "base_reading": {
+        "value": 20,
+        "unit": "ohm"
+      },
+      "multiplier": {
+        "value": 100,
+        "unit": "1"
+      }
+    },
+    "context": {
+      "object_model": "measurement",
+      "reference_frame": "declared",
+      "ohmmeter_zero_adjusted": true,
+      "selected_range_matches_scale": true
+    },
+    "expected": {
+      "resistance": 2000
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "ohmmeter_unknown_resistance",
+    "bindings": {
+      "emf": {
+        "value": 1.5,
+        "unit": "V"
+      },
+      "current": {
+        "value": 0.001,
+        "unit": "A"
+      },
+      "internal_resistance": {
+        "value": 500,
+        "unit": "ohm"
+      }
+    },
+    "context": {
+      "object_model": "dc_circuit",
+      "reference_frame": "declared",
+      "ohmmeter_zero_adjusted": true,
+      "single_source": true,
+      "ohmic_material": true,
+      "steady_dc": true
+    },
+    "expected": {
+      "unknown_resistance": 1000
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "current_element_magnitude",
+    "bindings": {
+      "current": {
+        "value": 2,
+        "unit": "A"
+      },
+      "length": {
+        "value": 3,
+        "unit": "m"
+      }
+    },
+    "context": {
+      "object_model": "magnetostatic",
+      "reference_frame": "declared",
+      "straight_current_segment": true,
+      "oriented_currents": true
+    },
+    "expected": {
+      "current_element": 6
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "normal_magnetic_field_from_flux",
+    "bindings": {
+      "flux": {
+        "value": -6,
+        "unit": "Wb"
+      },
+      "area": {
+        "value": 3,
+        "unit": "m^2"
+      }
+    },
+    "context": {
+      "object_model": "magnetostatic",
+      "reference_frame": "declared",
+      "uniform_magnetic_field": true,
+      "plane_surface": true,
+      "oriented_surface_normal": true
+    },
+    "expected": {
+      "normal_field": -2
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "oil_film_molecular_size",
+    "bindings": {
+      "oil_volume": {
+        "value": 1e-09,
+        "unit": "m^3"
+      },
+      "film_area": {
+        "value": 1,
+        "unit": "m^2"
+      }
+    },
+    "context": {
+      "object_model": "measurement",
+      "reference_frame": "declared",
+      "monomolecular_film": true,
+      "oil_volume_excludes_solvent": true,
+      "uniform_film": true
+    },
+    "expected": {
+      "thickness": 1e-09
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "temperature_to_kelvin",
+    "bindings": {
+      "temperature": {
+        "value": 25,
+        "unit": "degC"
+      }
+    },
+    "context": {
+      "object_model": "thermal_system",
+      "reference_frame": "declared"
+    },
+    "expected": {
+      "kelvin_temperature": 298.15
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "ideal_rocket_velocity",
+    "bindings": {
+      "initial_mass": {
+        "value": 2,
+        "unit": "kg"
+      },
+      "final_mass": {
+        "value": 1,
+        "unit": "kg"
+      },
+      "exhaust_speed": {
+        "value": 1000,
+        "unit": "m/s"
+      },
+      "initial_velocity": {
+        "value": 10,
+        "unit": "m/s"
+      },
+      "t0": {
+        "value": 0,
+        "unit": "s"
+      }
+    },
+    "context": {
+      "object_model": "point_particle",
+      "reference_frame": "inertial",
+      "no_external_impulse": true,
+      "one_dimensional_exhaust": true,
+      "constant_relative_exhaust_speed": true,
+      "exhaust_opposite_positive_axis": true
+    },
+    "expected": {
+      "final_velocity": 703.1471805599452
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "alpha_decay_numbers",
+    "bindings": {
+      "parent_A": {
+        "value": 238,
+        "unit": "1"
+      },
+      "parent_Z": {
+        "value": 92,
+        "unit": "1"
+      }
+    },
+    "context": {
+      "object_model": "atomic_system",
+      "reference_frame": "declared",
+      "decay_channel_energetically_allowed": true,
+      "isolated_nuclear_decay": true
+    },
+    "expected": {
+      "daughter_A": 234,
+      "daughter_Z": 90
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "beta_minus_decay_numbers",
+    "bindings": {
+      "parent_A": {
+        "value": 14,
+        "unit": "1"
+      },
+      "parent_Z": {
+        "value": 6,
+        "unit": "1"
+      }
+    },
+    "context": {
+      "object_model": "atomic_system",
+      "reference_frame": "declared",
+      "decay_channel_energetically_allowed": true,
+      "isolated_nuclear_decay": true
+    },
+    "expected": {
+      "daughter_A": 14,
+      "daughter_Z": 7
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "planar_velocity_direction",
+    "bindings": {
+      "vx": {
+        "value": -3,
+        "unit": "m/s"
+      },
+      "vy": {
+        "value": 4,
+        "unit": "m/s"
+      }
+    },
+    "context": {
+      "object_model": "point_particle",
+      "reference_frame": "inertial",
+      "orthonormal_xy_axes": true,
+      "angle_from_positive_x": true
+    },
+    "expected": {
+      "direction": 2.214297435588181
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "frequency_from_period",
+    "bindings": {
+      "period": {
+        "value": 0.5,
+        "unit": "s"
+      }
+    },
+    "context": {
+      "object_model": "oscillator",
+      "reference_frame": "declared",
+      "periodic_motion": true
+    },
+    "expected": {
+      "frequency": 2
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "centripetal_force_angular",
+    "bindings": {
+      "mass": {
+        "value": 2,
+        "unit": "kg"
+      },
+      "omega": {
+        "value": 3,
+        "unit": "rad/s"
+      },
+      "radius": {
+        "value": 4,
+        "unit": "m"
+      }
+    },
+    "context": {
+      "object_model": "point_particle",
+      "reference_frame": "inertial",
+      "circular_motion": true,
+      "angular_speed_radians": true,
+      "classical_regime": true
+    },
+    "expected": {
+      "force": 72
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "centripetal_acceleration_angular",
+    "bindings": {
+      "omega": {
+        "value": 3,
+        "unit": "rad/s"
+      },
+      "radius": {
+        "value": 4,
+        "unit": "m"
+      }
+    },
+    "context": {
+      "object_model": "point_particle",
+      "reference_frame": "inertial",
+      "circular_motion": true,
+      "angular_speed_radians": true
+    },
+    "expected": {
+      "acceleration": 36
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "surface_circular_orbit_speed",
+    "bindings": {
+      "g": {
+        "value": 10,
+        "unit": "m/s^2"
+      },
+      "radius": {
+        "value": 4,
+        "unit": "m"
+      }
+    },
+    "context": {
+      "object_model": "two_body_system",
+      "reference_frame": "declared",
+      "spherical_central_body": true,
+      "surface_gravity_due_to_body": true,
+      "rotation_correction_negligible": true,
+      "no_drag": true,
+      "circular_gravity_orbit": true
+    },
+    "expected": {
+      "speed": 6.324555320336759
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "harmonic_motion_phase",
+    "bindings": {
+      "amplitude": {
+        "value": 2,
+        "unit": "m"
+      },
+      "omega": {
+        "value": 3,
+        "unit": "rad/s"
+      },
+      "phase": {
+        "value": 0,
+        "unit": "1"
+      },
+      "t0": {
+        "value": 1,
+        "unit": "s"
+      },
+      "t": {
+        "value": 1,
+        "unit": "s"
+      }
+    },
+    "context": {
+      "object_model": "oscillator",
+      "reference_frame": "inertial",
+      "linear_restoring_force": true,
+      "undamped": true,
+      "mass_constant": true,
+      "phase_at_initial_time": true,
+      "force": {
+        "behavior": "variable",
+        "depends_on": [
+          "position"
+        ]
+      }
+    },
+    "expected": {
+      "x0": 0,
+      "v0": 6,
+      "x": 0
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "linear_iv_resistance",
+    "bindings": {
+      "voltage": {
+        "value": 10,
+        "unit": "V"
+      },
+      "current": {
+        "value": 2,
+        "unit": "A"
+      }
+    },
+    "context": {
+      "object_model": "ohmic_resistor",
+      "reference_frame": "declared",
+      "linear_iv_through_origin": true,
+      "passive_sign_convention": true
+    },
+    "expected": {
+      "resistance": 5
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "internal_resistance_short_current",
+    "bindings": {
+      "emf": {
+        "value": 12,
+        "unit": "V"
+      },
+      "short_current": {
+        "value": 2,
+        "unit": "A"
+      }
+    },
+    "context": {
+      "object_model": "dc_circuit",
+      "reference_frame": "declared",
+      "single_source": true,
+      "external_resistance_zero": true,
+      "ohmic_material": true
+    },
+    "expected": {
+      "internal_resistance": 6
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "internal_resistance_iv_slope",
+    "bindings": {
+      "voltage_change": {
+        "value": -2,
+        "unit": "V"
+      },
+      "current_change": {
+        "value": 2,
+        "unit": "A"
+      }
+    },
+    "context": {
+      "object_model": "dc_circuit",
+      "reference_frame": "declared",
+      "single_source": true,
+      "internal_resistance_constant": true,
+      "linear_source_iv_curve": true
+    },
+    "expected": {
+      "internal_resistance": 1
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "ohmmeter_current",
+    "bindings": {
+      "emf": {
+        "value": 1.5,
+        "unit": "V"
+      },
+      "internal_resistance": {
+        "value": 500,
+        "unit": "ohm"
+      },
+      "unknown_resistance": {
+        "value": 1000,
+        "unit": "ohm"
+      }
+    },
+    "context": {
+      "object_model": "dc_circuit",
+      "reference_frame": "declared",
+      "ohmmeter_zero_adjusted": true,
+      "single_source": true,
+      "ohmic_material": true,
+      "steady_dc": true
+    },
+    "expected": {
+      "current": 0.001
+    },
+    "boundary_conditions": []
+  }
+]

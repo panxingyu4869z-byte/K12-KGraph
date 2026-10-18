@@ -1,0 +1,32 @@
+[
+  {
+    "id": "physics_8a_rjb_cpt11",
+    "status": "scopes_explicit",
+    "reason": "middle-school path/time scalar speed and high-school displacement/time vector velocity are separate model records; original mixed wording is retained only for provenance"
+  },
+  {
+    "id": "physics_8a_rjb_cpt3",
+    "status": "source_wording_retained",
+    "reason": "source time definition is narrowed to work/power after upstream merging; executable rules use explicit time quantities, while this original wording remains display only"
+  },
+  {
+    "id": "physics_8b_rjb_cpt69",
+    "status": "variants_explicit",
+    "reason": "parallel-force work and general constant-force dot product have separate executable model scopes"
+  },
+  {
+    "id": "physics_8b_rjb_cpt40",
+    "status": "constant_precision_explicit",
+    "reason": "source rounds standard atmosphere to 101300 Pa; typed declaration uses exact standard 101325 Pa and retains the rounded source text"
+  },
+  {
+    "id": "physics_xzxbx1_rjb_cpt18",
+    "status": "model_replaced_explicitly",
+    "reason": "source finite mass-change expression is a local first-order approximation; executable ideal rocket model uses endpoint masses and the logarithmic relation under stated assumptions"
+  },
+  {
+    "id": "physics_xzxbx3_rjb_cpt125",
+    "status": "products_completed",
+    "reason": "beta-minus products include electron antineutrino; nucleon, charge and electron-lepton numbers are checked separately"
+  }
+]

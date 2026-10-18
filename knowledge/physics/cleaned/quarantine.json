@@ -1,0 +1,194 @@
+[
+  {
+    "source_edge_index": 894,
+    "reason": "source_type",
+    "original": {
+      "source": "physics_9_rjb_cpt122",
+      "source_name": "避雷针",
+      "target": "physics_9_rjb_cpt123",
+      "target_name": "雷电",
+      "type": "verifies",
+      "properties": {
+        "evidence": "防雷的原理是为雷电提供一条低电阻的通道。"
+      }
+    }
+  },
+  {
+    "source_edge_index": 897,
+    "reason": "target_type",
+    "original": {
+      "source": "physics_9_rjb_cpt116",
+      "source_name": "触电",
+      "target": "physics_9_rjb_skl20",
+      "target_name": "安全用电意识",
+      "type": "relates_to",
+      "properties": {
+        "evidence": "防范触电事故最重要的是要有安全用电的意识。",
+        "relations": "安全用电意识能减少触电风险"
+      }
+    }
+  },
+  {
+    "source_edge_index": 1405,
+    "reason": "target_type",
+    "original": {
+      "source": "physics_bx1_rjb_cpt1",
+      "source_name": "质点",
+      "target": "physics_bx1_rjb_skl1",
+      "target_name": "建立物理模型",
+      "type": "relates_to",
+      "properties": {
+        "relations": "质点是物理建模思想的典型应用",
+        "evidence": "质点这一理想化模型就是这种方法的具体应用。"
+      }
+    }
+  },
+  {
+    "source_edge_index": 1424,
+    "reason": "source_type",
+    "original": {
+      "source": "physics_bx1_rjb_cpt24",
+      "source_name": "v-t 图像",
+      "target": "physics_bx1_rjb_cpt21",
+      "target_name": "加速度",
+      "type": "verifies",
+      "properties": {
+        "evidence": "v-t 图像的斜率表示加速度"
+      }
+    }
+  },
+  {
+    "source_edge_index": 1439,
+    "reason": "target_type",
+    "original": {
+      "source": "physics_bx1_rjb_skl11",
+      "source_name": "建立一维坐标系处理矢量正负方向",
+      "target": "physics_bx1_rjb_exe6",
+      "target_name": "动车从126 km/h 减速至54 km/h，经过3个里程碑（3000 m），视为匀减速运动，求加速度及之后到停止所需距离。",
+      "type": "prerequisites_for",
+      "properties": {
+        "evidence": "需要建立一维坐标系来处理相关物理量的正负号"
+      }
+    }
+  },
+  {
+    "source_edge_index": 2015,
+    "reason": "source_type",
+    "original": {
+      "source": "physics_bx3_rjb_exp4",
+      "source_name": "模拟电场线（蓖麻油中碎屑排列）",
+      "target": "physics_bx3_rjb_cpt29",
+      "target_name": "电场强度",
+      "type": "relates_to",
+      "properties": {
+        "relations": "实验现象中碎屑排列方向对应电场强度方向，用于可视化E的方向分布（但电场线为假想线）。",
+        "evidence": "碎屑就按电场强度的方向排列起来……电场线不是实际存在的线，而是为了形象地描述电场而假想的线。"
+      }
+    }
+  },
+  {
+    "source_edge_index": 2133,
+    "reason": "target_type",
+    "original": {
+      "source": "physics_bx3_rjb_cpt129",
+      "source_name": "量程（倍率）选择原则",
+      "target": "physics_bx3_rjb_skl33",
+      "target_name": "用估算指导量程选择",
+      "type": "relates_to",
+      "properties": {
+        "relations": "“量程（倍率）选择原则”对应一种通用技能：根据估计值选择合适量程/倍率并必要时调整。",
+        "evidence": "注意选择大于小灯泡两端电压估计值的量程。/注意选择大于通过小灯泡电流估计值的量程。/如果不能估计未知电阻的大小，可以先用中等倍率的某个欧姆挡试测，然后根据读数的大小选择合适的挡位再次测量。"
+      }
+    }
+  },
+  {
+    "source_edge_index": 2134,
+    "reason": "target_type",
+    "original": {
+      "source": "physics_bx3_rjb_cpt132",
+      "source_name": "欧姆表读数与倍率关系",
+      "target": "physics_bx3_rjb_skl34",
+      "target_name": "按表盘刻度与所选量程进行读数换算",
+      "type": "relates_to",
+      "properties": {
+        "relations": "“读数乘倍率”和“按所选量程/倍率进行读数换算”是同一类读数与换算能力的核心内容。",
+        "evidence": "电阻值为读数乘倍率。/根据表盘上相应量程的直流电压刻度进行读数。"
+      }
+    }
+  },
+  {
+    "source_edge_index": 3110,
+    "reason": "target_type",
+    "original": {
+      "source": "physics_xzxbx2_rjb_cpt82",
+      "source_name": "光敏电阻",
+      "target": "physics_xzxbx2_rjb_skl13",
+      "target_name": "通过电阻变化判断物理量变化",
+      "type": "relates_to",
+      "properties": {
+        "relations": "光敏电阻的阻值变化体现了通过电阻变化判断光照强弱的方法。",
+        "evidence": "光敏电阻能够把光照强弱转换为电阻变化。"
+      }
+    }
+  },
+  {
+    "source_edge_index": 3736,
+    "reason": "source_type",
+    "original": {
+      "source": "physics_8a_rjb_exp13",
+      "source_stem": "探究固体熔化时温度的变化规律",
+      "type": "tests_skill",
+      "target_name_to_ids": [
+        {
+          "target": "physics_8a_rjb_skl12",
+          "target_name": "绘制物理量随时间变化的图象"
+        }
+      ]
+    }
+  },
+  {
+    "source_edge_index": 3790,
+    "reason": "source_type",
+    "original": {
+      "source": "physics_9_rjb_exp22",
+      "source_stem": "探究串联电路中用电器两端的电压与电源电压的关系",
+      "type": "tests_skill",
+      "target_name_to_ids": [
+        {
+          "target": "physics_9_rjb_skl10",
+          "target_name": "设计电路图"
+        }
+      ]
+    }
+  },
+  {
+    "source_edge_index": 3791,
+    "reason": "source_type",
+    "original": {
+      "source": "physics_9_rjb_exp23",
+      "source_stem": "探究并联电路中各支路电压与电源电压的关系",
+      "type": "tests_skill",
+      "target_name_to_ids": [
+        {
+          "target": "physics_9_rjb_skl10",
+          "target_name": "设计电路图"
+        }
+      ]
+    }
+  },
+  {
+    "source_edge_index": 3991,
+    "reason": "source_type",
+    "original": {
+      "source": "physics_xzxbx3_rjb_exp3",
+      "source_stem": "模拟气体压强产生机理实验",
+      "type": "tests_skill",
+      "target_name_to_ids": [
+        {
+          "target": "physics_xzxbx3_rjb_skl2",
+          "target_name": "统计分析方法"
+        }
+      ]
+    }
+  }
+]
