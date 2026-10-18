@@ -1,13 +1,14 @@
 {
-  "test_count": 14,
+  "test_count": 15,
   "failures": 0,
   "errors": 0,
   "schema_validated": true,
-  "rule_count": 8,
+  "rule_count": 29,
   "dependencies": {
     "jsonschema": "4.26.0",
     "sympy": "1.14.0"
   },
+  "independent_review": "batch2_review.json",
   "examples": [
     {
       "rule_id": "average_speed",
@@ -266,6 +267,626 @@
           "si_value": -6.0,
           "principles": [
             "work"
+          ]
+        }
+      ]
+    },
+    {
+      "rule_id": "sound_path_speed",
+      "results": {
+        "speed": {
+          "si_value": 340.0,
+          "si_unit": "m/s",
+          "dimension": [
+            0,
+            1,
+            -1,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "trace": [
+        {
+          "step": "calculate",
+          "quantity": "speed",
+          "si_value": 340.0,
+          "principles": [
+            "sound_path_speed"
+          ]
+        }
+      ]
+    },
+    {
+      "rule_id": "cycle_frequency",
+      "results": {
+        "frequency": {
+          "si_value": 50.0,
+          "si_unit": "Hz",
+          "dimension": [
+            0,
+            0,
+            -1,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "trace": [
+        {
+          "step": "calculate",
+          "quantity": "frequency",
+          "si_value": 50.0,
+          "principles": [
+            "cycle_frequency"
+          ]
+        }
+      ]
+    },
+    {
+      "rule_id": "thin_lens_power",
+      "results": {
+        "power": {
+          "si_value": 2.0,
+          "si_unit": "1/m",
+          "dimension": [
+            0,
+            -1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "trace": [
+        {
+          "step": "calculate",
+          "quantity": "power",
+          "si_value": 2.0,
+          "principles": [
+            "thin_lens_power"
+          ]
+        }
+      ]
+    },
+    {
+      "rule_id": "local_weight",
+      "results": {
+        "weight": {
+          "si_value": 19.6,
+          "si_unit": "N",
+          "dimension": [
+            1,
+            1,
+            -2,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "trace": [
+        {
+          "step": "calculate",
+          "quantity": "weight",
+          "si_value": 19.6,
+          "principles": [
+            "local_weight"
+          ]
+        }
+      ]
+    },
+    {
+      "rule_id": "kinetic_friction",
+      "results": {
+        "friction": {
+          "si_value": 6.0,
+          "si_unit": "N",
+          "dimension": [
+            1,
+            1,
+            -2,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "trace": [
+        {
+          "step": "calculate",
+          "quantity": "friction",
+          "si_value": 6.0,
+          "principles": [
+            "kinetic_friction"
+          ]
+        }
+      ]
+    },
+    {
+      "rule_id": "average_pressure",
+      "results": {
+        "pressure": {
+          "si_value": 2000.0,
+          "si_unit": "Pa",
+          "dimension": [
+            1,
+            -1,
+            -2,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "trace": [
+        {
+          "step": "calculate",
+          "quantity": "pressure",
+          "si_value": 2000.0,
+          "principles": [
+            "average_pressure"
+          ]
+        }
+      ]
+    },
+    {
+      "rule_id": "hydrostatic_gauge_pressure",
+      "results": {
+        "pressure": {
+          "si_value": 20000.0,
+          "si_unit": "Pa",
+          "dimension": [
+            1,
+            -1,
+            -2,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "trace": [
+        {
+          "step": "calculate",
+          "quantity": "pressure",
+          "si_value": 20000.0,
+          "principles": [
+            "hydrostatic_gauge_pressure"
+          ]
+        }
+      ]
+    },
+    {
+      "rule_id": "archimedes_buoyancy",
+      "results": {
+        "buoyancy": {
+          "si_value": 20.0,
+          "si_unit": "N",
+          "dimension": [
+            1,
+            1,
+            -2,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "trace": [
+        {
+          "step": "calculate",
+          "quantity": "buoyancy",
+          "si_value": 20.0,
+          "principles": [
+            "archimedes_buoyancy"
+          ]
+        }
+      ]
+    },
+    {
+      "rule_id": "displaced_fluid_weight",
+      "results": {
+        "weight": {
+          "si_value": 30.0,
+          "si_unit": "N",
+          "dimension": [
+            1,
+            1,
+            -2,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "trace": [
+        {
+          "step": "calculate",
+          "quantity": "weight",
+          "si_value": 30.0,
+          "principles": [
+            "displaced_fluid_weight"
+          ]
+        }
+      ]
+    },
+    {
+      "rule_id": "density_volume_direction",
+      "results": {
+        "volume": {
+          "si_value": 0.002,
+          "si_unit": "m^3",
+          "dimension": [
+            0,
+            3,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "trace": [
+        {
+          "step": "calculate",
+          "quantity": "volume",
+          "si_value": 0.002,
+          "principles": [
+            "density_volume_direction"
+          ]
+        }
+      ]
+    },
+    {
+      "rule_id": "average_power",
+      "results": {
+        "power": {
+          "si_value": 200.0,
+          "si_unit": "W",
+          "dimension": [
+            1,
+            2,
+            -3,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "trace": [
+        {
+          "step": "calculate",
+          "quantity": "power",
+          "si_value": 200.0,
+          "principles": [
+            "average_power"
+          ]
+        }
+      ]
+    },
+    {
+      "rule_id": "near_surface_potential_energy",
+      "results": {
+        "energy": {
+          "si_value": -60.0,
+          "si_unit": "J",
+          "dimension": [
+            1,
+            2,
+            -2,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "trace": [
+        {
+          "step": "calculate",
+          "quantity": "energy",
+          "si_value": -60.0,
+          "principles": [
+            "near_surface_potential_energy"
+          ]
+        }
+      ]
+    },
+    {
+      "rule_id": "two_force_lever_balance",
+      "results": {
+        "force2": {
+          "si_value": 40.0,
+          "si_unit": "N",
+          "dimension": [
+            1,
+            1,
+            -2,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "trace": [
+        {
+          "step": "calculate",
+          "quantity": "force2",
+          "si_value": 40.0,
+          "principles": [
+            "two_force_lever_balance"
+          ]
+        }
+      ]
+    },
+    {
+      "rule_id": "total_work_accounting",
+      "results": {
+        "total_work": {
+          "si_value": 100.0,
+          "si_unit": "J",
+          "dimension": [
+            1,
+            2,
+            -2,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "trace": [
+        {
+          "step": "calculate",
+          "quantity": "total_work",
+          "si_value": 100.0,
+          "principles": [
+            "total_work_accounting"
+          ]
+        }
+      ]
+    },
+    {
+      "rule_id": "mechanical_efficiency",
+      "results": {
+        "efficiency": {
+          "si_value": 0.8,
+          "si_unit": "1",
+          "dimension": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "trace": [
+        {
+          "step": "calculate",
+          "quantity": "efficiency",
+          "si_value": 0.8,
+          "principles": [
+            "mechanical_efficiency"
+          ]
+        }
+      ]
+    },
+    {
+      "rule_id": "signed_displacement",
+      "results": {
+        "displacement": {
+          "si_value": -3.0,
+          "si_unit": "m",
+          "dimension": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "trace": [
+        {
+          "step": "calculate",
+          "quantity": "displacement",
+          "si_value": -3.0,
+          "principles": [
+            "signed_displacement"
+          ]
+        }
+      ]
+    },
+    {
+      "rule_id": "average_acceleration_vector",
+      "results": {
+        "acceleration": {
+          "si_value": [
+            3.0,
+            0.0,
+            0.0
+          ],
+          "si_unit": "m/s^2",
+          "dimension": [
+            0,
+            1,
+            -2,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "trace": [
+        {
+          "step": "calculate",
+          "quantity": "acceleration",
+          "si_value": [
+            3.0,
+            0.0,
+            0.0
+          ],
+          "principles": [
+            "average_acceleration_vector"
+          ]
+        }
+      ]
+    },
+    {
+      "rule_id": "velocity_change_vector",
+      "results": {
+        "change": {
+          "si_value": [
+            -2.0,
+            1.0,
+            0.0
+          ],
+          "si_unit": "m/s",
+          "dimension": [
+            0,
+            1,
+            -1,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "trace": [
+        {
+          "step": "calculate",
+          "quantity": "change",
+          "si_value": [
+            -2.0,
+            1.0,
+            0.0
+          ],
+          "principles": [
+            "velocity_change_vector"
+          ]
+        }
+      ]
+    },
+    {
+      "rule_id": "hooke_restoring_component",
+      "results": {
+        "force": {
+          "si_value": -2.0,
+          "si_unit": "N",
+          "dimension": [
+            1,
+            1,
+            -2,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "trace": [
+        {
+          "step": "calculate",
+          "quantity": "force",
+          "si_value": -2.0,
+          "principles": [
+            "hooke_restoring_component"
+          ]
+        }
+      ]
+    },
+    {
+      "rule_id": "classical_momentum",
+      "results": {
+        "momentum": {
+          "si_value": [
+            6.0,
+            -2.0,
+            0.0
+          ],
+          "si_unit": "kg*m/s",
+          "dimension": [
+            1,
+            1,
+            -1,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "trace": [
+        {
+          "step": "calculate",
+          "quantity": "momentum",
+          "si_value": [
+            6.0,
+            -2.0,
+            0.0
+          ],
+          "principles": [
+            "classical_momentum"
+          ]
+        }
+      ]
+    },
+    {
+      "rule_id": "constant_force_impulse",
+      "results": {
+        "impulse": {
+          "si_value": [
+            6.0,
+            -3.0,
+            0.0
+          ],
+          "si_unit": "kg*m/s",
+          "dimension": [
+            1,
+            1,
+            -1,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "trace": [
+        {
+          "step": "calculate",
+          "quantity": "impulse",
+          "si_value": [
+            6.0,
+            -3.0,
+            0.0
+          ],
+          "principles": [
+            "constant_force_impulse"
           ]
         }
       ]

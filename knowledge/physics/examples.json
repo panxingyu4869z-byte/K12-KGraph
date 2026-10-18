@@ -267,5 +267,552 @@
       "work": -6
     },
     "boundary_conditions": []
+  },
+  {
+    "rule_id": "sound_path_speed",
+    "bindings": {
+      "distance": {
+        "value": 340,
+        "unit": "m"
+      },
+      "duration": {
+        "value": 1,
+        "unit": "s"
+      }
+    },
+    "context": {
+      "object_model": "wave",
+      "reference_frame": "declared",
+      "uniform_medium": true
+    },
+    "expected": {
+      "speed": 340
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "cycle_frequency",
+    "bindings": {
+      "cycles": {
+        "value": 100,
+        "unit": "1"
+      },
+      "duration": {
+        "value": 2,
+        "unit": "s"
+      }
+    },
+    "context": {
+      "object_model": "wave",
+      "reference_frame": "declared",
+      "complete_cycles": true
+    },
+    "expected": {
+      "frequency": 50
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "thin_lens_power",
+    "bindings": {
+      "focal_length": {
+        "value": 0.5,
+        "unit": "m"
+      }
+    },
+    "context": {
+      "object_model": "ray_optics",
+      "reference_frame": "declared",
+      "thin_lens": true
+    },
+    "expected": {
+      "power": 2
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "local_weight",
+    "bindings": {
+      "mass": {
+        "value": 2,
+        "unit": "kg"
+      },
+      "g": {
+        "value": 9.8,
+        "unit": "m/s^2"
+      }
+    },
+    "context": {
+      "object_model": "point_particle",
+      "reference_frame": "declared",
+      "uniform_gravity": true,
+      "near_surface": true
+    },
+    "expected": {
+      "weight": 19.6
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "kinetic_friction",
+    "bindings": {
+      "mu": {
+        "value": 0.3,
+        "unit": "1"
+      },
+      "normal_force": {
+        "value": 20,
+        "unit": "N"
+      }
+    },
+    "context": {
+      "object_model": "point_particle",
+      "reference_frame": "declared",
+      "sliding_contact": true,
+      "kinetic_friction_model": true
+    },
+    "expected": {
+      "friction": 6
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "average_pressure",
+    "bindings": {
+      "normal_force": {
+        "value": 20,
+        "unit": "N"
+      },
+      "area": {
+        "value": 0.01,
+        "unit": "m^2"
+      }
+    },
+    "context": {
+      "object_model": "bulk_body",
+      "reference_frame": "declared"
+    },
+    "expected": {
+      "pressure": 2000
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "hydrostatic_gauge_pressure",
+    "bindings": {
+      "density": {
+        "value": 1000,
+        "unit": "kg/m^3"
+      },
+      "g": {
+        "value": 10,
+        "unit": "m/s^2"
+      },
+      "depth": {
+        "value": 2,
+        "unit": "m"
+      }
+    },
+    "context": {
+      "object_model": "uniform_fluid",
+      "reference_frame": "declared",
+      "fluid_static": true,
+      "density_constant": true,
+      "uniform_gravity": true,
+      "pressure_is_gauge": true
+    },
+    "expected": {
+      "pressure": 20000
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "archimedes_buoyancy",
+    "bindings": {
+      "density": {
+        "value": 1000,
+        "unit": "kg/m^3"
+      },
+      "g": {
+        "value": 10,
+        "unit": "m/s^2"
+      },
+      "displaced_volume": {
+        "value": 0.002,
+        "unit": "m^3"
+      }
+    },
+    "context": {
+      "object_model": "uniform_fluid",
+      "reference_frame": "declared",
+      "fluid_static": true,
+      "density_constant": true,
+      "uniform_gravity": true
+    },
+    "expected": {
+      "buoyancy": 20
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "displaced_fluid_weight",
+    "bindings": {
+      "density": {
+        "value": 1000,
+        "unit": "kg/m^3"
+      },
+      "g": {
+        "value": 10,
+        "unit": "m/s^2"
+      },
+      "displaced_volume": {
+        "value": 0.003,
+        "unit": "m^3"
+      }
+    },
+    "context": {
+      "object_model": "uniform_fluid",
+      "reference_frame": "declared",
+      "density_constant": true,
+      "uniform_gravity": true
+    },
+    "expected": {
+      "weight": 30
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "density_volume_direction",
+    "bindings": {
+      "mass": {
+        "value": 2,
+        "unit": "kg"
+      },
+      "density": {
+        "value": 1000,
+        "unit": "kg/m^3"
+      }
+    },
+    "context": {
+      "object_model": "bulk_body",
+      "reference_frame": "declared"
+    },
+    "expected": {
+      "volume": 0.002
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "average_power",
+    "bindings": {
+      "work": {
+        "value": 600,
+        "unit": "J"
+      },
+      "duration": {
+        "value": 3,
+        "unit": "s"
+      }
+    },
+    "context": {
+      "object_model": "point_particle",
+      "reference_frame": "declared"
+    },
+    "expected": {
+      "power": 200
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "near_surface_potential_energy",
+    "bindings": {
+      "mass": {
+        "value": 2,
+        "unit": "kg"
+      },
+      "g": {
+        "value": 10,
+        "unit": "m/s^2"
+      },
+      "height": {
+        "value": -3,
+        "unit": "m"
+      }
+    },
+    "context": {
+      "object_model": "point_particle",
+      "reference_frame": "declared",
+      "near_surface": true,
+      "uniform_gravity": true,
+      "height_reference_declared": true
+    },
+    "expected": {
+      "energy": -60
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "two_force_lever_balance",
+    "bindings": {
+      "force1": {
+        "value": 10,
+        "unit": "N"
+      },
+      "arm1": {
+        "value": 2,
+        "unit": "m"
+      },
+      "arm2": {
+        "value": 0.5,
+        "unit": "m"
+      }
+    },
+    "context": {
+      "object_model": "rigid_lever",
+      "reference_frame": "declared",
+      "static_balance": true
+    },
+    "expected": {
+      "force2": 40
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "total_work_accounting",
+    "bindings": {
+      "useful_work": {
+        "value": 80,
+        "unit": "J"
+      },
+      "extra_work": {
+        "value": 20,
+        "unit": "J"
+      }
+    },
+    "context": {
+      "object_model": "bulk_body",
+      "reference_frame": "declared",
+      "input_output_same_interval": true
+    },
+    "expected": {
+      "total_work": 100
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "mechanical_efficiency",
+    "bindings": {
+      "useful_work": {
+        "value": 80,
+        "unit": "J"
+      },
+      "total_work": {
+        "value": 100,
+        "unit": "J"
+      }
+    },
+    "context": {
+      "object_model": "bulk_body",
+      "reference_frame": "declared",
+      "input_output_same_interval": true
+    },
+    "expected": {
+      "efficiency": 0.8
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "signed_displacement",
+    "bindings": {
+      "initial_position": {
+        "value": 5,
+        "unit": "m"
+      },
+      "final_position": {
+        "value": 2,
+        "unit": "m"
+      }
+    },
+    "context": {
+      "object_model": "point_particle",
+      "reference_frame": "inertial",
+      "axis_declared": true,
+      "axis": [
+        1,
+        0,
+        0
+      ]
+    },
+    "expected": {
+      "displacement": -3
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "average_acceleration_vector",
+    "bindings": {
+      "initial_velocity": {
+        "value": [
+          0,
+          1,
+          0
+        ],
+        "unit": "m/s"
+      },
+      "final_velocity": {
+        "value": [
+          6,
+          1,
+          0
+        ],
+        "unit": "m/s"
+      },
+      "duration": {
+        "value": 2,
+        "unit": "s"
+      }
+    },
+    "context": {
+      "object_model": "point_particle",
+      "reference_frame": "inertial",
+      "frame_id": "lab"
+    },
+    "expected": {
+      "acceleration": [
+        3,
+        0,
+        0
+      ]
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "velocity_change_vector",
+    "bindings": {
+      "initial_velocity": {
+        "value": [
+          1,
+          2,
+          0
+        ],
+        "unit": "m/s"
+      },
+      "final_velocity": {
+        "value": [
+          -1,
+          3,
+          0
+        ],
+        "unit": "m/s"
+      }
+    },
+    "context": {
+      "object_model": "point_particle",
+      "reference_frame": "inertial",
+      "frame_id": "lab"
+    },
+    "expected": {
+      "change": [
+        -2,
+        1,
+        0
+      ]
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "hooke_restoring_component",
+    "bindings": {
+      "stiffness": {
+        "value": 100,
+        "unit": "N/m"
+      },
+      "extension": {
+        "value": 0.02,
+        "unit": "m"
+      }
+    },
+    "context": {
+      "object_model": "oscillator",
+      "reference_frame": "declared",
+      "elastic_limit": true,
+      "axis_declared": true,
+      "axis": [
+        1,
+        0,
+        0
+      ]
+    },
+    "expected": {
+      "force": -2
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "classical_momentum",
+    "bindings": {
+      "mass": {
+        "value": 2,
+        "unit": "kg"
+      },
+      "velocity": {
+        "value": [
+          3,
+          -1,
+          0
+        ],
+        "unit": "m/s"
+      }
+    },
+    "context": {
+      "object_model": "point_particle",
+      "reference_frame": "inertial",
+      "frame_id": "lab",
+      "classical_regime": true,
+      "mass_constant": true
+    },
+    "expected": {
+      "momentum": [
+        6,
+        -2,
+        0
+      ]
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "constant_force_impulse",
+    "bindings": {
+      "force": {
+        "value": [
+          2,
+          -1,
+          0
+        ],
+        "unit": "N"
+      },
+      "duration": {
+        "value": 3,
+        "unit": "s"
+      }
+    },
+    "context": {
+      "object_model": "point_particle",
+      "reference_frame": "inertial",
+      "frame_id": "lab",
+      "force_constant": true,
+      "force": {
+        "behavior": "constant",
+        "depends_on": []
+      }
+    },
+    "expected": {
+      "impulse": [
+        6,
+        -3,
+        0
+      ]
+    },
+    "boundary_conditions": []
   }
 ]

@@ -249,6 +249,372 @@
         0
       ],
       "scale": "1"
+    },
+    "W": {
+      "dimension": [
+        1,
+        2,
+        -3,
+        0,
+        0,
+        0,
+        0
+      ],
+      "scale": "1"
+    },
+    "m^2": {
+      "dimension": [
+        0,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "scale": "1"
+    },
+    "Pa": {
+      "dimension": [
+        1,
+        -1,
+        -2,
+        0,
+        0,
+        0,
+        0
+      ],
+      "scale": "1"
+    },
+    "Hz": {
+      "dimension": [
+        0,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "scale": "1"
+    },
+    "1/m": {
+      "dimension": [
+        0,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "scale": "1"
+    },
+    "kg*m/s": {
+      "dimension": [
+        1,
+        1,
+        -1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "scale": "1"
+    },
+    "N/m": {
+      "dimension": [
+        1,
+        0,
+        -2,
+        0,
+        0,
+        0,
+        0
+      ],
+      "scale": "1"
+    },
+    "A": {
+      "dimension": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "scale": "1"
+    },
+    "C": {
+      "dimension": [
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "scale": "1"
+    },
+    "V": {
+      "dimension": [
+        1,
+        2,
+        -3,
+        -1,
+        0,
+        0,
+        0
+      ],
+      "scale": "1"
+    },
+    "ohm": {
+      "dimension": [
+        1,
+        2,
+        -3,
+        -2,
+        0,
+        0,
+        0
+      ],
+      "scale": "1"
+    },
+    "S/m": {
+      "dimension": [
+        -1,
+        -3,
+        3,
+        2,
+        0,
+        0,
+        0
+      ],
+      "scale": "1"
+    },
+    "ohm*m": {
+      "dimension": [
+        1,
+        3,
+        -3,
+        -2,
+        0,
+        0,
+        0
+      ],
+      "scale": "1"
+    },
+    "F": {
+      "dimension": [
+        -1,
+        -2,
+        4,
+        2,
+        0,
+        0,
+        0
+      ],
+      "scale": "1"
+    },
+    "N/C": {
+      "dimension": [
+        1,
+        1,
+        -3,
+        -1,
+        0,
+        0,
+        0
+      ],
+      "scale": "1"
+    },
+    "T": {
+      "dimension": [
+        1,
+        0,
+        -2,
+        -1,
+        0,
+        0,
+        0
+      ],
+      "scale": "1"
+    },
+    "Wb": {
+      "dimension": [
+        1,
+        2,
+        -2,
+        -1,
+        0,
+        0,
+        0
+      ],
+      "scale": "1"
+    },
+    "H": {
+      "dimension": [
+        1,
+        2,
+        -2,
+        -2,
+        0,
+        0,
+        0
+      ],
+      "scale": "1"
+    },
+    "K": {
+      "dimension": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "scale": "1",
+      "temperature_kind": "absolute"
+    },
+    "delta_K": {
+      "dimension": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "scale": "1",
+      "temperature_kind": "interval"
+    },
+    "J/(kg*K)": {
+      "dimension": [
+        0,
+        2,
+        -2,
+        0,
+        -1,
+        0,
+        0
+      ],
+      "scale": "1"
+    },
+    "J/kg": {
+      "dimension": [
+        0,
+        2,
+        -2,
+        0,
+        0,
+        0,
+        0
+      ],
+      "scale": "1"
+    },
+    "J*s": {
+      "dimension": [
+        1,
+        2,
+        -1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "scale": "1"
+    },
+    "m^3/(kg*s^2)": {
+      "dimension": [
+        -1,
+        3,
+        -2,
+        0,
+        0,
+        0,
+        0
+      ],
+      "scale": "1"
+    },
+    "N*m^2/C^2": {
+      "dimension": [
+        1,
+        3,
+        -4,
+        -2,
+        0,
+        0,
+        0
+      ],
+      "scale": "1"
+    },
+    "1/m^3": {
+      "dimension": [
+        0,
+        -3,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "scale": "1"
+    },
+    "degC": {
+      "dimension": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "scale": "1",
+      "offset": "27315/100",
+      "temperature_kind": "absolute"
+    },
+    "delta_degC": {
+      "dimension": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "scale": "1",
+      "temperature_kind": "interval"
+    },
+    "rad": {
+      "dimension": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "scale": "1"
+    },
+    "degree": {
+      "dimension": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "scale": "1/180",
+      "pi_factor": true
     }
   },
   "principles": {
@@ -293,6 +659,132 @@
       "kind": "mathematical",
       "source_url": "https://openstax.org/books/university-physics-volume-1/pages/5-3-newtons-second-law",
       "locator": "5.3 equations 5.3–5.4 and nonzero positive mass"
+    },
+    "sound_path_speed": {
+      "name_zh": "声传播的平均速率",
+      "kind": "physical",
+      "source_url": "https://openstax.org/books/physics/pages/2-2-speed-and-velocity",
+      "locator": "node:physics_8a_rjb_cpt20 / physics_8a_rjb_ch2_s1"
+    },
+    "cycle_frequency": {
+      "name_zh": "完整周期计数频率",
+      "kind": "physical",
+      "source_url": "https://huggingface.co/datasets/lhpku20010120/K12-KGraph/blob/d8522c2b336ee435aa51daa39ca0dd736f56fa53/K12-KGraph/subject_specific_KG/physics.json",
+      "locator": "node:physics_8a_rjb_cpt24 / physics_8a_rjb_ch2_s2"
+    },
+    "thin_lens_power": {
+      "name_zh": "薄透镜焦度",
+      "kind": "physical",
+      "source_url": "https://huggingface.co/datasets/lhpku20010120/K12-KGraph/blob/d8522c2b336ee435aa51daa39ca0dd736f56fa53/K12-KGraph/subject_specific_KG/physics.json",
+      "locator": "node:physics_8a_rjb_cpt118 / physics_8a_rjb_ch5_s4"
+    },
+    "local_weight": {
+      "name_zh": "近地均匀重力场中的重量",
+      "kind": "physical",
+      "source_url": "https://huggingface.co/datasets/lhpku20010120/K12-KGraph/blob/d8522c2b336ee435aa51daa39ca0dd736f56fa53/K12-KGraph/subject_specific_KG/physics.json",
+      "locator": "node:physics_8b_rjb_cpt16 / physics_8b_rjb_ch7_s3"
+    },
+    "kinetic_friction": {
+      "name_zh": "库仑模型滑动摩擦力大小",
+      "kind": "physical",
+      "source_url": "https://huggingface.co/datasets/lhpku20010120/K12-KGraph/blob/d8522c2b336ee435aa51daa39ca0dd736f56fa53/K12-KGraph/subject_specific_KG/physics.json",
+      "locator": "node:physics_8b_rjb_cpt29 / physics_8b_rjb_ch8_s3"
+    },
+    "average_pressure": {
+      "name_zh": "平均法向压强",
+      "kind": "physical",
+      "source_url": "https://openstax.org/books/university-physics-volume-1/pages/14-1-fluids-density-and-pressure",
+      "locator": "node:physics_8b_rjb_cpt33 / physics_8b_rjb_ch9_s1"
+    },
+    "hydrostatic_gauge_pressure": {
+      "name_zh": "均匀静止液体表压",
+      "kind": "physical",
+      "source_url": "https://huggingface.co/datasets/lhpku20010120/K12-KGraph/blob/d8522c2b336ee435aa51daa39ca0dd736f56fa53/K12-KGraph/subject_specific_KG/physics.json",
+      "locator": "node:physics_8b_rjb_cpt37 / physics_8b_rjb_ch9_s2"
+    },
+    "archimedes_buoyancy": {
+      "name_zh": "阿基米德浮力大小",
+      "kind": "physical",
+      "source_url": "https://openstax.org/books/university-physics-volume-1/pages/14-4-archimedes-principle-and-buoyancy",
+      "locator": "node:physics_8b_rjb_cpt51 / physics_8b_rjb_ch10_s1"
+    },
+    "displaced_fluid_weight": {
+      "name_zh": "排开液体的重量",
+      "kind": "physical",
+      "source_url": "https://huggingface.co/datasets/lhpku20010120/K12-KGraph/blob/d8522c2b336ee435aa51daa39ca0dd736f56fa53/K12-KGraph/subject_specific_KG/physics.json",
+      "locator": "node:physics_8b_rjb_cpt58 / physics_8b_rjb_ch10_s2"
+    },
+    "density_volume_direction": {
+      "name_zh": "密度关系的求体积方向",
+      "kind": "physical",
+      "source_url": "https://huggingface.co/datasets/lhpku20010120/K12-KGraph/blob/d8522c2b336ee435aa51daa39ca0dd736f56fa53/K12-KGraph/subject_specific_KG/physics.json",
+      "locator": "node:physics_8b_rjb_cpt60 / physics_8b_rjb_ch10_s2"
+    },
+    "average_power": {
+      "name_zh": "时间区间内平均输出功率",
+      "kind": "physical",
+      "source_url": "https://openstax.org/books/university-physics-volume-1/pages/7-4-power",
+      "locator": "node:physics_8b_rjb_cpt68 / physics_8b_rjb_ch11_s2"
+    },
+    "near_surface_potential_energy": {
+      "name_zh": "近地重力势能",
+      "kind": "physical",
+      "source_url": "https://huggingface.co/datasets/lhpku20010120/K12-KGraph/blob/d8522c2b336ee435aa51daa39ca0dd736f56fa53/K12-KGraph/subject_specific_KG/physics.json",
+      "locator": "node:physics_8b_rjb_cpt75 / physics_8b_rjb_ch11_s3"
+    },
+    "two_force_lever_balance": {
+      "name_zh": "双力矩平衡的求力方向",
+      "kind": "physical",
+      "source_url": "https://huggingface.co/datasets/lhpku20010120/K12-KGraph/blob/d8522c2b336ee435aa51daa39ca0dd736f56fa53/K12-KGraph/subject_specific_KG/physics.json",
+      "locator": "node:physics_8b_rjb_cpt84 / physics_8b_rjb_ch12_s1"
+    },
+    "total_work_accounting": {
+      "name_zh": "总功的能量核算",
+      "kind": "physical",
+      "source_url": "https://huggingface.co/datasets/lhpku20010120/K12-KGraph/blob/d8522c2b336ee435aa51daa39ca0dd736f56fa53/K12-KGraph/subject_specific_KG/physics.json",
+      "locator": "node:physics_8b_rjb_cpt95 / physics_8b_rjb_ch12_s3"
+    },
+    "mechanical_efficiency": {
+      "name_zh": "同一过程机械效率",
+      "kind": "physical",
+      "source_url": "https://huggingface.co/datasets/lhpku20010120/K12-KGraph/blob/d8522c2b336ee435aa51daa39ca0dd736f56fa53/K12-KGraph/subject_specific_KG/physics.json",
+      "locator": "node:physics_8b_rjb_cpt96 / physics_8b_rjb_ch12_s3"
+    },
+    "signed_displacement": {
+      "name_zh": "同一坐标系中的位移分量",
+      "kind": "physical",
+      "source_url": "https://huggingface.co/datasets/lhpku20010120/K12-KGraph/blob/d8522c2b336ee435aa51daa39ca0dd736f56fa53/K12-KGraph/subject_specific_KG/physics.json",
+      "locator": "node:physics_bx1_rjb_cpt10 / physics_bx1_rjb_ch1_s2"
+    },
+    "average_acceleration_vector": {
+      "name_zh": "时间区间内平均加速度",
+      "kind": "physical",
+      "source_url": "https://huggingface.co/datasets/lhpku20010120/K12-KGraph/blob/d8522c2b336ee435aa51daa39ca0dd736f56fa53/K12-KGraph/subject_specific_KG/physics.json",
+      "locator": "node:physics_bx1_rjb_cpt21 / physics_bx1_rjb_ch1_s4"
+    },
+    "velocity_change_vector": {
+      "name_zh": "速度变化矢量",
+      "kind": "physical",
+      "source_url": "https://huggingface.co/datasets/lhpku20010120/K12-KGraph/blob/d8522c2b336ee435aa51daa39ca0dd736f56fa53/K12-KGraph/subject_specific_KG/physics.json",
+      "locator": "node:physics_bx1_rjb_cpt22 / physics_bx1_rjb_ch1_s4"
+    },
+    "hooke_restoring_component": {
+      "name_zh": "弹性限度内弹簧回复力",
+      "kind": "physical",
+      "source_url": "https://huggingface.co/datasets/lhpku20010120/K12-KGraph/blob/d8522c2b336ee435aa51daa39ca0dd736f56fa53/K12-KGraph/subject_specific_KG/physics.json",
+      "locator": "node:physics_bx1_rjb_cpt38 / physics_bx1_rjb_ch3_s1"
+    },
+    "classical_momentum": {
+      "name_zh": "经典定质量质点的动量",
+      "kind": "physical",
+      "source_url": "https://huggingface.co/datasets/lhpku20010120/K12-KGraph/blob/d8522c2b336ee435aa51daa39ca0dd736f56fa53/K12-KGraph/subject_specific_KG/physics.json",
+      "locator": "node:physics_xzxbx1_rjb_cpt1 / physics_xzxbx1_rjb_ch1_s1"
+    },
+    "constant_force_impulse": {
+      "name_zh": "恒合外力的冲量",
+      "kind": "physical",
+      "source_url": "https://huggingface.co/datasets/lhpku20010120/K12-KGraph/blob/d8522c2b336ee435aa51daa39ca0dd736f56fa53/K12-KGraph/subject_specific_KG/physics.json",
+      "locator": "node:physics_xzxbx1_rjb_cpt5 / physics_xzxbx1_rjb_ch1_s2"
     }
   },
   "rules": [
@@ -1743,6 +2235,11 @@
       ],
       "conclusions": [
         "work"
+      ],
+      "source_nodes": [
+        "physics_8b_rjb_cpt69",
+        "physics_8b_rjb_cpt66",
+        "physics_8b_rjb_cpt93"
       ]
     },
     {
@@ -1877,6 +2374,3121 @@
       ],
       "conclusions": [
         "work"
+      ]
+    },
+    {
+      "id": "sound_path_speed",
+      "concept_id": "physics_8a_rjb_cpt20",
+      "source_nodes": [
+        "physics_8a_rjb_cpt20"
+      ],
+      "batch": 2,
+      "variant_of": null,
+      "introduced_at": "physics_8a_rjb_ch2_s1",
+      "stage": "middle",
+      "status": "ready",
+      "display": {
+        "name_zh": "声传播的平均速率",
+        "original_formula": "v = s / t",
+        "notes_zh": "仅在结构化条件已建立时执行；原文字段不参与求值。"
+      },
+      "object_model": "wave",
+      "reference_frame": "declared",
+      "quantities": {
+        "distance": {
+          "kind": "scalar",
+          "dimension": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "unit": "m",
+          "domain": "nonnegative",
+          "object": "body",
+          "frame": "not_applicable"
+        },
+        "duration": {
+          "kind": "scalar",
+          "dimension": [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "unit": "s",
+          "domain": "positive",
+          "object": "body",
+          "frame": "not_applicable"
+        },
+        "speed": {
+          "kind": "scalar",
+          "dimension": [
+            0,
+            1,
+            -1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "unit": "m/s",
+          "domain": "nonnegative",
+          "object": "body",
+          "frame": "not_applicable"
+        }
+      },
+      "conditions": [
+        {
+          "fact": "uniform_medium",
+          "equals": true
+        }
+      ],
+      "force_dependence": {
+        "mode": "not_used",
+        "allowed_dependencies": []
+      },
+      "initial_conditions": [],
+      "boundary_conditions": "none_assumed",
+      "laws": [
+        {
+          "id": "law",
+          "equation": {
+            "op": "eq",
+            "args": [
+              {
+                "op": "var",
+                "id": "speed"
+              },
+              {
+                "op": "div",
+                "args": [
+                  {
+                    "op": "var",
+                    "id": "distance"
+                  },
+                  {
+                    "op": "var",
+                    "id": "duration"
+                  }
+                ]
+              }
+            ]
+          },
+          "principles": [
+            "sound_path_speed"
+          ]
+        }
+      ],
+      "steps": [
+        {
+          "id": "calculate",
+          "target": "speed",
+          "expression": {
+            "op": "div",
+            "args": [
+              {
+                "op": "var",
+                "id": "distance"
+              },
+              {
+                "op": "var",
+                "id": "duration"
+              }
+            ]
+          },
+          "principles": [
+            "sound_path_speed"
+          ],
+          "law_id": "law",
+          "rewrite": "direct"
+        }
+      ],
+      "conclusions": [
+        "speed"
+      ]
+    },
+    {
+      "id": "cycle_frequency",
+      "concept_id": "physics_8a_rjb_cpt24",
+      "source_nodes": [
+        "physics_8a_rjb_cpt24"
+      ],
+      "batch": 2,
+      "variant_of": null,
+      "introduced_at": "physics_8a_rjb_ch2_s2",
+      "stage": "middle",
+      "status": "ready",
+      "display": {
+        "name_zh": "完整周期计数频率",
+        "original_formula": "f = 振动次数 / 时间",
+        "notes_zh": "仅在结构化条件已建立时执行；原文字段不参与求值。"
+      },
+      "object_model": "wave",
+      "reference_frame": "declared",
+      "quantities": {
+        "cycles": {
+          "kind": "scalar",
+          "dimension": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "unit": "1",
+          "domain": "positive_integer",
+          "object": "body",
+          "frame": "not_applicable"
+        },
+        "duration": {
+          "kind": "scalar",
+          "dimension": [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "unit": "s",
+          "domain": "positive",
+          "object": "body",
+          "frame": "not_applicable"
+        },
+        "frequency": {
+          "kind": "scalar",
+          "dimension": [
+            0,
+            0,
+            -1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "unit": "Hz",
+          "domain": "positive",
+          "object": "body",
+          "frame": "not_applicable"
+        }
+      },
+      "conditions": [
+        {
+          "fact": "complete_cycles",
+          "equals": true
+        }
+      ],
+      "force_dependence": {
+        "mode": "not_used",
+        "allowed_dependencies": []
+      },
+      "initial_conditions": [],
+      "boundary_conditions": "none_assumed",
+      "laws": [
+        {
+          "id": "law",
+          "equation": {
+            "op": "eq",
+            "args": [
+              {
+                "op": "var",
+                "id": "frequency"
+              },
+              {
+                "op": "div",
+                "args": [
+                  {
+                    "op": "var",
+                    "id": "cycles"
+                  },
+                  {
+                    "op": "var",
+                    "id": "duration"
+                  }
+                ]
+              }
+            ]
+          },
+          "principles": [
+            "cycle_frequency"
+          ]
+        }
+      ],
+      "steps": [
+        {
+          "id": "calculate",
+          "target": "frequency",
+          "expression": {
+            "op": "div",
+            "args": [
+              {
+                "op": "var",
+                "id": "cycles"
+              },
+              {
+                "op": "var",
+                "id": "duration"
+              }
+            ]
+          },
+          "principles": [
+            "cycle_frequency"
+          ],
+          "law_id": "law",
+          "rewrite": "direct"
+        }
+      ],
+      "conclusions": [
+        "frequency"
+      ]
+    },
+    {
+      "id": "thin_lens_power",
+      "concept_id": "physics_8a_rjb_cpt118",
+      "source_nodes": [
+        "physics_8a_rjb_cpt118"
+      ],
+      "batch": 2,
+      "variant_of": null,
+      "introduced_at": "physics_8a_rjb_ch5_s4",
+      "stage": "middle",
+      "status": "ready",
+      "display": {
+        "name_zh": "薄透镜焦度",
+        "original_formula": "Φ = 1 / f",
+        "notes_zh": "焦距按已声明的会聚正、发散负约定输入；焦距不得为零。"
+      },
+      "object_model": "ray_optics",
+      "reference_frame": "declared",
+      "quantities": {
+        "focal_length": {
+          "kind": "scalar",
+          "dimension": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "unit": "m",
+          "domain": "real",
+          "object": "body",
+          "frame": "not_applicable"
+        },
+        "power": {
+          "kind": "scalar",
+          "dimension": [
+            0,
+            -1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "unit": "1/m",
+          "domain": "real",
+          "object": "body",
+          "frame": "not_applicable"
+        }
+      },
+      "conditions": [
+        {
+          "fact": "thin_lens",
+          "equals": true
+        }
+      ],
+      "force_dependence": {
+        "mode": "not_used",
+        "allowed_dependencies": []
+      },
+      "initial_conditions": [],
+      "boundary_conditions": "none_assumed",
+      "laws": [
+        {
+          "id": "law",
+          "equation": {
+            "op": "eq",
+            "args": [
+              {
+                "op": "var",
+                "id": "power"
+              },
+              {
+                "op": "div",
+                "args": [
+                  {
+                    "op": "number",
+                    "value": 1
+                  },
+                  {
+                    "op": "var",
+                    "id": "focal_length"
+                  }
+                ]
+              }
+            ]
+          },
+          "principles": [
+            "thin_lens_power"
+          ]
+        }
+      ],
+      "steps": [
+        {
+          "id": "calculate",
+          "target": "power",
+          "expression": {
+            "op": "div",
+            "args": [
+              {
+                "op": "number",
+                "value": 1
+              },
+              {
+                "op": "var",
+                "id": "focal_length"
+              }
+            ]
+          },
+          "principles": [
+            "thin_lens_power"
+          ],
+          "law_id": "law",
+          "rewrite": "direct"
+        }
+      ],
+      "conclusions": [
+        "power"
+      ],
+      "constraints": [
+        {
+          "op": "ne",
+          "args": [
+            {
+              "op": "var",
+              "id": "focal_length"
+            },
+            {
+              "op": "literal",
+              "value": 0,
+              "unit": "m"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "local_weight",
+      "concept_id": "physics_8b_rjb_cpt16",
+      "source_nodes": [
+        "physics_8b_rjb_cpt16",
+        "physics_8b_rjb_cpt17",
+        "physics_bx1_rjb_cpt77"
+      ],
+      "batch": 2,
+      "variant_of": null,
+      "introduced_at": "physics_8b_rjb_ch7_s3",
+      "stage": "middle",
+      "status": "ready",
+      "display": {
+        "name_zh": "近地均匀重力场中的重量",
+        "original_formula": "G = mg",
+        "notes_zh": "仅在结构化条件已建立时执行；原文字段不参与求值。"
+      },
+      "object_model": "point_particle",
+      "reference_frame": "declared",
+      "quantities": {
+        "mass": {
+          "kind": "scalar",
+          "dimension": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "unit": "kg",
+          "domain": "positive",
+          "object": "body",
+          "frame": "not_applicable"
+        },
+        "g": {
+          "kind": "scalar",
+          "dimension": [
+            0,
+            1,
+            -2,
+            0,
+            0,
+            0,
+            0
+          ],
+          "unit": "m/s^2",
+          "domain": "positive",
+          "object": "body",
+          "frame": "not_applicable"
+        },
+        "weight": {
+          "kind": "scalar",
+          "dimension": [
+            1,
+            1,
+            -2,
+            0,
+            0,
+            0,
+            0
+          ],
+          "unit": "N",
+          "domain": "positive",
+          "object": "body",
+          "frame": "not_applicable"
+        }
+      },
+      "conditions": [
+        {
+          "fact": "uniform_gravity",
+          "equals": true
+        },
+        {
+          "fact": "near_surface",
+          "equals": true
+        }
+      ],
+      "force_dependence": {
+        "mode": "not_used",
+        "allowed_dependencies": []
+      },
+      "initial_conditions": [],
+      "boundary_conditions": "none_assumed",
+      "laws": [
+        {
+          "id": "law",
+          "equation": {
+            "op": "eq",
+            "args": [
+              {
+                "op": "var",
+                "id": "weight"
+              },
+              {
+                "op": "mul",
+                "args": [
+                  {
+                    "op": "var",
+                    "id": "mass"
+                  },
+                  {
+                    "op": "var",
+                    "id": "g"
+                  }
+                ]
+              }
+            ]
+          },
+          "principles": [
+            "local_weight"
+          ]
+        }
+      ],
+      "steps": [
+        {
+          "id": "calculate",
+          "target": "weight",
+          "expression": {
+            "op": "mul",
+            "args": [
+              {
+                "op": "var",
+                "id": "mass"
+              },
+              {
+                "op": "var",
+                "id": "g"
+              }
+            ]
+          },
+          "principles": [
+            "local_weight"
+          ],
+          "law_id": "law",
+          "rewrite": "direct"
+        }
+      ],
+      "conclusions": [
+        "weight"
+      ]
+    },
+    {
+      "id": "kinetic_friction",
+      "concept_id": "physics_8b_rjb_cpt29",
+      "source_nodes": [
+        "physics_8b_rjb_cpt29",
+        "physics_bx1_rjb_cpt41"
+      ],
+      "batch": 2,
+      "variant_of": null,
+      "introduced_at": "physics_8b_rjb_ch8_s3",
+      "stage": "middle",
+      "status": "ready",
+      "display": {
+        "name_zh": "库仑模型滑动摩擦力大小",
+        "original_formula": "F_f = \\mu F_N",
+        "notes_zh": "仅在结构化条件已建立时执行；原文字段不参与求值。"
+      },
+      "object_model": "point_particle",
+      "reference_frame": "declared",
+      "quantities": {
+        "mu": {
+          "kind": "scalar",
+          "dimension": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "unit": "1",
+          "domain": "nonnegative",
+          "object": "body",
+          "frame": "not_applicable"
+        },
+        "normal_force": {
+          "kind": "scalar",
+          "dimension": [
+            1,
+            1,
+            -2,
+            0,
+            0,
+            0,
+            0
+          ],
+          "unit": "N",
+          "domain": "nonnegative",
+          "object": "body",
+          "frame": "not_applicable"
+        },
+        "friction": {
+          "kind": "scalar",
+          "dimension": [
+            1,
+            1,
+            -2,
+            0,
+            0,
+            0,
+            0
+          ],
+          "unit": "N",
+          "domain": "nonnegative",
+          "object": "body",
+          "frame": "not_applicable"
+        }
+      },
+      "conditions": [
+        {
+          "fact": "sliding_contact",
+          "equals": true
+        },
+        {
+          "fact": "kinetic_friction_model",
+          "equals": true
+        }
+      ],
+      "force_dependence": {
+        "mode": "not_used",
+        "allowed_dependencies": []
+      },
+      "initial_conditions": [],
+      "boundary_conditions": "none_assumed",
+      "laws": [
+        {
+          "id": "law",
+          "equation": {
+            "op": "eq",
+            "args": [
+              {
+                "op": "var",
+                "id": "friction"
+              },
+              {
+                "op": "mul",
+                "args": [
+                  {
+                    "op": "var",
+                    "id": "mu"
+                  },
+                  {
+                    "op": "var",
+                    "id": "normal_force"
+                  }
+                ]
+              }
+            ]
+          },
+          "principles": [
+            "kinetic_friction"
+          ]
+        }
+      ],
+      "steps": [
+        {
+          "id": "calculate",
+          "target": "friction",
+          "expression": {
+            "op": "mul",
+            "args": [
+              {
+                "op": "var",
+                "id": "mu"
+              },
+              {
+                "op": "var",
+                "id": "normal_force"
+              }
+            ]
+          },
+          "principles": [
+            "kinetic_friction"
+          ],
+          "law_id": "law",
+          "rewrite": "direct"
+        }
+      ],
+      "conclusions": [
+        "friction"
+      ]
+    },
+    {
+      "id": "average_pressure",
+      "concept_id": "physics_8b_rjb_cpt33",
+      "source_nodes": [
+        "physics_8b_rjb_cpt33"
+      ],
+      "batch": 2,
+      "variant_of": null,
+      "introduced_at": "physics_8b_rjb_ch9_s1",
+      "stage": "middle",
+      "status": "ready",
+      "display": {
+        "name_zh": "平均法向压强",
+        "original_formula": "p = F / S",
+        "notes_zh": "仅在结构化条件已建立时执行；原文字段不参与求值。"
+      },
+      "object_model": "bulk_body",
+      "reference_frame": "declared",
+      "quantities": {
+        "normal_force": {
+          "kind": "scalar",
+          "dimension": [
+            1,
+            1,
+            -2,
+            0,
+            0,
+            0,
+            0
+          ],
+          "unit": "N",
+          "domain": "nonnegative",
+          "object": "body",
+          "frame": "not_applicable"
+        },
+        "area": {
+          "kind": "scalar",
+          "dimension": [
+            0,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "unit": "m^2",
+          "domain": "positive",
+          "object": "body",
+          "frame": "not_applicable"
+        },
+        "pressure": {
+          "kind": "scalar",
+          "dimension": [
+            1,
+            -1,
+            -2,
+            0,
+            0,
+            0,
+            0
+          ],
+          "unit": "Pa",
+          "domain": "nonnegative",
+          "object": "body",
+          "frame": "not_applicable"
+        }
+      },
+      "conditions": [],
+      "force_dependence": {
+        "mode": "not_used",
+        "allowed_dependencies": []
+      },
+      "initial_conditions": [],
+      "boundary_conditions": "none_assumed",
+      "laws": [
+        {
+          "id": "law",
+          "equation": {
+            "op": "eq",
+            "args": [
+              {
+                "op": "var",
+                "id": "pressure"
+              },
+              {
+                "op": "div",
+                "args": [
+                  {
+                    "op": "var",
+                    "id": "normal_force"
+                  },
+                  {
+                    "op": "var",
+                    "id": "area"
+                  }
+                ]
+              }
+            ]
+          },
+          "principles": [
+            "average_pressure"
+          ]
+        }
+      ],
+      "steps": [
+        {
+          "id": "calculate",
+          "target": "pressure",
+          "expression": {
+            "op": "div",
+            "args": [
+              {
+                "op": "var",
+                "id": "normal_force"
+              },
+              {
+                "op": "var",
+                "id": "area"
+              }
+            ]
+          },
+          "principles": [
+            "average_pressure"
+          ],
+          "law_id": "law",
+          "rewrite": "direct"
+        }
+      ],
+      "conclusions": [
+        "pressure"
+      ]
+    },
+    {
+      "id": "hydrostatic_gauge_pressure",
+      "concept_id": "physics_8b_rjb_cpt37",
+      "source_nodes": [
+        "physics_8b_rjb_cpt37",
+        "physics_8b_rjb_cpt44",
+        "physics_8b_rjb_cpt48"
+      ],
+      "batch": 2,
+      "variant_of": null,
+      "introduced_at": "physics_8b_rjb_ch9_s2",
+      "stage": "middle",
+      "status": "ready",
+      "display": {
+        "name_zh": "均匀静止液体表压",
+        "original_formula": "p = ρ g h",
+        "notes_zh": "输出相对液面的压强增量；绝对压强还须加上液面外压。"
+      },
+      "object_model": "uniform_fluid",
+      "reference_frame": "declared",
+      "quantities": {
+        "density": {
+          "kind": "scalar",
+          "dimension": [
+            1,
+            -3,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "unit": "kg/m^3",
+          "domain": "positive",
+          "object": "body",
+          "frame": "not_applicable"
+        },
+        "g": {
+          "kind": "scalar",
+          "dimension": [
+            0,
+            1,
+            -2,
+            0,
+            0,
+            0,
+            0
+          ],
+          "unit": "m/s^2",
+          "domain": "positive",
+          "object": "body",
+          "frame": "not_applicable"
+        },
+        "depth": {
+          "kind": "scalar",
+          "dimension": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "unit": "m",
+          "domain": "nonnegative",
+          "object": "body",
+          "frame": "not_applicable"
+        },
+        "pressure": {
+          "kind": "scalar",
+          "dimension": [
+            1,
+            -1,
+            -2,
+            0,
+            0,
+            0,
+            0
+          ],
+          "unit": "Pa",
+          "domain": "nonnegative",
+          "object": "body",
+          "frame": "not_applicable"
+        }
+      },
+      "conditions": [
+        {
+          "fact": "fluid_static",
+          "equals": true
+        },
+        {
+          "fact": "density_constant",
+          "equals": true
+        },
+        {
+          "fact": "uniform_gravity",
+          "equals": true
+        },
+        {
+          "fact": "pressure_is_gauge",
+          "equals": true
+        }
+      ],
+      "force_dependence": {
+        "mode": "not_used",
+        "allowed_dependencies": []
+      },
+      "initial_conditions": [],
+      "boundary_conditions": "none_assumed",
+      "laws": [
+        {
+          "id": "law",
+          "equation": {
+            "op": "eq",
+            "args": [
+              {
+                "op": "var",
+                "id": "pressure"
+              },
+              {
+                "op": "mul",
+                "args": [
+                  {
+                    "op": "var",
+                    "id": "density"
+                  },
+                  {
+                    "op": "var",
+                    "id": "g"
+                  },
+                  {
+                    "op": "var",
+                    "id": "depth"
+                  }
+                ]
+              }
+            ]
+          },
+          "principles": [
+            "hydrostatic_gauge_pressure"
+          ]
+        }
+      ],
+      "steps": [
+        {
+          "id": "calculate",
+          "target": "pressure",
+          "expression": {
+            "op": "mul",
+            "args": [
+              {
+                "op": "var",
+                "id": "density"
+              },
+              {
+                "op": "var",
+                "id": "g"
+              },
+              {
+                "op": "var",
+                "id": "depth"
+              }
+            ]
+          },
+          "principles": [
+            "hydrostatic_gauge_pressure"
+          ],
+          "law_id": "law",
+          "rewrite": "direct"
+        }
+      ],
+      "conclusions": [
+        "pressure"
+      ]
+    },
+    {
+      "id": "archimedes_buoyancy",
+      "concept_id": "physics_8b_rjb_cpt51",
+      "source_nodes": [
+        "physics_8b_rjb_cpt51",
+        "physics_8b_rjb_cpt59"
+      ],
+      "batch": 2,
+      "variant_of": null,
+      "introduced_at": "physics_8b_rjb_ch10_s1",
+      "stage": "middle",
+      "status": "ready",
+      "display": {
+        "name_zh": "阿基米德浮力大小",
+        "original_formula": "F浮 = ρ液 g V排",
+        "notes_zh": "仅在结构化条件已建立时执行；原文字段不参与求值。"
+      },
+      "object_model": "uniform_fluid",
+      "reference_frame": "declared",
+      "quantities": {
+        "density": {
+          "kind": "scalar",
+          "dimension": [
+            1,
+            -3,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "unit": "kg/m^3",
+          "domain": "positive",
+          "object": "body",
+          "frame": "not_applicable"
+        },
+        "g": {
+          "kind": "scalar",
+          "dimension": [
+            0,
+            1,
+            -2,
+            0,
+            0,
+            0,
+            0
+          ],
+          "unit": "m/s^2",
+          "domain": "positive",
+          "object": "body",
+          "frame": "not_applicable"
+        },
+        "displaced_volume": {
+          "kind": "scalar",
+          "dimension": [
+            0,
+            3,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "unit": "m^3",
+          "domain": "nonnegative",
+          "object": "body",
+          "frame": "not_applicable"
+        },
+        "buoyancy": {
+          "kind": "scalar",
+          "dimension": [
+            1,
+            1,
+            -2,
+            0,
+            0,
+            0,
+            0
+          ],
+          "unit": "N",
+          "domain": "nonnegative",
+          "object": "body",
+          "frame": "not_applicable"
+        }
+      },
+      "conditions": [
+        {
+          "fact": "fluid_static",
+          "equals": true
+        },
+        {
+          "fact": "density_constant",
+          "equals": true
+        },
+        {
+          "fact": "uniform_gravity",
+          "equals": true
+        }
+      ],
+      "force_dependence": {
+        "mode": "not_used",
+        "allowed_dependencies": []
+      },
+      "initial_conditions": [],
+      "boundary_conditions": "none_assumed",
+      "laws": [
+        {
+          "id": "law",
+          "equation": {
+            "op": "eq",
+            "args": [
+              {
+                "op": "var",
+                "id": "buoyancy"
+              },
+              {
+                "op": "mul",
+                "args": [
+                  {
+                    "op": "var",
+                    "id": "density"
+                  },
+                  {
+                    "op": "var",
+                    "id": "g"
+                  },
+                  {
+                    "op": "var",
+                    "id": "displaced_volume"
+                  }
+                ]
+              }
+            ]
+          },
+          "principles": [
+            "archimedes_buoyancy"
+          ]
+        }
+      ],
+      "steps": [
+        {
+          "id": "calculate",
+          "target": "buoyancy",
+          "expression": {
+            "op": "mul",
+            "args": [
+              {
+                "op": "var",
+                "id": "density"
+              },
+              {
+                "op": "var",
+                "id": "g"
+              },
+              {
+                "op": "var",
+                "id": "displaced_volume"
+              }
+            ]
+          },
+          "principles": [
+            "archimedes_buoyancy"
+          ],
+          "law_id": "law",
+          "rewrite": "direct"
+        }
+      ],
+      "conclusions": [
+        "buoyancy"
+      ]
+    },
+    {
+      "id": "displaced_fluid_weight",
+      "concept_id": "physics_8b_rjb_cpt58",
+      "source_nodes": [
+        "physics_8b_rjb_cpt58"
+      ],
+      "batch": 2,
+      "variant_of": "archimedes_buoyancy",
+      "introduced_at": "physics_8b_rjb_ch10_s2",
+      "stage": "middle",
+      "status": "ready",
+      "display": {
+        "name_zh": "排开液体的重量",
+        "original_formula": "G排 = ρ液 V排 g",
+        "notes_zh": "相同计算式中的对象为被排开的液体；与浮力通过阿基米德关系关联，不混同对象身份。"
+      },
+      "object_model": "uniform_fluid",
+      "reference_frame": "declared",
+      "quantities": {
+        "density": {
+          "kind": "scalar",
+          "dimension": [
+            1,
+            -3,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "unit": "kg/m^3",
+          "domain": "positive",
+          "object": "body",
+          "frame": "not_applicable"
+        },
+        "g": {
+          "kind": "scalar",
+          "dimension": [
+            0,
+            1,
+            -2,
+            0,
+            0,
+            0,
+            0
+          ],
+          "unit": "m/s^2",
+          "domain": "positive",
+          "object": "body",
+          "frame": "not_applicable"
+        },
+        "displaced_volume": {
+          "kind": "scalar",
+          "dimension": [
+            0,
+            3,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "unit": "m^3",
+          "domain": "nonnegative",
+          "object": "body",
+          "frame": "not_applicable"
+        },
+        "weight": {
+          "kind": "scalar",
+          "dimension": [
+            1,
+            1,
+            -2,
+            0,
+            0,
+            0,
+            0
+          ],
+          "unit": "N",
+          "domain": "nonnegative",
+          "object": "body",
+          "frame": "not_applicable"
+        }
+      },
+      "conditions": [
+        {
+          "fact": "density_constant",
+          "equals": true
+        },
+        {
+          "fact": "uniform_gravity",
+          "equals": true
+        }
+      ],
+      "force_dependence": {
+        "mode": "not_used",
+        "allowed_dependencies": []
+      },
+      "initial_conditions": [],
+      "boundary_conditions": "none_assumed",
+      "laws": [
+        {
+          "id": "law",
+          "equation": {
+            "op": "eq",
+            "args": [
+              {
+                "op": "var",
+                "id": "weight"
+              },
+              {
+                "op": "mul",
+                "args": [
+                  {
+                    "op": "var",
+                    "id": "density"
+                  },
+                  {
+                    "op": "var",
+                    "id": "g"
+                  },
+                  {
+                    "op": "var",
+                    "id": "displaced_volume"
+                  }
+                ]
+              }
+            ]
+          },
+          "principles": [
+            "displaced_fluid_weight"
+          ]
+        }
+      ],
+      "steps": [
+        {
+          "id": "calculate",
+          "target": "weight",
+          "expression": {
+            "op": "mul",
+            "args": [
+              {
+                "op": "var",
+                "id": "density"
+              },
+              {
+                "op": "var",
+                "id": "g"
+              },
+              {
+                "op": "var",
+                "id": "displaced_volume"
+              }
+            ]
+          },
+          "principles": [
+            "displaced_fluid_weight"
+          ],
+          "law_id": "law",
+          "rewrite": "direct"
+        }
+      ],
+      "conclusions": [
+        "weight"
+      ]
+    },
+    {
+      "id": "density_volume_direction",
+      "concept_id": "physics_8b_rjb_cpt60",
+      "source_nodes": [
+        "physics_8b_rjb_cpt60"
+      ],
+      "batch": 2,
+      "variant_of": "bulk_average_density",
+      "introduced_at": "physics_8b_rjb_ch10_s2",
+      "stage": "middle",
+      "status": "ready",
+      "display": {
+        "name_zh": "密度关系的求体积方向",
+        "original_formula": "V = m / ρ",
+        "notes_zh": "复用密度关系；该记录表示求体积的运算方向，不新增密度原理。"
+      },
+      "object_model": "bulk_body",
+      "reference_frame": "declared",
+      "quantities": {
+        "mass": {
+          "kind": "scalar",
+          "dimension": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "unit": "kg",
+          "domain": "positive",
+          "object": "body",
+          "frame": "not_applicable"
+        },
+        "density": {
+          "kind": "scalar",
+          "dimension": [
+            1,
+            -3,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "unit": "kg/m^3",
+          "domain": "positive",
+          "object": "body",
+          "frame": "not_applicable"
+        },
+        "volume": {
+          "kind": "scalar",
+          "dimension": [
+            0,
+            3,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "unit": "m^3",
+          "domain": "positive",
+          "object": "body",
+          "frame": "not_applicable"
+        }
+      },
+      "conditions": [],
+      "force_dependence": {
+        "mode": "not_used",
+        "allowed_dependencies": []
+      },
+      "initial_conditions": [],
+      "boundary_conditions": "none_assumed",
+      "laws": [
+        {
+          "id": "law",
+          "equation": {
+            "op": "eq",
+            "args": [
+              {
+                "op": "var",
+                "id": "volume"
+              },
+              {
+                "op": "div",
+                "args": [
+                  {
+                    "op": "var",
+                    "id": "mass"
+                  },
+                  {
+                    "op": "var",
+                    "id": "density"
+                  }
+                ]
+              }
+            ]
+          },
+          "principles": [
+            "density_volume_direction"
+          ]
+        }
+      ],
+      "steps": [
+        {
+          "id": "calculate",
+          "target": "volume",
+          "expression": {
+            "op": "div",
+            "args": [
+              {
+                "op": "var",
+                "id": "mass"
+              },
+              {
+                "op": "var",
+                "id": "density"
+              }
+            ]
+          },
+          "principles": [
+            "density_volume_direction"
+          ],
+          "law_id": "law",
+          "rewrite": "direct"
+        }
+      ],
+      "conclusions": [
+        "volume"
+      ]
+    },
+    {
+      "id": "average_power",
+      "concept_id": "physics_8b_rjb_cpt68",
+      "source_nodes": [
+        "physics_8b_rjb_cpt68"
+      ],
+      "batch": 2,
+      "variant_of": null,
+      "introduced_at": "physics_8b_rjb_ch11_s2",
+      "stage": "middle",
+      "status": "ready",
+      "display": {
+        "name_zh": "时间区间内平均输出功率",
+        "original_formula": "P = W / t",
+        "notes_zh": "仅在结构化条件已建立时执行；原文字段不参与求值。"
+      },
+      "object_model": "point_particle",
+      "reference_frame": "declared",
+      "quantities": {
+        "work": {
+          "kind": "scalar",
+          "dimension": [
+            1,
+            2,
+            -2,
+            0,
+            0,
+            0,
+            0
+          ],
+          "unit": "J",
+          "domain": "nonnegative",
+          "object": "body",
+          "frame": "not_applicable"
+        },
+        "duration": {
+          "kind": "scalar",
+          "dimension": [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "unit": "s",
+          "domain": "positive",
+          "object": "body",
+          "frame": "not_applicable"
+        },
+        "power": {
+          "kind": "scalar",
+          "dimension": [
+            1,
+            2,
+            -3,
+            0,
+            0,
+            0,
+            0
+          ],
+          "unit": "W",
+          "domain": "nonnegative",
+          "object": "body",
+          "frame": "not_applicable"
+        }
+      },
+      "conditions": [],
+      "force_dependence": {
+        "mode": "not_used",
+        "allowed_dependencies": []
+      },
+      "initial_conditions": [],
+      "boundary_conditions": "none_assumed",
+      "laws": [
+        {
+          "id": "law",
+          "equation": {
+            "op": "eq",
+            "args": [
+              {
+                "op": "var",
+                "id": "power"
+              },
+              {
+                "op": "div",
+                "args": [
+                  {
+                    "op": "var",
+                    "id": "work"
+                  },
+                  {
+                    "op": "var",
+                    "id": "duration"
+                  }
+                ]
+              }
+            ]
+          },
+          "principles": [
+            "average_power"
+          ]
+        }
+      ],
+      "steps": [
+        {
+          "id": "calculate",
+          "target": "power",
+          "expression": {
+            "op": "div",
+            "args": [
+              {
+                "op": "var",
+                "id": "work"
+              },
+              {
+                "op": "var",
+                "id": "duration"
+              }
+            ]
+          },
+          "principles": [
+            "average_power"
+          ],
+          "law_id": "law",
+          "rewrite": "direct"
+        }
+      ],
+      "conclusions": [
+        "power"
+      ]
+    },
+    {
+      "id": "near_surface_potential_energy",
+      "concept_id": "physics_8b_rjb_cpt75",
+      "source_nodes": [
+        "physics_8b_rjb_cpt75"
+      ],
+      "batch": 2,
+      "variant_of": null,
+      "introduced_at": "physics_8b_rjb_ch11_s3",
+      "stage": "middle",
+      "status": "ready",
+      "display": {
+        "name_zh": "近地重力势能",
+        "original_formula": "E_p = mgh",
+        "notes_zh": "仅在结构化条件已建立时执行；原文字段不参与求值。"
+      },
+      "object_model": "point_particle",
+      "reference_frame": "declared",
+      "quantities": {
+        "mass": {
+          "kind": "scalar",
+          "dimension": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "unit": "kg",
+          "domain": "positive",
+          "object": "body",
+          "frame": "not_applicable"
+        },
+        "g": {
+          "kind": "scalar",
+          "dimension": [
+            0,
+            1,
+            -2,
+            0,
+            0,
+            0,
+            0
+          ],
+          "unit": "m/s^2",
+          "domain": "positive",
+          "object": "body",
+          "frame": "not_applicable"
+        },
+        "height": {
+          "kind": "scalar",
+          "dimension": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "unit": "m",
+          "domain": "real",
+          "object": "body",
+          "frame": "not_applicable"
+        },
+        "energy": {
+          "kind": "scalar",
+          "dimension": [
+            1,
+            2,
+            -2,
+            0,
+            0,
+            0,
+            0
+          ],
+          "unit": "J",
+          "domain": "real",
+          "object": "body",
+          "frame": "not_applicable"
+        }
+      },
+      "conditions": [
+        {
+          "fact": "near_surface",
+          "equals": true
+        },
+        {
+          "fact": "uniform_gravity",
+          "equals": true
+        },
+        {
+          "fact": "height_reference_declared",
+          "equals": true
+        }
+      ],
+      "force_dependence": {
+        "mode": "not_used",
+        "allowed_dependencies": []
+      },
+      "initial_conditions": [],
+      "boundary_conditions": "none_assumed",
+      "laws": [
+        {
+          "id": "law",
+          "equation": {
+            "op": "eq",
+            "args": [
+              {
+                "op": "var",
+                "id": "energy"
+              },
+              {
+                "op": "mul",
+                "args": [
+                  {
+                    "op": "var",
+                    "id": "mass"
+                  },
+                  {
+                    "op": "var",
+                    "id": "g"
+                  },
+                  {
+                    "op": "var",
+                    "id": "height"
+                  }
+                ]
+              }
+            ]
+          },
+          "principles": [
+            "near_surface_potential_energy"
+          ]
+        }
+      ],
+      "steps": [
+        {
+          "id": "calculate",
+          "target": "energy",
+          "expression": {
+            "op": "mul",
+            "args": [
+              {
+                "op": "var",
+                "id": "mass"
+              },
+              {
+                "op": "var",
+                "id": "g"
+              },
+              {
+                "op": "var",
+                "id": "height"
+              }
+            ]
+          },
+          "principles": [
+            "near_surface_potential_energy"
+          ],
+          "law_id": "law",
+          "rewrite": "direct"
+        }
+      ],
+      "conclusions": [
+        "energy"
+      ]
+    },
+    {
+      "id": "two_force_lever_balance",
+      "concept_id": "physics_8b_rjb_cpt84",
+      "source_nodes": [
+        "physics_8b_rjb_cpt84"
+      ],
+      "batch": 2,
+      "variant_of": null,
+      "introduced_at": "physics_8b_rjb_ch12_s1",
+      "stage": "middle",
+      "status": "ready",
+      "display": {
+        "name_zh": "双力矩平衡的求力方向",
+        "original_formula": "F1*l1 = F2*l2",
+        "notes_zh": "力臂为到力作用线的垂直距离；两力矩方向相反，不用杠杆长度替代力臂。"
+      },
+      "object_model": "rigid_lever",
+      "reference_frame": "declared",
+      "quantities": {
+        "force1": {
+          "kind": "scalar",
+          "dimension": [
+            1,
+            1,
+            -2,
+            0,
+            0,
+            0,
+            0
+          ],
+          "unit": "N",
+          "domain": "nonnegative",
+          "object": "body",
+          "frame": "not_applicable"
+        },
+        "arm1": {
+          "kind": "scalar",
+          "dimension": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "unit": "m",
+          "domain": "nonnegative",
+          "object": "body",
+          "frame": "not_applicable"
+        },
+        "arm2": {
+          "kind": "scalar",
+          "dimension": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "unit": "m",
+          "domain": "positive",
+          "object": "body",
+          "frame": "not_applicable"
+        },
+        "force2": {
+          "kind": "scalar",
+          "dimension": [
+            1,
+            1,
+            -2,
+            0,
+            0,
+            0,
+            0
+          ],
+          "unit": "N",
+          "domain": "nonnegative",
+          "object": "body",
+          "frame": "not_applicable"
+        }
+      },
+      "conditions": [
+        {
+          "fact": "static_balance",
+          "equals": true
+        }
+      ],
+      "force_dependence": {
+        "mode": "not_used",
+        "allowed_dependencies": []
+      },
+      "initial_conditions": [],
+      "boundary_conditions": "none_assumed",
+      "laws": [
+        {
+          "id": "law",
+          "equation": {
+            "op": "eq",
+            "args": [
+              {
+                "op": "var",
+                "id": "force2"
+              },
+              {
+                "op": "div",
+                "args": [
+                  {
+                    "op": "mul",
+                    "args": [
+                      {
+                        "op": "var",
+                        "id": "force1"
+                      },
+                      {
+                        "op": "var",
+                        "id": "arm1"
+                      }
+                    ]
+                  },
+                  {
+                    "op": "var",
+                    "id": "arm2"
+                  }
+                ]
+              }
+            ]
+          },
+          "principles": [
+            "two_force_lever_balance"
+          ]
+        }
+      ],
+      "steps": [
+        {
+          "id": "calculate",
+          "target": "force2",
+          "expression": {
+            "op": "div",
+            "args": [
+              {
+                "op": "mul",
+                "args": [
+                  {
+                    "op": "var",
+                    "id": "force1"
+                  },
+                  {
+                    "op": "var",
+                    "id": "arm1"
+                  }
+                ]
+              },
+              {
+                "op": "var",
+                "id": "arm2"
+              }
+            ]
+          },
+          "principles": [
+            "two_force_lever_balance"
+          ],
+          "law_id": "law",
+          "rewrite": "direct"
+        }
+      ],
+      "conclusions": [
+        "force2"
+      ]
+    },
+    {
+      "id": "total_work_accounting",
+      "concept_id": "physics_8b_rjb_cpt95",
+      "source_nodes": [
+        "physics_8b_rjb_cpt95"
+      ],
+      "batch": 2,
+      "variant_of": null,
+      "introduced_at": "physics_8b_rjb_ch12_s3",
+      "stage": "middle",
+      "status": "ready",
+      "display": {
+        "name_zh": "总功的能量核算",
+        "original_formula": "W总 = W有 + W额外",
+        "notes_zh": "仅在结构化条件已建立时执行；原文字段不参与求值。"
+      },
+      "object_model": "bulk_body",
+      "reference_frame": "declared",
+      "quantities": {
+        "useful_work": {
+          "kind": "scalar",
+          "dimension": [
+            1,
+            2,
+            -2,
+            0,
+            0,
+            0,
+            0
+          ],
+          "unit": "J",
+          "domain": "nonnegative",
+          "object": "body",
+          "frame": "not_applicable"
+        },
+        "extra_work": {
+          "kind": "scalar",
+          "dimension": [
+            1,
+            2,
+            -2,
+            0,
+            0,
+            0,
+            0
+          ],
+          "unit": "J",
+          "domain": "nonnegative",
+          "object": "body",
+          "frame": "not_applicable"
+        },
+        "total_work": {
+          "kind": "scalar",
+          "dimension": [
+            1,
+            2,
+            -2,
+            0,
+            0,
+            0,
+            0
+          ],
+          "unit": "J",
+          "domain": "nonnegative",
+          "object": "body",
+          "frame": "not_applicable"
+        }
+      },
+      "conditions": [
+        {
+          "fact": "input_output_same_interval",
+          "equals": true
+        }
+      ],
+      "force_dependence": {
+        "mode": "not_used",
+        "allowed_dependencies": []
+      },
+      "initial_conditions": [],
+      "boundary_conditions": "none_assumed",
+      "laws": [
+        {
+          "id": "law",
+          "equation": {
+            "op": "eq",
+            "args": [
+              {
+                "op": "var",
+                "id": "total_work"
+              },
+              {
+                "op": "add",
+                "args": [
+                  {
+                    "op": "var",
+                    "id": "useful_work"
+                  },
+                  {
+                    "op": "var",
+                    "id": "extra_work"
+                  }
+                ]
+              }
+            ]
+          },
+          "principles": [
+            "total_work_accounting"
+          ]
+        }
+      ],
+      "steps": [
+        {
+          "id": "calculate",
+          "target": "total_work",
+          "expression": {
+            "op": "add",
+            "args": [
+              {
+                "op": "var",
+                "id": "useful_work"
+              },
+              {
+                "op": "var",
+                "id": "extra_work"
+              }
+            ]
+          },
+          "principles": [
+            "total_work_accounting"
+          ],
+          "law_id": "law",
+          "rewrite": "direct"
+        }
+      ],
+      "conclusions": [
+        "total_work"
+      ]
+    },
+    {
+      "id": "mechanical_efficiency",
+      "concept_id": "physics_8b_rjb_cpt96",
+      "source_nodes": [
+        "physics_8b_rjb_cpt96"
+      ],
+      "batch": 2,
+      "variant_of": null,
+      "introduced_at": "physics_8b_rjb_ch12_s3",
+      "stage": "middle",
+      "status": "ready",
+      "display": {
+        "name_zh": "同一过程机械效率",
+        "original_formula": "η = W有 / W总",
+        "notes_zh": "仅在结构化条件已建立时执行；原文字段不参与求值。"
+      },
+      "object_model": "bulk_body",
+      "reference_frame": "declared",
+      "quantities": {
+        "useful_work": {
+          "kind": "scalar",
+          "dimension": [
+            1,
+            2,
+            -2,
+            0,
+            0,
+            0,
+            0
+          ],
+          "unit": "J",
+          "domain": "nonnegative",
+          "object": "body",
+          "frame": "not_applicable"
+        },
+        "total_work": {
+          "kind": "scalar",
+          "dimension": [
+            1,
+            2,
+            -2,
+            0,
+            0,
+            0,
+            0
+          ],
+          "unit": "J",
+          "domain": "positive",
+          "object": "body",
+          "frame": "not_applicable"
+        },
+        "efficiency": {
+          "kind": "scalar",
+          "dimension": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "unit": "1",
+          "domain": "nonnegative",
+          "object": "body",
+          "frame": "not_applicable"
+        }
+      },
+      "conditions": [
+        {
+          "fact": "input_output_same_interval",
+          "equals": true
+        }
+      ],
+      "force_dependence": {
+        "mode": "not_used",
+        "allowed_dependencies": []
+      },
+      "initial_conditions": [],
+      "boundary_conditions": "none_assumed",
+      "laws": [
+        {
+          "id": "law",
+          "equation": {
+            "op": "eq",
+            "args": [
+              {
+                "op": "var",
+                "id": "efficiency"
+              },
+              {
+                "op": "div",
+                "args": [
+                  {
+                    "op": "var",
+                    "id": "useful_work"
+                  },
+                  {
+                    "op": "var",
+                    "id": "total_work"
+                  }
+                ]
+              }
+            ]
+          },
+          "principles": [
+            "mechanical_efficiency"
+          ]
+        }
+      ],
+      "steps": [
+        {
+          "id": "calculate",
+          "target": "efficiency",
+          "expression": {
+            "op": "div",
+            "args": [
+              {
+                "op": "var",
+                "id": "useful_work"
+              },
+              {
+                "op": "var",
+                "id": "total_work"
+              }
+            ]
+          },
+          "principles": [
+            "mechanical_efficiency"
+          ],
+          "law_id": "law",
+          "rewrite": "direct"
+        }
+      ],
+      "conclusions": [
+        "efficiency"
+      ],
+      "constraints": [
+        {
+          "op": "le",
+          "args": [
+            {
+              "op": "var",
+              "id": "useful_work"
+            },
+            {
+              "op": "var",
+              "id": "total_work"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "signed_displacement",
+      "concept_id": "physics_bx1_rjb_cpt10",
+      "source_nodes": [
+        "physics_bx1_rjb_cpt10"
+      ],
+      "batch": 2,
+      "variant_of": null,
+      "introduced_at": "physics_bx1_rjb_ch1_s2",
+      "stage": "high",
+      "status": "ready",
+      "display": {
+        "name_zh": "同一坐标系中的位移分量",
+        "original_formula": "Δx = x₂ - x₁",
+        "notes_zh": "仅在结构化条件已建立时执行；原文字段不参与求值。"
+      },
+      "object_model": "point_particle",
+      "reference_frame": "inertial",
+      "quantities": {
+        "initial_position": {
+          "kind": "scalar",
+          "dimension": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "unit": "m",
+          "domain": "real",
+          "object": "body",
+          "frame": "not_applicable"
+        },
+        "final_position": {
+          "kind": "scalar",
+          "dimension": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "unit": "m",
+          "domain": "real",
+          "object": "body",
+          "frame": "not_applicable"
+        },
+        "displacement": {
+          "kind": "scalar",
+          "dimension": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "unit": "m",
+          "domain": "real",
+          "object": "body",
+          "frame": "not_applicable"
+        }
+      },
+      "conditions": [
+        {
+          "fact": "axis_declared",
+          "equals": true
+        }
+      ],
+      "force_dependence": {
+        "mode": "not_used",
+        "allowed_dependencies": []
+      },
+      "initial_conditions": [],
+      "boundary_conditions": "none_assumed",
+      "laws": [
+        {
+          "id": "law",
+          "equation": {
+            "op": "eq",
+            "args": [
+              {
+                "op": "var",
+                "id": "displacement"
+              },
+              {
+                "op": "sub",
+                "args": [
+                  {
+                    "op": "var",
+                    "id": "final_position"
+                  },
+                  {
+                    "op": "var",
+                    "id": "initial_position"
+                  }
+                ]
+              }
+            ]
+          },
+          "principles": [
+            "signed_displacement"
+          ]
+        }
+      ],
+      "steps": [
+        {
+          "id": "calculate",
+          "target": "displacement",
+          "expression": {
+            "op": "sub",
+            "args": [
+              {
+                "op": "var",
+                "id": "final_position"
+              },
+              {
+                "op": "var",
+                "id": "initial_position"
+              }
+            ]
+          },
+          "principles": [
+            "signed_displacement"
+          ],
+          "law_id": "law",
+          "rewrite": "direct"
+        }
+      ],
+      "conclusions": [
+        "displacement"
+      ]
+    },
+    {
+      "id": "average_acceleration_vector",
+      "concept_id": "physics_bx1_rjb_cpt21",
+      "source_nodes": [
+        "physics_bx1_rjb_cpt21"
+      ],
+      "batch": 2,
+      "variant_of": null,
+      "introduced_at": "physics_bx1_rjb_ch1_s4",
+      "stage": "high",
+      "status": "ready",
+      "display": {
+        "name_zh": "时间区间内平均加速度",
+        "original_formula": "a = Δv / Δt",
+        "notes_zh": "有限时间区间的速度变化量除以时间；不无条件等同瞬时加速度。"
+      },
+      "object_model": "point_particle",
+      "reference_frame": "inertial",
+      "quantities": {
+        "initial_velocity": {
+          "kind": "vector",
+          "dimension": [
+            0,
+            1,
+            -1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "unit": "m/s",
+          "domain": "real",
+          "object": "body",
+          "frame": "lab"
+        },
+        "final_velocity": {
+          "kind": "vector",
+          "dimension": [
+            0,
+            1,
+            -1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "unit": "m/s",
+          "domain": "real",
+          "object": "body",
+          "frame": "lab"
+        },
+        "duration": {
+          "kind": "scalar",
+          "dimension": [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "unit": "s",
+          "domain": "positive",
+          "object": "body",
+          "frame": "not_applicable"
+        },
+        "acceleration": {
+          "kind": "vector",
+          "dimension": [
+            0,
+            1,
+            -2,
+            0,
+            0,
+            0,
+            0
+          ],
+          "unit": "m/s^2",
+          "domain": "real",
+          "object": "body",
+          "frame": "lab"
+        }
+      },
+      "conditions": [],
+      "force_dependence": {
+        "mode": "not_used",
+        "allowed_dependencies": []
+      },
+      "initial_conditions": [],
+      "boundary_conditions": "none_assumed",
+      "laws": [
+        {
+          "id": "law",
+          "equation": {
+            "op": "eq",
+            "args": [
+              {
+                "op": "var",
+                "id": "acceleration"
+              },
+              {
+                "op": "div",
+                "args": [
+                  {
+                    "op": "sub",
+                    "args": [
+                      {
+                        "op": "var",
+                        "id": "final_velocity"
+                      },
+                      {
+                        "op": "var",
+                        "id": "initial_velocity"
+                      }
+                    ]
+                  },
+                  {
+                    "op": "var",
+                    "id": "duration"
+                  }
+                ]
+              }
+            ]
+          },
+          "principles": [
+            "average_acceleration_vector"
+          ]
+        }
+      ],
+      "steps": [
+        {
+          "id": "calculate",
+          "target": "acceleration",
+          "expression": {
+            "op": "div",
+            "args": [
+              {
+                "op": "sub",
+                "args": [
+                  {
+                    "op": "var",
+                    "id": "final_velocity"
+                  },
+                  {
+                    "op": "var",
+                    "id": "initial_velocity"
+                  }
+                ]
+              },
+              {
+                "op": "var",
+                "id": "duration"
+              }
+            ]
+          },
+          "principles": [
+            "average_acceleration_vector"
+          ],
+          "law_id": "law",
+          "rewrite": "direct"
+        }
+      ],
+      "conclusions": [
+        "acceleration"
+      ]
+    },
+    {
+      "id": "velocity_change_vector",
+      "concept_id": "physics_bx1_rjb_cpt22",
+      "source_nodes": [
+        "physics_bx1_rjb_cpt22"
+      ],
+      "batch": 2,
+      "variant_of": null,
+      "introduced_at": "physics_bx1_rjb_ch1_s4",
+      "stage": "high",
+      "status": "ready",
+      "display": {
+        "name_zh": "速度变化矢量",
+        "original_formula": "Δv = v2 - v1",
+        "notes_zh": "仅在结构化条件已建立时执行；原文字段不参与求值。"
+      },
+      "object_model": "point_particle",
+      "reference_frame": "inertial",
+      "quantities": {
+        "initial_velocity": {
+          "kind": "vector",
+          "dimension": [
+            0,
+            1,
+            -1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "unit": "m/s",
+          "domain": "real",
+          "object": "body",
+          "frame": "lab"
+        },
+        "final_velocity": {
+          "kind": "vector",
+          "dimension": [
+            0,
+            1,
+            -1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "unit": "m/s",
+          "domain": "real",
+          "object": "body",
+          "frame": "lab"
+        },
+        "change": {
+          "kind": "vector",
+          "dimension": [
+            0,
+            1,
+            -1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "unit": "m/s",
+          "domain": "real",
+          "object": "body",
+          "frame": "lab"
+        }
+      },
+      "conditions": [],
+      "force_dependence": {
+        "mode": "not_used",
+        "allowed_dependencies": []
+      },
+      "initial_conditions": [],
+      "boundary_conditions": "none_assumed",
+      "laws": [
+        {
+          "id": "law",
+          "equation": {
+            "op": "eq",
+            "args": [
+              {
+                "op": "var",
+                "id": "change"
+              },
+              {
+                "op": "sub",
+                "args": [
+                  {
+                    "op": "var",
+                    "id": "final_velocity"
+                  },
+                  {
+                    "op": "var",
+                    "id": "initial_velocity"
+                  }
+                ]
+              }
+            ]
+          },
+          "principles": [
+            "velocity_change_vector"
+          ]
+        }
+      ],
+      "steps": [
+        {
+          "id": "calculate",
+          "target": "change",
+          "expression": {
+            "op": "sub",
+            "args": [
+              {
+                "op": "var",
+                "id": "final_velocity"
+              },
+              {
+                "op": "var",
+                "id": "initial_velocity"
+              }
+            ]
+          },
+          "principles": [
+            "velocity_change_vector"
+          ],
+          "law_id": "law",
+          "rewrite": "direct"
+        }
+      ],
+      "conclusions": [
+        "change"
+      ]
+    },
+    {
+      "id": "hooke_restoring_component",
+      "concept_id": "physics_bx1_rjb_cpt38",
+      "source_nodes": [
+        "physics_bx1_rjb_cpt38",
+        "physics_xzxbx1_rjb_cpt30"
+      ],
+      "batch": 2,
+      "variant_of": null,
+      "introduced_at": "physics_bx1_rjb_ch3_s1",
+      "stage": "high",
+      "status": "ready",
+      "display": {
+        "name_zh": "弹性限度内弹簧回复力",
+        "original_formula": "F = k x",
+        "notes_zh": "相对自然长度的有向形变量，正轴固定；回复力分量与形变方向相反。源 F=kx 表示大小，本式显式保留方向。"
+      },
+      "object_model": "oscillator",
+      "reference_frame": "declared",
+      "quantities": {
+        "stiffness": {
+          "kind": "scalar",
+          "dimension": [
+            1,
+            0,
+            -2,
+            0,
+            0,
+            0,
+            0
+          ],
+          "unit": "N/m",
+          "domain": "positive",
+          "object": "body",
+          "frame": "not_applicable"
+        },
+        "extension": {
+          "kind": "scalar",
+          "dimension": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "unit": "m",
+          "domain": "real",
+          "object": "body",
+          "frame": "not_applicable"
+        },
+        "force": {
+          "kind": "scalar",
+          "dimension": [
+            1,
+            1,
+            -2,
+            0,
+            0,
+            0,
+            0
+          ],
+          "unit": "N",
+          "domain": "real",
+          "object": "body",
+          "frame": "not_applicable"
+        }
+      },
+      "conditions": [
+        {
+          "fact": "elastic_limit",
+          "equals": true
+        },
+        {
+          "fact": "axis_declared",
+          "equals": true
+        }
+      ],
+      "force_dependence": {
+        "mode": "not_used",
+        "allowed_dependencies": []
+      },
+      "initial_conditions": [],
+      "boundary_conditions": "none_assumed",
+      "laws": [
+        {
+          "id": "law",
+          "equation": {
+            "op": "eq",
+            "args": [
+              {
+                "op": "var",
+                "id": "force"
+              },
+              {
+                "op": "mul",
+                "args": [
+                  {
+                    "op": "number",
+                    "value": -1
+                  },
+                  {
+                    "op": "var",
+                    "id": "stiffness"
+                  },
+                  {
+                    "op": "var",
+                    "id": "extension"
+                  }
+                ]
+              }
+            ]
+          },
+          "principles": [
+            "hooke_restoring_component"
+          ]
+        }
+      ],
+      "steps": [
+        {
+          "id": "calculate",
+          "target": "force",
+          "expression": {
+            "op": "mul",
+            "args": [
+              {
+                "op": "number",
+                "value": -1
+              },
+              {
+                "op": "var",
+                "id": "stiffness"
+              },
+              {
+                "op": "var",
+                "id": "extension"
+              }
+            ]
+          },
+          "principles": [
+            "hooke_restoring_component"
+          ],
+          "law_id": "law",
+          "rewrite": "direct"
+        }
+      ],
+      "conclusions": [
+        "force"
+      ]
+    },
+    {
+      "id": "classical_momentum",
+      "concept_id": "physics_xzxbx1_rjb_cpt1",
+      "source_nodes": [
+        "physics_xzxbx1_rjb_cpt1"
+      ],
+      "batch": 2,
+      "variant_of": null,
+      "introduced_at": "physics_xzxbx1_rjb_ch1_s1",
+      "stage": "high",
+      "status": "ready",
+      "display": {
+        "name_zh": "经典定质量质点的动量",
+        "original_formula": "p = m v",
+        "notes_zh": "仅在结构化条件已建立时执行；原文字段不参与求值。"
+      },
+      "object_model": "point_particle",
+      "reference_frame": "inertial",
+      "quantities": {
+        "mass": {
+          "kind": "scalar",
+          "dimension": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "unit": "kg",
+          "domain": "positive",
+          "object": "body",
+          "frame": "not_applicable"
+        },
+        "velocity": {
+          "kind": "vector",
+          "dimension": [
+            0,
+            1,
+            -1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "unit": "m/s",
+          "domain": "real",
+          "object": "body",
+          "frame": "lab"
+        },
+        "momentum": {
+          "kind": "vector",
+          "dimension": [
+            1,
+            1,
+            -1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "unit": "kg*m/s",
+          "domain": "real",
+          "object": "body",
+          "frame": "lab"
+        }
+      },
+      "conditions": [
+        {
+          "fact": "classical_regime",
+          "equals": true
+        },
+        {
+          "fact": "mass_constant",
+          "equals": true
+        }
+      ],
+      "force_dependence": {
+        "mode": "not_used",
+        "allowed_dependencies": []
+      },
+      "initial_conditions": [],
+      "boundary_conditions": "none_assumed",
+      "laws": [
+        {
+          "id": "law",
+          "equation": {
+            "op": "eq",
+            "args": [
+              {
+                "op": "var",
+                "id": "momentum"
+              },
+              {
+                "op": "mul",
+                "args": [
+                  {
+                    "op": "var",
+                    "id": "mass"
+                  },
+                  {
+                    "op": "var",
+                    "id": "velocity"
+                  }
+                ]
+              }
+            ]
+          },
+          "principles": [
+            "classical_momentum"
+          ]
+        }
+      ],
+      "steps": [
+        {
+          "id": "calculate",
+          "target": "momentum",
+          "expression": {
+            "op": "mul",
+            "args": [
+              {
+                "op": "var",
+                "id": "mass"
+              },
+              {
+                "op": "var",
+                "id": "velocity"
+              }
+            ]
+          },
+          "principles": [
+            "classical_momentum"
+          ],
+          "law_id": "law",
+          "rewrite": "direct"
+        }
+      ],
+      "conclusions": [
+        "momentum"
+      ]
+    },
+    {
+      "id": "constant_force_impulse",
+      "concept_id": "physics_xzxbx1_rjb_cpt5",
+      "source_nodes": [
+        "physics_xzxbx1_rjb_cpt5"
+      ],
+      "batch": 2,
+      "variant_of": null,
+      "introduced_at": "physics_xzxbx1_rjb_ch1_s2",
+      "stage": "high",
+      "status": "ready",
+      "display": {
+        "name_zh": "恒合外力的冲量",
+        "original_formula": "FΔt = p' − p",
+        "notes_zh": "输出冲量；需另以动量定理将其与同一对象的动量变化关联。"
+      },
+      "object_model": "point_particle",
+      "reference_frame": "inertial",
+      "quantities": {
+        "force": {
+          "kind": "vector",
+          "dimension": [
+            1,
+            1,
+            -2,
+            0,
+            0,
+            0,
+            0
+          ],
+          "unit": "N",
+          "domain": "real",
+          "object": "body",
+          "frame": "lab"
+        },
+        "duration": {
+          "kind": "scalar",
+          "dimension": [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "unit": "s",
+          "domain": "nonnegative",
+          "object": "body",
+          "frame": "not_applicable"
+        },
+        "impulse": {
+          "kind": "vector",
+          "dimension": [
+            1,
+            1,
+            -1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "unit": "kg*m/s",
+          "domain": "real",
+          "object": "body",
+          "frame": "lab"
+        }
+      },
+      "conditions": [
+        {
+          "fact": "force_constant",
+          "equals": true
+        }
+      ],
+      "force_dependence": {
+        "mode": "not_used",
+        "allowed_dependencies": []
+      },
+      "initial_conditions": [],
+      "boundary_conditions": "none_assumed",
+      "laws": [
+        {
+          "id": "law",
+          "equation": {
+            "op": "eq",
+            "args": [
+              {
+                "op": "var",
+                "id": "impulse"
+              },
+              {
+                "op": "mul",
+                "args": [
+                  {
+                    "op": "var",
+                    "id": "force"
+                  },
+                  {
+                    "op": "var",
+                    "id": "duration"
+                  }
+                ]
+              }
+            ]
+          },
+          "principles": [
+            "constant_force_impulse"
+          ]
+        }
+      ],
+      "steps": [
+        {
+          "id": "calculate",
+          "target": "impulse",
+          "expression": {
+            "op": "mul",
+            "args": [
+              {
+                "op": "var",
+                "id": "force"
+              },
+              {
+                "op": "var",
+                "id": "duration"
+              }
+            ]
+          },
+          "principles": [
+            "constant_force_impulse"
+          ],
+          "law_id": "law",
+          "rewrite": "direct"
+        }
+      ],
+      "conclusions": [
+        "impulse"
       ]
     }
   ]

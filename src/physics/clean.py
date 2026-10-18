@@ -108,7 +108,9 @@ def clean_graph(graph, rules, aliases=None):
         if r["concept_id"] not in canonical: raise RuleError("rule has no source node")
         if r["introduced_at"] not in locations[r["concept_id"]]: raise RuleError("rule location absent from source graph")
         if r["stage"] != stage(r["introduced_at"]): raise RuleError("rule curriculum stage mismatch")
-        linked[r["concept_id"]].append(r["id"])
+        for source_id in r.get('source_nodes',[r['concept_id']]):
+            if source_id not in canonical: raise RuleError('rule has an unknown source node')
+            linked[source_id].append(r['id'])
     pending = [{"id":n["id"],"name":n["name"],"original_formula":n["properties"]["formula"],"status":"pending_semantic_conversion"} for n in out_nodes if "formula" in n.get("properties",{}) and n["id"] not in linked]
     review = [
         {"id":"physics_8a_rjb_cpt11","status":"pending_scope_review","reason":"definition describes vector velocity while formula and examples include scalar speed; do not execute display text"},

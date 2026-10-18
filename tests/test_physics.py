@@ -3,7 +3,7 @@ import json
 import unittest
 from collections import Counter, deque
 
-from physics.engine import ROOT, RuleError, available_rules, read_json, run_rule, validate_bundle
+from physics.engine import ROOT, CompiledRules, RuleError, available_rules, read_json, run_rule, validate_bundle
 from physics.clean import ALIASES, clean_graph
 
 
@@ -12,9 +12,11 @@ class PhysicsContractTests(unittest.TestCase):
     def setUpClass(cls):
         cls.bundle = read_json(ROOT / 'knowledge/physics/rules.json')
         cls.examples = read_json(ROOT / 'knowledge/physics/examples.json')
+        cls.compiled = CompiledRules(cls.bundle)
 
     def run_case(self, case, bundle=None):
-        return run_rule(bundle or self.bundle,case['rule_id'],case['bindings'],case['context'],case['boundary_conditions'])
+        engine=self.compiled if bundle is None else CompiledRules(bundle)
+        return engine.run(case['rule_id'],case['bindings'],case['context'],case['boundary_conditions'])
 
     def test_all_rules_and_independent_numeric_answers(self):
         self.assertTrue(validate_bundle(self.bundle))
@@ -33,7 +35,17 @@ class PhysicsContractTests(unittest.TestCase):
         b = copy.deepcopy(self.bundle)
         for r in b['rules']:
             r['display'] = {'name_zh':'无关名称','original_formula':'__import__("os").system("false")','notes_zh':'不能改变解释结果'}
-        for case in self.examples: self.assertEqual(self.run_case(case), self.run_case(case,b))
+        altered=CompiledRules(b)
+        for case in self.examples:
+            self.assertEqual(self.run_case(case),altered.run(case['rule_id'],case['bindings'],case['context'],case['boundary_conditions']))
+
+    def test_model_domains_and_constraints(self):
+        cases={x['rule_id']:x for x in self.examples}
+        for rid,key,value in [('mechanical_efficiency','useful_work',200),('average_pressure','area',0),('thin_lens_power','focal_length',0),('cycle_frequency','cycles',1.5)]:
+            c=copy.deepcopy(cases[rid]);c['bindings'][key]['value']=value
+            with self.subTest(rule=rid),self.assertRaises(RuleError):self.run_case(c)
+        c=copy.deepcopy(cases['hydrostatic_gauge_pressure']);c['context'].pop('fluid_static')
+        with self.assertRaises(RuleError):self.run_case(c)
 
     def test_unknown_operator_and_property_rejected_by_schema(self):
         for field in ['op','code']:

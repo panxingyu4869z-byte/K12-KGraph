@@ -18,18 +18,6 @@
     "status": "pending_semantic_conversion"
   },
   {
-    "id": "physics_8a_rjb_cpt20",
-    "name": "声速",
-    "original_formula": "v = s / t",
-    "status": "pending_semantic_conversion"
-  },
-  {
-    "id": "physics_8a_rjb_cpt24",
-    "name": "频率",
-    "original_formula": "f = 振动次数 / 时间",
-    "status": "pending_semantic_conversion"
-  },
-  {
     "id": "physics_8a_rjb_cpt71",
     "name": "光速",
     "original_formula": "c = 3×10^8 m/s",
@@ -42,45 +30,9 @@
     "status": "pending_semantic_conversion"
   },
   {
-    "id": "physics_8a_rjb_cpt118",
-    "name": "透镜焦度",
-    "original_formula": "Φ = 1 / f",
-    "status": "pending_semantic_conversion"
-  },
-  {
     "id": "physics_8a_rjb_cpt124",
     "name": "质量",
     "original_formula": "",
-    "status": "pending_semantic_conversion"
-  },
-  {
-    "id": "physics_8b_rjb_cpt16",
-    "name": "重力",
-    "original_formula": "G = mg",
-    "status": "pending_semantic_conversion"
-  },
-  {
-    "id": "physics_8b_rjb_cpt17",
-    "name": "重力与质量的关系",
-    "original_formula": "G = mg",
-    "status": "pending_semantic_conversion"
-  },
-  {
-    "id": "physics_8b_rjb_cpt29",
-    "name": "滑动摩擦力",
-    "original_formula": "F_f = \\mu F_N",
-    "status": "pending_semantic_conversion"
-  },
-  {
-    "id": "physics_8b_rjb_cpt33",
-    "name": "压强",
-    "original_formula": "p = F / S",
-    "status": "pending_semantic_conversion"
-  },
-  {
-    "id": "physics_8b_rjb_cpt37",
-    "name": "液体压强公式",
-    "original_formula": "p = ρ g h",
     "status": "pending_semantic_conversion"
   },
   {
@@ -90,87 +42,9 @@
     "status": "pending_semantic_conversion"
   },
   {
-    "id": "physics_8b_rjb_cpt44",
-    "name": "压强公式 p = ρgh",
-    "original_formula": "p = ρgh",
-    "status": "pending_semantic_conversion"
-  },
-  {
-    "id": "physics_8b_rjb_cpt48",
-    "name": "液体压强",
-    "original_formula": "p=ρgh",
-    "status": "pending_semantic_conversion"
-  },
-  {
-    "id": "physics_8b_rjb_cpt51",
-    "name": "浮力",
-    "original_formula": "F浮 = ρ液 g V排",
-    "status": "pending_semantic_conversion"
-  },
-  {
-    "id": "physics_8b_rjb_cpt58",
-    "name": "排开液体所受的重力",
-    "original_formula": "G排 = ρ液 V排 g",
-    "status": "pending_semantic_conversion"
-  },
-  {
-    "id": "physics_8b_rjb_cpt59",
-    "name": "阿基米德原理",
-    "original_formula": "F浮 = G排",
-    "status": "pending_semantic_conversion"
-  },
-  {
-    "id": "physics_8b_rjb_cpt60",
-    "name": "体积-质量-密度关系",
-    "original_formula": "V = m / ρ",
-    "status": "pending_semantic_conversion"
-  },
-  {
-    "id": "physics_8b_rjb_cpt66",
-    "name": "功的计算公式",
-    "original_formula": "W = F s",
-    "status": "pending_semantic_conversion"
-  },
-  {
-    "id": "physics_8b_rjb_cpt68",
-    "name": "功率",
-    "original_formula": "P = W / t",
-    "status": "pending_semantic_conversion"
-  },
-  {
     "id": "physics_8b_rjb_cpt72",
     "name": "动能",
     "original_formula": "与质量和速度有关",
-    "status": "pending_semantic_conversion"
-  },
-  {
-    "id": "physics_8b_rjb_cpt75",
-    "name": "重力势能",
-    "original_formula": "E_p = mgh",
-    "status": "pending_semantic_conversion"
-  },
-  {
-    "id": "physics_8b_rjb_cpt84",
-    "name": "杠杆平衡条件",
-    "original_formula": "F1*l1 = F2*l2",
-    "status": "pending_semantic_conversion"
-  },
-  {
-    "id": "physics_8b_rjb_cpt93",
-    "name": "有用功",
-    "original_formula": "W有 = F · h",
-    "status": "pending_semantic_conversion"
-  },
-  {
-    "id": "physics_8b_rjb_cpt95",
-    "name": "总功",
-    "original_formula": "W总 = W有 + W额外",
-    "status": "pending_semantic_conversion"
-  },
-  {
-    "id": "physics_8b_rjb_cpt96",
-    "name": "机械效率",
-    "original_formula": "η = W有 / W总",
     "status": "pending_semantic_conversion"
   },
   {
@@ -330,39 +204,9 @@
     "status": "pending_semantic_conversion"
   },
   {
-    "id": "physics_bx1_rjb_cpt10",
-    "name": "位移",
-    "original_formula": "Δx = x₂ - x₁",
-    "status": "pending_semantic_conversion"
-  },
-  {
-    "id": "physics_bx1_rjb_cpt21",
-    "name": "加速度",
-    "original_formula": "a = Δv / Δt",
-    "status": "pending_semantic_conversion"
-  },
-  {
-    "id": "physics_bx1_rjb_cpt22",
-    "name": "速度变化量",
-    "original_formula": "Δv = v2 - v1",
-    "status": "pending_semantic_conversion"
-  },
-  {
     "id": "physics_bx1_rjb_cpt36",
     "name": "自由落体运动",
     "original_formula": "v = g t; x = 1/2 g t^2",
-    "status": "pending_semantic_conversion"
-  },
-  {
-    "id": "physics_bx1_rjb_cpt38",
-    "name": "胡克定律",
-    "original_formula": "F = k x",
-    "status": "pending_semantic_conversion"
-  },
-  {
-    "id": "physics_bx1_rjb_cpt41",
-    "name": "动摩擦因数",
-    "original_formula": "F_f = μ F_压",
     "status": "pending_semantic_conversion"
   },
   {
@@ -393,12 +237,6 @@
     "id": "physics_bx1_rjb_cpt76",
     "name": "匀变速直线运动规律",
     "original_formula": "v^2 - v_0^2 = 2ax; x = v_0 t + 1/2 at^2",
-    "status": "pending_semantic_conversion"
-  },
-  {
-    "id": "physics_bx1_rjb_cpt77",
-    "name": "重力的测量",
-    "original_formula": "G = mg",
     "status": "pending_semantic_conversion"
   },
   {
@@ -1007,18 +845,6 @@
     "status": "pending_semantic_conversion"
   },
   {
-    "id": "physics_xzxbx1_rjb_cpt1",
-    "name": "动量",
-    "original_formula": "p = m v",
-    "status": "pending_semantic_conversion"
-  },
-  {
-    "id": "physics_xzxbx1_rjb_cpt5",
-    "name": "动量定理",
-    "original_formula": "FΔt = p' − p",
-    "status": "pending_semantic_conversion"
-  },
-  {
     "id": "physics_xzxbx1_rjb_cpt10",
     "name": "动量守恒定律",
     "original_formula": "m1 v1 + m2 v2 = m1 v1' + m2 v2'",
@@ -1064,12 +890,6 @@
     "id": "physics_xzxbx1_rjb_cpt29",
     "name": "回复力",
     "original_formula": "F = - (mg/l)x",
-    "status": "pending_semantic_conversion"
-  },
-  {
-    "id": "physics_xzxbx1_rjb_cpt30",
-    "name": "胡克定律（弹簧弹力）",
-    "original_formula": "F = -kx",
     "status": "pending_semantic_conversion"
   },
   {

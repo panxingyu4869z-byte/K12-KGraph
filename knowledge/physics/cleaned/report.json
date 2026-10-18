@@ -21,12 +21,12 @@
     "high": 1070
   },
   "rules": {
-    "ready": 8,
-    "covered_canonical_formula_nodes": 7,
-    "pending_formula_nodes": 228,
+    "ready": 29,
+    "covered_canonical_formula_nodes": 37,
+    "pending_formula_nodes": 198,
     "by_stage": {
-      "middle": 3,
-      "high": 5
+      "middle": 18,
+      "high": 11
     }
   },
   "scope": "first_observed_location is relative to this already-merged nine-book dataset; it is not proof of the earliest historical introduction",
@@ -44,14 +44,35 @@
     "middle": [
       "average_speed",
       "bulk_average_density",
-      "work_parallel_constant_force"
+      "work_parallel_constant_force",
+      "sound_path_speed",
+      "cycle_frequency",
+      "thin_lens_power",
+      "local_weight",
+      "kinetic_friction",
+      "average_pressure",
+      "hydrostatic_gauge_pressure",
+      "archimedes_buoyancy",
+      "displaced_fluid_weight",
+      "density_volume_direction",
+      "average_power",
+      "near_surface_potential_energy",
+      "two_force_lever_balance",
+      "total_work_accounting",
+      "mechanical_efficiency"
     ],
     "high": [
       "newton2_point_mass",
       "constant_a_velocity",
       "constant_a_position",
       "constant_a_speed_squared",
-      "work_dot_constant_force"
+      "work_dot_constant_force",
+      "signed_displacement",
+      "average_acceleration_vector",
+      "velocity_change_vector",
+      "hooke_restoring_component",
+      "classical_momentum",
+      "constant_force_impulse"
     ]
   }
 }
