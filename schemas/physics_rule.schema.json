@@ -324,7 +324,80 @@
                     "cross_section_uniform",
                     "temperature_scale_absolute",
                     "source_current_known",
-                    "complete_cycles"
+                    "complete_cycles",
+                    "specific_heat_constant",
+                    "heat_into_system_positive",
+                    "heating_value_basis_declared",
+                    "heat_engine_cycle",
+                    "ohmic_material",
+                    "passive_sign_convention",
+                    "same_operating_point",
+                    "series_topology",
+                    "oriented_voltage_drops",
+                    "parallel_same_two_nodes",
+                    "steady_state_no_charge_accumulation",
+                    "oriented_currents",
+                    "voltage_current_constant",
+                    "same_instant",
+                    "current_resistance_constant",
+                    "resistive_heat_only",
+                    "current_constant",
+                    "uniform_material",
+                    "uniform_cross_section",
+                    "isotropic_material",
+                    "circular_cross_section",
+                    "single_source",
+                    "steady_dc",
+                    "current_out_of_positive_terminal",
+                    "open_circuit",
+                    "ideal_voltage_measurement",
+                    "external_resistance_zero",
+                    "non_electrostatic_source_work",
+                    "source_polarity_declared",
+                    "emf_constant",
+                    "steady_motor",
+                    "copper_loss_only",
+                    "elementary_charge_quantization",
+                    "point_charges",
+                    "electrostatic",
+                    "same_test_charge",
+                    "test_charge_nonperturbing",
+                    "radial_outward_positive",
+                    "same_field_point",
+                    "isolated_conducting_sphere",
+                    "potential_zero_declared",
+                    "common_potential_reference",
+                    "voltage_a_minus_b",
+                    "displacement_a_to_b",
+                    "uniform_field",
+                    "two_terminal_capacitor",
+                    "opposite_plate_charges",
+                    "uniform_linear_dielectric",
+                    "fringing_negligible",
+                    "uniform_magnetic_field",
+                    "plane_surface",
+                    "angle_to_oriented_normal",
+                    "straight_wire",
+                    "angle_current_to_field",
+                    "wire_perpendicular_field",
+                    "same_flux_each_turn",
+                    "right_hand_loop_orientation",
+                    "flux_change_final_minus_initial",
+                    "straight_moving_rod",
+                    "rod_velocity_field_mutually_perpendicular",
+                    "inductance_constant",
+                    "passive_loop_orientation",
+                    "pure_sinusoid",
+                    "integer_period_average",
+                    "alternating_linked_flux",
+                    "same_voltage_measure",
+                    "resistance_negligible",
+                    "closed_thermodynamic_system",
+                    "bulk_kinetic_potential_unchanged",
+                    "rigid_volume",
+                    "pressure_volume_work_only",
+                    "fixed_amount_gas",
+                    "equilibrium_end_states"
                   ]
                 },
                 "equals": {
@@ -567,595 +640,895 @@
   "$id": "urn:k12:physics-rule:1.0.0",
   "$defs": {
     "expr": {
-      "oneOf": [
+      "type": "object",
+      "required": [
+        "op"
+      ],
+      "properties": {
+        "op": {
+          "enum": [
+            "var",
+            "number",
+            "add",
+            "sub",
+            "mul",
+            "div",
+            "pow",
+            "dot",
+            "sum",
+            "eq",
+            "sqrt",
+            "abs",
+            "norm",
+            "sin",
+            "cos",
+            "tan",
+            "asin",
+            "acos",
+            "exp",
+            "log",
+            "cross",
+            "vector",
+            "lt",
+            "le",
+            "gt",
+            "ge",
+            "ne",
+            "pi",
+            "literal"
+          ]
+        }
+      },
+      "allOf": [
         {
-          "type": "object",
-          "properties": {
-            "op": {
-              "const": "var"
-            },
-            "id": {
-              "type": "string",
-              "minLength": 1
+          "if": {
+            "properties": {
+              "op": {
+                "const": "var"
+              }
             }
           },
-          "required": [
-            "op",
-            "id"
-          ],
-          "additionalProperties": false
-        },
-        {
-          "type": "object",
-          "properties": {
-            "op": {
-              "const": "number"
-            },
-            "value": {
-              "type": "number"
-            }
-          },
-          "required": [
-            "op",
-            "value"
-          ],
-          "additionalProperties": false
-        },
-        {
-          "type": "object",
-          "properties": {
-            "op": {
-              "const": "add"
-            },
-            "args": {
-              "type": "array",
-              "items": {
-                "$ref": "#/$defs/expr"
+          "then": {
+            "type": "object",
+            "properties": {
+              "op": {
+                "const": "var"
               },
-              "minItems": 2
-            }
-          },
-          "required": [
-            "op",
-            "args"
-          ],
-          "additionalProperties": false
+              "id": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": [
+              "op",
+              "id"
+            ],
+            "additionalProperties": false
+          }
         },
         {
-          "type": "object",
-          "properties": {
-            "op": {
-              "const": "sub"
-            },
-            "args": {
-              "type": "array",
-              "items": {
-                "$ref": "#/$defs/expr"
+          "if": {
+            "properties": {
+              "op": {
+                "const": "number"
+              }
+            }
+          },
+          "then": {
+            "type": "object",
+            "properties": {
+              "op": {
+                "const": "number"
               },
-              "minItems": 2,
-              "maxItems": 2
-            }
-          },
-          "required": [
-            "op",
-            "args"
-          ],
-          "additionalProperties": false
+              "value": {
+                "type": "number"
+              }
+            },
+            "required": [
+              "op",
+              "value"
+            ],
+            "additionalProperties": false
+          }
         },
         {
-          "type": "object",
-          "properties": {
-            "op": {
-              "const": "mul"
-            },
-            "args": {
-              "type": "array",
-              "items": {
-                "$ref": "#/$defs/expr"
+          "if": {
+            "properties": {
+              "op": {
+                "const": "add"
+              }
+            }
+          },
+          "then": {
+            "type": "object",
+            "properties": {
+              "op": {
+                "const": "add"
               },
-              "minItems": 2
-            }
-          },
-          "required": [
-            "op",
-            "args"
-          ],
-          "additionalProperties": false
+              "args": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/$defs/expr"
+                },
+                "minItems": 2
+              }
+            },
+            "required": [
+              "op",
+              "args"
+            ],
+            "additionalProperties": false
+          }
         },
         {
-          "type": "object",
-          "properties": {
-            "op": {
-              "const": "div"
-            },
-            "args": {
-              "type": "array",
-              "items": {
-                "$ref": "#/$defs/expr"
+          "if": {
+            "properties": {
+              "op": {
+                "const": "sub"
+              }
+            }
+          },
+          "then": {
+            "type": "object",
+            "properties": {
+              "op": {
+                "const": "sub"
               },
-              "minItems": 2,
-              "maxItems": 2
-            }
-          },
-          "required": [
-            "op",
-            "args"
-          ],
-          "additionalProperties": false
+              "args": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/$defs/expr"
+                },
+                "minItems": 2,
+                "maxItems": 2
+              }
+            },
+            "required": [
+              "op",
+              "args"
+            ],
+            "additionalProperties": false
+          }
         },
         {
-          "type": "object",
-          "properties": {
-            "op": {
-              "const": "pow"
-            },
-            "args": {
-              "type": "array",
-              "items": {
-                "$ref": "#/$defs/expr"
+          "if": {
+            "properties": {
+              "op": {
+                "const": "mul"
+              }
+            }
+          },
+          "then": {
+            "type": "object",
+            "properties": {
+              "op": {
+                "const": "mul"
               },
-              "minItems": 2,
-              "maxItems": 2
-            }
-          },
-          "required": [
-            "op",
-            "args"
-          ],
-          "additionalProperties": false
+              "args": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/$defs/expr"
+                },
+                "minItems": 2
+              }
+            },
+            "required": [
+              "op",
+              "args"
+            ],
+            "additionalProperties": false
+          }
         },
         {
-          "type": "object",
-          "properties": {
-            "op": {
-              "const": "dot"
-            },
-            "args": {
-              "type": "array",
-              "items": {
-                "$ref": "#/$defs/expr"
+          "if": {
+            "properties": {
+              "op": {
+                "const": "div"
+              }
+            }
+          },
+          "then": {
+            "type": "object",
+            "properties": {
+              "op": {
+                "const": "div"
               },
-              "minItems": 2,
-              "maxItems": 2
-            }
-          },
-          "required": [
-            "op",
-            "args"
-          ],
-          "additionalProperties": false
+              "args": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/$defs/expr"
+                },
+                "minItems": 2,
+                "maxItems": 2
+              }
+            },
+            "required": [
+              "op",
+              "args"
+            ],
+            "additionalProperties": false
+          }
         },
         {
-          "type": "object",
-          "properties": {
-            "op": {
-              "const": "sum"
-            },
-            "args": {
-              "type": "array",
-              "items": {
-                "$ref": "#/$defs/expr"
+          "if": {
+            "properties": {
+              "op": {
+                "const": "pow"
+              }
+            }
+          },
+          "then": {
+            "type": "object",
+            "properties": {
+              "op": {
+                "const": "pow"
               },
-              "minItems": 1,
-              "maxItems": 1
-            }
-          },
-          "required": [
-            "op",
-            "args"
-          ],
-          "additionalProperties": false
+              "args": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/$defs/expr"
+                },
+                "minItems": 2,
+                "maxItems": 2
+              }
+            },
+            "required": [
+              "op",
+              "args"
+            ],
+            "additionalProperties": false
+          }
         },
         {
-          "type": "object",
-          "properties": {
-            "op": {
-              "const": "eq"
-            },
-            "args": {
-              "type": "array",
-              "items": {
-                "$ref": "#/$defs/expr"
+          "if": {
+            "properties": {
+              "op": {
+                "const": "dot"
+              }
+            }
+          },
+          "then": {
+            "type": "object",
+            "properties": {
+              "op": {
+                "const": "dot"
               },
-              "minItems": 2,
-              "maxItems": 2
-            }
-          },
-          "required": [
-            "op",
-            "args"
-          ],
-          "additionalProperties": false
+              "args": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/$defs/expr"
+                },
+                "minItems": 2,
+                "maxItems": 2
+              }
+            },
+            "required": [
+              "op",
+              "args"
+            ],
+            "additionalProperties": false
+          }
         },
         {
-          "type": "object",
-          "properties": {
-            "op": {
-              "const": "sqrt"
-            },
-            "args": {
-              "type": "array",
-              "items": {
-                "$ref": "#/$defs/expr"
+          "if": {
+            "properties": {
+              "op": {
+                "const": "sum"
+              }
+            }
+          },
+          "then": {
+            "type": "object",
+            "properties": {
+              "op": {
+                "const": "sum"
               },
-              "minItems": 1,
-              "maxItems": 1
-            }
-          },
-          "required": [
-            "op",
-            "args"
-          ],
-          "additionalProperties": false
+              "args": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/$defs/expr"
+                },
+                "minItems": 1,
+                "maxItems": 1
+              }
+            },
+            "required": [
+              "op",
+              "args"
+            ],
+            "additionalProperties": false
+          }
         },
         {
-          "type": "object",
-          "properties": {
-            "op": {
-              "const": "abs"
-            },
-            "args": {
-              "type": "array",
-              "items": {
-                "$ref": "#/$defs/expr"
+          "if": {
+            "properties": {
+              "op": {
+                "const": "eq"
+              }
+            }
+          },
+          "then": {
+            "type": "object",
+            "properties": {
+              "op": {
+                "const": "eq"
               },
-              "minItems": 1,
-              "maxItems": 1
-            }
-          },
-          "required": [
-            "op",
-            "args"
-          ],
-          "additionalProperties": false
+              "args": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/$defs/expr"
+                },
+                "minItems": 2,
+                "maxItems": 2
+              }
+            },
+            "required": [
+              "op",
+              "args"
+            ],
+            "additionalProperties": false
+          }
         },
         {
-          "type": "object",
-          "properties": {
-            "op": {
-              "const": "norm"
-            },
-            "args": {
-              "type": "array",
-              "items": {
-                "$ref": "#/$defs/expr"
+          "if": {
+            "properties": {
+              "op": {
+                "const": "sqrt"
+              }
+            }
+          },
+          "then": {
+            "type": "object",
+            "properties": {
+              "op": {
+                "const": "sqrt"
               },
-              "minItems": 1,
-              "maxItems": 1
-            }
-          },
-          "required": [
-            "op",
-            "args"
-          ],
-          "additionalProperties": false
+              "args": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/$defs/expr"
+                },
+                "minItems": 1,
+                "maxItems": 1
+              }
+            },
+            "required": [
+              "op",
+              "args"
+            ],
+            "additionalProperties": false
+          }
         },
         {
-          "type": "object",
-          "properties": {
-            "op": {
-              "const": "sin"
-            },
-            "args": {
-              "type": "array",
-              "items": {
-                "$ref": "#/$defs/expr"
+          "if": {
+            "properties": {
+              "op": {
+                "const": "abs"
+              }
+            }
+          },
+          "then": {
+            "type": "object",
+            "properties": {
+              "op": {
+                "const": "abs"
               },
-              "minItems": 1,
-              "maxItems": 1
-            }
-          },
-          "required": [
-            "op",
-            "args"
-          ],
-          "additionalProperties": false
+              "args": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/$defs/expr"
+                },
+                "minItems": 1,
+                "maxItems": 1
+              }
+            },
+            "required": [
+              "op",
+              "args"
+            ],
+            "additionalProperties": false
+          }
         },
         {
-          "type": "object",
-          "properties": {
-            "op": {
-              "const": "cos"
-            },
-            "args": {
-              "type": "array",
-              "items": {
-                "$ref": "#/$defs/expr"
+          "if": {
+            "properties": {
+              "op": {
+                "const": "norm"
+              }
+            }
+          },
+          "then": {
+            "type": "object",
+            "properties": {
+              "op": {
+                "const": "norm"
               },
-              "minItems": 1,
-              "maxItems": 1
-            }
-          },
-          "required": [
-            "op",
-            "args"
-          ],
-          "additionalProperties": false
+              "args": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/$defs/expr"
+                },
+                "minItems": 1,
+                "maxItems": 1
+              }
+            },
+            "required": [
+              "op",
+              "args"
+            ],
+            "additionalProperties": false
+          }
         },
         {
-          "type": "object",
-          "properties": {
-            "op": {
-              "const": "tan"
-            },
-            "args": {
-              "type": "array",
-              "items": {
-                "$ref": "#/$defs/expr"
+          "if": {
+            "properties": {
+              "op": {
+                "const": "sin"
+              }
+            }
+          },
+          "then": {
+            "type": "object",
+            "properties": {
+              "op": {
+                "const": "sin"
               },
-              "minItems": 1,
-              "maxItems": 1
-            }
-          },
-          "required": [
-            "op",
-            "args"
-          ],
-          "additionalProperties": false
+              "args": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/$defs/expr"
+                },
+                "minItems": 1,
+                "maxItems": 1
+              }
+            },
+            "required": [
+              "op",
+              "args"
+            ],
+            "additionalProperties": false
+          }
         },
         {
-          "type": "object",
-          "properties": {
-            "op": {
-              "const": "asin"
-            },
-            "args": {
-              "type": "array",
-              "items": {
-                "$ref": "#/$defs/expr"
+          "if": {
+            "properties": {
+              "op": {
+                "const": "cos"
+              }
+            }
+          },
+          "then": {
+            "type": "object",
+            "properties": {
+              "op": {
+                "const": "cos"
               },
-              "minItems": 1,
-              "maxItems": 1
-            }
-          },
-          "required": [
-            "op",
-            "args"
-          ],
-          "additionalProperties": false
+              "args": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/$defs/expr"
+                },
+                "minItems": 1,
+                "maxItems": 1
+              }
+            },
+            "required": [
+              "op",
+              "args"
+            ],
+            "additionalProperties": false
+          }
         },
         {
-          "type": "object",
-          "properties": {
-            "op": {
-              "const": "acos"
-            },
-            "args": {
-              "type": "array",
-              "items": {
-                "$ref": "#/$defs/expr"
+          "if": {
+            "properties": {
+              "op": {
+                "const": "tan"
+              }
+            }
+          },
+          "then": {
+            "type": "object",
+            "properties": {
+              "op": {
+                "const": "tan"
               },
-              "minItems": 1,
-              "maxItems": 1
-            }
-          },
-          "required": [
-            "op",
-            "args"
-          ],
-          "additionalProperties": false
+              "args": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/$defs/expr"
+                },
+                "minItems": 1,
+                "maxItems": 1
+              }
+            },
+            "required": [
+              "op",
+              "args"
+            ],
+            "additionalProperties": false
+          }
         },
         {
-          "type": "object",
-          "properties": {
-            "op": {
-              "const": "exp"
-            },
-            "args": {
-              "type": "array",
-              "items": {
-                "$ref": "#/$defs/expr"
+          "if": {
+            "properties": {
+              "op": {
+                "const": "asin"
+              }
+            }
+          },
+          "then": {
+            "type": "object",
+            "properties": {
+              "op": {
+                "const": "asin"
               },
-              "minItems": 1,
-              "maxItems": 1
-            }
-          },
-          "required": [
-            "op",
-            "args"
-          ],
-          "additionalProperties": false
+              "args": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/$defs/expr"
+                },
+                "minItems": 1,
+                "maxItems": 1
+              }
+            },
+            "required": [
+              "op",
+              "args"
+            ],
+            "additionalProperties": false
+          }
         },
         {
-          "type": "object",
-          "properties": {
-            "op": {
-              "const": "log"
-            },
-            "args": {
-              "type": "array",
-              "items": {
-                "$ref": "#/$defs/expr"
+          "if": {
+            "properties": {
+              "op": {
+                "const": "acos"
+              }
+            }
+          },
+          "then": {
+            "type": "object",
+            "properties": {
+              "op": {
+                "const": "acos"
               },
-              "minItems": 1,
-              "maxItems": 1
-            }
-          },
-          "required": [
-            "op",
-            "args"
-          ],
-          "additionalProperties": false
+              "args": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/$defs/expr"
+                },
+                "minItems": 1,
+                "maxItems": 1
+              }
+            },
+            "required": [
+              "op",
+              "args"
+            ],
+            "additionalProperties": false
+          }
         },
         {
-          "type": "object",
-          "properties": {
-            "op": {
-              "const": "cross"
-            },
-            "args": {
-              "type": "array",
-              "items": {
-                "$ref": "#/$defs/expr"
+          "if": {
+            "properties": {
+              "op": {
+                "const": "exp"
+              }
+            }
+          },
+          "then": {
+            "type": "object",
+            "properties": {
+              "op": {
+                "const": "exp"
               },
-              "minItems": 2,
-              "maxItems": 2
-            }
-          },
-          "required": [
-            "op",
-            "args"
-          ],
-          "additionalProperties": false
+              "args": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/$defs/expr"
+                },
+                "minItems": 1,
+                "maxItems": 1
+              }
+            },
+            "required": [
+              "op",
+              "args"
+            ],
+            "additionalProperties": false
+          }
         },
         {
-          "type": "object",
-          "properties": {
-            "op": {
-              "const": "vector"
-            },
-            "args": {
-              "type": "array",
-              "items": {
-                "$ref": "#/$defs/expr"
+          "if": {
+            "properties": {
+              "op": {
+                "const": "log"
+              }
+            }
+          },
+          "then": {
+            "type": "object",
+            "properties": {
+              "op": {
+                "const": "log"
               },
-              "minItems": 3,
-              "maxItems": 3
-            }
-          },
-          "required": [
-            "op",
-            "args"
-          ],
-          "additionalProperties": false
+              "args": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/$defs/expr"
+                },
+                "minItems": 1,
+                "maxItems": 1
+              }
+            },
+            "required": [
+              "op",
+              "args"
+            ],
+            "additionalProperties": false
+          }
         },
         {
-          "type": "object",
-          "properties": {
-            "op": {
-              "const": "lt"
-            },
-            "args": {
-              "type": "array",
-              "items": {
-                "$ref": "#/$defs/expr"
+          "if": {
+            "properties": {
+              "op": {
+                "const": "cross"
+              }
+            }
+          },
+          "then": {
+            "type": "object",
+            "properties": {
+              "op": {
+                "const": "cross"
               },
-              "minItems": 2,
-              "maxItems": 2
-            }
-          },
-          "required": [
-            "op",
-            "args"
-          ],
-          "additionalProperties": false
+              "args": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/$defs/expr"
+                },
+                "minItems": 2,
+                "maxItems": 2
+              }
+            },
+            "required": [
+              "op",
+              "args"
+            ],
+            "additionalProperties": false
+          }
         },
         {
-          "type": "object",
-          "properties": {
-            "op": {
-              "const": "le"
-            },
-            "args": {
-              "type": "array",
-              "items": {
-                "$ref": "#/$defs/expr"
+          "if": {
+            "properties": {
+              "op": {
+                "const": "vector"
+              }
+            }
+          },
+          "then": {
+            "type": "object",
+            "properties": {
+              "op": {
+                "const": "vector"
               },
-              "minItems": 2,
-              "maxItems": 2
-            }
-          },
-          "required": [
-            "op",
-            "args"
-          ],
-          "additionalProperties": false
+              "args": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/$defs/expr"
+                },
+                "minItems": 3,
+                "maxItems": 3
+              }
+            },
+            "required": [
+              "op",
+              "args"
+            ],
+            "additionalProperties": false
+          }
         },
         {
-          "type": "object",
-          "properties": {
-            "op": {
-              "const": "gt"
-            },
-            "args": {
-              "type": "array",
-              "items": {
-                "$ref": "#/$defs/expr"
+          "if": {
+            "properties": {
+              "op": {
+                "const": "lt"
+              }
+            }
+          },
+          "then": {
+            "type": "object",
+            "properties": {
+              "op": {
+                "const": "lt"
               },
-              "minItems": 2,
-              "maxItems": 2
-            }
-          },
-          "required": [
-            "op",
-            "args"
-          ],
-          "additionalProperties": false
+              "args": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/$defs/expr"
+                },
+                "minItems": 2,
+                "maxItems": 2
+              }
+            },
+            "required": [
+              "op",
+              "args"
+            ],
+            "additionalProperties": false
+          }
         },
         {
-          "type": "object",
-          "properties": {
-            "op": {
-              "const": "ge"
-            },
-            "args": {
-              "type": "array",
-              "items": {
-                "$ref": "#/$defs/expr"
+          "if": {
+            "properties": {
+              "op": {
+                "const": "le"
+              }
+            }
+          },
+          "then": {
+            "type": "object",
+            "properties": {
+              "op": {
+                "const": "le"
               },
-              "minItems": 2,
-              "maxItems": 2
-            }
-          },
-          "required": [
-            "op",
-            "args"
-          ],
-          "additionalProperties": false
+              "args": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/$defs/expr"
+                },
+                "minItems": 2,
+                "maxItems": 2
+              }
+            },
+            "required": [
+              "op",
+              "args"
+            ],
+            "additionalProperties": false
+          }
         },
         {
-          "type": "object",
-          "properties": {
-            "op": {
-              "const": "ne"
-            },
-            "args": {
-              "type": "array",
-              "items": {
-                "$ref": "#/$defs/expr"
+          "if": {
+            "properties": {
+              "op": {
+                "const": "gt"
+              }
+            }
+          },
+          "then": {
+            "type": "object",
+            "properties": {
+              "op": {
+                "const": "gt"
               },
-              "minItems": 2,
-              "maxItems": 2
-            }
-          },
-          "required": [
-            "op",
-            "args"
-          ],
-          "additionalProperties": false
+              "args": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/$defs/expr"
+                },
+                "minItems": 2,
+                "maxItems": 2
+              }
+            },
+            "required": [
+              "op",
+              "args"
+            ],
+            "additionalProperties": false
+          }
         },
         {
-          "type": "object",
-          "properties": {
-            "op": {
-              "const": "pi"
+          "if": {
+            "properties": {
+              "op": {
+                "const": "ge"
+              }
             }
           },
-          "required": [
-            "op"
-          ],
-          "additionalProperties": false
+          "then": {
+            "type": "object",
+            "properties": {
+              "op": {
+                "const": "ge"
+              },
+              "args": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/$defs/expr"
+                },
+                "minItems": 2,
+                "maxItems": 2
+              }
+            },
+            "required": [
+              "op",
+              "args"
+            ],
+            "additionalProperties": false
+          }
         },
         {
-          "type": "object",
-          "properties": {
-            "op": {
-              "const": "literal"
-            },
-            "value": {
-              "type": "number"
-            },
-            "unit": {
-              "type": "string",
-              "minLength": 1
+          "if": {
+            "properties": {
+              "op": {
+                "const": "ne"
+              }
             }
           },
-          "required": [
-            "op",
-            "value",
-            "unit"
-          ],
-          "additionalProperties": false
+          "then": {
+            "type": "object",
+            "properties": {
+              "op": {
+                "const": "ne"
+              },
+              "args": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/$defs/expr"
+                },
+                "minItems": 2,
+                "maxItems": 2
+              }
+            },
+            "required": [
+              "op",
+              "args"
+            ],
+            "additionalProperties": false
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "op": {
+                "const": "pi"
+              }
+            }
+          },
+          "then": {
+            "type": "object",
+            "properties": {
+              "op": {
+                "const": "pi"
+              }
+            },
+            "required": [
+              "op"
+            ],
+            "additionalProperties": false
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "op": {
+                "const": "literal"
+              }
+            }
+          },
+          "then": {
+            "type": "object",
+            "properties": {
+              "op": {
+                "const": "literal"
+              },
+              "value": {
+                "type": "number"
+              },
+              "unit": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": [
+              "op",
+              "value",
+              "unit"
+            ],
+            "additionalProperties": false
+          }
         }
       ]
     }

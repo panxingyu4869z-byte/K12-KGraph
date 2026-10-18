@@ -56,7 +56,7 @@
 
 类型违反原仓库 `src/kg/prompt.txt` 定义的 13 条关系隔离到 `quarantine.json`，不猜测替换关系。
 章节间 `leads_to` 依照 `src/benchmark/generate_benchmark.py` 的章节任务保留。
-`pending.json` 保留 198 个尚未完成语义转换的公式节点；这些节点没有执行权限。
+`pending.json` 保留 113 个尚未完成语义转换的公式节点；这些节点没有执行权限。
 `review.json` 记录速度定义混用、时间定义过窄等待核对问题。中文原文保留，未自动重写。
 
 复现
@@ -98,3 +98,10 @@ result = run_rule(bundle, case['rule_id'], case['bindings'], case['context'])
 ```bash
 python tests/review_physics_batches.py --output knowledge/physics/cleaned/independent_review.json
 ```
+
+第三批：电学与热学
+----------------
+
+累计 93 条规则。新增 64 条电路、静电、磁通、感应、正弦有效值、理想变压器、LC振荡、热量与气体关系。绝对温度按开尔文运算，摄氏读数先换算；温差不能使用绝对温标单位。法拉第有限差分关系明确输出区间平均电动势及回路定向，不冒充瞬时导数。
+
+16 项测试通过，93 个实例通过独立精确数值和量纲复核。结构校验按 op 标签分支，仍拒绝未知运算、额外字段和错误元数。

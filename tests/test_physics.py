@@ -47,6 +47,22 @@ class PhysicsContractTests(unittest.TestCase):
         c=copy.deepcopy(cases['hydrostatic_gauge_pressure']);c['context'].pop('fluid_static')
         with self.assertRaises(RuleError):self.run_case(c)
 
+    def test_electric_and_thermal_boundaries(self):
+        cases={x['rule_id']:x for x in self.examples}
+        c=copy.deepcopy(cases['parallel_resistance']);c['bindings']['resistances']['value']=[1,0]
+        with self.assertRaises(RuleError):self.run_case(c)
+        c=copy.deepcopy(cases['sensible_heat_exchange']);c['bindings']['temperature_change']['unit']='degC'
+        with self.assertRaisesRegex(RuleError,'temperature'):self.run_case(c)
+        c=copy.deepcopy(cases['ideal_gas_state_change']);c['bindings']['t1']={'value':-10,'unit':'degC'}
+        result=self.run_case(c)['results']['p2']['si_value']
+        self.assertAlmostEqual(result,100000*600/(2*263.15))
+        c['bindings']['t1']={'value':-273.15,'unit':'degC'}
+        with self.assertRaises(RuleError):self.run_case(c)
+        c=copy.deepcopy(cases['sinusoidal_rms_voltage']);c['context'].pop('pure_sinusoid')
+        with self.assertRaises(RuleError):self.run_case(c)
+        c=copy.deepcopy(cases['electric_field_definition']);c['bindings']['test_charge']['value']=0
+        with self.assertRaises(RuleError):self.run_case(c)
+
     def test_unknown_operator_and_property_rejected_by_schema(self):
         for field in ['op','code']:
             b = copy.deepcopy(self.bundle)

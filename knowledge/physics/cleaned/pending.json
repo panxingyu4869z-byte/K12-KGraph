@@ -48,30 +48,6 @@
     "status": "pending_semantic_conversion"
   },
   {
-    "id": "physics_9_rjb_cpt13",
-    "name": "比热容",
-    "original_formula": "c = Q / (m·Δt)",
-    "status": "pending_semantic_conversion"
-  },
-  {
-    "id": "physics_9_rjb_cpt14",
-    "name": "热量计算",
-    "original_formula": "Q吸 = cm(t - t0); Q放 = cm(t0 - t)",
-    "status": "pending_semantic_conversion"
-  },
-  {
-    "id": "physics_9_rjb_cpt22",
-    "name": "燃料的热值",
-    "original_formula": "Q = qm（其中q为热值）",
-    "status": "pending_semantic_conversion"
-  },
-  {
-    "id": "physics_9_rjb_cpt23",
-    "name": "热机效率",
-    "original_formula": "η = W / Q_total",
-    "status": "pending_semantic_conversion"
-  },
-  {
     "id": "physics_9_rjb_cpt31",
     "name": "电荷量",
     "original_formula": "Q 或 q；符号单位：C",
@@ -90,105 +66,9 @@
     "status": "pending_semantic_conversion"
   },
   {
-    "id": "physics_9_rjb_cpt62",
-    "name": "电流与电压的关系",
-    "original_formula": "I ∝ U",
-    "status": "pending_semantic_conversion"
-  },
-  {
-    "id": "physics_9_rjb_cpt63",
-    "name": "串联电路的电压规律",
-    "original_formula": "U = U1 + U2",
-    "status": "pending_semantic_conversion"
-  },
-  {
-    "id": "physics_9_rjb_cpt64",
-    "name": "并联电路的电压规律",
-    "original_formula": "U = U1 = U2",
-    "status": "pending_semantic_conversion"
-  },
-  {
-    "id": "physics_9_rjb_cpt66",
-    "name": "电阻",
-    "original_formula": "R = U / I",
-    "status": "pending_semantic_conversion"
-  },
-  {
-    "id": "physics_9_rjb_cpt74",
-    "name": "电流与电阻的关系",
-    "original_formula": "I ∝ 1/R",
-    "status": "pending_semantic_conversion"
-  },
-  {
-    "id": "physics_9_rjb_cpt75",
-    "name": "U/I 与电阻的关系",
-    "original_formula": "R = U/I",
-    "status": "pending_semantic_conversion"
-  },
-  {
-    "id": "physics_9_rjb_cpt76",
-    "name": "欧姆定律",
-    "original_formula": "I = U / R",
-    "status": "pending_semantic_conversion"
-  },
-  {
-    "id": "physics_9_rjb_cpt78",
-    "name": "伏安法测电阻",
-    "original_formula": "R = U/I",
-    "status": "pending_semantic_conversion"
-  },
-  {
-    "id": "physics_9_rjb_cpt83",
-    "name": "串联电路电流计算",
-    "original_formula": "I = U / (R1 + R2 + ...)",
-    "status": "pending_semantic_conversion"
-  },
-  {
     "id": "physics_9_rjb_cpt86",
     "name": "千瓦时",
     "original_formula": "1 kW·h = 3.6×10^6 J",
-    "status": "pending_semantic_conversion"
-  },
-  {
-    "id": "physics_9_rjb_cpt88",
-    "name": "电功",
-    "original_formula": "W = U I t",
-    "status": "pending_semantic_conversion"
-  },
-  {
-    "id": "physics_9_rjb_cpt89",
-    "name": "电功公式",
-    "original_formula": "W = U I t",
-    "status": "pending_semantic_conversion"
-  },
-  {
-    "id": "physics_9_rjb_cpt90",
-    "name": "电功率",
-    "original_formula": "P = W / t; P = UI",
-    "status": "pending_semantic_conversion"
-  },
-  {
-    "id": "physics_9_rjb_cpt95",
-    "name": "电功率测量",
-    "original_formula": "P = UI",
-    "status": "pending_semantic_conversion"
-  },
-  {
-    "id": "physics_9_rjb_cpt99",
-    "name": "焦耳定律",
-    "original_formula": "Q = I^2 R t",
-    "status": "pending_semantic_conversion"
-  },
-  {
-    "id": "physics_9_rjb_cpt109",
-    "name": "电功率与电流、电压的关系",
-    "original_formula": "P = UI, I = P/U",
-    "status": "pending_semantic_conversion"
-  },
-  {
-    "id": "physics_9_rjb_cpt113",
-    "name": "短路",
-    "original_formula": "R=0 ⇒ I=E/r",
     "status": "pending_semantic_conversion"
   },
   {
@@ -396,27 +276,9 @@
     "status": "pending_semantic_conversion"
   },
   {
-    "id": "physics_bx3_rjb_cpt13",
-    "name": "元电荷",
-    "original_formula": "e = 1.602176634×10^-19 C（计算可取1.60×10^-19 C）",
-    "status": "pending_semantic_conversion"
-  },
-  {
-    "id": "physics_bx3_rjb_cpt14",
-    "name": "电荷量量子化",
-    "original_formula": "Q = n·e（n为整数）",
-    "status": "pending_semantic_conversion"
-  },
-  {
     "id": "physics_bx3_rjb_cpt15",
     "name": "电子的比荷",
     "original_formula": "e/me = 1.76×10^11 C/kg",
-    "status": "pending_semantic_conversion"
-  },
-  {
-    "id": "physics_bx3_rjb_cpt17",
-    "name": "库仑定律",
-    "original_formula": "F = k * q1*q2 / r^2",
     "status": "pending_semantic_conversion"
   },
   {
@@ -438,36 +300,6 @@
     "status": "pending_semantic_conversion"
   },
   {
-    "id": "physics_bx3_rjb_cpt23",
-    "name": "叠加原理（静电力的矢量叠加）",
-    "original_formula": "F合 = Σ Fi（矢量和）",
-    "status": "pending_semantic_conversion"
-  },
-  {
-    "id": "physics_bx3_rjb_cpt29",
-    "name": "电场强度",
-    "original_formula": "E = F/q",
-    "status": "pending_semantic_conversion"
-  },
-  {
-    "id": "physics_bx3_rjb_cpt31",
-    "name": "点电荷的电场强度",
-    "original_formula": "E = kQ/r^2",
-    "status": "pending_semantic_conversion"
-  },
-  {
-    "id": "physics_bx3_rjb_cpt32",
-    "name": "电场强度的叠加（多点电荷电场）",
-    "original_formula": "E = E1 + E2 + ... (矢量和)",
-    "status": "pending_semantic_conversion"
-  },
-  {
-    "id": "physics_bx3_rjb_cpt34",
-    "name": "均匀带电球体（或球壳）外部电场的点电荷等效",
-    "original_formula": "E = kQ/r^2 (r>R)",
-    "status": "pending_semantic_conversion"
-  },
-  {
     "id": "physics_bx3_rjb_cpt38",
     "name": "静电平衡",
     "original_formula": "导体内部：E = 0",
@@ -480,45 +312,15 @@
     "status": "pending_semantic_conversion"
   },
   {
-    "id": "physics_bx3_rjb_cpt49",
-    "name": "静电力做功与路径无关（静电场力做功特点）",
-    "original_formula": "W_{AB}仅由A、B决定；在匀强电场推导例：W=qE|AM|",
-    "status": "pending_semantic_conversion"
-  },
-  {
     "id": "physics_bx3_rjb_cpt50",
     "name": "电势能",
     "original_formula": "W_{AB}=E_{pA}-E_{pB}",
     "status": "pending_semantic_conversion"
   },
   {
-    "id": "physics_bx3_rjb_cpt52",
-    "name": "电势",
-    "original_formula": "\\varphi=\\frac{E_p}{q}",
-    "status": "pending_semantic_conversion"
-  },
-  {
     "id": "physics_bx3_rjb_cpt53",
     "name": "电势的单位（伏特）",
     "original_formula": "1\\,\\mathrm{V}=1\\,\\mathrm{J}/\\mathrm{C}",
-    "status": "pending_semantic_conversion"
-  },
-  {
-    "id": "physics_bx3_rjb_cpt56",
-    "name": "电势差",
-    "original_formula": "U_AB = φ_A - φ_B；U_BA = φ_B - φ_A；U_AB = -U_BA",
-    "status": "pending_semantic_conversion"
-  },
-  {
-    "id": "physics_bx3_rjb_cpt57",
-    "name": "静电力做功",
-    "original_formula": "W_AB = E_pA - E_pB = q(φ_A-φ_B)=qU_AB",
-    "status": "pending_semantic_conversion"
-  },
-  {
-    "id": "physics_bx3_rjb_cpt61",
-    "name": "匀强电场中电势差与电场强度的关系",
-    "original_formula": "U_AB=Ed；E=U_AB/d",
     "status": "pending_semantic_conversion"
   },
   {
@@ -534,12 +336,6 @@
     "status": "pending_semantic_conversion"
   },
   {
-    "id": "physics_bx3_rjb_cpt70",
-    "name": "电容（电容器的电容）",
-    "original_formula": "C = Q / U",
-    "status": "pending_semantic_conversion"
-  },
-  {
     "id": "physics_bx3_rjb_cpt72",
     "name": "微法",
     "original_formula": "1 μF = 10^-6 F",
@@ -552,33 +348,9 @@
     "status": "pending_semantic_conversion"
   },
   {
-    "id": "physics_bx3_rjb_cpt76",
-    "name": "相对介电常数",
-    "original_formula": "C = (εr S) / (4π k d)",
-    "status": "pending_semantic_conversion"
-  },
-  {
-    "id": "physics_bx3_rjb_cpt77",
-    "name": "平行板电容器电容与几何/介质的关系",
-    "original_formula": "真空：C = S / (4π k d)；充满介质：C = (εr S) / (4π k d)",
-    "status": "pending_semantic_conversion"
-  },
-  {
-    "id": "physics_bx3_rjb_cpt82",
-    "name": "静电力（电场力）",
-    "original_formula": "F = qE",
-    "status": "pending_semantic_conversion"
-  },
-  {
     "id": "physics_bx3_rjb_cpt83",
     "name": "动能定理（静电力做功与动能变化）",
     "original_formula": "W = \\Delta E_k",
-    "status": "pending_semantic_conversion"
-  },
-  {
-    "id": "physics_bx3_rjb_cpt92",
-    "name": "电流（物理量）",
-    "original_formula": "I = q / t",
     "status": "pending_semantic_conversion"
   },
   {
@@ -591,72 +363,6 @@
     "id": "physics_bx3_rjb_cpt95",
     "name": "电流的微观关系式",
     "original_formula": "I = n e S v",
-    "status": "pending_semantic_conversion"
-  },
-  {
-    "id": "physics_bx3_rjb_cpt97",
-    "name": "U-I图像的斜率与电阻",
-    "original_formula": "U-I图像斜率k = U/I = R（针对线性、过原点直线情形）",
-    "status": "pending_semantic_conversion"
-  },
-  {
-    "id": "physics_bx3_rjb_cpt99",
-    "name": "电阻定律（均匀导体）",
-    "original_formula": "R = ρ l / S",
-    "status": "pending_semantic_conversion"
-  },
-  {
-    "id": "physics_bx3_rjb_cpt100",
-    "name": "电阻率",
-    "original_formula": "ρ = R S / l",
-    "status": "pending_semantic_conversion"
-  },
-  {
-    "id": "physics_bx3_rjb_cpt108",
-    "name": "截面积",
-    "original_formula": "S=πd^2/4",
-    "status": "pending_semantic_conversion"
-  },
-  {
-    "id": "physics_bx3_rjb_cpt110",
-    "name": "电导率",
-    "original_formula": "σ=1/ρ",
-    "status": "pending_semantic_conversion"
-  },
-  {
-    "id": "physics_bx3_rjb_cpt115",
-    "name": "串联电路中的电流规律",
-    "original_formula": "I1 = I2 = ... = I",
-    "status": "pending_semantic_conversion"
-  },
-  {
-    "id": "physics_bx3_rjb_cpt116",
-    "name": "并联电路中的电流规律",
-    "original_formula": "I = I1 + I2 + ... + In",
-    "status": "pending_semantic_conversion"
-  },
-  {
-    "id": "physics_bx3_rjb_cpt117",
-    "name": "串联电路中的电压规律",
-    "original_formula": "U = U1 + U2 + ... + Un",
-    "status": "pending_semantic_conversion"
-  },
-  {
-    "id": "physics_bx3_rjb_cpt118",
-    "name": "并联电路中的电压规律",
-    "original_formula": "U = U1 = U2 = ... = Un",
-    "status": "pending_semantic_conversion"
-  },
-  {
-    "id": "physics_bx3_rjb_cpt119",
-    "name": "串联电路的等效电阻",
-    "original_formula": "R = R1 + R2 + ... + Rn",
-    "status": "pending_semantic_conversion"
-  },
-  {
-    "id": "physics_bx3_rjb_cpt120",
-    "name": "并联电路的等效电阻",
-    "original_formula": "1/R = 1/R1 + 1/R2 + ... + 1/Rn",
     "status": "pending_semantic_conversion"
   },
   {
@@ -690,122 +396,15 @@
     "status": "pending_semantic_conversion"
   },
   {
-    "id": "physics_bx3_rjb_cpt137",
-    "name": "电荷量与电流关系",
-    "original_formula": "q=It",
-    "status": "pending_semantic_conversion"
-  },
-  {
-    "id": "physics_bx3_rjb_cpt138",
-    "name": "发热功率（电阻热功率）",
-    "original_formula": "P热=Q/t=I^2R",
-    "status": "pending_semantic_conversion"
-  },
-  {
-    "id": "physics_bx3_rjb_cpt140",
-    "name": "电动机的功率分配关系",
-    "original_formula": "P电=UI；P电=P机+P损；（仅计线圈发热）P损=P热=I^2R",
-    "status": "pending_semantic_conversion"
-  },
-  {
-    "id": "physics_bx3_rjb_cpt145",
-    "name": "电动势",
-    "original_formula": "E = W/q",
-    "status": "pending_semantic_conversion"
-  },
-  {
-    "id": "physics_bx3_rjb_cpt146",
-    "name": "部分电路欧姆定律",
-    "original_formula": "I = U/R",
-    "status": "pending_semantic_conversion"
-  },
-  {
-    "id": "physics_bx3_rjb_cpt147",
-    "name": "内阻",
-    "original_formula": [
-      "E = U + Ir",
-      "U = -Ir + E",
-      "r = E / I短",
-      "r = |ΔU/ΔI|"
-    ],
-    "status": "pending_semantic_conversion"
-  },
-  {
-    "id": "physics_bx3_rjb_cpt148",
-    "name": "闭合电路欧姆定律",
-    "original_formula": "I = E/(R + r)；E = IR + Ir",
-    "status": "pending_semantic_conversion"
-  },
-  {
-    "id": "physics_bx3_rjb_cpt150",
-    "name": "路端电压",
-    "original_formula": "U = E - Ir",
-    "status": "pending_semantic_conversion"
-  },
-  {
-    "id": "physics_bx3_rjb_cpt152",
-    "name": "断路（开路）",
-    "original_formula": "I=0 ⇒ U=E",
-    "status": "pending_semantic_conversion"
-  },
-  {
-    "id": "physics_bx3_rjb_cpt153",
-    "name": "电源输出电能（非静电力做功）",
-    "original_formula": "W = Eq = EIt",
-    "status": "pending_semantic_conversion"
-  },
-  {
-    "id": "physics_bx3_rjb_cpt154",
-    "name": "焦耳热（电阻上的电能转化为内能）",
-    "original_formula": "Q外=I^2Rt；Q内=I^2rt",
-    "status": "pending_semantic_conversion"
-  },
-  {
     "id": "physics_bx3_rjb_cpt155",
     "name": "欧姆表原理（电阻-电流对应刻度）",
     "original_formula": "Ix=E/(RΩ+Rx)；Rx=E/Ix−RΩ",
     "status": "pending_semantic_conversion"
   },
   {
-    "id": "physics_bx3_rjb_cpt156",
-    "name": "U-I图像（路端电压-电流图像）",
-    "original_formula": [
-      "U = -Ir + E",
-      "纵截距：E",
-      "斜率：-r"
-    ],
-    "status": "pending_semantic_conversion"
-  },
-  {
-    "id": "physics_bx3_rjb_cpt157",
-    "name": "短路电流",
-    "original_formula": [
-      "r = E / I短"
-    ],
-    "status": "pending_semantic_conversion"
-  },
-  {
     "id": "physics_bx3_rjb_cpt173",
     "name": "电流元",
     "original_formula": "Il",
-    "status": "pending_semantic_conversion"
-  },
-  {
-    "id": "physics_bx3_rjb_cpt174",
-    "name": "磁感应强度",
-    "original_formula": "B=F/(Il)（导线与磁场垂直时）",
-    "status": "pending_semantic_conversion"
-  },
-  {
-    "id": "physics_bx3_rjb_cpt175",
-    "name": "磁场力（通电导线在磁场中受力）",
-    "original_formula": "F=IlB（导线与磁场垂直时）",
-    "status": "pending_semantic_conversion"
-  },
-  {
-    "id": "physics_bx3_rjb_cpt177",
-    "name": "磁通量",
-    "original_formula": "Φ=BS（垂直时）；一般情形：Φ=B·S'（S'为对垂直于B方向的投影面积）",
     "status": "pending_semantic_conversion"
   },
   {
@@ -941,12 +540,6 @@
     "status": "pending_semantic_conversion"
   },
   {
-    "id": "physics_xzxbx2_rjb_cpt1",
-    "name": "安培力",
-    "original_formula": "F = I l B sinθ",
-    "status": "pending_semantic_conversion"
-  },
-  {
     "id": "physics_xzxbx2_rjb_cpt4",
     "name": "洛伦兹力",
     "original_formula": "F = q v B sinθ",
@@ -983,33 +576,9 @@
     "status": "pending_semantic_conversion"
   },
   {
-    "id": "physics_xzxbx2_rjb_cpt20",
-    "name": "法拉第电磁感应定律",
-    "original_formula": "E = ΔΦ / Δt",
-    "status": "pending_semantic_conversion"
-  },
-  {
-    "id": "physics_xzxbx2_rjb_cpt21",
-    "name": "线圈匝数与感应电动势",
-    "original_formula": "E = n ΔΦ/Δt",
-    "status": "pending_semantic_conversion"
-  },
-  {
-    "id": "physics_xzxbx2_rjb_cpt23",
-    "name": "导线切割磁感线的感应电动势公式",
-    "original_formula": "E = B l v",
-    "status": "pending_semantic_conversion"
-  },
-  {
     "id": "physics_xzxbx2_rjb_cpt24",
     "name": "导线运动方向与磁场夹角的感应电动势",
     "original_formula": "E = B l v sinθ",
-    "status": "pending_semantic_conversion"
-  },
-  {
-    "id": "physics_xzxbx2_rjb_cpt31",
-    "name": "自感电动势",
-    "original_formula": "E = L * ΔI/Δt",
     "status": "pending_semantic_conversion"
   },
   {
@@ -1025,36 +594,6 @@
     "status": "pending_semantic_conversion"
   },
   {
-    "id": "physics_xzxbx2_rjb_cpt39",
-    "name": "有效值",
-    "original_formula": "I = I_m / √2,  U = U_m / √2",
-    "status": "pending_semantic_conversion"
-  },
-  {
-    "id": "physics_xzxbx2_rjb_cpt48",
-    "name": "变压器电压与匝数关系",
-    "original_formula": "U1 / U2 = n1 / n2",
-    "status": "pending_semantic_conversion"
-  },
-  {
-    "id": "physics_xzxbx2_rjb_cpt51",
-    "name": "输电线路功率损失",
-    "original_formula": "P = I^2 r",
-    "status": "pending_semantic_conversion"
-  },
-  {
-    "id": "physics_xzxbx2_rjb_cpt58",
-    "name": "LC振荡电路",
-    "original_formula": "T = 2π√(LC),  f = 1/(2π√(LC))",
-    "status": "pending_semantic_conversion"
-  },
-  {
-    "id": "physics_xzxbx2_rjb_cpt61",
-    "name": "振荡周期与频率",
-    "original_formula": "T = 2π√(LC),  f = 1/T",
-    "status": "pending_semantic_conversion"
-  },
-  {
     "id": "physics_xzxbx3_rjb_cpt6",
     "name": "油膜法估测分子大小",
     "original_formula": "d = V / S",
@@ -1064,66 +603,6 @@
     "id": "physics_xzxbx3_rjb_cpt25",
     "name": "热力学温标",
     "original_formula": "T = t + 273.15",
-    "status": "pending_semantic_conversion"
-  },
-  {
-    "id": "physics_xzxbx3_rjb_cpt27",
-    "name": "压强与体积的反比关系",
-    "original_formula": "p ∝ 1/V",
-    "status": "pending_semantic_conversion"
-  },
-  {
-    "id": "physics_xzxbx3_rjb_cpt28",
-    "name": "玻意耳定律",
-    "original_formula": "pV = C 或 p1V1 = p2V2",
-    "status": "pending_semantic_conversion"
-  },
-  {
-    "id": "physics_xzxbx3_rjb_cpt30",
-    "name": "气体的等压变化",
-    "original_formula": "V ∝ T,  V = C T,  V1/T1 = V2/T2",
-    "status": "pending_semantic_conversion"
-  },
-  {
-    "id": "physics_xzxbx3_rjb_cpt31",
-    "name": "盖-吕萨克定律",
-    "original_formula": "V = C T",
-    "status": "pending_semantic_conversion"
-  },
-  {
-    "id": "physics_xzxbx3_rjb_cpt32",
-    "name": "气体的等容变化",
-    "original_formula": "p ∝ T,  p = C T,  p1/T1 = p2/T2",
-    "status": "pending_semantic_conversion"
-  },
-  {
-    "id": "physics_xzxbx3_rjb_cpt33",
-    "name": "查理定律",
-    "original_formula": "p = C T",
-    "status": "pending_semantic_conversion"
-  },
-  {
-    "id": "physics_xzxbx3_rjb_cpt35",
-    "name": "理想气体状态方程",
-    "original_formula": "pV/T = C",
-    "status": "pending_semantic_conversion"
-  },
-  {
-    "id": "physics_xzxbx3_rjb_cpt50",
-    "name": "做功引起的内能变化",
-    "original_formula": "ΔU = W",
-    "status": "pending_semantic_conversion"
-  },
-  {
-    "id": "physics_xzxbx3_rjb_cpt51",
-    "name": "热量与内能的变化",
-    "original_formula": "ΔU = Q",
-    "status": "pending_semantic_conversion"
-  },
-  {
-    "id": "physics_xzxbx3_rjb_cpt55",
-    "name": "热力学第一定律",
-    "original_formula": "ΔU = Q + W",
     "status": "pending_semantic_conversion"
   },
   {

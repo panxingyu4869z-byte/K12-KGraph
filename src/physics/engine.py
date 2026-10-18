@@ -268,7 +268,9 @@ def measurement(value, spec, units):
     if not isinstance(value['unit'],str): raise RuleError("unit must be a registered string")
     unit = units.get(value["unit"])
     if not unit or unit["dimension"] != spec["dimension"]: raise RuleError("input unit has incompatible dimensions")
-    check_value(value["value"], spec)
+    # Domain bounds describe the physical SI quantity, not an affine reading.
+    # A negative Celsius reading can still be a positive absolute temperature.
+    check_value(value["value"], dict(spec,domain='real'))
     preferred=units[spec['unit']]
     if preferred.get('temperature_kind')!=unit.get('temperature_kind'):raise RuleError('absolute temperature and temperature intervals cannot be interchanged')
     scale = float(Fraction(unit["scale"]))*(math.pi if unit.get('pi_factor') else 1)
@@ -339,8 +341,9 @@ def _run_rule(bundle, rule_id, bindings, context, boundary_conditions=()):
         def close(a,b): return all(close(x,y) for x,y in zip(a,b)) if isinstance(a,list) else math.isclose(a,b,rel_tol=1e-9,abs_tol=1e-12)
         if not close(values[key],expected): raise RuleError("boundary constraint not satisfied")
     def si_unit(key):
-        dim = r['quantities'][key]['dimension']
-        return next((u for u,spec in bundle['units'].items() if spec['dimension'] == dim and Fraction(spec['scale']) == 1), None)
+        declared=r['quantities'][key]
+        preferred=bundle['units'][declared['unit']]
+        return next((u for u,spec in bundle['units'].items() if spec['dimension'] == declared['dimension'] and Fraction(spec['scale']) == 1 and not spec.get('pi_factor') and not Fraction(spec.get('offset','0')) and spec.get('temperature_kind')==preferred.get('temperature_kind')), None)
     return {"rule_id":rule_id,"results":{k:{"si_value":values[k],"si_unit":si_unit(k),"dimension":r["quantities"][k]["dimension"]} for k in r["conclusions"]},"trace":trace}
 
 

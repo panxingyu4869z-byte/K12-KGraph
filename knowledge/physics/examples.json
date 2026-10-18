@@ -814,5 +814,1648 @@
       ]
     },
     "boundary_conditions": []
+  },
+  {
+    "rule_id": "specific_heat_capacity",
+    "bindings": {
+      "heat": {
+        "value": 8400,
+        "unit": "J"
+      },
+      "mass": {
+        "value": 2,
+        "unit": "kg"
+      },
+      "temperature_rise": {
+        "value": 1,
+        "unit": "delta_K"
+      }
+    },
+    "context": {
+      "object_model": "thermal_system",
+      "reference_frame": "declared",
+      "no_phase_change": true,
+      "specific_heat_constant": true
+    },
+    "expected": {
+      "specific_heat": 4200
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "sensible_heat_exchange",
+    "bindings": {
+      "mass": {
+        "value": 2,
+        "unit": "kg"
+      },
+      "specific_heat": {
+        "value": 4200,
+        "unit": "J/(kg*K)"
+      },
+      "temperature_change": {
+        "value": -2,
+        "unit": "delta_K"
+      }
+    },
+    "context": {
+      "object_model": "thermal_system",
+      "reference_frame": "declared",
+      "no_phase_change": true,
+      "specific_heat_constant": true,
+      "heat_into_system_positive": true
+    },
+    "expected": {
+      "heat": -16800
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "released_sensible_heat",
+    "bindings": {
+      "mass": {
+        "value": 1,
+        "unit": "kg"
+      },
+      "specific_heat": {
+        "value": 4200,
+        "unit": "J/(kg*K)"
+      },
+      "temperature_drop": {
+        "value": 5,
+        "unit": "delta_K"
+      }
+    },
+    "context": {
+      "object_model": "thermal_system",
+      "reference_frame": "declared",
+      "no_phase_change": true,
+      "specific_heat_constant": true
+    },
+    "expected": {
+      "released_heat": 21000
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "complete_combustion_heat",
+    "bindings": {
+      "fuel_mass": {
+        "value": 2,
+        "unit": "kg"
+      },
+      "heating_value": {
+        "value": 30000000,
+        "unit": "J/kg"
+      }
+    },
+    "context": {
+      "object_model": "thermal_system",
+      "reference_frame": "declared",
+      "complete_combustion": true,
+      "heating_value_basis_declared": true
+    },
+    "expected": {
+      "released_heat": 60000000
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "heat_engine_efficiency",
+    "bindings": {
+      "useful_work": {
+        "value": 30,
+        "unit": "J"
+      },
+      "input_heat": {
+        "value": 100,
+        "unit": "J"
+      }
+    },
+    "context": {
+      "object_model": "thermal_system",
+      "reference_frame": "declared",
+      "heat_engine_cycle": true,
+      "input_output_same_interval": true
+    },
+    "expected": {
+      "efficiency": 0.3
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "ohmic_current",
+    "bindings": {
+      "voltage": {
+        "value": 12,
+        "unit": "V"
+      },
+      "resistance": {
+        "value": 6,
+        "unit": "ohm"
+      }
+    },
+    "context": {
+      "object_model": "ohmic_resistor",
+      "reference_frame": "declared",
+      "ohmic_material": true,
+      "temperature_constant": true,
+      "passive_sign_convention": true
+    },
+    "expected": {
+      "current": 2
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "measured_resistance",
+    "bindings": {
+      "voltage": {
+        "value": 12,
+        "unit": "V"
+      },
+      "current": {
+        "value": 2,
+        "unit": "A"
+      }
+    },
+    "context": {
+      "object_model": "dc_circuit",
+      "reference_frame": "declared",
+      "passive_sign_convention": true,
+      "same_operating_point": true
+    },
+    "expected": {
+      "resistance": 6
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "series_voltage_sum",
+    "bindings": {
+      "drops": {
+        "value": [
+          2,
+          3,
+          4
+        ],
+        "unit": "V"
+      }
+    },
+    "context": {
+      "object_model": "dc_circuit",
+      "reference_frame": "declared",
+      "series_topology": true,
+      "oriented_voltage_drops": true
+    },
+    "expected": {
+      "total_voltage": 9
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "parallel_voltage_equal",
+    "bindings": {
+      "terminal_voltage": {
+        "value": 12,
+        "unit": "V"
+      }
+    },
+    "context": {
+      "object_model": "dc_circuit",
+      "reference_frame": "declared",
+      "parallel_same_two_nodes": true,
+      "ideal_wires": true
+    },
+    "expected": {
+      "branch_voltage": 12
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "series_resistance",
+    "bindings": {
+      "resistances": {
+        "value": [
+          2,
+          3
+        ],
+        "unit": "ohm"
+      }
+    },
+    "context": {
+      "object_model": "dc_circuit",
+      "reference_frame": "declared",
+      "series_topology": true,
+      "ohmic_material": true
+    },
+    "expected": {
+      "equivalent_resistance": 5
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "parallel_resistance",
+    "bindings": {
+      "resistances": {
+        "value": [
+          6,
+          3
+        ],
+        "unit": "ohm"
+      }
+    },
+    "context": {
+      "object_model": "dc_circuit",
+      "reference_frame": "declared",
+      "parallel_same_two_nodes": true,
+      "ohmic_material": true
+    },
+    "expected": {
+      "equivalent_resistance": 2
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "series_current",
+    "bindings": {
+      "voltage": {
+        "value": 12,
+        "unit": "V"
+      },
+      "resistances": {
+        "value": [
+          2,
+          4
+        ],
+        "unit": "ohm"
+      }
+    },
+    "context": {
+      "object_model": "dc_circuit",
+      "reference_frame": "declared",
+      "series_topology": true,
+      "ohmic_material": true,
+      "ideal_wires": true
+    },
+    "expected": {
+      "current": 2
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "series_current_equal",
+    "bindings": {
+      "path_current": {
+        "value": 2,
+        "unit": "A"
+      }
+    },
+    "context": {
+      "object_model": "dc_circuit",
+      "reference_frame": "declared",
+      "series_topology": true,
+      "steady_state_no_charge_accumulation": true
+    },
+    "expected": {
+      "element_current": 2
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "parallel_current_sum",
+    "bindings": {
+      "branch_currents": {
+        "value": [
+          1,
+          2,
+          -0.5
+        ],
+        "unit": "A"
+      }
+    },
+    "context": {
+      "object_model": "dc_circuit",
+      "reference_frame": "declared",
+      "parallel_same_two_nodes": true,
+      "oriented_currents": true,
+      "steady_state_no_charge_accumulation": true
+    },
+    "expected": {
+      "total_current": 2.5
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "electrical_work_dc",
+    "bindings": {
+      "voltage": {
+        "value": 12,
+        "unit": "V"
+      },
+      "current": {
+        "value": 2,
+        "unit": "A"
+      },
+      "duration": {
+        "value": 5,
+        "unit": "s"
+      }
+    },
+    "context": {
+      "object_model": "dc_circuit",
+      "reference_frame": "declared",
+      "voltage_current_constant": true,
+      "passive_sign_convention": true
+    },
+    "expected": {
+      "work": 120
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "electrical_power",
+    "bindings": {
+      "voltage": {
+        "value": 12,
+        "unit": "V"
+      },
+      "current": {
+        "value": 2,
+        "unit": "A"
+      }
+    },
+    "context": {
+      "object_model": "dc_circuit",
+      "reference_frame": "declared",
+      "same_instant": true,
+      "passive_sign_convention": true
+    },
+    "expected": {
+      "power": 24
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "current_from_power",
+    "bindings": {
+      "power": {
+        "value": 24,
+        "unit": "W"
+      },
+      "voltage": {
+        "value": 12,
+        "unit": "V"
+      }
+    },
+    "context": {
+      "object_model": "dc_circuit",
+      "reference_frame": "declared",
+      "same_instant": true,
+      "passive_sign_convention": true
+    },
+    "expected": {
+      "current": 2
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "joule_heat",
+    "bindings": {
+      "current": {
+        "value": 2,
+        "unit": "A"
+      },
+      "resistance": {
+        "value": 3,
+        "unit": "ohm"
+      },
+      "duration": {
+        "value": 4,
+        "unit": "s"
+      }
+    },
+    "context": {
+      "object_model": "ohmic_resistor",
+      "reference_frame": "declared",
+      "current_resistance_constant": true,
+      "resistive_heat_only": true
+    },
+    "expected": {
+      "heat": 48
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "joule_power",
+    "bindings": {
+      "current": {
+        "value": 2,
+        "unit": "A"
+      },
+      "resistance": {
+        "value": 3,
+        "unit": "ohm"
+      }
+    },
+    "context": {
+      "object_model": "ohmic_resistor",
+      "reference_frame": "declared",
+      "resistive_heat_only": true
+    },
+    "expected": {
+      "power": 12
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "dc_charge_transfer",
+    "bindings": {
+      "current": {
+        "value": 2,
+        "unit": "A"
+      },
+      "duration": {
+        "value": 3,
+        "unit": "s"
+      }
+    },
+    "context": {
+      "object_model": "dc_circuit",
+      "reference_frame": "declared",
+      "current_constant": true,
+      "oriented_currents": true
+    },
+    "expected": {
+      "charge": 6
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "average_current",
+    "bindings": {
+      "charge": {
+        "value": 6,
+        "unit": "C"
+      },
+      "duration": {
+        "value": 3,
+        "unit": "s"
+      }
+    },
+    "context": {
+      "object_model": "dc_circuit",
+      "reference_frame": "declared",
+      "oriented_currents": true
+    },
+    "expected": {
+      "current": 2
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "resistance_geometry",
+    "bindings": {
+      "resistivity": {
+        "value": 2e-08,
+        "unit": "ohm*m"
+      },
+      "length": {
+        "value": 10,
+        "unit": "m"
+      },
+      "area": {
+        "value": 1e-06,
+        "unit": "m^2"
+      }
+    },
+    "context": {
+      "object_model": "ohmic_resistor",
+      "reference_frame": "declared",
+      "uniform_material": true,
+      "uniform_cross_section": true,
+      "temperature_constant": true,
+      "ohmic_material": true
+    },
+    "expected": {
+      "resistance": 0.2
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "resistivity_measurement",
+    "bindings": {
+      "resistance": {
+        "value": 0.2,
+        "unit": "ohm"
+      },
+      "area": {
+        "value": 1e-06,
+        "unit": "m^2"
+      },
+      "length": {
+        "value": 10,
+        "unit": "m"
+      }
+    },
+    "context": {
+      "object_model": "ohmic_resistor",
+      "reference_frame": "declared",
+      "uniform_material": true,
+      "uniform_cross_section": true,
+      "temperature_constant": true,
+      "ohmic_material": true
+    },
+    "expected": {
+      "resistivity": 2e-08
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "conductivity_reciprocal",
+    "bindings": {
+      "resistivity": {
+        "value": 2e-08,
+        "unit": "ohm*m"
+      }
+    },
+    "context": {
+      "object_model": "ohmic_resistor",
+      "reference_frame": "declared",
+      "isotropic_material": true,
+      "same_operating_point": true
+    },
+    "expected": {
+      "conductivity": 50000000.0
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "circle_cross_section",
+    "bindings": {
+      "diameter": {
+        "value": 2,
+        "unit": "m"
+      }
+    },
+    "context": {
+      "object_model": "ohmic_resistor",
+      "reference_frame": "declared",
+      "circular_cross_section": true
+    },
+    "expected": {
+      "area": 3.141592653589793
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "closed_circuit_current",
+    "bindings": {
+      "emf": {
+        "value": 12,
+        "unit": "V"
+      },
+      "external_resistance": {
+        "value": 5,
+        "unit": "ohm"
+      },
+      "internal_resistance": {
+        "value": 1,
+        "unit": "ohm"
+      }
+    },
+    "context": {
+      "object_model": "dc_circuit",
+      "reference_frame": "declared",
+      "single_source": true,
+      "ohmic_material": true,
+      "steady_dc": true
+    },
+    "expected": {
+      "current": 2
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "terminal_voltage",
+    "bindings": {
+      "emf": {
+        "value": 12,
+        "unit": "V"
+      },
+      "current": {
+        "value": 2,
+        "unit": "A"
+      },
+      "internal_resistance": {
+        "value": 1,
+        "unit": "ohm"
+      }
+    },
+    "context": {
+      "object_model": "dc_circuit",
+      "reference_frame": "declared",
+      "single_source": true,
+      "current_out_of_positive_terminal": true,
+      "steady_dc": true
+    },
+    "expected": {
+      "terminal_voltage": 10
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "open_circuit_voltage",
+    "bindings": {
+      "emf": {
+        "value": 12,
+        "unit": "V"
+      }
+    },
+    "context": {
+      "object_model": "dc_circuit",
+      "reference_frame": "declared",
+      "single_source": true,
+      "open_circuit": true,
+      "ideal_voltage_measurement": true
+    },
+    "expected": {
+      "terminal_voltage": 12
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "short_circuit_current",
+    "bindings": {
+      "emf": {
+        "value": 12,
+        "unit": "V"
+      },
+      "internal_resistance": {
+        "value": 1,
+        "unit": "ohm"
+      }
+    },
+    "context": {
+      "object_model": "dc_circuit",
+      "reference_frame": "declared",
+      "single_source": true,
+      "external_resistance_zero": true,
+      "ohmic_material": true
+    },
+    "expected": {
+      "current": 12
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "emf_work_per_charge",
+    "bindings": {
+      "source_work": {
+        "value": 24,
+        "unit": "J"
+      },
+      "charge": {
+        "value": 2,
+        "unit": "C"
+      }
+    },
+    "context": {
+      "object_model": "dc_circuit",
+      "reference_frame": "declared",
+      "non_electrostatic_source_work": true,
+      "source_polarity_declared": true
+    },
+    "expected": {
+      "emf": 12
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "source_work",
+    "bindings": {
+      "emf": {
+        "value": 12,
+        "unit": "V"
+      },
+      "charge": {
+        "value": 2,
+        "unit": "C"
+      }
+    },
+    "context": {
+      "object_model": "dc_circuit",
+      "reference_frame": "declared",
+      "emf_constant": true,
+      "source_polarity_declared": true
+    },
+    "expected": {
+      "work": 24
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "motor_output_power",
+    "bindings": {
+      "voltage": {
+        "value": 12,
+        "unit": "V"
+      },
+      "current": {
+        "value": 2,
+        "unit": "A"
+      },
+      "winding_resistance": {
+        "value": 1,
+        "unit": "ohm"
+      }
+    },
+    "context": {
+      "object_model": "dc_circuit",
+      "reference_frame": "declared",
+      "steady_motor": true,
+      "copper_loss_only": true,
+      "passive_sign_convention": true
+    },
+    "expected": {
+      "mechanical_power": 20
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "charge_quantization",
+    "bindings": {
+      "count": {
+        "value": -2,
+        "unit": "1"
+      }
+    },
+    "context": {
+      "object_model": "electrostatic",
+      "reference_frame": "declared",
+      "elementary_charge_quantization": true
+    },
+    "expected": {
+      "charge": -3.204353268e-19
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "coulomb_force_magnitude",
+    "bindings": {
+      "k": {
+        "value": 9000000000.0,
+        "unit": "N*m^2/C^2"
+      },
+      "q1": {
+        "value": 1e-06,
+        "unit": "C"
+      },
+      "q2": {
+        "value": -2e-06,
+        "unit": "C"
+      },
+      "distance": {
+        "value": 0.3,
+        "unit": "m"
+      }
+    },
+    "context": {
+      "object_model": "electrostatic",
+      "reference_frame": "declared",
+      "point_charges": true,
+      "vacuum": true,
+      "electrostatic": true
+    },
+    "expected": {
+      "force": 0.2
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "electrostatic_force_sum",
+    "bindings": {
+      "forces": {
+        "value": [
+          [
+            1,
+            2,
+            0
+          ],
+          [
+            -1,
+            3,
+            0
+          ]
+        ],
+        "unit": "N"
+      }
+    },
+    "context": {
+      "object_model": "electrostatic",
+      "reference_frame": "declared",
+      "frame_id": "lab",
+      "electrostatic": true,
+      "same_test_charge": true
+    },
+    "expected": {
+      "net_force": [
+        0,
+        5,
+        0
+      ]
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "electric_field_definition",
+    "bindings": {
+      "force": {
+        "value": [
+          -2,
+          0,
+          0
+        ],
+        "unit": "N"
+      },
+      "test_charge": {
+        "value": -1,
+        "unit": "C"
+      }
+    },
+    "context": {
+      "object_model": "electrostatic",
+      "reference_frame": "declared",
+      "frame_id": "lab",
+      "test_charge_nonperturbing": true,
+      "electrostatic": true
+    },
+    "expected": {
+      "field": [
+        2,
+        0,
+        0
+      ]
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "point_charge_radial_field",
+    "bindings": {
+      "k": {
+        "value": 9000000000.0,
+        "unit": "N*m^2/C^2"
+      },
+      "source_charge": {
+        "value": -1e-06,
+        "unit": "C"
+      },
+      "distance": {
+        "value": 3,
+        "unit": "m"
+      }
+    },
+    "context": {
+      "object_model": "electrostatic",
+      "reference_frame": "declared",
+      "point_charges": true,
+      "vacuum": true,
+      "radial_outward_positive": true
+    },
+    "expected": {
+      "field": -1000
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "electric_field_sum",
+    "bindings": {
+      "fields": {
+        "value": [
+          [
+            1,
+            2,
+            0
+          ],
+          [
+            3,
+            -2,
+            0
+          ]
+        ],
+        "unit": "N/C"
+      }
+    },
+    "context": {
+      "object_model": "electrostatic",
+      "reference_frame": "declared",
+      "frame_id": "lab",
+      "electrostatic": true,
+      "same_field_point": true
+    },
+    "expected": {
+      "field": [
+        4,
+        0,
+        0
+      ]
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "conducting_sphere_external_field",
+    "bindings": {
+      "k": {
+        "value": 9000000000.0,
+        "unit": "N*m^2/C^2"
+      },
+      "charge": {
+        "value": 1e-06,
+        "unit": "C"
+      },
+      "radius": {
+        "value": 1,
+        "unit": "m"
+      },
+      "distance": {
+        "value": 3,
+        "unit": "m"
+      }
+    },
+    "context": {
+      "object_model": "electrostatic",
+      "reference_frame": "declared",
+      "isolated_conducting_sphere": true,
+      "vacuum": true,
+      "electrostatic": true,
+      "radial_outward_positive": true
+    },
+    "expected": {
+      "field": 1000
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "electric_potential",
+    "bindings": {
+      "potential_energy": {
+        "value": 6,
+        "unit": "J"
+      },
+      "test_charge": {
+        "value": 2,
+        "unit": "C"
+      }
+    },
+    "context": {
+      "object_model": "electrostatic",
+      "reference_frame": "declared",
+      "electrostatic": true,
+      "potential_zero_declared": true
+    },
+    "expected": {
+      "potential": 3
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "potential_difference",
+    "bindings": {
+      "potential_a": {
+        "value": 5,
+        "unit": "V"
+      },
+      "potential_b": {
+        "value": 8,
+        "unit": "V"
+      }
+    },
+    "context": {
+      "object_model": "electrostatic",
+      "reference_frame": "declared",
+      "common_potential_reference": true
+    },
+    "expected": {
+      "voltage_ab": -3
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "electrostatic_work",
+    "bindings": {
+      "charge": {
+        "value": -2,
+        "unit": "C"
+      },
+      "voltage_ab": {
+        "value": -3,
+        "unit": "V"
+      }
+    },
+    "context": {
+      "object_model": "electrostatic",
+      "reference_frame": "declared",
+      "electrostatic": true,
+      "voltage_a_minus_b": true,
+      "displacement_a_to_b": true
+    },
+    "expected": {
+      "work": 6
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "uniform_field_voltage",
+    "bindings": {
+      "field": {
+        "value": [
+          3,
+          0,
+          0
+        ],
+        "unit": "N/C"
+      },
+      "displacement": {
+        "value": [
+          2,
+          4,
+          0
+        ],
+        "unit": "m"
+      }
+    },
+    "context": {
+      "object_model": "electrostatic",
+      "reference_frame": "declared",
+      "frame_id": "lab",
+      "electrostatic": true,
+      "uniform_field": true,
+      "displacement_a_to_b": true
+    },
+    "expected": {
+      "voltage_ab": 6
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "electric_force",
+    "bindings": {
+      "charge": {
+        "value": -2,
+        "unit": "C"
+      },
+      "field": {
+        "value": [
+          3,
+          0,
+          0
+        ],
+        "unit": "N/C"
+      }
+    },
+    "context": {
+      "object_model": "electrostatic",
+      "reference_frame": "declared",
+      "frame_id": "lab",
+      "test_charge_nonperturbing": true
+    },
+    "expected": {
+      "force": [
+        -6,
+        0,
+        0
+      ]
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "capacitor_capacitance",
+    "bindings": {
+      "charge_magnitude": {
+        "value": 6e-06,
+        "unit": "C"
+      },
+      "voltage_magnitude": {
+        "value": 3,
+        "unit": "V"
+      }
+    },
+    "context": {
+      "object_model": "electrostatic",
+      "reference_frame": "declared",
+      "two_terminal_capacitor": true,
+      "opposite_plate_charges": true
+    },
+    "expected": {
+      "capacitance": 2e-06
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "parallel_plate_capacitance",
+    "bindings": {
+      "relative_permittivity": {
+        "value": 1,
+        "unit": "1"
+      },
+      "area": {
+        "value": 1,
+        "unit": "m^2"
+      },
+      "k": {
+        "value": 9000000000.0,
+        "unit": "N*m^2/C^2"
+      },
+      "separation": {
+        "value": 0.01,
+        "unit": "m"
+      }
+    },
+    "context": {
+      "object_model": "electrostatic",
+      "reference_frame": "declared",
+      "parallel_plates": true,
+      "uniform_linear_dielectric": true,
+      "fringing_negligible": true
+    },
+    "expected": {
+      "capacitance": 8.841941282883075e-10
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "magnetic_flux_uniform",
+    "bindings": {
+      "field": {
+        "value": 2,
+        "unit": "T"
+      },
+      "area": {
+        "value": 3,
+        "unit": "m^2"
+      },
+      "normal_angle": {
+        "value": 0,
+        "unit": "1"
+      }
+    },
+    "context": {
+      "object_model": "magnetostatic",
+      "reference_frame": "declared",
+      "uniform_magnetic_field": true,
+      "plane_surface": true,
+      "angle_to_oriented_normal": true
+    },
+    "expected": {
+      "flux": 6
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "magnetic_force_wire_magnitude",
+    "bindings": {
+      "field": {
+        "value": 2,
+        "unit": "T"
+      },
+      "current": {
+        "value": 3,
+        "unit": "A"
+      },
+      "length": {
+        "value": 4,
+        "unit": "m"
+      },
+      "angle": {
+        "value": 1.5707963267948966,
+        "unit": "1"
+      }
+    },
+    "context": {
+      "object_model": "magnetostatic",
+      "reference_frame": "declared",
+      "uniform_magnetic_field": true,
+      "straight_wire": true,
+      "angle_current_to_field": true
+    },
+    "expected": {
+      "force": 24
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "perpendicular_wire_force",
+    "bindings": {
+      "field": {
+        "value": 2,
+        "unit": "T"
+      },
+      "current": {
+        "value": -3,
+        "unit": "A"
+      },
+      "length": {
+        "value": 4,
+        "unit": "m"
+      }
+    },
+    "context": {
+      "object_model": "magnetostatic",
+      "reference_frame": "declared",
+      "uniform_magnetic_field": true,
+      "straight_wire": true,
+      "wire_perpendicular_field": true
+    },
+    "expected": {
+      "force": 24
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "magnetic_field_measurement",
+    "bindings": {
+      "force": {
+        "value": 24,
+        "unit": "N"
+      },
+      "current": {
+        "value": 3,
+        "unit": "A"
+      },
+      "length": {
+        "value": 4,
+        "unit": "m"
+      }
+    },
+    "context": {
+      "object_model": "magnetostatic",
+      "reference_frame": "declared",
+      "uniform_magnetic_field": true,
+      "straight_wire": true,
+      "wire_perpendicular_field": true
+    },
+    "expected": {
+      "field": 2
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "faraday_average_emf",
+    "bindings": {
+      "turns": {
+        "value": 10,
+        "unit": "1"
+      },
+      "flux_change": {
+        "value": 0.6,
+        "unit": "Wb"
+      },
+      "duration": {
+        "value": 2,
+        "unit": "s"
+      }
+    },
+    "context": {
+      "object_model": "electromagnetic",
+      "reference_frame": "declared",
+      "same_flux_each_turn": true,
+      "right_hand_loop_orientation": true,
+      "flux_change_final_minus_initial": true
+    },
+    "expected": {
+      "emf": -3
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "motional_emf_perpendicular",
+    "bindings": {
+      "field": {
+        "value": 2,
+        "unit": "T"
+      },
+      "length": {
+        "value": 3,
+        "unit": "m"
+      },
+      "speed": {
+        "value": 4,
+        "unit": "m/s"
+      }
+    },
+    "context": {
+      "object_model": "electromagnetic",
+      "reference_frame": "declared",
+      "uniform_magnetic_field": true,
+      "straight_moving_rod": true,
+      "rod_velocity_field_mutually_perpendicular": true
+    },
+    "expected": {
+      "emf": 24
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "self_induction_average_emf",
+    "bindings": {
+      "inductance": {
+        "value": 2,
+        "unit": "H"
+      },
+      "current_change": {
+        "value": 3,
+        "unit": "A"
+      },
+      "duration": {
+        "value": 4,
+        "unit": "s"
+      }
+    },
+    "context": {
+      "object_model": "electromagnetic",
+      "reference_frame": "declared",
+      "inductance_constant": true,
+      "passive_loop_orientation": true
+    },
+    "expected": {
+      "emf": -1.5
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "sinusoidal_rms_current",
+    "bindings": {
+      "peak": {
+        "value": 10,
+        "unit": "A"
+      }
+    },
+    "context": {
+      "object_model": "electromagnetic",
+      "reference_frame": "declared",
+      "pure_sinusoid": true,
+      "integer_period_average": true
+    },
+    "expected": {
+      "rms": 7.071067811865475
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "sinusoidal_rms_voltage",
+    "bindings": {
+      "peak": {
+        "value": 10,
+        "unit": "V"
+      }
+    },
+    "context": {
+      "object_model": "electromagnetic",
+      "reference_frame": "declared",
+      "pure_sinusoid": true,
+      "integer_period_average": true
+    },
+    "expected": {
+      "rms": 7.071067811865475
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "ideal_transformer_voltage",
+    "bindings": {
+      "primary_voltage": {
+        "value": 220,
+        "unit": "V"
+      },
+      "primary_turns": {
+        "value": 100,
+        "unit": "1"
+      },
+      "secondary_turns": {
+        "value": 5,
+        "unit": "1"
+      }
+    },
+    "context": {
+      "object_model": "ideal_transformer",
+      "reference_frame": "declared",
+      "ideal_transformer": true,
+      "alternating_linked_flux": true,
+      "same_voltage_measure": true
+    },
+    "expected": {
+      "secondary_voltage": 11
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "lc_period",
+    "bindings": {
+      "inductance": {
+        "value": 1,
+        "unit": "H"
+      },
+      "capacitance": {
+        "value": 1,
+        "unit": "F"
+      }
+    },
+    "context": {
+      "object_model": "electromagnetic",
+      "reference_frame": "declared",
+      "ideal_lc": true,
+      "resistance_negligible": true
+    },
+    "expected": {
+      "period": 6.283185307179586
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "first_law_thermodynamics",
+    "bindings": {
+      "heat_into_system": {
+        "value": 5,
+        "unit": "J"
+      },
+      "work_on_system": {
+        "value": -2,
+        "unit": "J"
+      }
+    },
+    "context": {
+      "object_model": "thermal_system",
+      "reference_frame": "declared",
+      "closed_thermodynamic_system": true,
+      "heat_into_system_positive": true,
+      "work_on_system_positive": true,
+      "bulk_kinetic_potential_unchanged": true
+    },
+    "expected": {
+      "internal_energy_change": 3
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "adiabatic_internal_energy",
+    "bindings": {
+      "work_on_system": {
+        "value": 5,
+        "unit": "J"
+      }
+    },
+    "context": {
+      "object_model": "thermal_system",
+      "reference_frame": "declared",
+      "closed_thermodynamic_system": true,
+      "adiabatic": true,
+      "work_on_system_positive": true,
+      "bulk_kinetic_potential_unchanged": true
+    },
+    "expected": {
+      "internal_energy_change": 5
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "isochoric_internal_energy",
+    "bindings": {
+      "heat_into_system": {
+        "value": 5,
+        "unit": "J"
+      }
+    },
+    "context": {
+      "object_model": "thermal_system",
+      "reference_frame": "declared",
+      "closed_thermodynamic_system": true,
+      "rigid_volume": true,
+      "pressure_volume_work_only": true,
+      "bulk_kinetic_potential_unchanged": true
+    },
+    "expected": {
+      "internal_energy_change": 5
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "ideal_gas_state_change",
+    "bindings": {
+      "p1": {
+        "value": 100000,
+        "unit": "Pa"
+      },
+      "v1": {
+        "value": 1,
+        "unit": "m^3"
+      },
+      "t1": {
+        "value": 300,
+        "unit": "K"
+      },
+      "v2": {
+        "value": 2,
+        "unit": "m^3"
+      },
+      "t2": {
+        "value": 600,
+        "unit": "K"
+      }
+    },
+    "context": {
+      "object_model": "ideal_gas",
+      "reference_frame": "declared",
+      "fixed_amount_gas": true,
+      "ideal_gas": true,
+      "equilibrium_end_states": true
+    },
+    "expected": {
+      "p2": 100000
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "isothermal_gas_pressure",
+    "bindings": {
+      "p1": {
+        "value": 100000,
+        "unit": "Pa"
+      },
+      "v1": {
+        "value": 1,
+        "unit": "m^3"
+      },
+      "v2": {
+        "value": 2,
+        "unit": "m^3"
+      }
+    },
+    "context": {
+      "object_model": "ideal_gas",
+      "reference_frame": "declared",
+      "fixed_amount_gas": true,
+      "ideal_gas": true,
+      "isothermal": true
+    },
+    "expected": {
+      "p2": 50000
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "isobaric_gas_volume",
+    "bindings": {
+      "v1": {
+        "value": 1,
+        "unit": "m^3"
+      },
+      "t1": {
+        "value": 300,
+        "unit": "K"
+      },
+      "t2": {
+        "value": 600,
+        "unit": "K"
+      }
+    },
+    "context": {
+      "object_model": "ideal_gas",
+      "reference_frame": "declared",
+      "fixed_amount_gas": true,
+      "ideal_gas": true,
+      "isobaric": true
+    },
+    "expected": {
+      "v2": 2
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "isochoric_gas_pressure",
+    "bindings": {
+      "p1": {
+        "value": 100000,
+        "unit": "Pa"
+      },
+      "t1": {
+        "value": 300,
+        "unit": "K"
+      },
+      "t2": {
+        "value": 600,
+        "unit": "K"
+      }
+    },
+    "context": {
+      "object_model": "ideal_gas",
+      "reference_frame": "declared",
+      "fixed_amount_gas": true,
+      "ideal_gas": true,
+      "rigid_volume": true
+    },
+    "expected": {
+      "p2": 200000
+    },
+    "boundary_conditions": []
   }
 ]
