@@ -343,6 +343,8 @@ def _run_rule(bundle, rule_id, bindings, context, boundary_conditions=()):
     def si_unit(key):
         declared=r['quantities'][key]
         preferred=bundle['units'][declared['unit']]
+        if Fraction(preferred['scale'])==1 and not preferred.get('pi_factor') and not Fraction(preferred.get('offset','0')):
+            return declared['unit']
         return next((u for u,spec in bundle['units'].items() if spec['dimension'] == declared['dimension'] and Fraction(spec['scale']) == 1 and not spec.get('pi_factor') and not Fraction(spec.get('offset','0')) and spec.get('temperature_kind')==preferred.get('temperature_kind')), None)
     return {"rule_id":rule_id,"results":{k:{"si_value":values[k],"si_unit":si_unit(k),"dimension":r["quantities"][k]["dimension"]} for k in r["conclusions"]},"trace":trace}
 

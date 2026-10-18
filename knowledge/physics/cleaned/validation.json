@@ -1,10 +1,10 @@
 {
-  "test_count": 16,
+  "test_count": 17,
   "failures": 0,
   "errors": 0,
   "schema_validated": true,
-  "rule_count": 93,
-  "independent_review": "batch3_review.json",
+  "rule_count": 149,
+  "independent_review": "batch4_review.json",
   "examples": [
     {
       "rule_id": "average_speed",
@@ -2707,6 +2707,1732 @@
           "si_value": 200000.0,
           "principles": [
             "isochoric_gas_pressure"
+          ]
+        }
+      ]
+    },
+    {
+      "rule_id": "free_fall_from_rest",
+      "results": {
+        "position": {
+          "si_value": 23.0,
+          "si_unit": "m",
+          "dimension": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "velocity": {
+          "si_value": 20.0,
+          "si_unit": "m/s",
+          "dimension": [
+            0,
+            1,
+            -1,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "trace": [
+        {
+          "step": "calculate",
+          "quantity": "position",
+          "si_value": 23.0,
+          "principles": [
+            "free_fall_from_rest"
+          ]
+        },
+        {
+          "step": "compute_velocity",
+          "quantity": "velocity",
+          "si_value": 20.0,
+          "principles": [
+            "free_fall_from_rest"
+          ]
+        }
+      ]
+    },
+    {
+      "rule_id": "newton_third_law",
+      "results": {
+        "force_on_partner": {
+          "si_value": [
+            -2.0,
+            3.0,
+            -1.0
+          ],
+          "si_unit": "N",
+          "dimension": [
+            1,
+            1,
+            -2,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "trace": [
+        {
+          "step": "calculate",
+          "quantity": "force_on_partner",
+          "si_value": [
+            -2.0,
+            3.0,
+            -1.0
+          ],
+          "principles": [
+            "newton_third_law"
+          ]
+        }
+      ]
+    },
+    {
+      "rule_id": "equilibrium_force_balance",
+      "results": {
+        "balancing_force": {
+          "si_value": [
+            -2.0,
+            -3.0,
+            -0.0
+          ],
+          "si_unit": "N",
+          "dimension": [
+            1,
+            1,
+            -2,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "trace": [
+        {
+          "step": "calculate",
+          "quantity": "balancing_force",
+          "si_value": [
+            -2.0,
+            -3.0,
+            -0.0
+          ],
+          "principles": [
+            "equilibrium_force_balance"
+          ]
+        }
+      ]
+    },
+    {
+      "rule_id": "force_components_angle_from_y",
+      "results": {
+        "fx": {
+          "si_value": 0.0,
+          "si_unit": "N",
+          "dimension": [
+            1,
+            1,
+            -2,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "fy": {
+          "si_value": 10.0,
+          "si_unit": "N",
+          "dimension": [
+            1,
+            1,
+            -2,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "trace": [
+        {
+          "step": "calculate",
+          "quantity": "fx",
+          "si_value": 0.0,
+          "principles": [
+            "force_components_angle_from_y"
+          ]
+        },
+        {
+          "step": "compute_fy",
+          "quantity": "fy",
+          "si_value": 10.0,
+          "principles": [
+            "force_components_angle_from_y"
+          ]
+        }
+      ]
+    },
+    {
+      "rule_id": "planar_speed_norm",
+      "results": {
+        "speed": {
+          "si_value": 5.0,
+          "si_unit": "m/s",
+          "dimension": [
+            0,
+            1,
+            -1,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "trace": [
+        {
+          "step": "calculate",
+          "quantity": "speed",
+          "si_value": 5.0,
+          "principles": [
+            "planar_speed_norm"
+          ]
+        }
+      ]
+    },
+    {
+      "rule_id": "horizontal_projectile",
+      "results": {
+        "x": {
+          "si_value": 10.0,
+          "si_unit": "m",
+          "dimension": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "y": {
+          "si_value": 23.0,
+          "si_unit": "m",
+          "dimension": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "vx": {
+          "si_value": 4.0,
+          "si_unit": "m/s",
+          "dimension": [
+            0,
+            1,
+            -1,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "vy": {
+          "si_value": 20.0,
+          "si_unit": "m/s",
+          "dimension": [
+            0,
+            1,
+            -1,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "speed": {
+          "si_value": 20.396078054371138,
+          "si_unit": "m/s",
+          "dimension": [
+            0,
+            1,
+            -1,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "trace": [
+        {
+          "step": "calculate",
+          "quantity": "x",
+          "si_value": 10.0,
+          "principles": [
+            "horizontal_projectile"
+          ]
+        },
+        {
+          "step": "compute_y",
+          "quantity": "y",
+          "si_value": 23.0,
+          "principles": [
+            "horizontal_projectile"
+          ]
+        },
+        {
+          "step": "compute_vx",
+          "quantity": "vx",
+          "si_value": 4.0,
+          "principles": [
+            "horizontal_projectile"
+          ]
+        },
+        {
+          "step": "compute_vy",
+          "quantity": "vy",
+          "si_value": 20.0,
+          "principles": [
+            "horizontal_projectile"
+          ]
+        },
+        {
+          "step": "compute_speed",
+          "quantity": "speed",
+          "si_value": 20.396078054371138,
+          "principles": [
+            "horizontal_projectile"
+          ]
+        }
+      ]
+    },
+    {
+      "rule_id": "projectile_trajectory",
+      "results": {
+        "downward_displacement": {
+          "si_value": 5.0,
+          "si_unit": "m",
+          "dimension": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "trace": [
+        {
+          "step": "calculate",
+          "quantity": "downward_displacement",
+          "si_value": 5.0,
+          "principles": [
+            "projectile_trajectory"
+          ]
+        }
+      ]
+    },
+    {
+      "rule_id": "average_angular_velocity",
+      "results": {
+        "angular_velocity": {
+          "si_value": 0.5,
+          "si_unit": "rad/s",
+          "dimension": [
+            0,
+            0,
+            -1,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "trace": [
+        {
+          "step": "calculate",
+          "quantity": "angular_velocity",
+          "si_value": 0.5,
+          "principles": [
+            "average_angular_velocity"
+          ]
+        }
+      ]
+    },
+    {
+      "rule_id": "period_from_frequency",
+      "results": {
+        "period": {
+          "si_value": 0.2,
+          "si_unit": "s",
+          "dimension": [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "trace": [
+        {
+          "step": "calculate",
+          "quantity": "period",
+          "si_value": 0.2,
+          "principles": [
+            "period_from_frequency"
+          ]
+        }
+      ]
+    },
+    {
+      "rule_id": "circular_speed",
+      "results": {
+        "speed": {
+          "si_value": 6.0,
+          "si_unit": "m/s",
+          "dimension": [
+            0,
+            1,
+            -1,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "trace": [
+        {
+          "step": "calculate",
+          "quantity": "speed",
+          "si_value": 6.0,
+          "principles": [
+            "circular_speed"
+          ]
+        }
+      ]
+    },
+    {
+      "rule_id": "centripetal_force",
+      "results": {
+        "force": {
+          "si_value": 3.0,
+          "si_unit": "N",
+          "dimension": [
+            1,
+            1,
+            -2,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "trace": [
+        {
+          "step": "calculate",
+          "quantity": "force",
+          "si_value": 3.0,
+          "principles": [
+            "centripetal_force"
+          ]
+        }
+      ]
+    },
+    {
+      "rule_id": "centripetal_acceleration",
+      "results": {
+        "acceleration": {
+          "si_value": 1.5,
+          "si_unit": "m/s^2",
+          "dimension": [
+            0,
+            1,
+            -2,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "trace": [
+        {
+          "step": "calculate",
+          "quantity": "acceleration",
+          "si_value": 1.5,
+          "principles": [
+            "centripetal_acceleration"
+          ]
+        }
+      ]
+    },
+    {
+      "rule_id": "kepler_orbit_constant",
+      "results": {
+        "constant": {
+          "si_value": 16.0,
+          "si_unit": "m^3/s^2",
+          "dimension": [
+            0,
+            3,
+            -2,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "trace": [
+        {
+          "step": "calculate",
+          "quantity": "constant",
+          "si_value": 16.0,
+          "principles": [
+            "kepler_orbit_constant"
+          ]
+        }
+      ]
+    },
+    {
+      "rule_id": "universal_gravitation",
+      "results": {
+        "force": {
+          "si_value": 1.0011449999999999e-10,
+          "si_unit": "N",
+          "dimension": [
+            1,
+            1,
+            -2,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "trace": [
+        {
+          "step": "calculate",
+          "quantity": "force",
+          "si_value": 1.0011449999999999e-10,
+          "principles": [
+            "universal_gravitation"
+          ]
+        }
+      ]
+    },
+    {
+      "rule_id": "mass_from_surface_gravity",
+      "results": {
+        "central_mass": {
+          "si_value": 20.0,
+          "si_unit": "kg",
+          "dimension": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "trace": [
+        {
+          "step": "calculate",
+          "quantity": "central_mass",
+          "si_value": 20.0,
+          "principles": [
+            "mass_from_surface_gravity"
+          ]
+        }
+      ]
+    },
+    {
+      "rule_id": "central_mass_from_orbit",
+      "results": {
+        "central_mass": {
+          "si_value": 39.47841760435743,
+          "si_unit": "kg",
+          "dimension": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "trace": [
+        {
+          "step": "calculate",
+          "quantity": "central_mass",
+          "si_value": 39.47841760435743,
+          "principles": [
+            "central_mass_from_orbit"
+          ]
+        }
+      ]
+    },
+    {
+      "rule_id": "circular_orbit_speed",
+      "results": {
+        "speed": {
+          "si_value": 2.0,
+          "si_unit": "m/s",
+          "dimension": [
+            0,
+            1,
+            -1,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "trace": [
+        {
+          "step": "calculate",
+          "quantity": "speed",
+          "si_value": 2.0,
+          "principles": [
+            "circular_orbit_speed"
+          ]
+        }
+      ]
+    },
+    {
+      "rule_id": "escape_speed",
+      "results": {
+        "speed": {
+          "si_value": 2.0,
+          "si_unit": "m/s",
+          "dimension": [
+            0,
+            1,
+            -1,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "trace": [
+        {
+          "step": "calculate",
+          "quantity": "speed",
+          "si_value": 2.0,
+          "principles": [
+            "escape_speed"
+          ]
+        }
+      ]
+    },
+    {
+      "rule_id": "time_dilation",
+      "results": {
+        "duration": {
+          "si_value": 3.75,
+          "si_unit": "s",
+          "dimension": [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "trace": [
+        {
+          "step": "calculate",
+          "quantity": "duration",
+          "si_value": 3.75,
+          "principles": [
+            "time_dilation"
+          ]
+        }
+      ]
+    },
+    {
+      "rule_id": "length_contraction",
+      "results": {
+        "length": {
+          "si_value": 4.0,
+          "si_unit": "m",
+          "dimension": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "trace": [
+        {
+          "step": "calculate",
+          "quantity": "length",
+          "si_value": 4.0,
+          "principles": [
+            "length_contraction"
+          ]
+        }
+      ]
+    },
+    {
+      "rule_id": "instantaneous_mechanical_power",
+      "results": {
+        "power": {
+          "si_value": -6.0,
+          "si_unit": "W",
+          "dimension": [
+            1,
+            2,
+            -3,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "trace": [
+        {
+          "step": "calculate",
+          "quantity": "power",
+          "si_value": -6.0,
+          "principles": [
+            "instantaneous_mechanical_power"
+          ]
+        }
+      ]
+    },
+    {
+      "rule_id": "gravity_work",
+      "results": {
+        "work": {
+          "si_value": -40.0,
+          "si_unit": "J",
+          "dimension": [
+            1,
+            2,
+            -2,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "trace": [
+        {
+          "step": "calculate",
+          "quantity": "work",
+          "si_value": -40.0,
+          "principles": [
+            "gravity_work"
+          ]
+        }
+      ]
+    },
+    {
+      "rule_id": "kinetic_energy",
+      "results": {
+        "energy": {
+          "si_value": 25.0,
+          "si_unit": "J",
+          "dimension": [
+            1,
+            2,
+            -2,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "trace": [
+        {
+          "step": "calculate",
+          "quantity": "energy",
+          "si_value": 25.0,
+          "principles": [
+            "kinetic_energy"
+          ]
+        }
+      ]
+    },
+    {
+      "rule_id": "work_kinetic_energy",
+      "results": {
+        "final_energy": {
+          "si_value": 6.0,
+          "si_unit": "J",
+          "dimension": [
+            1,
+            2,
+            -2,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "trace": [
+        {
+          "step": "calculate",
+          "quantity": "final_energy",
+          "si_value": 6.0,
+          "principles": [
+            "work_kinetic_energy"
+          ]
+        }
+      ]
+    },
+    {
+      "rule_id": "mechanical_energy_conservation",
+      "results": {
+        "final_speed_squared": {
+          "si_value": 89.0,
+          "si_unit": "m^2/s^2",
+          "dimension": [
+            0,
+            2,
+            -2,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "trace": [
+        {
+          "step": "calculate",
+          "quantity": "final_speed_squared",
+          "si_value": 89.0,
+          "principles": [
+            "mechanical_energy_conservation"
+          ]
+        }
+      ]
+    },
+    {
+      "rule_id": "two_body_momentum_balance",
+      "results": {
+        "v2_final": {
+          "si_value": [
+            4.0,
+            0.0,
+            0.0
+          ],
+          "si_unit": "m/s",
+          "dimension": [
+            0,
+            1,
+            -1,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "trace": [
+        {
+          "step": "calculate",
+          "quantity": "v2_final",
+          "si_value": [
+            4.0,
+            0.0,
+            0.0
+          ],
+          "principles": [
+            "two_body_momentum_balance"
+          ]
+        }
+      ]
+    },
+    {
+      "rule_id": "elastic_collision_energy_balance",
+      "results": {
+        "final_total_energy": {
+          "si_value": 20.0,
+          "si_unit": "J",
+          "dimension": [
+            1,
+            2,
+            -2,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "trace": [
+        {
+          "step": "calculate",
+          "quantity": "final_total_energy",
+          "si_value": 20.0,
+          "principles": [
+            "elastic_collision_energy_balance"
+          ]
+        }
+      ]
+    },
+    {
+      "rule_id": "harmonic_motion_initial_state",
+      "results": {
+        "x": {
+          "si_value": 2.0,
+          "si_unit": "m",
+          "dimension": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "trace": [
+        {
+          "step": "calculate",
+          "quantity": "x",
+          "si_value": 2.0,
+          "principles": [
+            "harmonic_motion_initial_state"
+          ]
+        }
+      ]
+    },
+    {
+      "rule_id": "angular_frequency",
+      "results": {
+        "omega": {
+          "si_value": 12.566370614359172,
+          "si_unit": "rad/s",
+          "dimension": [
+            0,
+            0,
+            -1,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "trace": [
+        {
+          "step": "calculate",
+          "quantity": "omega",
+          "si_value": 12.566370614359172,
+          "principles": [
+            "angular_frequency"
+          ]
+        }
+      ]
+    },
+    {
+      "rule_id": "phase_difference",
+      "results": {
+        "phase_difference": {
+          "si_value": -3.0,
+          "si_unit": "1",
+          "dimension": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "trace": [
+        {
+          "step": "calculate",
+          "quantity": "phase_difference",
+          "si_value": -3.0,
+          "principles": [
+            "phase_difference"
+          ]
+        }
+      ]
+    },
+    {
+      "rule_id": "pendulum_linear_restoring_force",
+      "results": {
+        "force": {
+          "si_value": -1.0,
+          "si_unit": "N",
+          "dimension": [
+            1,
+            1,
+            -2,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "trace": [
+        {
+          "step": "calculate",
+          "quantity": "force",
+          "si_value": -1.0,
+          "principles": [
+            "pendulum_linear_restoring_force"
+          ]
+        }
+      ]
+    },
+    {
+      "rule_id": "small_pendulum_period",
+      "results": {
+        "period": {
+          "si_value": 6.283185307179586,
+          "si_unit": "s",
+          "dimension": [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "trace": [
+        {
+          "step": "calculate",
+          "quantity": "period",
+          "si_value": 6.283185307179586,
+          "principles": [
+            "small_pendulum_period"
+          ]
+        }
+      ]
+    },
+    {
+      "rule_id": "wave_phase_speed",
+      "results": {
+        "speed": {
+          "si_value": 6.0,
+          "si_unit": "m/s",
+          "dimension": [
+            0,
+            1,
+            -1,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "trace": [
+        {
+          "step": "calculate",
+          "quantity": "speed",
+          "si_value": 6.0,
+          "principles": [
+            "wave_phase_speed"
+          ]
+        }
+      ]
+    },
+    {
+      "rule_id": "refractive_index",
+      "results": {
+        "index": {
+          "si_value": 1.5,
+          "si_unit": "1",
+          "dimension": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "trace": [
+        {
+          "step": "calculate",
+          "quantity": "index",
+          "si_value": 1.5,
+          "principles": [
+            "refractive_index"
+          ]
+        }
+      ]
+    },
+    {
+      "rule_id": "snell_transmitted_sine",
+      "results": {
+        "transmitted_sine": {
+          "si_value": 0.5,
+          "si_unit": "1",
+          "dimension": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "trace": [
+        {
+          "step": "calculate",
+          "quantity": "transmitted_sine",
+          "si_value": 0.5,
+          "principles": [
+            "snell_transmitted_sine"
+          ]
+        }
+      ]
+    },
+    {
+      "rule_id": "total_internal_reflection_angle",
+      "results": {
+        "critical_angle": {
+          "si_value": 0.5235987755982989,
+          "si_unit": "1",
+          "dimension": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "trace": [
+        {
+          "step": "calculate",
+          "quantity": "critical_angle",
+          "si_value": 0.5235987755982989,
+          "principles": [
+            "total_internal_reflection_angle"
+          ]
+        }
+      ]
+    },
+    {
+      "rule_id": "double_slit_fringe_spacing",
+      "results": {
+        "spacing": {
+          "si_value": 0.001,
+          "si_unit": "m",
+          "dimension": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "trace": [
+        {
+          "step": "calculate",
+          "quantity": "spacing",
+          "si_value": 0.001,
+          "principles": [
+            "double_slit_fringe_spacing"
+          ]
+        }
+      ]
+    },
+    {
+      "rule_id": "wavelength_from_double_slit",
+      "results": {
+        "wavelength": {
+          "si_value": 5e-07,
+          "si_unit": "m",
+          "dimension": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "trace": [
+        {
+          "step": "calculate",
+          "quantity": "wavelength",
+          "si_value": 5e-07,
+          "principles": [
+            "wavelength_from_double_slit"
+          ]
+        }
+      ]
+    },
+    {
+      "rule_id": "fringe_spacing_measurement",
+      "results": {
+        "spacing": {
+          "si_value": 0.001,
+          "si_unit": "m",
+          "dimension": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "trace": [
+        {
+          "step": "calculate",
+          "quantity": "spacing",
+          "si_value": 0.001,
+          "principles": [
+            "fringe_spacing_measurement"
+          ]
+        }
+      ]
+    },
+    {
+      "rule_id": "lorentz_force_magnitude",
+      "results": {
+        "force": {
+          "si_value": 24.0,
+          "si_unit": "N",
+          "dimension": [
+            1,
+            1,
+            -2,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "trace": [
+        {
+          "step": "calculate",
+          "quantity": "force",
+          "si_value": 24.0,
+          "principles": [
+            "lorentz_force_magnitude"
+          ]
+        }
+      ]
+    },
+    {
+      "rule_id": "lorentz_force_vector",
+      "results": {
+        "force": {
+          "si_value": [
+            -0.0,
+            24.0,
+            -0.0
+          ],
+          "si_unit": "N",
+          "dimension": [
+            1,
+            1,
+            -2,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "trace": [
+        {
+          "step": "calculate",
+          "quantity": "force",
+          "si_value": [
+            -0.0,
+            24.0,
+            -0.0
+          ],
+          "principles": [
+            "lorentz_force_vector"
+          ]
+        }
+      ]
+    },
+    {
+      "rule_id": "charged_particle_gyroradius",
+      "results": {
+        "radius": {
+          "si_value": 1.0,
+          "si_unit": "m",
+          "dimension": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "trace": [
+        {
+          "step": "calculate",
+          "quantity": "radius",
+          "si_value": 1.0,
+          "principles": [
+            "charged_particle_gyroradius"
+          ]
+        }
+      ]
+    },
+    {
+      "rule_id": "charged_particle_gyroperiod",
+      "results": {
+        "period": {
+          "si_value": 3.141592653589793,
+          "si_unit": "s",
+          "dimension": [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "trace": [
+        {
+          "step": "calculate",
+          "quantity": "period",
+          "si_value": 3.141592653589793,
+          "principles": [
+            "charged_particle_gyroperiod"
+          ]
+        }
+      ]
+    },
+    {
+      "rule_id": "electrostatic_acceleration_from_rest",
+      "results": {
+        "speed": {
+          "si_value": 2.0,
+          "si_unit": "m/s",
+          "dimension": [
+            0,
+            1,
+            -1,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "trace": [
+        {
+          "step": "calculate",
+          "quantity": "speed",
+          "si_value": 2.0,
+          "principles": [
+            "electrostatic_acceleration_from_rest"
+          ]
+        }
+      ]
+    },
+    {
+      "rule_id": "rotating_coil_emf",
+      "results": {
+        "emf": {
+          "si_value": 0.0,
+          "si_unit": "V",
+          "dimension": [
+            1,
+            2,
+            -3,
+            -1,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "trace": [
+        {
+          "step": "calculate",
+          "quantity": "emf",
+          "si_value": 0.0,
+          "principles": [
+            "rotating_coil_emf"
+          ]
+        }
+      ]
+    },
+    {
+      "rule_id": "motional_emf_oblique",
+      "results": {
+        "emf": {
+          "si_value": 24.0,
+          "si_unit": "V",
+          "dimension": [
+            1,
+            2,
+            -3,
+            -1,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "trace": [
+        {
+          "step": "calculate",
+          "quantity": "emf",
+          "si_value": 24.0,
+          "principles": [
+            "motional_emf_oblique"
+          ]
+        }
+      ]
+    },
+    {
+      "rule_id": "sinusoidal_current",
+      "results": {
+        "current": {
+          "si_value": 0.0,
+          "si_unit": "A",
+          "dimension": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "trace": [
+        {
+          "step": "calculate",
+          "quantity": "current",
+          "si_value": 0.0,
+          "principles": [
+            "sinusoidal_current"
+          ]
+        }
+      ]
+    },
+    {
+      "rule_id": "sinusoidal_voltage",
+      "results": {
+        "voltage": {
+          "si_value": 2.0,
+          "si_unit": "V",
+          "dimension": [
+            1,
+            2,
+            -3,
+            -1,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "trace": [
+        {
+          "step": "calculate",
+          "quantity": "voltage",
+          "si_value": 2.0,
+          "principles": [
+            "sinusoidal_voltage"
+          ]
+        }
+      ]
+    },
+    {
+      "rule_id": "photon_energy",
+      "results": {
+        "energy": {
+          "si_value": 6.62607015e-20,
+          "si_unit": "J",
+          "dimension": [
+            1,
+            2,
+            -2,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "trace": [
+        {
+          "step": "calculate",
+          "quantity": "energy",
+          "si_value": 6.62607015e-20,
+          "principles": [
+            "photon_energy"
+          ]
+        }
+      ]
+    },
+    {
+      "rule_id": "photoelectric_maximum_energy",
+      "results": {
+        "kinetic_energy": {
+          "si_value": 3.6260701500000003e-19,
+          "si_unit": "J",
+          "dimension": [
+            1,
+            2,
+            -2,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "trace": [
+        {
+          "step": "calculate",
+          "quantity": "kinetic_energy",
+          "si_value": 3.6260701500000003e-19,
+          "principles": [
+            "photoelectric_maximum_energy"
+          ]
+        }
+      ]
+    },
+    {
+      "rule_id": "photon_momentum",
+      "results": {
+        "momentum": {
+          "si_value": 6.62607015e-28,
+          "si_unit": "kg*m/s",
+          "dimension": [
+            1,
+            1,
+            -1,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "trace": [
+        {
+          "step": "calculate",
+          "quantity": "momentum",
+          "si_value": 6.62607015e-28,
+          "principles": [
+            "photon_momentum"
+          ]
+        }
+      ]
+    },
+    {
+      "rule_id": "balmer_wavelength",
+      "results": {
+        "wavelength": {
+          "si_value": 6.564696063498423e-07,
+          "si_unit": "m",
+          "dimension": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "trace": [
+        {
+          "step": "calculate",
+          "quantity": "wavelength",
+          "si_value": 6.564696063498423e-07,
+          "principles": [
+            "balmer_wavelength"
+          ]
+        }
+      ]
+    },
+    {
+      "rule_id": "emission_transition_frequency",
+      "results": {
+        "frequency": {
+          "si_value": 150919017964215.2,
+          "si_unit": "Hz",
+          "dimension": [
+            0,
+            0,
+            -1,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "trace": [
+        {
+          "step": "calculate",
+          "quantity": "frequency",
+          "si_value": 150919017964215.2,
+          "principles": [
+            "emission_transition_frequency"
+          ]
+        }
+      ]
+    },
+    {
+      "rule_id": "de_broglie_wavelength",
+      "results": {
+        "wavelength": {
+          "si_value": 1e-06,
+          "si_unit": "m",
+          "dimension": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "trace": [
+        {
+          "step": "calculate",
+          "quantity": "wavelength",
+          "si_value": 1e-06,
+          "principles": [
+            "de_broglie_wavelength"
+          ]
+        }
+      ]
+    },
+    {
+      "rule_id": "matter_wave_frequency",
+      "results": {
+        "frequency": {
+          "si_value": 100000000000000.0,
+          "si_unit": "Hz",
+          "dimension": [
+            0,
+            0,
+            -1,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "trace": [
+        {
+          "step": "calculate",
+          "quantity": "frequency",
+          "si_value": 100000000000000.0,
+          "principles": [
+            "matter_wave_frequency"
+          ]
+        }
+      ]
+    },
+    {
+      "rule_id": "rest_energy",
+      "results": {
+        "rest_energy": {
+          "si_value": 8.987551787368176e+16,
+          "si_unit": "J",
+          "dimension": [
+            1,
+            2,
+            -2,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "trace": [
+        {
+          "step": "calculate",
+          "quantity": "rest_energy",
+          "si_value": 8.987551787368176e+16,
+          "principles": [
+            "rest_energy"
           ]
         }
       ]

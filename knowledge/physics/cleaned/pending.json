@@ -42,12 +42,6 @@
     "status": "pending_semantic_conversion"
   },
   {
-    "id": "physics_8b_rjb_cpt72",
-    "name": "动能",
-    "original_formula": "与质量和速度有关",
-    "status": "pending_semantic_conversion"
-  },
-  {
     "id": "physics_9_rjb_cpt31",
     "name": "电荷量",
     "original_formula": "Q 或 q；符号单位：C",
@@ -78,195 +72,9 @@
     "status": "pending_semantic_conversion"
   },
   {
-    "id": "physics_9_rjb_cpt167",
-    "name": "波速",
-    "original_formula": "v = λ f",
-    "status": "pending_semantic_conversion"
-  },
-  {
-    "id": "physics_bx1_rjb_cpt36",
-    "name": "自由落体运动",
-    "original_formula": "v = g t; x = 1/2 g t^2",
-    "status": "pending_semantic_conversion"
-  },
-  {
     "id": "physics_bx1_rjb_cpt42",
     "name": "最大静摩擦力",
     "original_formula": "0 < F ≤ F_max",
-    "status": "pending_semantic_conversion"
-  },
-  {
-    "id": "physics_bx1_rjb_cpt46",
-    "name": "牛顿第三定律",
-    "original_formula": "F_作用 = - F_反作用",
-    "status": "pending_semantic_conversion"
-  },
-  {
-    "id": "physics_bx1_rjb_cpt56",
-    "name": "共点力平衡条件",
-    "original_formula": "F合 = 0",
-    "status": "pending_semantic_conversion"
-  },
-  {
-    "id": "physics_bx1_rjb_cpt58",
-    "name": "力的正交分解",
-    "original_formula": "F_x = F sinθ, F_y = F cosθ 等",
-    "status": "pending_semantic_conversion"
-  },
-  {
-    "id": "physics_bx1_rjb_cpt76",
-    "name": "匀变速直线运动规律",
-    "original_formula": "v^2 - v_0^2 = 2ax; x = v_0 t + 1/2 at^2",
-    "status": "pending_semantic_conversion"
-  },
-  {
-    "id": "physics_bx2_rjb_cpt8",
-    "name": "速度的分解",
-    "original_formula": "v = √(vx² + vy²), tanθ = vy / vx",
-    "status": "pending_semantic_conversion"
-  },
-  {
-    "id": "physics_bx2_rjb_cpt15",
-    "name": "平抛运动的速度规律",
-    "original_formula": "vx=v0，vy=gt，v=√(v0²+g²t²)",
-    "status": "pending_semantic_conversion"
-  },
-  {
-    "id": "physics_bx2_rjb_cpt16",
-    "name": "平抛运动的位移规律",
-    "original_formula": "x=v0 t, y=1/2 g t²",
-    "status": "pending_semantic_conversion"
-  },
-  {
-    "id": "physics_bx2_rjb_cpt17",
-    "name": "平抛运动轨迹方程",
-    "original_formula": "y = (g / 2v0²) x²",
-    "status": "pending_semantic_conversion"
-  },
-  {
-    "id": "physics_bx2_rjb_cpt19",
-    "name": "线速度",
-    "original_formula": "v = Δs/Δt",
-    "status": "pending_semantic_conversion"
-  },
-  {
-    "id": "physics_bx2_rjb_cpt22",
-    "name": "角速度",
-    "original_formula": "ω = Δθ/Δt",
-    "status": "pending_semantic_conversion"
-  },
-  {
-    "id": "physics_bx2_rjb_cpt23",
-    "name": "周期",
-    "original_formula": "T = 1/f",
-    "status": "pending_semantic_conversion"
-  },
-  {
-    "id": "physics_bx2_rjb_cpt25",
-    "name": "线速度与角速度的关系",
-    "original_formula": "v = ωr",
-    "status": "pending_semantic_conversion"
-  },
-  {
-    "id": "physics_bx2_rjb_cpt26",
-    "name": "向心力",
-    "original_formula": "F_n = mω^2 r 或 F_n = mv^2/r",
-    "status": "pending_semantic_conversion"
-  },
-  {
-    "id": "physics_bx2_rjb_cpt29",
-    "name": "向心力公式",
-    "original_formula": "F_n = mω^2 r; F_n = mv^2/r",
-    "status": "pending_semantic_conversion"
-  },
-  {
-    "id": "physics_bx2_rjb_cpt30",
-    "name": "向心加速度",
-    "original_formula": "a_n = v^2/r = ω^2 r",
-    "status": "pending_semantic_conversion"
-  },
-  {
-    "id": "physics_bx2_rjb_cpt40",
-    "name": "开普勒第三定律",
-    "original_formula": "a^3 / T^2 = k",
-    "status": "pending_semantic_conversion"
-  },
-  {
-    "id": "physics_bx2_rjb_cpt42",
-    "name": "万有引力定律",
-    "original_formula": "F = G * m1 * m2 / r^2",
-    "status": "pending_semantic_conversion"
-  },
-  {
-    "id": "physics_bx2_rjb_cpt44",
-    "name": "地球质量的计算公式",
-    "original_formula": "m地 = gR^2 / G",
-    "status": "pending_semantic_conversion"
-  },
-  {
-    "id": "physics_bx2_rjb_cpt46",
-    "name": "天体质量的计算",
-    "original_formula": "m = 4π² r³ / (G T²)",
-    "status": "pending_semantic_conversion"
-  },
-  {
-    "id": "physics_bx2_rjb_cpt48",
-    "name": "第一宇宙速度",
-    "original_formula": "v = sqrt(G M / R) 或 v = sqrt(g R)",
-    "status": "pending_semantic_conversion"
-  },
-  {
-    "id": "physics_bx2_rjb_cpt51",
-    "name": "万有引力提供向心力",
-    "original_formula": "G M m / r^2 = m v^2 / r",
-    "status": "pending_semantic_conversion"
-  },
-  {
-    "id": "physics_bx2_rjb_cpt52",
-    "name": "逃逸速度",
-    "original_formula": "v = sqrt(2 G M / R)",
-    "status": "pending_semantic_conversion"
-  },
-  {
-    "id": "physics_bx2_rjb_cpt59",
-    "name": "时间延缓效应",
-    "original_formula": "Δt = Δτ / sqrt(1 - (v/c)^2)",
-    "status": "pending_semantic_conversion"
-  },
-  {
-    "id": "physics_bx2_rjb_cpt60",
-    "name": "长度收缩效应",
-    "original_formula": "l = l0 * sqrt(1 - (v/c)^2)",
-    "status": "pending_semantic_conversion"
-  },
-  {
-    "id": "physics_bx2_rjb_cpt64",
-    "name": "恒力做功的功率表达式",
-    "original_formula": "P = Fv",
-    "status": "pending_semantic_conversion"
-  },
-  {
-    "id": "physics_bx2_rjb_cpt65",
-    "name": "重力做功",
-    "original_formula": "W_G = mg(h_1 - h_2)",
-    "status": "pending_semantic_conversion"
-  },
-  {
-    "id": "physics_bx2_rjb_cpt67",
-    "name": "动能定理",
-    "original_formula": "W = ΔE_k",
-    "status": "pending_semantic_conversion"
-  },
-  {
-    "id": "physics_bx2_rjb_cpt68",
-    "name": "机械能守恒定律",
-    "original_formula": "1/2 m v^2 + m g h = 常量",
-    "status": "pending_semantic_conversion"
-  },
-  {
-    "id": "physics_bx2_rjb_cpt69",
-    "name": "向心力与向心加速度",
-    "original_formula": "a = v^2 / r",
     "status": "pending_semantic_conversion"
   },
   {
@@ -330,12 +138,6 @@
     "status": "pending_semantic_conversion"
   },
   {
-    "id": "physics_bx3_rjb_cpt64",
-    "name": "静电力做功与动能变化（动能定理在静电场中的应用）",
-    "original_formula": "qU=\\frac{1}{2}mv^2",
-    "status": "pending_semantic_conversion"
-  },
-  {
     "id": "physics_bx3_rjb_cpt72",
     "name": "微法",
     "original_formula": "1 μF = 10^-6 F",
@@ -345,12 +147,6 @@
     "id": "physics_bx3_rjb_cpt73",
     "name": "皮法",
     "original_formula": "1 pF = 10^-12 F",
-    "status": "pending_semantic_conversion"
-  },
-  {
-    "id": "physics_bx3_rjb_cpt83",
-    "name": "动能定理（静电力做功与动能变化）",
-    "original_formula": "W = \\Delta E_k",
     "status": "pending_semantic_conversion"
   },
   {
@@ -420,177 +216,15 @@
     "status": "pending_semantic_conversion"
   },
   {
-    "id": "physics_bx3_rjb_cpt191",
-    "name": "电磁波的波速公式",
-    "original_formula": "c = λ f",
-    "status": "pending_semantic_conversion"
-  },
-  {
-    "id": "physics_bx3_rjb_cpt199",
-    "name": "能量子",
-    "original_formula": "ε = hν",
-    "status": "pending_semantic_conversion"
-  },
-  {
     "id": "physics_bx3_rjb_cpt200",
     "name": "普朗克常量",
     "original_formula": "h = 6.62607015×10^-34 J·s",
     "status": "pending_semantic_conversion"
   },
   {
-    "id": "physics_bx3_rjb_cpt202",
-    "name": "光子",
-    "original_formula": "E_photon = hν",
-    "status": "pending_semantic_conversion"
-  },
-  {
-    "id": "physics_xzxbx1_rjb_cpt10",
-    "name": "动量守恒定律",
-    "original_formula": "m1 v1 + m2 v2 = m1 v1' + m2 v2'",
-    "status": "pending_semantic_conversion"
-  },
-  {
-    "id": "physics_xzxbx1_rjb_cpt15",
-    "name": "动能守恒（在弹性碰撞中）",
-    "original_formula": "1/2 m1 v1^2 + 1/2 m2 v2^2 = 1/2 m1 v1'^2 + 1/2 m2 v2'^2",
-    "status": "pending_semantic_conversion"
-  },
-  {
-    "id": "physics_xzxbx1_rjb_cpt16",
-    "name": "动量守恒",
-    "original_formula": "m1 v1 + m2 v2 = m1 v1' + m2 v2'",
-    "status": "pending_semantic_conversion"
-  },
-  {
     "id": "physics_xzxbx1_rjb_cpt18",
     "name": "火箭原理",
     "original_formula": "Δv = -(Δm/m)u",
-    "status": "pending_semantic_conversion"
-  },
-  {
-    "id": "physics_xzxbx1_rjb_cpt24",
-    "name": "简谐运动",
-    "original_formula": "x = A sin(ωt + φ)",
-    "status": "pending_semantic_conversion"
-  },
-  {
-    "id": "physics_xzxbx1_rjb_cpt25",
-    "name": "圆频率",
-    "original_formula": "ω = 2π/T = 2πf",
-    "status": "pending_semantic_conversion"
-  },
-  {
-    "id": "physics_xzxbx1_rjb_cpt28",
-    "name": "相位差",
-    "original_formula": "Δφ = φ1 - φ2",
-    "status": "pending_semantic_conversion"
-  },
-  {
-    "id": "physics_xzxbx1_rjb_cpt29",
-    "name": "回复力",
-    "original_formula": "F = - (mg/l)x",
-    "status": "pending_semantic_conversion"
-  },
-  {
-    "id": "physics_xzxbx1_rjb_cpt33",
-    "name": "单摆周期",
-    "original_formula": "T = 2π √(l/g)",
-    "status": "pending_semantic_conversion"
-  },
-  {
-    "id": "physics_xzxbx1_rjb_cpt36",
-    "name": "单摆周期公式",
-    "original_formula": "T = 2π√(l/g)",
-    "status": "pending_semantic_conversion"
-  },
-  {
-    "id": "physics_xzxbx1_rjb_cpt69",
-    "name": "光的折射定律",
-    "original_formula": "sinθ1 / sinθ2 = n12",
-    "status": "pending_semantic_conversion"
-  },
-  {
-    "id": "physics_xzxbx1_rjb_cpt70",
-    "name": "折射率",
-    "original_formula": "n = c / v",
-    "status": "pending_semantic_conversion"
-  },
-  {
-    "id": "physics_xzxbx1_rjb_cpt74",
-    "name": "临界角",
-    "original_formula": "sin C = 1 / n",
-    "status": "pending_semantic_conversion"
-  },
-  {
-    "id": "physics_xzxbx1_rjb_cpt82",
-    "name": "干涉条纹位置公式",
-    "original_formula": "Δx = (l/d)λ",
-    "status": "pending_semantic_conversion"
-  },
-  {
-    "id": "physics_xzxbx1_rjb_cpt84",
-    "name": "干涉条纹间距 Δx",
-    "original_formula": "Δx = (l/d) λ 或 Δx = a / (n - 1)",
-    "status": "pending_semantic_conversion"
-  },
-  {
-    "id": "physics_xzxbx1_rjb_cpt85",
-    "name": "光的波长 λ",
-    "original_formula": "λ = (d/l) Δx",
-    "status": "pending_semantic_conversion"
-  },
-  {
-    "id": "physics_xzxbx2_rjb_cpt4",
-    "name": "洛伦兹力",
-    "original_formula": "F = q v B sinθ",
-    "status": "pending_semantic_conversion"
-  },
-  {
-    "id": "physics_xzxbx2_rjb_cpt7",
-    "name": "圆周运动半径公式",
-    "original_formula": "r = mv/(qB)",
-    "status": "pending_semantic_conversion"
-  },
-  {
-    "id": "physics_xzxbx2_rjb_cpt8",
-    "name": "圆周运动周期公式",
-    "original_formula": "T = 2πm/(qB)",
-    "status": "pending_semantic_conversion"
-  },
-  {
-    "id": "physics_xzxbx2_rjb_cpt9",
-    "name": "洛伦兹力与带电粒子圆周运动",
-    "original_formula": "r = mv/(qB); T = 2πm/(qB)",
-    "status": "pending_semantic_conversion"
-  },
-  {
-    "id": "physics_xzxbx2_rjb_cpt10",
-    "name": "电场加速带电粒子",
-    "original_formula": "v = sqrt(2qU/m)",
-    "status": "pending_semantic_conversion"
-  },
-  {
-    "id": "physics_xzxbx2_rjb_cpt19",
-    "name": "感应电动势",
-    "original_formula": "e = ω B S sin(ωt)",
-    "status": "pending_semantic_conversion"
-  },
-  {
-    "id": "physics_xzxbx2_rjb_cpt24",
-    "name": "导线运动方向与磁场夹角的感应电动势",
-    "original_formula": "E = B l v sinθ",
-    "status": "pending_semantic_conversion"
-  },
-  {
-    "id": "physics_xzxbx2_rjb_cpt35",
-    "name": "正弦式交变电流",
-    "original_formula": "e = E_m sin(ωt), u = U_m sin(ωt), i = I_m sin(ωt)",
-    "status": "pending_semantic_conversion"
-  },
-  {
-    "id": "physics_xzxbx2_rjb_cpt38",
-    "name": "角频率",
-    "original_formula": "ω = 2πf",
     "status": "pending_semantic_conversion"
   },
   {
@@ -609,42 +243,6 @@
     "id": "physics_xzxbx3_rjb_cpt77",
     "name": "逸出功",
     "original_formula": "W0",
-    "status": "pending_semantic_conversion"
-  },
-  {
-    "id": "physics_xzxbx3_rjb_cpt78",
-    "name": "光子能量",
-    "original_formula": "E=hν",
-    "status": "pending_semantic_conversion"
-  },
-  {
-    "id": "physics_xzxbx3_rjb_cpt79",
-    "name": "爱因斯坦光电效应方程",
-    "original_formula": "Ek = hν - W0",
-    "status": "pending_semantic_conversion"
-  },
-  {
-    "id": "physics_xzxbx3_rjb_cpt80",
-    "name": "光子的动量",
-    "original_formula": "p=h/λ",
-    "status": "pending_semantic_conversion"
-  },
-  {
-    "id": "physics_xzxbx3_rjb_cpt96",
-    "name": "巴耳末公式",
-    "original_formula": "1/λ = R∞ (1/2² − 1/n²)",
-    "status": "pending_semantic_conversion"
-  },
-  {
-    "id": "physics_xzxbx3_rjb_cpt100",
-    "name": "频率条件",
-    "original_formula": "hν = En − Em",
-    "status": "pending_semantic_conversion"
-  },
-  {
-    "id": "physics_xzxbx3_rjb_cpt104",
-    "name": "德布罗意关系式",
-    "original_formula": "v = ε/h； λ = h/p",
     "status": "pending_semantic_conversion"
   },
   {
@@ -669,12 +267,6 @@
     "id": "physics_xzxbx3_rjb_cpt135",
     "name": "弱相互作用",
     "original_formula": "作用范围约为 10^-18 m",
-    "status": "pending_semantic_conversion"
-  },
-  {
-    "id": "physics_xzxbx3_rjb_cpt139",
-    "name": "质能方程",
-    "original_formula": "E = mc²",
     "status": "pending_semantic_conversion"
   }
 ]

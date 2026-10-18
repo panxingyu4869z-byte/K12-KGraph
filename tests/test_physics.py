@@ -51,6 +51,20 @@ class PhysicsContractTests(unittest.TestCase):
         cases={x['rule_id']:x for x in self.examples}
         c=copy.deepcopy(cases['parallel_resistance']);c['bindings']['resistances']['value']=[1,0]
         with self.assertRaises(RuleError):self.run_case(c)
+
+    def test_motion_quantum_and_optical_boundaries(self):
+        cases={x['rule_id']:x for x in self.examples}
+        for rid,key,value in [('time_dilation','relative_speed',10),('balmer_wavelength','upper_n',2),('photoelectric_maximum_energy','frequency',1),('electrostatic_acceleration_from_rest','voltage_ab',3)]:
+            c=copy.deepcopy(cases[rid]);c['bindings'][key]['value']=value
+            with self.subTest(rule=rid),self.assertRaises(RuleError):self.run_case(c)
+        c=copy.deepcopy(cases['horizontal_projectile']);c['bindings'].pop('y0')
+        with self.assertRaisesRegex(RuleError,'initial condition'):self.run_case(c)
+        c=copy.deepcopy(cases['horizontal_projectile']);c['bindings']['vy0']['value']=1
+        with self.assertRaises(RuleError):self.run_case(c)
+        c=copy.deepcopy(cases['snell_transmitted_sine']);c['bindings']['n1']['value']=3
+        with self.assertRaises(RuleError):self.run_case(c)
+        result=self.run_case(cases['angular_frequency'])['results']['omega']
+        self.assertEqual(result['si_unit'],'rad/s')
         c=copy.deepcopy(cases['sensible_heat_exchange']);c['bindings']['temperature_change']['unit']='degC'
         with self.assertRaisesRegex(RuleError,'temperature'):self.run_case(c)
         c=copy.deepcopy(cases['ideal_gas_state_change']);c['bindings']['t1']={'value':-10,'unit':'degC'}
