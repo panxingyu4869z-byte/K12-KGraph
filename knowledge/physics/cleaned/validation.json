@@ -1,0 +1,274 @@
+{
+  "test_count": 14,
+  "failures": 0,
+  "errors": 0,
+  "schema_validated": true,
+  "rule_count": 8,
+  "dependencies": {
+    "jsonschema": "4.26.0",
+    "sympy": "1.14.0"
+  },
+  "examples": [
+    {
+      "rule_id": "average_speed",
+      "results": {
+        "speed": {
+          "si_value": 10.0,
+          "si_unit": "m/s",
+          "dimension": [
+            0,
+            1,
+            -1,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "trace": [
+        {
+          "step": "calculate",
+          "quantity": "speed",
+          "si_value": 10.0,
+          "principles": [
+            "average_speed"
+          ]
+        }
+      ]
+    },
+    {
+      "rule_id": "bulk_average_density",
+      "results": {
+        "density": {
+          "si_value": 2000.0000000000002,
+          "si_unit": "kg/m^3",
+          "dimension": [
+            1,
+            -3,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "trace": [
+        {
+          "step": "calculate",
+          "quantity": "density",
+          "si_value": 2000.0000000000002,
+          "principles": [
+            "density"
+          ]
+        }
+      ]
+    },
+    {
+      "rule_id": "newton2_point_mass",
+      "results": {
+        "acceleration": {
+          "si_value": [
+            5.0,
+            0.0,
+            0.0
+          ],
+          "si_unit": "m/s^2",
+          "dimension": [
+            0,
+            1,
+            -2,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "trace": [
+        {
+          "step": "compose",
+          "quantity": "net_force",
+          "si_value": [
+            10.0,
+            0.0,
+            0.0
+          ],
+          "principles": [
+            "vector_sum"
+          ]
+        },
+        {
+          "step": "accelerate",
+          "quantity": "acceleration",
+          "si_value": [
+            5.0,
+            0.0,
+            0.0
+          ],
+          "principles": [
+            "newton",
+            "divide_nonzero"
+          ]
+        }
+      ]
+    },
+    {
+      "rule_id": "constant_a_velocity",
+      "results": {
+        "v": {
+          "si_value": 7.0,
+          "si_unit": "m/s",
+          "dimension": [
+            0,
+            1,
+            -1,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "trace": [
+        {
+          "step": "elapsed",
+          "quantity": "dt",
+          "si_value": 2.0,
+          "principles": [
+            "kinematics"
+          ]
+        },
+        {
+          "step": "calculate",
+          "quantity": "v",
+          "si_value": 7.0,
+          "principles": [
+            "kinematics"
+          ]
+        }
+      ]
+    },
+    {
+      "rule_id": "constant_a_position",
+      "results": {
+        "x": {
+          "si_value": 20.0,
+          "si_unit": "m",
+          "dimension": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "trace": [
+        {
+          "step": "elapsed",
+          "quantity": "dt",
+          "si_value": 2.0,
+          "principles": [
+            "kinematics"
+          ]
+        },
+        {
+          "step": "calculate",
+          "quantity": "x",
+          "si_value": 20.0,
+          "principles": [
+            "kinematics"
+          ]
+        }
+      ]
+    },
+    {
+      "rule_id": "constant_a_speed_squared",
+      "results": {
+        "v_squared": {
+          "si_value": 49.0,
+          "si_unit": "m^2/s^2",
+          "dimension": [
+            0,
+            2,
+            -2,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "trace": [
+        {
+          "step": "calculate",
+          "quantity": "v_squared",
+          "si_value": 49.0,
+          "principles": [
+            "kinematics"
+          ]
+        }
+      ]
+    },
+    {
+      "rule_id": "work_parallel_constant_force",
+      "results": {
+        "work": {
+          "si_value": 10.0,
+          "si_unit": "J",
+          "dimension": [
+            1,
+            2,
+            -2,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "trace": [
+        {
+          "step": "calculate",
+          "quantity": "work",
+          "si_value": 10.0,
+          "principles": [
+            "work"
+          ]
+        }
+      ]
+    },
+    {
+      "rule_id": "work_dot_constant_force",
+      "results": {
+        "work": {
+          "si_value": -6.0,
+          "si_unit": "J",
+          "dimension": [
+            1,
+            2,
+            -2,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "trace": [
+        {
+          "step": "calculate",
+          "quantity": "work",
+          "si_value": -6.0,
+          "principles": [
+            "work"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,271 @@
+[
+  {
+    "rule_id": "average_speed",
+    "bindings": {
+      "distance": {
+        "value": 1.2,
+        "unit": "km"
+      },
+      "duration": {
+        "value": 2,
+        "unit": "min"
+      }
+    },
+    "context": {
+      "object_model": "point_particle",
+      "reference_frame": "declared"
+    },
+    "expected": {
+      "speed": 10
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "bulk_average_density",
+    "bindings": {
+      "mass": {
+        "value": 200,
+        "unit": "g"
+      },
+      "volume": {
+        "value": 100,
+        "unit": "cm^3"
+      }
+    },
+    "context": {
+      "object_model": "bulk_body"
+    },
+    "expected": {
+      "density": 2000
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "newton2_point_mass",
+    "bindings": {
+      "external_forces": {
+        "value": [
+          [
+            12,
+            0,
+            0
+          ],
+          [
+            -2,
+            0,
+            0
+          ]
+        ],
+        "unit": "N"
+      },
+      "mass": {
+        "value": 2,
+        "unit": "kg"
+      }
+    },
+    "context": {
+      "object_model": "point_particle",
+      "reference_frame": "inertial",
+      "frame_id": "lab",
+      "mass_constant": true,
+      "classical_regime": true,
+      "force": {
+        "behavior": "constant",
+        "depends_on": []
+      }
+    },
+    "expected": {
+      "acceleration": [
+        5,
+        0,
+        0
+      ]
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "constant_a_velocity",
+    "bindings": {
+      "v0": {
+        "value": 10.8,
+        "unit": "km/h"
+      },
+      "a": {
+        "value": 2,
+        "unit": "m/s^2"
+      },
+      "t0": {
+        "value": 5,
+        "unit": "s"
+      },
+      "t": {
+        "value": 7,
+        "unit": "s"
+      }
+    },
+    "context": {
+      "object_model": "point_particle",
+      "reference_frame": "inertial",
+      "frame_id": "lab",
+      "acceleration_constant": true,
+      "axis": [
+        1,
+        0,
+        0
+      ]
+    },
+    "expected": {
+      "v": 7
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "constant_a_position",
+    "bindings": {
+      "v0": {
+        "value": 3,
+        "unit": "m/s"
+      },
+      "a": {
+        "value": 2,
+        "unit": "m/s^2"
+      },
+      "t0": {
+        "value": 5,
+        "unit": "s"
+      },
+      "t": {
+        "value": 7,
+        "unit": "s"
+      },
+      "x0": {
+        "value": 10,
+        "unit": "m"
+      }
+    },
+    "context": {
+      "object_model": "point_particle",
+      "reference_frame": "inertial",
+      "frame_id": "lab",
+      "acceleration_constant": true,
+      "axis": [
+        1,
+        0,
+        0
+      ]
+    },
+    "expected": {
+      "x": 20
+    },
+    "boundary_conditions": [
+      {
+        "quantity": "x",
+        "value": 20,
+        "unit": "m"
+      }
+    ]
+  },
+  {
+    "rule_id": "constant_a_speed_squared",
+    "bindings": {
+      "v0": {
+        "value": 3,
+        "unit": "m/s"
+      },
+      "a": {
+        "value": 2,
+        "unit": "m/s^2"
+      },
+      "t0": {
+        "value": 5,
+        "unit": "s"
+      },
+      "x0": {
+        "value": 10,
+        "unit": "m"
+      },
+      "x": {
+        "value": 20,
+        "unit": "m"
+      }
+    },
+    "context": {
+      "object_model": "point_particle",
+      "reference_frame": "inertial",
+      "frame_id": "lab",
+      "acceleration_constant": true,
+      "axis": [
+        1,
+        0,
+        0
+      ]
+    },
+    "expected": {
+      "v_squared": 49
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "work_parallel_constant_force",
+    "bindings": {
+      "force": {
+        "value": 5,
+        "unit": "N"
+      },
+      "distance": {
+        "value": 2,
+        "unit": "m"
+      }
+    },
+    "context": {
+      "object_model": "point_particle",
+      "reference_frame": "inertial",
+      "frame_id": "lab",
+      "force_constant": true,
+      "parallel_same_direction": true,
+      "force": {
+        "behavior": "constant",
+        "depends_on": []
+      }
+    },
+    "expected": {
+      "work": 10
+    },
+    "boundary_conditions": []
+  },
+  {
+    "rule_id": "work_dot_constant_force",
+    "bindings": {
+      "force": {
+        "value": [
+          2,
+          0,
+          0
+        ],
+        "unit": "N"
+      },
+      "displacement": {
+        "value": [
+          -3,
+          4,
+          0
+        ],
+        "unit": "m"
+      }
+    },
+    "context": {
+      "object_model": "point_particle",
+      "reference_frame": "inertial",
+      "frame_id": "lab",
+      "force_constant": true,
+      "force": {
+        "behavior": "constant",
+        "depends_on": []
+      }
+    },
+    "expected": {
+      "work": -6
+    },
+    "boundary_conditions": []
+  }
+]

@@ -1,0 +1,611 @@
+{
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "dimension_order": {
+      "const": [
+        "mass",
+        "length",
+        "time",
+        "electric_current",
+        "temperature",
+        "amount",
+        "luminous_intensity"
+      ]
+    },
+    "units": {
+      "type": "object",
+      "minProperties": 1,
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "dimension": {
+            "type": "array",
+            "items": {
+              "type": "integer"
+            },
+            "minItems": 7,
+            "maxItems": 7
+          },
+          "scale": {
+            "type": "string",
+            "pattern": "^[1-9][0-9]*(/[1-9][0-9]*)?$"
+          }
+        },
+        "required": [
+          "dimension",
+          "scale"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "principles": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "name_zh": {
+            "type": "string",
+            "minLength": 1
+          },
+          "kind": {
+            "enum": [
+              "physical",
+              "mathematical"
+            ]
+          },
+          "source_url": {
+            "type": "string",
+            "minLength": 1
+          },
+          "locator": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "name_zh",
+          "kind",
+          "source_url",
+          "locator"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "rules": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "concept_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "variant_of": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "introduced_at": {
+            "type": "string",
+            "minLength": 1
+          },
+          "stage": {
+            "enum": [
+              "primary",
+              "middle",
+              "high"
+            ]
+          },
+          "status": {
+            "const": "ready"
+          },
+          "display": {
+            "type": "object",
+            "properties": {
+              "name_zh": {
+                "type": "string",
+                "minLength": 1
+              },
+              "original_formula": {
+                "type": "string",
+                "minLength": 1
+              },
+              "notes_zh": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": [
+              "name_zh",
+              "original_formula",
+              "notes_zh"
+            ],
+            "additionalProperties": false
+          },
+          "object_model": {
+            "enum": [
+              "point_particle",
+              "bulk_body"
+            ]
+          },
+          "reference_frame": {
+            "enum": [
+              "inertial",
+              "declared",
+              "not_applicable"
+            ]
+          },
+          "quantities": {
+            "type": "object",
+            "minProperties": 1,
+            "additionalProperties": {
+              "type": "object",
+              "properties": {
+                "kind": {
+                  "enum": [
+                    "scalar",
+                    "vector",
+                    "vector_list"
+                  ]
+                },
+                "dimension": {
+                  "type": "array",
+                  "items": {
+                    "type": "integer"
+                  },
+                  "minItems": 7,
+                  "maxItems": 7
+                },
+                "unit": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "domain": {
+                  "enum": [
+                    "real",
+                    "positive",
+                    "nonnegative"
+                  ]
+                },
+                "object": {
+                  "const": "body"
+                },
+                "frame": {
+                  "enum": [
+                    "lab",
+                    "not_applicable"
+                  ]
+                }
+              },
+              "required": [
+                "kind",
+                "dimension",
+                "unit",
+                "domain",
+                "object",
+                "frame"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "conditions": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "fact": {
+                  "enum": [
+                    "mass_constant",
+                    "classical_regime",
+                    "acceleration_constant",
+                    "axis_declared",
+                    "force_constant",
+                    "parallel_same_direction"
+                  ]
+                },
+                "equals": {
+                  "type": "boolean"
+                }
+              },
+              "required": [
+                "fact",
+                "equals"
+              ],
+              "additionalProperties": false
+            },
+            "minItems": 0
+          },
+          "force_dependence": {
+            "type": "object",
+            "properties": {
+              "mode": {
+                "enum": [
+                  "instantaneous",
+                  "not_used",
+                  "constant"
+                ]
+              },
+              "allowed_dependencies": {
+                "type": "array",
+                "items": {
+                  "enum": [
+                    "position",
+                    "time",
+                    "velocity"
+                  ]
+                },
+                "minItems": 0
+              }
+            },
+            "required": [
+              "mode",
+              "allowed_dependencies"
+            ],
+            "additionalProperties": false
+          },
+          "initial_conditions": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "state": {
+                  "enum": [
+                    "position",
+                    "velocity"
+                  ]
+                },
+                "quantity": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "time_quantity": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "required": [
+                "state",
+                "quantity",
+                "time_quantity"
+              ],
+              "additionalProperties": false
+            },
+            "minItems": 0
+          },
+          "boundary_conditions": {
+            "const": "none_assumed"
+          },
+          "laws": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "equation": {
+                  "$ref": "#/$defs/expr"
+                },
+                "principles": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "minItems": 1
+                }
+              },
+              "required": [
+                "id",
+                "equation",
+                "principles"
+              ],
+              "additionalProperties": false
+            },
+            "minItems": 1
+          },
+          "steps": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "target": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "expression": {
+                  "$ref": "#/$defs/expr"
+                },
+                "principles": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "minItems": 1
+                },
+                "law_id": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "rewrite": {
+                  "enum": [
+                    "direct",
+                    "solve_linear"
+                  ]
+                }
+              },
+              "required": [
+                "id",
+                "target",
+                "expression",
+                "principles",
+                "law_id",
+                "rewrite"
+              ],
+              "additionalProperties": false
+            },
+            "minItems": 1
+          },
+          "conclusions": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "minItems": 1
+          }
+        },
+        "required": [
+          "id",
+          "concept_id",
+          "variant_of",
+          "introduced_at",
+          "stage",
+          "status",
+          "display",
+          "object_model",
+          "reference_frame",
+          "quantities",
+          "conditions",
+          "force_dependence",
+          "initial_conditions",
+          "boundary_conditions",
+          "laws",
+          "steps",
+          "conclusions"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 1
+    }
+  },
+  "required": [
+    "schema_version",
+    "dimension_order",
+    "units",
+    "principles",
+    "rules"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:k12:physics-rule:1.0.0",
+  "$defs": {
+    "expr": {
+      "oneOf": [
+        {
+          "type": "object",
+          "properties": {
+            "op": {
+              "const": "var"
+            },
+            "id": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "op",
+            "id"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "op": {
+              "const": "number"
+            },
+            "value": {
+              "type": "number"
+            }
+          },
+          "required": [
+            "op",
+            "value"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "op": {
+              "const": "add"
+            },
+            "args": {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/expr"
+              },
+              "minItems": 2
+            }
+          },
+          "required": [
+            "op",
+            "args"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "op": {
+              "const": "sub"
+            },
+            "args": {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/expr"
+              },
+              "minItems": 2,
+              "maxItems": 2
+            }
+          },
+          "required": [
+            "op",
+            "args"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "op": {
+              "const": "mul"
+            },
+            "args": {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/expr"
+              },
+              "minItems": 2
+            }
+          },
+          "required": [
+            "op",
+            "args"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "op": {
+              "const": "div"
+            },
+            "args": {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/expr"
+              },
+              "minItems": 2,
+              "maxItems": 2
+            }
+          },
+          "required": [
+            "op",
+            "args"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "op": {
+              "const": "pow"
+            },
+            "args": {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/expr"
+              },
+              "minItems": 2,
+              "maxItems": 2
+            }
+          },
+          "required": [
+            "op",
+            "args"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "op": {
+              "const": "dot"
+            },
+            "args": {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/expr"
+              },
+              "minItems": 2,
+              "maxItems": 2
+            }
+          },
+          "required": [
+            "op",
+            "args"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "op": {
+              "const": "sum"
+            },
+            "args": {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/expr"
+              },
+              "minItems": 1,
+              "maxItems": 1
+            }
+          },
+          "required": [
+            "op",
+            "args"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "op": {
+              "const": "eq"
+            },
+            "args": {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/expr"
+              },
+              "minItems": 2,
+              "maxItems": 2
+            }
+          },
+          "required": [
+            "op",
+            "args"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    }
+  }
+}

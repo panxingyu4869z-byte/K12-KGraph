@@ -1,0 +1,17 @@
+[
+  {
+    "id": "physics_8a_rjb_cpt11",
+    "status": "pending_scope_review",
+    "reason": "definition describes vector velocity while formula and examples include scalar speed; do not execute display text"
+  },
+  {
+    "id": "physics_8a_rjb_cpt3",
+    "status": "pending_scope_review",
+    "reason": "time definition is narrowed to a work/power context after upstream merging; earliest textbook wording is unavailable"
+  },
+  {
+    "id": "physics_8b_rjb_cpt69",
+    "status": "variants_explicit",
+    "reason": "parallel-force work and general constant-force dot product have separate executable model scopes"
+  }
+]
