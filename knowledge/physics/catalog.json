@@ -1,0 +1,752 @@
+{
+  "version": "1.0",
+  "records": [
+    {
+      "id": "length_unit_relations",
+      "kind": "unit_relation",
+      "source_nodes": [
+        "physics_8a_rjb_cpt2"
+      ],
+      "introduced_at": "physics_8a_rjb_ch1_s1",
+      "stage": "middle",
+      "display": {
+        "name_zh": "长度单位（米及其倍数、子倍数）",
+        "original_formula": "1 km = 1000 m；1 cm = 0.01 m 等"
+      },
+      "equations": [
+        {
+          "op": "eq",
+          "args": [
+            {
+              "op": "literal",
+              "value": 1,
+              "unit": "km"
+            },
+            {
+              "op": "literal",
+              "value": 1000,
+              "unit": "m"
+            }
+          ]
+        },
+        {
+          "op": "eq",
+          "args": [
+            {
+              "op": "literal",
+              "value": 1,
+              "unit": "cm"
+            },
+            {
+              "op": "literal",
+              "value": 0.01,
+              "unit": "m"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "time_unit_relations",
+      "kind": "unit_relation",
+      "source_nodes": [
+        "physics_8a_rjb_cpt4"
+      ],
+      "introduced_at": "physics_8a_rjb_ch1_s1",
+      "stage": "middle",
+      "display": {
+        "name_zh": "时间单位（秒及其换算）",
+        "original_formula": "1 h = 60 min；1 min = 60 s"
+      },
+      "equations": [
+        {
+          "op": "eq",
+          "args": [
+            {
+              "op": "literal",
+              "value": 1,
+              "unit": "h"
+            },
+            {
+              "op": "literal",
+              "value": 60,
+              "unit": "min"
+            }
+          ]
+        },
+        {
+          "op": "eq",
+          "args": [
+            {
+              "op": "literal",
+              "value": 1,
+              "unit": "min"
+            },
+            {
+              "op": "literal",
+              "value": 60,
+              "unit": "s"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "current_unit_relations",
+      "kind": "unit_relation",
+      "source_nodes": [
+        "physics_9_rjb_cpt52"
+      ],
+      "introduced_at": "physics_9_rjb_ch15_s4",
+      "stage": "middle",
+      "display": {
+        "name_zh": "电流单位换算",
+        "original_formula": "1 mA = 10^-3 A；1 μA = 10^-6 A"
+      },
+      "equations": [
+        {
+          "op": "eq",
+          "args": [
+            {
+              "op": "literal",
+              "value": 1,
+              "unit": "mA"
+            },
+            {
+              "op": "literal",
+              "value": 0.001,
+              "unit": "A"
+            }
+          ]
+        },
+        {
+          "op": "eq",
+          "args": [
+            {
+              "op": "literal",
+              "value": 1,
+              "unit": "uA"
+            },
+            {
+              "op": "literal",
+              "value": 1e-06,
+              "unit": "A"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "voltage_unit_relations",
+      "kind": "unit_relation",
+      "source_nodes": [
+        "physics_9_rjb_cpt60"
+      ],
+      "introduced_at": "physics_9_rjb_ch16_s1",
+      "stage": "middle",
+      "display": {
+        "name_zh": "电压的单位",
+        "original_formula": "1 kV = 10^3 V；1 mV = 10^-3 V"
+      },
+      "equations": [
+        {
+          "op": "eq",
+          "args": [
+            {
+              "op": "literal",
+              "value": 1,
+              "unit": "kV"
+            },
+            {
+              "op": "literal",
+              "value": 1000,
+              "unit": "V"
+            }
+          ]
+        },
+        {
+          "op": "eq",
+          "args": [
+            {
+              "op": "literal",
+              "value": 1,
+              "unit": "mV"
+            },
+            {
+              "op": "literal",
+              "value": 0.001,
+              "unit": "V"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kwh_unit_relation",
+      "kind": "unit_relation",
+      "source_nodes": [
+        "physics_9_rjb_cpt86"
+      ],
+      "introduced_at": "physics_9_rjb_ch18_s1",
+      "stage": "middle",
+      "display": {
+        "name_zh": "千瓦时",
+        "original_formula": "1 kW·h = 3.6×10^6 J"
+      },
+      "equations": [
+        {
+          "op": "eq",
+          "args": [
+            {
+              "op": "literal",
+              "value": 1,
+              "unit": "kWh"
+            },
+            {
+              "op": "literal",
+              "value": 3600000,
+              "unit": "J"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "coulomb_ampere_second",
+      "kind": "unit_relation",
+      "source_nodes": [
+        "physics_bx3_rjb_cpt3",
+        "physics_bx3_rjb_cpt93"
+      ],
+      "introduced_at": "physics_bx3_rjb_ch9_s1",
+      "stage": "high",
+      "display": {
+        "name_zh": "库仑（C）",
+        "original_formula": "1C = 1A × 1s"
+      },
+      "equations": [
+        {
+          "op": "eq",
+          "args": [
+            {
+              "op": "literal",
+              "value": 1,
+              "unit": "C"
+            },
+            {
+              "op": "mul",
+              "args": [
+                {
+                  "op": "literal",
+                  "value": 1,
+                  "unit": "A"
+                },
+                {
+                  "op": "literal",
+                  "value": 1,
+                  "unit": "s"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "volt_joule_per_coulomb",
+      "kind": "unit_relation",
+      "source_nodes": [
+        "physics_bx3_rjb_cpt53"
+      ],
+      "introduced_at": "physics_bx3_rjb_ch10_s1",
+      "stage": "high",
+      "display": {
+        "name_zh": "电势的单位（伏特）",
+        "original_formula": "1\\,\\mathrm{V}=1\\,\\mathrm{J}/\\mathrm{C}"
+      },
+      "equations": [
+        {
+          "op": "eq",
+          "args": [
+            {
+              "op": "literal",
+              "value": 1,
+              "unit": "V"
+            },
+            {
+              "op": "div",
+              "args": [
+                {
+                  "op": "literal",
+                  "value": 1,
+                  "unit": "J"
+                },
+                {
+                  "op": "literal",
+                  "value": 1,
+                  "unit": "C"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "microfarad_unit_relation",
+      "kind": "unit_relation",
+      "source_nodes": [
+        "physics_bx3_rjb_cpt72"
+      ],
+      "introduced_at": "physics_bx3_rjb_ch10_s4",
+      "stage": "high",
+      "display": {
+        "name_zh": "微法",
+        "original_formula": "1 μF = 10^-6 F"
+      },
+      "equations": [
+        {
+          "op": "eq",
+          "args": [
+            {
+              "op": "literal",
+              "value": 1,
+              "unit": "uF"
+            },
+            {
+              "op": "literal",
+              "value": 1e-06,
+              "unit": "F"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "picofarad_unit_relation",
+      "kind": "unit_relation",
+      "source_nodes": [
+        "physics_bx3_rjb_cpt73"
+      ],
+      "introduced_at": "physics_bx3_rjb_ch10_s4",
+      "stage": "high",
+      "display": {
+        "name_zh": "皮法",
+        "original_formula": "1 pF = 10^-12 F"
+      },
+      "equations": [
+        {
+          "op": "eq",
+          "args": [
+            {
+              "op": "literal",
+              "value": 1,
+              "unit": "pF"
+            },
+            {
+              "op": "literal",
+              "value": 1e-12,
+              "unit": "F"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "vacuum_light_speed",
+      "kind": "constant",
+      "source_nodes": [
+        "physics_8a_rjb_cpt71",
+        "physics_bx3_rjb_cpt188"
+      ],
+      "introduced_at": "physics_8a_rjb_ch4_s1",
+      "stage": "middle",
+      "display": {
+        "name_zh": "光速",
+        "original_formula": "c = 3×10^8 m/s"
+      },
+      "expression": {
+        "op": "literal",
+        "value": 299792458,
+        "unit": "m/s"
+      },
+      "precision": "exact_definition",
+      "conditions": [
+        "vacuum"
+      ],
+      "authority_url": "https://physics.nist.gov/cuu/Constants/"
+    },
+    {
+      "id": "standard_atmosphere",
+      "kind": "constant",
+      "source_nodes": [
+        "physics_8b_rjb_cpt40"
+      ],
+      "introduced_at": "physics_8b_rjb_ch9_s3",
+      "stage": "middle",
+      "display": {
+        "name_zh": "标准大气压",
+        "original_formula": "p0 = ρgh = 1.013×10^5 Pa"
+      },
+      "expression": {
+        "op": "literal",
+        "value": 101325,
+        "unit": "Pa"
+      },
+      "precision": "exact_definition",
+      "conditions": [],
+      "authority_url": "https://www.bipm.org/en/publications/si-brochure"
+    },
+    {
+      "id": "electron_charge_mass_rounded",
+      "kind": "constant",
+      "source_nodes": [
+        "physics_bx3_rjb_cpt15"
+      ],
+      "introduced_at": "physics_bx3_rjb_ch9_s1",
+      "stage": "high",
+      "display": {
+        "name_zh": "电子的比荷",
+        "original_formula": "e/me = 1.76×10^11 C/kg"
+      },
+      "expression": {
+        "op": "literal",
+        "value": 176000000000.0,
+        "unit": "C/kg"
+      },
+      "precision": "rounded_source",
+      "conditions": [],
+      "authority_url": "https://physics.nist.gov/cuu/Constants/"
+    },
+    {
+      "id": "coulomb_constant_rounded",
+      "kind": "constant",
+      "source_nodes": [
+        "physics_bx3_rjb_cpt19"
+      ],
+      "introduced_at": "physics_bx3_rjb_ch9_s2",
+      "stage": "high",
+      "display": {
+        "name_zh": "静电力常量k",
+        "original_formula": "k = 9.0×10^9 N·m^2/C^2"
+      },
+      "expression": {
+        "op": "literal",
+        "value": 9000000000.0,
+        "unit": "N*m^2/C^2"
+      },
+      "precision": "rounded_source",
+      "conditions": [
+        "vacuum"
+      ],
+      "authority_url": "https://physics.nist.gov/cuu/Constants/"
+    },
+    {
+      "id": "planck_constant",
+      "kind": "constant",
+      "source_nodes": [
+        "physics_bx3_rjb_cpt200"
+      ],
+      "introduced_at": "physics_bx3_rjb_ch13_s5",
+      "stage": "high",
+      "display": {
+        "name_zh": "普朗克常量",
+        "original_formula": "h = 6.62607015×10^-34 J·s"
+      },
+      "expression": {
+        "op": "literal",
+        "value": 6.62607015e-34,
+        "unit": "J*s"
+      },
+      "precision": "exact_definition",
+      "conditions": [],
+      "authority_url": "https://physics.nist.gov/cuu/Constants/"
+    },
+    {
+      "id": "strong_interaction_scale",
+      "kind": "constant",
+      "source_nodes": [
+        "physics_xzxbx3_rjb_cpt134"
+      ],
+      "introduced_at": "physics_xzxbx3_rjb_ch5_s3",
+      "stage": "high",
+      "display": {
+        "name_zh": "强相互作用",
+        "original_formula": "作用范围约为 10^-15 m"
+      },
+      "expression": {
+        "op": "literal",
+        "value": 1e-15,
+        "unit": "m"
+      },
+      "precision": "order_of_magnitude",
+      "conditions": [
+        "scale_not_sharp_cutoff"
+      ],
+      "authority_url": "https://physics.nist.gov/cuu/Constants/"
+    },
+    {
+      "id": "weak_interaction_scale",
+      "kind": "constant",
+      "source_nodes": [
+        "physics_xzxbx3_rjb_cpt135"
+      ],
+      "introduced_at": "physics_xzxbx3_rjb_ch5_s3",
+      "stage": "high",
+      "display": {
+        "name_zh": "弱相互作用",
+        "original_formula": "作用范围约为 10^-18 m"
+      },
+      "expression": {
+        "op": "literal",
+        "value": 1e-18,
+        "unit": "m"
+      },
+      "precision": "order_of_magnitude",
+      "conditions": [
+        "scale_not_sharp_cutoff"
+      ],
+      "authority_url": "https://physics.nist.gov/cuu/Constants/"
+    },
+    {
+      "id": "focal_length",
+      "kind": "quantity",
+      "source_nodes": [
+        "physics_8a_rjb_cpt101"
+      ],
+      "introduced_at": "physics_8a_rjb_ch5_s1",
+      "stage": "middle",
+      "display": {
+        "name_zh": "焦距",
+        "original_formula": "f = 光心到焦点的距离"
+      },
+      "quantity": {
+        "kind": "scalar",
+        "dimension": [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "unit": "m",
+        "domain": "real",
+        "object": "body",
+        "frame": "not_applicable"
+      },
+      "object_model": "ray_optics"
+    },
+    {
+      "id": "mass_quantity",
+      "kind": "quantity",
+      "source_nodes": [
+        "physics_8a_rjb_cpt124"
+      ],
+      "introduced_at": "physics_8a_rjb_ch6_s1",
+      "stage": "middle",
+      "display": {
+        "name_zh": "质量",
+        "original_formula": ""
+      },
+      "quantity": {
+        "kind": "scalar",
+        "dimension": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "unit": "kg",
+        "domain": "positive",
+        "object": "body",
+        "frame": "not_applicable"
+      },
+      "object_model": "bulk_body"
+    },
+    {
+      "id": "charge_quantity",
+      "kind": "quantity",
+      "source_nodes": [
+        "physics_9_rjb_cpt31"
+      ],
+      "introduced_at": "physics_9_rjb_ch15_s1",
+      "stage": "middle",
+      "display": {
+        "name_zh": "电荷量",
+        "original_formula": "Q 或 q；符号单位：C"
+      },
+      "quantity": {
+        "kind": "scalar",
+        "dimension": [
+          0,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0
+        ],
+        "unit": "C",
+        "domain": "real",
+        "object": "body",
+        "frame": "not_applicable"
+      },
+      "object_model": "electrostatic"
+    },
+    {
+      "id": "wavelength_quantity",
+      "kind": "quantity",
+      "source_nodes": [
+        "physics_9_rjb_cpt166"
+      ],
+      "introduced_at": "physics_9_rjb_ch21_s2",
+      "stage": "middle",
+      "display": {
+        "name_zh": "波长",
+        "original_formula": "λ"
+      },
+      "quantity": {
+        "kind": "scalar",
+        "dimension": [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "unit": "m",
+        "domain": "positive",
+        "object": "body",
+        "frame": "not_applicable"
+      },
+      "object_model": "wave"
+    },
+    {
+      "id": "meter_resistance_quantity",
+      "kind": "quantity",
+      "source_nodes": [
+        "physics_bx3_rjb_cpt122"
+      ],
+      "introduced_at": "physics_bx3_rjb_ch11_s4",
+      "stage": "high",
+      "display": {
+        "name_zh": "电流表内阻（表头内阻）",
+        "original_formula": "Rg"
+      },
+      "quantity": {
+        "kind": "scalar",
+        "dimension": [
+          1,
+          2,
+          -3,
+          -2,
+          0,
+          0,
+          0
+        ],
+        "unit": "ohm",
+        "domain": "positive",
+        "object": "body",
+        "frame": "not_applicable"
+      },
+      "object_model": "dc_circuit"
+    },
+    {
+      "id": "full_scale_current_quantity",
+      "kind": "quantity",
+      "source_nodes": [
+        "physics_bx3_rjb_cpt123"
+      ],
+      "introduced_at": "physics_bx3_rjb_ch11_s4",
+      "stage": "high",
+      "display": {
+        "name_zh": "满偏电流",
+        "original_formula": "Ig"
+      },
+      "quantity": {
+        "kind": "scalar",
+        "dimension": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "unit": "A",
+        "domain": "positive",
+        "object": "body",
+        "frame": "not_applicable"
+      },
+      "object_model": "dc_circuit"
+    },
+    {
+      "id": "full_scale_voltage_quantity",
+      "kind": "quantity",
+      "source_nodes": [
+        "physics_bx3_rjb_cpt124"
+      ],
+      "introduced_at": "physics_bx3_rjb_ch11_s4",
+      "stage": "high",
+      "display": {
+        "name_zh": "满偏电压",
+        "original_formula": "Ug"
+      },
+      "quantity": {
+        "kind": "scalar",
+        "dimension": [
+          1,
+          2,
+          -3,
+          -1,
+          0,
+          0,
+          0
+        ],
+        "unit": "V",
+        "domain": "positive",
+        "object": "body",
+        "frame": "not_applicable"
+      },
+      "object_model": "dc_circuit"
+    },
+    {
+      "id": "work_function_quantity",
+      "kind": "quantity",
+      "source_nodes": [
+        "physics_xzxbx3_rjb_cpt77"
+      ],
+      "introduced_at": "physics_xzxbx3_rjb_ch4_s2",
+      "stage": "high",
+      "display": {
+        "name_zh": "逸出功",
+        "original_formula": "W0"
+      },
+      "quantity": {
+        "kind": "scalar",
+        "dimension": [
+          1,
+          2,
+          -2,
+          0,
+          0,
+          0,
+          0
+        ],
+        "unit": "J",
+        "domain": "nonnegative",
+        "object": "body",
+        "frame": "not_applicable"
+      },
+      "object_model": "atomic_system"
+    }
+  ]
+}

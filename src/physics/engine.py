@@ -65,6 +65,9 @@ def infer(expr, quantities, depth=0, units=None):
     if op in {'sin','cos','tan','asin','acos','exp','log'}:
         if a[0][0]!='scalar' or a[0][1]!=ZERO: raise RuleError('dimensionless scalar argument required')
         return 'scalar',ZERO,'not_applicable'
+    if op=='atan2':
+        if any(x[0]!='scalar' for x in a) or a[0][1]!=a[1][1]:raise RuleError('atan2 requires same-dimension scalars')
+        return 'scalar',ZERO,'not_applicable'
     if op=='vector':
         if any(x[0]!='scalar' or x[1]!=a[0][1] for x in a): raise RuleError('incompatible vector components')
         return 'vector',a[0][1],'lab'
@@ -195,6 +198,24 @@ def validate_bundle(bundle, schema=None):
             dimension = (0,1,0,0,0,0,0) if initial["state"] == "position" else (0,1,-1,0,0,0,0)
             if quantity not in q or tuple(q[quantity]["dimension"]) != dimension or time not in q or q[time]["dimension"] != [0,0,1,0,0,0,0]:
                 raise RuleError("invalid initial condition references")
+        if 'reaction' in r:
+            computed={}
+            for step in r['steps']:
+                computed[symbols[step['target']]]=symbolic(step['expression'],symbols).subs(computed)
+            fixed={'alpha':(4,2,0),'electron':(0,-1,1),'electron_antineutrino':(0,0,-1)}
+            fields=['nucleon_number','charge_number','electron_lepton_number']
+            for side in r['reaction'].values():
+                for particle in side:
+                    for field in fields:
+                        if infer(particle[field],q,units=bundle['units'])[:2]!=('scalar',ZERO):raise RuleError('quantum numbers must be dimensionless scalars')
+                    if particle['species'] in fixed:
+                        for field,value in zip(fields,fixed[particle['species']]):
+                            if sp.simplify(symbolic(particle[field],symbols)-value)!=0:raise RuleError('particle quantum numbers inconsistent with species')
+                    elif sp.simplify(symbolic(particle['electron_lepton_number'],symbols))!=0:
+                        raise RuleError('a bare nucleus has zero electron lepton number')
+            for field in fields:
+                totals=[sum(symbolic(p[field],symbols).subs(computed) for p in r['reaction'][side]) for side in ['reactants','products']]
+                if sp.simplify(totals[0]-totals[1])!=0:raise RuleError('reaction violates conserved quantum number')
     return True
 
 
@@ -212,6 +233,9 @@ def evaluate(expr, values, units=None):
     if op in {'sqrt','abs','sin','cos','tan','asin','acos','exp','log'}:
         try:return abs(a[0]) if op=='abs' else getattr(math,op)(a[0])
         except (ValueError,OverflowError) as e:raise RuleError(f'{op}: outside real finite domain') from e
+    if op=='atan2':
+        if a[0]==0 and a[1]==0:raise RuleError('zero vector has no direction')
+        return math.atan2(a[0],a[1])
     if op=='norm': return math.hypot(*a[0])
     if op=='vector':return a
     if op=='cross':
@@ -324,7 +348,9 @@ def _run_rule(bundle, rule_id, bindings, context, boundary_conditions=()):
     if set(bindings) - (set(r["quantities"]) - targets): raise RuleError("unknown or computed input quantity")
     values = {k:measurement(v,r["quantities"][k],bundle["units"]) for k,v in bindings.items()}
     for initial in r["initial_conditions"]:
-        if initial["quantity"] not in values or initial["time_quantity"] not in values: raise RuleError("missing initial condition")
+        if ((initial["quantity"] not in values and initial["quantity"] not in targets)
+                or initial["time_quantity"] not in values):
+            raise RuleError("missing initial condition")
     if "t" in values and "t0" in values and values["t"] < values["t0"]: raise RuleError("terminal time precedes initial time")
     for c in r.get('constraints',[]):
         if evaluate(c,values,bundle['units']) is not True:raise RuleError('numeric applicability constraint not satisfied')
@@ -340,6 +366,10 @@ def _run_rule(bundle, rule_id, bindings, context, boundary_conditions=()):
         expected = measurement({"value":boundary["value"],"unit":boundary["unit"]},r["quantities"][key],bundle["units"])
         def close(a,b): return all(close(x,y) for x,y in zip(a,b)) if isinstance(a,list) else math.isclose(a,b,rel_tol=1e-9,abs_tol=1e-12)
         if not close(values[key],expected): raise RuleError("boundary constraint not satisfied")
+    if 'reaction' in r:
+        for field in ['nucleon_number','charge_number','electron_lepton_number']:
+            totals=[sum(evaluate(p[field],values,bundle['units']) for p in r['reaction'][side]) for side in ['reactants','products']]
+            if totals[0]!=totals[1]:raise RuleError('reaction conservation failed')
     def si_unit(key):
         declared=r['quantities'][key]
         preferred=bundle['units'][declared['unit']]

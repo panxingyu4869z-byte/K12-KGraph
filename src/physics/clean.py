@@ -9,6 +9,7 @@ from copy import deepcopy
 from pathlib import Path
 
 from .engine import ROOT, RuleError, read_json, validate_bundle
+from .catalog import validate_catalog
 
 BOOKS = ["8a", "8b", "9", "bx1", "bx2", "bx3", "xzxbx1", "xzxbx2", "xzxbx3"]
 LABELS = {"Book", "Chapter", "Section", "Concept", "Skill", "Experiment", "Exercise"}
@@ -47,7 +48,7 @@ def stage(value):
     return "middle" if location_key(value)[0] < 3 else "high"
 
 
-def clean_graph(graph, rules, aliases=None):
+def clean_graph(graph, rules, aliases=None, catalog=None):
     aliases = dict(ALIASES if aliases is None else aliases)
     nodes, edges = graph["nodes"], graph["edges"]
     by_id = {}
@@ -111,22 +112,32 @@ def clean_graph(graph, rules, aliases=None):
         for source_id in r.get('source_nodes',[r['concept_id']]):
             if source_id not in canonical: raise RuleError('rule has an unknown source node')
             linked[source_id].append(r['id'])
+    for record in (catalog or {}).get('records',[]):
+        primary=record['source_nodes'][0]
+        if record['introduced_at'] not in locations[primary] or record['stage']!=stage(record['introduced_at']):
+            raise RuleError('declaration has invalid curriculum location')
+        for source_id in record['source_nodes']:
+            if source_id not in canonical:raise RuleError('declaration has unknown source node')
+            linked[source_id].append(record['id'])
     pending = [{"id":n["id"],"name":n["name"],"original_formula":n["properties"]["formula"],"status":"pending_semantic_conversion"} for n in out_nodes if "formula" in n.get("properties",{}) and n["id"] not in linked]
     review = [
-        {"id":"physics_8a_rjb_cpt11","status":"pending_scope_review","reason":"definition describes vector velocity while formula and examples include scalar speed; do not execute display text"},
-        {"id":"physics_8a_rjb_cpt3","status":"pending_scope_review","reason":"time definition is narrowed to a work/power context after upstream merging; earliest textbook wording is unavailable"},
+        {"id":"physics_8a_rjb_cpt11","status":"scopes_explicit","reason":"middle-school path/time scalar speed and high-school displacement/time vector velocity are separate model records; original mixed wording is retained only for provenance"},
+        {"id":"physics_8a_rjb_cpt3","status":"source_wording_retained","reason":"source time definition is narrowed to work/power after upstream merging; executable rules use explicit time quantities, while this original wording remains display only"},
         {"id":"physics_8b_rjb_cpt69","status":"variants_explicit","reason":"parallel-force work and general constant-force dot product have separate executable model scopes"},
+        {"id":"physics_8b_rjb_cpt40","status":"constant_precision_explicit","reason":"source rounds standard atmosphere to 101300 Pa; typed declaration uses exact standard 101325 Pa and retains the rounded source text"},
+        {"id":"physics_xzxbx1_rjb_cpt18","status":"model_replaced_explicitly","reason":"source finite mass-change expression is a local first-order approximation; executable ideal rocket model uses endpoint masses and the logarithmic relation under stated assumptions"},
+        {"id":"physics_xzxbx3_rjb_cpt125","status":"products_completed","reason":"beta-minus products include electron antineutrino; nucleon, charge and electron-lepton numbers are checked separately"},
     ]
     report = {
         "input":{"nodes":len(nodes),"edges":len(edges),"formula_nodes":sum("formula" in n.get("properties",{}) for n in nodes)},
         "output":{"nodes":len(out_nodes),"edges":len(out_edges),"quarantined_edges":len(quarantine),"merged_nodes":len(aliases),"deduplicated_edges":sum(len(x['source_edge_indices'])-1 for x in lineage)},
         "quarantine_reasons":dict(Counter(x["reason"] for x in quarantine)),
         "curriculum_counts":{k:len(v) for k,v in curriculum.items()},
-        "rules":{"ready":len(rules["rules"]),"covered_canonical_formula_nodes":len(linked),"pending_formula_nodes":len(pending),"by_stage":dict(Counter(r['stage'] for r in rules['rules']))},
+        "rules":{"ready":len(rules["rules"]),"declarations":len((catalog or {}).get('records',[])),"covered_canonical_formula_nodes":len(linked),"pending_formula_nodes":len(pending),"by_stage":dict(Counter(r['stage'] for r in rules['rules']))},
         "scope":"first_observed_location is relative to this already-merged nine-book dataset; it is not proof of the earliest historical introduction",
     }
     provenance = {"aliases":[{"source_id":old,"canonical_id":new,"basis":"identical reviewed constant-acceleration velocity relation; ch2_s2 precedes ch2_s3","original_node":by_id[old]} for old,new in aliases.items()],"edges":lineage}
-    return {"graph": {"nodes":out_nodes,"edges":out_edges},"curriculum":curriculum,"quarantine":quarantine,"provenance":provenance,"pending":pending,"review":review,"report":report}
+    return {"graph": {"nodes":out_nodes,"edges":out_edges},"curriculum":curriculum,"quarantine":quarantine,"provenance":provenance,"pending":pending,"review":review,"report":report,"content_links":dict(sorted(linked.items()))}
 
 
 def main():
@@ -138,8 +149,10 @@ def main():
     if args.input.resolve().is_relative_to(args.output.resolve()): raise RuleError("raw input must be outside output directory")
     rules = read_json(ROOT / "knowledge/physics/rules.json")
     validate_bundle(rules)
+    catalog=read_json(ROOT/'knowledge/physics/catalog.json')
+    validate_catalog(catalog,rules)
     raw = args.input.read_bytes()
-    result = clean_graph(read_json(args.input),rules)
+    result = clean_graph(read_json(args.input),rules,catalog=catalog)
     source = read_json(args.source)
     digest = hashlib.sha256(raw).hexdigest()
     if source.get('sha256') != digest:
@@ -149,6 +162,7 @@ def main():
     result["report"]["source"] = source
     result["report"]["raw_formula_text_executable"] = False
     result["report"]["rule_index"] = {k:[r["id"] for r in rules["rules"] if r["stage"] == k] for k in ["primary","middle","high"]}
+    result["report"]["declaration_index"] = {k:[r["id"] for r in catalog["records"] if r["stage"] == k] for k in ["primary","middle","high"]}
     for name,value in result.items():
         if name == 'curriculum':
             for level,records in value.items():

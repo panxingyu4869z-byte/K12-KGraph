@@ -21,12 +21,13 @@
     "high": 1070
   },
   "rules": {
-    "ready": 149,
-    "covered_canonical_formula_nodes": 190,
-    "pending_formula_nodes": 45,
+    "ready": 176,
+    "declarations": 24,
+    "covered_canonical_formula_nodes": 235,
+    "pending_formula_nodes": 0,
     "by_stage": {
       "middle": 35,
-      "high": 114
+      "high": 141
     }
   },
   "scope": "first_observed_location is relative to this already-merged nine-book dataset; it is not proof of the earliest historical introduction",
@@ -192,7 +193,65 @@
       "emission_transition_frequency",
       "de_broglie_wavelength",
       "matter_wave_frequency",
-      "rest_energy"
+      "rest_energy",
+      "average_velocity_vector",
+      "static_friction_balance",
+      "conductor_interior_field",
+      "empty_conductor_cavity_field",
+      "electric_potential_energy_change",
+      "uniform_field_from_potential_spacing",
+      "microscopic_current",
+      "meter_full_scale_voltage",
+      "ohmmeter_scale_reading",
+      "ohmmeter_unknown_resistance",
+      "current_element_magnitude",
+      "normal_magnetic_field_from_flux",
+      "oil_film_molecular_size",
+      "temperature_to_kelvin",
+      "ideal_rocket_velocity",
+      "alpha_decay_numbers",
+      "beta_minus_decay_numbers",
+      "planar_velocity_direction",
+      "frequency_from_period",
+      "centripetal_force_angular",
+      "centripetal_acceleration_angular",
+      "surface_circular_orbit_speed",
+      "harmonic_motion_phase",
+      "linear_iv_resistance",
+      "internal_resistance_short_current",
+      "internal_resistance_iv_slope",
+      "ohmmeter_current"
+    ]
+  },
+  "declaration_index": {
+    "primary": [],
+    "middle": [
+      "length_unit_relations",
+      "time_unit_relations",
+      "current_unit_relations",
+      "voltage_unit_relations",
+      "kwh_unit_relation",
+      "vacuum_light_speed",
+      "standard_atmosphere",
+      "focal_length",
+      "mass_quantity",
+      "charge_quantity",
+      "wavelength_quantity"
+    ],
+    "high": [
+      "coulomb_ampere_second",
+      "volt_joule_per_coulomb",
+      "microfarad_unit_relation",
+      "picofarad_unit_relation",
+      "electron_charge_mass_rounded",
+      "coulomb_constant_rounded",
+      "planck_constant",
+      "strong_interaction_scale",
+      "weak_interaction_scale",
+      "meter_resistance_quantity",
+      "full_scale_current_quantity",
+      "full_scale_voltage_quantity",
+      "work_function_quantity"
     ]
   }
 }

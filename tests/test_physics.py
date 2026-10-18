@@ -5,6 +5,7 @@ from collections import Counter, deque
 
 from physics.engine import ROOT, CompiledRules, RuleError, available_rules, read_json, run_rule, validate_bundle
 from physics.clean import ALIASES, clean_graph
+from physics.catalog import validate_catalog
 
 
 class PhysicsContractTests(unittest.TestCase):
@@ -52,6 +53,18 @@ class PhysicsContractTests(unittest.TestCase):
         c=copy.deepcopy(cases['parallel_resistance']);c['bindings']['resistances']['value']=[1,0]
         with self.assertRaises(RuleError):self.run_case(c)
 
+        c=copy.deepcopy(cases['sensible_heat_exchange']);c['bindings']['temperature_change']['unit']='degC'
+        with self.assertRaisesRegex(RuleError,'temperature'):self.run_case(c)
+        c=copy.deepcopy(cases['ideal_gas_state_change']);c['bindings']['t1']={'value':-10,'unit':'degC'}
+        result=self.run_case(c)['results']['p2']['si_value']
+        self.assertAlmostEqual(result,100000*600/(2*263.15))
+        c['bindings']['t1']={'value':-273.15,'unit':'degC'}
+        with self.assertRaises(RuleError):self.run_case(c)
+        c=copy.deepcopy(cases['sinusoidal_rms_voltage']);c['context'].pop('pure_sinusoid')
+        with self.assertRaises(RuleError):self.run_case(c)
+        c=copy.deepcopy(cases['electric_field_definition']);c['bindings']['test_charge']['value']=0
+        with self.assertRaises(RuleError):self.run_case(c)
+
     def test_motion_quantum_and_optical_boundaries(self):
         cases={x['rule_id']:x for x in self.examples}
         for rid,key,value in [('time_dilation','relative_speed',10),('balmer_wavelength','upper_n',2),('photoelectric_maximum_energy','frequency',1),('electrostatic_acceleration_from_rest','voltage_ab',3)]:
@@ -65,16 +78,21 @@ class PhysicsContractTests(unittest.TestCase):
         with self.assertRaises(RuleError):self.run_case(c)
         result=self.run_case(cases['angular_frequency'])['results']['omega']
         self.assertEqual(result['si_unit'],'rad/s')
-        c=copy.deepcopy(cases['sensible_heat_exchange']);c['bindings']['temperature_change']['unit']='degC'
-        with self.assertRaisesRegex(RuleError,'temperature'):self.run_case(c)
-        c=copy.deepcopy(cases['ideal_gas_state_change']);c['bindings']['t1']={'value':-10,'unit':'degC'}
-        result=self.run_case(c)['results']['p2']['si_value']
-        self.assertAlmostEqual(result,100000*600/(2*263.15))
-        c['bindings']['t1']={'value':-273.15,'unit':'degC'}
+
+    def test_catalog_and_nuclear_conservation(self):
+        catalog=read_json(ROOT/'knowledge/physics/catalog.json')
+        self.assertTrue(validate_catalog(catalog,self.bundle))
+        altered=copy.deepcopy(catalog)
+        altered['records'][0]['equations'][0]['args'][1]['value']=999
+        with self.assertRaisesRegex(RuleError,'identity'):validate_catalog(altered,self.bundle)
+        b=copy.deepcopy(self.bundle)
+        beta=next(x for x in b['rules'] if x['id']=='beta_minus_decay_numbers')
+        beta['reaction']['products'].pop()
+        with self.assertRaisesRegex(RuleError,'conserved'):validate_bundle(b)
+        cases={x['rule_id']:x for x in self.examples}
+        c=copy.deepcopy(cases['alpha_decay_numbers']);c['bindings']['parent_Z']['value']=1
         with self.assertRaises(RuleError):self.run_case(c)
-        c=copy.deepcopy(cases['sinusoidal_rms_voltage']);c['context'].pop('pure_sinusoid')
-        with self.assertRaises(RuleError):self.run_case(c)
-        c=copy.deepcopy(cases['electric_field_definition']);c['bindings']['test_charge']['value']=0
+        c=copy.deepcopy(cases['empty_conductor_cavity_field']);c['context']['cavity_contains_no_charge']=False
         with self.assertRaises(RuleError):self.run_case(c)
 
     def test_unknown_operator_and_property_rejected_by_schema(self):
@@ -83,6 +101,17 @@ class PhysicsContractTests(unittest.TestCase):
             if field == 'op': b['rules'][0]['steps'][0]['expression']['op'] = 'python_eval'
             else: b['rules'][0]['code'] = 'ignored?'
             with self.assertRaisesRegex(RuleError,'JSON Schema'): validate_bundle(b)
+
+    def test_direction_and_phase_initialization(self):
+        cases={x['rule_id']:x for x in self.examples}
+        c=copy.deepcopy(cases['planar_velocity_direction'])
+        c['bindings']['vx']['value']=c['bindings']['vy']['value']=0
+        with self.assertRaisesRegex(RuleError,'no direction'):self.run_case(c)
+        phase=self.run_case(cases['harmonic_motion_phase'])['results']
+        self.assertEqual(phase['x0']['si_value'],phase['x']['si_value'])
+        self.assertEqual(phase['v0']['si_value'],6)
+        c=copy.deepcopy(cases['harmonic_motion_phase']);c['bindings'].pop('t0')
+        with self.assertRaisesRegex(RuleError,'initial condition'):self.run_case(c)
 
     def test_dimension_and_algebra_checks_are_separate(self):
         b = copy.deepcopy(self.bundle)
@@ -178,6 +207,17 @@ class CleanedGraphTests(unittest.TestCase):
         self.assertEqual(sorted(ids),sorted(expected));self.assertEqual(len(ids),len(set(ids)))
         self.assertEqual(self.curriculum['primary'],[])
         self.assertNotIn('physics_bx1_rjb_cpt33',ids)
+
+    def test_every_formula_field_classified_and_linked(self):
+        links=read_json(ROOT/'knowledge/physics/cleaned/content_links.json')
+        pending=read_json(ROOT/'knowledge/physics/cleaned/pending.json')
+        formula_ids={n['id'] for n in self.graph['nodes'] if 'formula' in n.get('properties',{})}
+        self.assertEqual(formula_ids,set(links)|{r['id'] for r in pending})
+        self.assertEqual(pending,[])
+        rules=read_json(ROOT/'knowledge/physics/rules.json')['rules']
+        catalog=read_json(ROOT/'knowledge/physics/catalog.json')['records']
+        known={r['id'] for r in rules+catalog}
+        self.assertTrue(all(set(items)<=known for items in links.values()))
 
     def test_cleaning_is_idempotent_and_keeps_later_work_model(self):
         result=clean_graph(self.graph,PhysicsContractTests.bundle if hasattr(PhysicsContractTests,'bundle') else read_json(ROOT/'knowledge/physics/rules.json'),aliases={})

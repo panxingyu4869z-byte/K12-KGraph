@@ -1,0 +1,40 @@
+{
+  "batches": [
+    {
+      "batch": 1,
+      "cumulative_rules": 8,
+      "cumulative_declarations": 0,
+      "tests_passed": 14,
+      "commit": "41d769e491e4c489b90d624bb2f6dc627cadfb69"
+    },
+    {
+      "batch": 2,
+      "cumulative_rules": 29,
+      "cumulative_declarations": 0,
+      "tests_passed": 15,
+      "commit": "0d1a2e9e3354662ae5c9936f2f95285af790ddc4"
+    },
+    {
+      "batch": 3,
+      "cumulative_rules": 93,
+      "cumulative_declarations": 0,
+      "tests_passed": 16,
+      "commit": "1f3280625fbb9f80aa95748586c453c197bceaf5"
+    },
+    {
+      "batch": 4,
+      "cumulative_rules": 149,
+      "cumulative_declarations": 0,
+      "tests_passed": 17,
+      "commit": "a6747233a268591bd6cecef6c1e5556cdb750f31"
+    },
+    {
+      "batch": 5,
+      "cumulative_rules": 176,
+      "cumulative_declarations": 24,
+      "tests_passed": 20,
+      "commit_reference": "current PR head"
+    }
+  ],
+  "completion_scope": "All 236 source formula fields accounted for: one duplicate alias, 235 canonical records. This is not universal solver coverage or a rewrite of every display description."
+}

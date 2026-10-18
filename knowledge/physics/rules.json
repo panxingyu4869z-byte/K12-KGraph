@@ -723,6 +723,30 @@
         0
       ],
       "scale": "1"
+    },
+    "A*m": {
+      "dimension": [
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "scale": "1"
+    },
+    "C/kg": {
+      "dimension": [
+        -1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "scale": "1"
     }
   },
   "principles": {
@@ -1613,6 +1637,168 @@
       "kind": "physical",
       "source_url": "https://huggingface.co/datasets/lhpku20010120/K12-KGraph/blob/d8522c2b336ee435aa51daa39ca0dd736f56fa53/K12-KGraph/subject_specific_KG/physics.json",
       "locator": "node:physics_xzxbx3_rjb_cpt139 / physics_xzxbx3_rjb_ch5_s3"
+    },
+    "average_velocity_vector": {
+      "name_zh": "平均速度的矢量定义",
+      "kind": "physical",
+      "source_url": "https://huggingface.co/datasets/lhpku20010120/K12-KGraph/blob/d8522c2b336ee435aa51daa39ca0dd736f56fa53/K12-KGraph/subject_specific_KG/physics.json",
+      "locator": "node:physics_8a_rjb_cpt11 / physics_bx1_rjb_ch1_s3"
+    },
+    "static_friction_balance": {
+      "name_zh": "静摩擦平衡与上限",
+      "kind": "physical",
+      "source_url": "https://huggingface.co/datasets/lhpku20010120/K12-KGraph/blob/d8522c2b336ee435aa51daa39ca0dd736f56fa53/K12-KGraph/subject_specific_KG/physics.json",
+      "locator": "node:physics_bx1_rjb_cpt42 / physics_bx1_rjb_ch3_s2"
+    },
+    "conductor_interior_field": {
+      "name_zh": "静电平衡导体材料内部场",
+      "kind": "physical",
+      "source_url": "https://huggingface.co/datasets/lhpku20010120/K12-KGraph/blob/d8522c2b336ee435aa51daa39ca0dd736f56fa53/K12-KGraph/subject_specific_KG/physics.json",
+      "locator": "node:physics_bx3_rjb_cpt38 / physics_bx3_rjb_ch9_s4"
+    },
+    "empty_conductor_cavity_field": {
+      "name_zh": "空腔内静电屏蔽",
+      "kind": "physical",
+      "source_url": "https://huggingface.co/datasets/lhpku20010120/K12-KGraph/blob/d8522c2b336ee435aa51daa39ca0dd736f56fa53/K12-KGraph/subject_specific_KG/physics.json",
+      "locator": "node:physics_bx3_rjb_cpt44 / physics_bx3_rjb_ch9_s4"
+    },
+    "electric_potential_energy_change": {
+      "name_zh": "电势能与静电力做功",
+      "kind": "physical",
+      "source_url": "https://huggingface.co/datasets/lhpku20010120/K12-KGraph/blob/d8522c2b336ee435aa51daa39ca0dd736f56fa53/K12-KGraph/subject_specific_KG/physics.json",
+      "locator": "node:physics_bx3_rjb_cpt50 / physics_bx3_rjb_ch10_s1"
+    },
+    "uniform_field_from_potential_spacing": {
+      "name_zh": "等势面间匀强电场分量",
+      "kind": "physical",
+      "source_url": "https://huggingface.co/datasets/lhpku20010120/K12-KGraph/blob/d8522c2b336ee435aa51daa39ca0dd736f56fa53/K12-KGraph/subject_specific_KG/physics.json",
+      "locator": "node:physics_bx3_rjb_cpt63 / physics_bx3_rjb_ch10_s3"
+    },
+    "microscopic_current": {
+      "name_zh": "载流子漂移电流",
+      "kind": "physical",
+      "source_url": "https://huggingface.co/datasets/lhpku20010120/K12-KGraph/blob/d8522c2b336ee435aa51daa39ca0dd736f56fa53/K12-KGraph/subject_specific_KG/physics.json",
+      "locator": "node:physics_bx3_rjb_cpt95 / physics_bx3_rjb_ch11_s1"
+    },
+    "meter_full_scale_voltage": {
+      "name_zh": "表头满偏电压",
+      "kind": "physical",
+      "source_url": "https://huggingface.co/datasets/lhpku20010120/K12-KGraph/blob/d8522c2b336ee435aa51daa39ca0dd736f56fa53/K12-KGraph/subject_specific_KG/physics.json",
+      "locator": "node:physics_bx3_rjb_cpt125 / physics_bx3_rjb_ch11_s4"
+    },
+    "ohmmeter_scale_reading": {
+      "name_zh": "欧姆表倍率读数",
+      "kind": "physical",
+      "source_url": "https://huggingface.co/datasets/lhpku20010120/K12-KGraph/blob/d8522c2b336ee435aa51daa39ca0dd736f56fa53/K12-KGraph/subject_specific_KG/physics.json",
+      "locator": "node:physics_bx3_rjb_cpt132 / physics_bx3_rjb_ch11_s5"
+    },
+    "ohmmeter_unknown_resistance": {
+      "name_zh": "欧姆表电阻电流对应",
+      "kind": "physical",
+      "source_url": "https://huggingface.co/datasets/lhpku20010120/K12-KGraph/blob/d8522c2b336ee435aa51daa39ca0dd736f56fa53/K12-KGraph/subject_specific_KG/physics.json",
+      "locator": "node:physics_bx3_rjb_cpt155 / physics_bx3_rjb_ch12_s2"
+    },
+    "current_element_magnitude": {
+      "name_zh": "电流元大小",
+      "kind": "physical",
+      "source_url": "https://huggingface.co/datasets/lhpku20010120/K12-KGraph/blob/d8522c2b336ee435aa51daa39ca0dd736f56fa53/K12-KGraph/subject_specific_KG/physics.json",
+      "locator": "node:physics_bx3_rjb_cpt173 / physics_bx3_rjb_ch13_s2"
+    },
+    "normal_magnetic_field_from_flux": {
+      "name_zh": "法向磁感应强度",
+      "kind": "physical",
+      "source_url": "https://huggingface.co/datasets/lhpku20010120/K12-KGraph/blob/d8522c2b336ee435aa51daa39ca0dd736f56fa53/K12-KGraph/subject_specific_KG/physics.json",
+      "locator": "node:physics_bx3_rjb_cpt178 / physics_bx3_rjb_ch13_s2"
+    },
+    "oil_film_molecular_size": {
+      "name_zh": "单分子油膜厚度估算",
+      "kind": "physical",
+      "source_url": "https://huggingface.co/datasets/lhpku20010120/K12-KGraph/blob/d8522c2b336ee435aa51daa39ca0dd736f56fa53/K12-KGraph/subject_specific_KG/physics.json",
+      "locator": "node:physics_xzxbx3_rjb_cpt6 / physics_xzxbx3_rjb_ch1_s2"
+    },
+    "temperature_to_kelvin": {
+      "name_zh": "绝对温标换算",
+      "kind": "physical",
+      "source_url": "https://huggingface.co/datasets/lhpku20010120/K12-KGraph/blob/d8522c2b336ee435aa51daa39ca0dd736f56fa53/K12-KGraph/subject_specific_KG/physics.json",
+      "locator": "node:physics_xzxbx3_rjb_cpt25 / physics_xzxbx3_rjb_ch2_s1"
+    },
+    "ideal_rocket_velocity": {
+      "name_zh": "理想火箭变质量速度增量",
+      "kind": "physical",
+      "source_url": "https://huggingface.co/datasets/lhpku20010120/K12-KGraph/blob/d8522c2b336ee435aa51daa39ca0dd736f56fa53/K12-KGraph/subject_specific_KG/physics.json",
+      "locator": "node:physics_xzxbx1_rjb_cpt18 / physics_xzxbx1_rjb_ch1_s6"
+    },
+    "alpha_decay_numbers": {
+      "name_zh": "α衰变核子与电荷数",
+      "kind": "physical",
+      "source_url": "https://openstax.org/books/university-physics-volume-3/pages/10-4-nuclear-reactions",
+      "locator": "node:physics_xzxbx3_rjb_cpt124 / physics_xzxbx3_rjb_ch5_s2"
+    },
+    "beta_minus_decay_numbers": {
+      "name_zh": "β负衰变核子与电荷数",
+      "kind": "physical",
+      "source_url": "https://openstax.org/books/university-physics-volume-3/pages/10-4-nuclear-reactions",
+      "locator": "node:physics_xzxbx3_rjb_cpt125 / physics_xzxbx3_rjb_ch5_s2"
+    },
+    "planar_velocity_direction": {
+      "name_zh": "平面速度方向角",
+      "kind": "physical",
+      "source_url": "https://huggingface.co/datasets/lhpku20010120/K12-KGraph/blob/d8522c2b336ee435aa51daa39ca0dd736f56fa53/K12-KGraph/subject_specific_KG/physics.json",
+      "locator": "node:physics_bx2_rjb_cpt8 / physics_bx2_rjb_ch5_s2"
+    },
+    "frequency_from_period": {
+      "name_zh": "由周期求频率",
+      "kind": "physical",
+      "source_url": "https://huggingface.co/datasets/lhpku20010120/K12-KGraph/blob/d8522c2b336ee435aa51daa39ca0dd736f56fa53/K12-KGraph/subject_specific_KG/physics.json",
+      "locator": "node:physics_bx2_rjb_cpt23 / physics_bx2_rjb_ch6_s1"
+    },
+    "centripetal_force_angular": {
+      "name_zh": "用角速度计算向心力",
+      "kind": "physical",
+      "source_url": "https://huggingface.co/datasets/lhpku20010120/K12-KGraph/blob/d8522c2b336ee435aa51daa39ca0dd736f56fa53/K12-KGraph/subject_specific_KG/physics.json",
+      "locator": "node:physics_bx2_rjb_cpt26 / physics_bx2_rjb_ch6_s2"
+    },
+    "centripetal_acceleration_angular": {
+      "name_zh": "用角速度计算向心加速度",
+      "kind": "physical",
+      "source_url": "https://huggingface.co/datasets/lhpku20010120/K12-KGraph/blob/d8522c2b336ee435aa51daa39ca0dd736f56fa53/K12-KGraph/subject_specific_KG/physics.json",
+      "locator": "node:physics_bx2_rjb_cpt30 / physics_bx2_rjb_ch6_s3"
+    },
+    "surface_circular_orbit_speed": {
+      "name_zh": "由表面引力求近地圆轨道速度",
+      "kind": "physical",
+      "source_url": "https://huggingface.co/datasets/lhpku20010120/K12-KGraph/blob/d8522c2b336ee435aa51daa39ca0dd736f56fa53/K12-KGraph/subject_specific_KG/physics.json",
+      "locator": "node:physics_bx2_rjb_cpt48 / physics_bx2_rjb_ch7_s4"
+    },
+    "harmonic_motion_phase": {
+      "name_zh": "简谐运动振幅相位形式",
+      "kind": "physical",
+      "source_url": "https://huggingface.co/datasets/lhpku20010120/K12-KGraph/blob/d8522c2b336ee435aa51daa39ca0dd736f56fa53/K12-KGraph/subject_specific_KG/physics.json",
+      "locator": "node:physics_xzxbx1_rjb_cpt24 / physics_xzxbx1_rjb_ch2_s1"
+    },
+    "linear_iv_resistance": {
+      "name_zh": "过原点线性伏安图斜率",
+      "kind": "physical",
+      "source_url": "https://huggingface.co/datasets/lhpku20010120/K12-KGraph/blob/d8522c2b336ee435aa51daa39ca0dd736f56fa53/K12-KGraph/subject_specific_KG/physics.json",
+      "locator": "node:physics_bx3_rjb_cpt97 / physics_bx3_rjb_ch11_s2"
+    },
+    "internal_resistance_short_current": {
+      "name_zh": "短路电流求内阻",
+      "kind": "physical",
+      "source_url": "https://huggingface.co/datasets/lhpku20010120/K12-KGraph/blob/d8522c2b336ee435aa51daa39ca0dd736f56fa53/K12-KGraph/subject_specific_KG/physics.json",
+      "locator": "node:physics_bx3_rjb_cpt147 / physics_bx3_rjb_ch12_s2"
+    },
+    "internal_resistance_iv_slope": {
+      "name_zh": "电源伏安曲线斜率求内阻",
+      "kind": "physical",
+      "source_url": "https://huggingface.co/datasets/lhpku20010120/K12-KGraph/blob/d8522c2b336ee435aa51daa39ca0dd736f56fa53/K12-KGraph/subject_specific_KG/physics.json",
+      "locator": "node:physics_bx3_rjb_cpt147 / physics_bx3_rjb_ch12_s2"
+    },
+    "ohmmeter_current": {
+      "name_zh": "欧姆表电流刻度",
+      "kind": "physical",
+      "source_url": "https://huggingface.co/datasets/lhpku20010120/K12-KGraph/blob/d8522c2b336ee435aa51daa39ca0dd736f56fa53/K12-KGraph/subject_specific_KG/physics.json",
+      "locator": "node:physics_bx3_rjb_cpt155 / physics_bx3_rjb_ch12_s2"
     }
   },
   "rules": [
@@ -1746,7 +1932,8 @@
       ],
       "source_nodes": [
         "physics_8a_rjb_cpt12",
-        "physics_bx2_rjb_cpt19"
+        "physics_bx2_rjb_cpt19",
+        "physics_8a_rjb_cpt11"
       ]
     },
     {
@@ -3223,7 +3410,7 @@
         "physics_8a_rjb_cpt20"
       ],
       "batch": 2,
-      "variant_of": null,
+      "variant_of": "average_speed",
       "introduced_at": "physics_8a_rjb_ch2_s1",
       "stage": "middle",
       "status": "ready",
@@ -7298,8 +7485,7 @@
       "source_nodes": [
         "physics_9_rjb_cpt66",
         "physics_9_rjb_cpt75",
-        "physics_9_rjb_cpt78",
-        "physics_bx3_rjb_cpt97"
+        "physics_9_rjb_cpt78"
       ],
       "batch": 3,
       "variant_of": null,
@@ -11346,7 +11532,9 @@
       "id": "coulomb_force_magnitude",
       "concept_id": "physics_bx3_rjb_cpt17",
       "source_nodes": [
-        "physics_bx3_rjb_cpt17"
+        "physics_bx3_rjb_cpt17",
+        "physics_bx3_rjb_cpt20",
+        "physics_bx3_rjb_cpt21"
       ],
       "batch": 3,
       "variant_of": null,
@@ -12633,6 +12821,22 @@
           "domain": "real",
           "object": "body",
           "frame": "not_applicable"
+        },
+        "voltage_ba": {
+          "kind": "scalar",
+          "dimension": [
+            1,
+            2,
+            -3,
+            -1,
+            0,
+            0,
+            0
+          ],
+          "unit": "V",
+          "domain": "real",
+          "object": "body",
+          "frame": "not_applicable"
         }
       },
       "conditions": [
@@ -12675,6 +12879,34 @@
           "principles": [
             "potential_difference"
           ]
+        },
+        {
+          "id": "law_voltage_ba",
+          "equation": {
+            "op": "eq",
+            "args": [
+              {
+                "op": "var",
+                "id": "voltage_ba"
+              },
+              {
+                "op": "mul",
+                "args": [
+                  {
+                    "op": "number",
+                    "value": -1
+                  },
+                  {
+                    "op": "var",
+                    "id": "voltage_ab"
+                  }
+                ]
+              }
+            ]
+          },
+          "principles": [
+            "potential_difference"
+          ]
         }
       ],
       "steps": [
@@ -12699,10 +12931,33 @@
           ],
           "law_id": "law",
           "rewrite": "direct"
+        },
+        {
+          "id": "compute_voltage_ba",
+          "target": "voltage_ba",
+          "expression": {
+            "op": "mul",
+            "args": [
+              {
+                "op": "number",
+                "value": -1
+              },
+              {
+                "op": "var",
+                "id": "voltage_ab"
+              }
+            ]
+          },
+          "principles": [
+            "potential_difference"
+          ],
+          "law_id": "law_voltage_ba",
+          "rewrite": "direct"
         }
       ],
       "conclusions": [
-        "voltage_ab"
+        "voltage_ab",
+        "voltage_ba"
       ]
     },
     {
@@ -27649,7 +27904,7 @@
         "physics_xzxbx3_rjb_cpt104"
       ],
       "batch": 4,
-      "variant_of": null,
+      "variant_of": "photon_momentum",
       "introduced_at": "physics_xzxbx3_rjb_ch4_s5",
       "stage": "high",
       "status": "ready",
@@ -28030,6 +28285,4815 @@
       ],
       "conclusions": [
         "rest_energy"
+      ]
+    },
+    {
+      "id": "average_velocity_vector",
+      "concept_id": "physics_8a_rjb_cpt11",
+      "source_nodes": [
+        "physics_8a_rjb_cpt11"
+      ],
+      "batch": 5,
+      "variant_of": "average_speed",
+      "introduced_at": "physics_bx1_rjb_ch1_s3",
+      "stage": "high",
+      "status": "ready",
+      "display": {
+        "name_zh": "平均速度的矢量定义",
+        "original_formula": "v = s / t",
+        "notes_zh": "来源节点混合了初中速率与高中矢量速度。本记录按高中位置保留矢量扩展；初中路程/时间引用average_speed。"
+      },
+      "object_model": "point_particle",
+      "reference_frame": "inertial",
+      "quantities": {
+        "displacement": {
+          "kind": "vector",
+          "dimension": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "unit": "m",
+          "domain": "real",
+          "object": "body",
+          "frame": "lab"
+        },
+        "duration": {
+          "kind": "scalar",
+          "dimension": [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "unit": "s",
+          "domain": "positive",
+          "object": "body",
+          "frame": "not_applicable"
+        },
+        "velocity": {
+          "kind": "vector",
+          "dimension": [
+            0,
+            1,
+            -1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "unit": "m/s",
+          "domain": "real",
+          "object": "body",
+          "frame": "lab"
+        }
+      },
+      "conditions": [
+        {
+          "fact": "same_body",
+          "equals": true
+        },
+        {
+          "fact": "same_reference_frame",
+          "equals": true
+        }
+      ],
+      "force_dependence": {
+        "mode": "not_used",
+        "allowed_dependencies": []
+      },
+      "initial_conditions": [],
+      "boundary_conditions": "none_assumed",
+      "laws": [
+        {
+          "id": "law",
+          "equation": {
+            "op": "eq",
+            "args": [
+              {
+                "op": "var",
+                "id": "velocity"
+              },
+              {
+                "op": "div",
+                "args": [
+                  {
+                    "op": "var",
+                    "id": "displacement"
+                  },
+                  {
+                    "op": "var",
+                    "id": "duration"
+                  }
+                ]
+              }
+            ]
+          },
+          "principles": [
+            "average_velocity_vector"
+          ]
+        }
+      ],
+      "steps": [
+        {
+          "id": "calculate",
+          "target": "velocity",
+          "expression": {
+            "op": "div",
+            "args": [
+              {
+                "op": "var",
+                "id": "displacement"
+              },
+              {
+                "op": "var",
+                "id": "duration"
+              }
+            ]
+          },
+          "principles": [
+            "average_velocity_vector"
+          ],
+          "law_id": "law",
+          "rewrite": "direct"
+        }
+      ],
+      "conclusions": [
+        "velocity"
+      ]
+    },
+    {
+      "id": "static_friction_balance",
+      "concept_id": "physics_bx1_rjb_cpt42",
+      "source_nodes": [
+        "physics_bx1_rjb_cpt42"
+      ],
+      "batch": 5,
+      "variant_of": null,
+      "introduced_at": "physics_bx1_rjb_ch3_s2",
+      "stage": "high",
+      "status": "ready",
+      "display": {
+        "name_zh": "静摩擦平衡与上限",
+        "original_formula": "0 < F ≤ F_max",
+        "notes_zh": "静摩擦允许为零；达到上限以后不能继续使用无滑动平衡关系。"
+      },
+      "object_model": "point_particle",
+      "reference_frame": "declared",
+      "quantities": {
+        "other_tangential_force": {
+          "kind": "scalar",
+          "dimension": [
+            1,
+            1,
+            -2,
+            0,
+            0,
+            0,
+            0
+          ],
+          "unit": "N",
+          "domain": "real",
+          "object": "body",
+          "frame": "not_applicable"
+        },
+        "maximum_static_friction": {
+          "kind": "scalar",
+          "dimension": [
+            1,
+            1,
+            -2,
+            0,
+            0,
+            0,
+            0
+          ],
+          "unit": "N",
+          "domain": "nonnegative",
+          "object": "body",
+          "frame": "not_applicable"
+        },
+        "friction": {
+          "kind": "scalar",
+          "dimension": [
+            1,
+            1,
+            -2,
+            0,
+            0,
+            0,
+            0
+          ],
+          "unit": "N",
+          "domain": "real",
+          "object": "body",
+          "frame": "not_applicable"
+        }
+      },
+      "conditions": [
+        {
+          "fact": "no_relative_slip",
+          "equals": true
+        },
+        {
+          "fact": "tangential_equilibrium",
+          "equals": true
+        },
+        {
+          "fact": "signed_tangential_axis",
+          "equals": true
+        }
+      ],
+      "force_dependence": {
+        "mode": "not_used",
+        "allowed_dependencies": []
+      },
+      "initial_conditions": [],
+      "boundary_conditions": "none_assumed",
+      "laws": [
+        {
+          "id": "law",
+          "equation": {
+            "op": "eq",
+            "args": [
+              {
+                "op": "var",
+                "id": "friction"
+              },
+              {
+                "op": "mul",
+                "args": [
+                  {
+                    "op": "number",
+                    "value": -1
+                  },
+                  {
+                    "op": "var",
+                    "id": "other_tangential_force"
+                  }
+                ]
+              }
+            ]
+          },
+          "principles": [
+            "static_friction_balance"
+          ]
+        }
+      ],
+      "steps": [
+        {
+          "id": "calculate",
+          "target": "friction",
+          "expression": {
+            "op": "mul",
+            "args": [
+              {
+                "op": "number",
+                "value": -1
+              },
+              {
+                "op": "var",
+                "id": "other_tangential_force"
+              }
+            ]
+          },
+          "principles": [
+            "static_friction_balance"
+          ],
+          "law_id": "law",
+          "rewrite": "direct"
+        }
+      ],
+      "conclusions": [
+        "friction"
+      ],
+      "constraints": [
+        {
+          "op": "le",
+          "args": [
+            {
+              "op": "abs",
+              "args": [
+                {
+                  "op": "var",
+                  "id": "other_tangential_force"
+                }
+              ]
+            },
+            {
+              "op": "var",
+              "id": "maximum_static_friction"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "conductor_interior_field",
+      "concept_id": "physics_bx3_rjb_cpt38",
+      "source_nodes": [
+        "physics_bx3_rjb_cpt38"
+      ],
+      "batch": 5,
+      "variant_of": null,
+      "introduced_at": "physics_bx3_rjb_ch9_s4",
+      "stage": "high",
+      "status": "ready",
+      "display": {
+        "name_zh": "静电平衡导体材料内部场",
+        "original_formula": "导体内部：E = 0",
+        "notes_zh": "仅在结构化条件已建立时执行；原文字段不参与求值。"
+      },
+      "object_model": "electrostatic",
+      "reference_frame": "declared",
+      "quantities": {
+        "field": {
+          "kind": "vector",
+          "dimension": [
+            1,
+            1,
+            -3,
+            -1,
+            0,
+            0,
+            0
+          ],
+          "unit": "N/C",
+          "domain": "real",
+          "object": "body",
+          "frame": "lab"
+        }
+      },
+      "conditions": [
+        {
+          "fact": "electrostatic_equilibrium",
+          "equals": true
+        },
+        {
+          "fact": "point_inside_conducting_material",
+          "equals": true
+        }
+      ],
+      "force_dependence": {
+        "mode": "not_used",
+        "allowed_dependencies": []
+      },
+      "initial_conditions": [],
+      "boundary_conditions": "none_assumed",
+      "laws": [
+        {
+          "id": "law",
+          "equation": {
+            "op": "eq",
+            "args": [
+              {
+                "op": "var",
+                "id": "field"
+              },
+              {
+                "op": "vector",
+                "args": [
+                  {
+                    "op": "literal",
+                    "value": 0,
+                    "unit": "N/C"
+                  },
+                  {
+                    "op": "literal",
+                    "value": 0,
+                    "unit": "N/C"
+                  },
+                  {
+                    "op": "literal",
+                    "value": 0,
+                    "unit": "N/C"
+                  }
+                ]
+              }
+            ]
+          },
+          "principles": [
+            "conductor_interior_field"
+          ]
+        }
+      ],
+      "steps": [
+        {
+          "id": "calculate",
+          "target": "field",
+          "expression": {
+            "op": "vector",
+            "args": [
+              {
+                "op": "literal",
+                "value": 0,
+                "unit": "N/C"
+              },
+              {
+                "op": "literal",
+                "value": 0,
+                "unit": "N/C"
+              },
+              {
+                "op": "literal",
+                "value": 0,
+                "unit": "N/C"
+              }
+            ]
+          },
+          "principles": [
+            "conductor_interior_field"
+          ],
+          "law_id": "law",
+          "rewrite": "direct"
+        }
+      ],
+      "conclusions": [
+        "field"
+      ]
+    },
+    {
+      "id": "empty_conductor_cavity_field",
+      "concept_id": "physics_bx3_rjb_cpt44",
+      "source_nodes": [
+        "physics_bx3_rjb_cpt44"
+      ],
+      "batch": 5,
+      "variant_of": "conductor_interior_field",
+      "introduced_at": "physics_bx3_rjb_ch9_s4",
+      "stage": "high",
+      "status": "ready",
+      "display": {
+        "name_zh": "空腔内静电屏蔽",
+        "original_formula": "空腔内：E = 0",
+        "notes_zh": "仅在结构化条件已建立时执行；原文字段不参与求值。"
+      },
+      "object_model": "electrostatic",
+      "reference_frame": "declared",
+      "quantities": {
+        "field": {
+          "kind": "vector",
+          "dimension": [
+            1,
+            1,
+            -3,
+            -1,
+            0,
+            0,
+            0
+          ],
+          "unit": "N/C",
+          "domain": "real",
+          "object": "body",
+          "frame": "lab"
+        }
+      },
+      "conditions": [
+        {
+          "fact": "electrostatic_equilibrium",
+          "equals": true
+        },
+        {
+          "fact": "closed_conducting_cavity",
+          "equals": true
+        },
+        {
+          "fact": "cavity_contains_no_charge",
+          "equals": true
+        }
+      ],
+      "force_dependence": {
+        "mode": "not_used",
+        "allowed_dependencies": []
+      },
+      "initial_conditions": [],
+      "boundary_conditions": "none_assumed",
+      "laws": [
+        {
+          "id": "law",
+          "equation": {
+            "op": "eq",
+            "args": [
+              {
+                "op": "var",
+                "id": "field"
+              },
+              {
+                "op": "vector",
+                "args": [
+                  {
+                    "op": "literal",
+                    "value": 0,
+                    "unit": "N/C"
+                  },
+                  {
+                    "op": "literal",
+                    "value": 0,
+                    "unit": "N/C"
+                  },
+                  {
+                    "op": "literal",
+                    "value": 0,
+                    "unit": "N/C"
+                  }
+                ]
+              }
+            ]
+          },
+          "principles": [
+            "empty_conductor_cavity_field"
+          ]
+        }
+      ],
+      "steps": [
+        {
+          "id": "calculate",
+          "target": "field",
+          "expression": {
+            "op": "vector",
+            "args": [
+              {
+                "op": "literal",
+                "value": 0,
+                "unit": "N/C"
+              },
+              {
+                "op": "literal",
+                "value": 0,
+                "unit": "N/C"
+              },
+              {
+                "op": "literal",
+                "value": 0,
+                "unit": "N/C"
+              }
+            ]
+          },
+          "principles": [
+            "empty_conductor_cavity_field"
+          ],
+          "law_id": "law",
+          "rewrite": "direct"
+        }
+      ],
+      "conclusions": [
+        "field"
+      ]
+    },
+    {
+      "id": "electric_potential_energy_change",
+      "concept_id": "physics_bx3_rjb_cpt50",
+      "source_nodes": [
+        "physics_bx3_rjb_cpt50"
+      ],
+      "batch": 5,
+      "variant_of": null,
+      "introduced_at": "physics_bx3_rjb_ch10_s1",
+      "stage": "high",
+      "status": "ready",
+      "display": {
+        "name_zh": "电势能与静电力做功",
+        "original_formula": "W_{AB}=E_{pA}-E_{pB}",
+        "notes_zh": "仅在结构化条件已建立时执行；原文字段不参与求值。"
+      },
+      "object_model": "electrostatic",
+      "reference_frame": "declared",
+      "quantities": {
+        "initial_energy": {
+          "kind": "scalar",
+          "dimension": [
+            1,
+            2,
+            -2,
+            0,
+            0,
+            0,
+            0
+          ],
+          "unit": "J",
+          "domain": "real",
+          "object": "body",
+          "frame": "not_applicable"
+        },
+        "electric_work": {
+          "kind": "scalar",
+          "dimension": [
+            1,
+            2,
+            -2,
+            0,
+            0,
+            0,
+            0
+          ],
+          "unit": "J",
+          "domain": "real",
+          "object": "body",
+          "frame": "not_applicable"
+        },
+        "final_energy": {
+          "kind": "scalar",
+          "dimension": [
+            1,
+            2,
+            -2,
+            0,
+            0,
+            0,
+            0
+          ],
+          "unit": "J",
+          "domain": "real",
+          "object": "body",
+          "frame": "not_applicable"
+        }
+      },
+      "conditions": [
+        {
+          "fact": "electrostatic",
+          "equals": true
+        },
+        {
+          "fact": "same_test_charge",
+          "equals": true
+        }
+      ],
+      "force_dependence": {
+        "mode": "not_used",
+        "allowed_dependencies": []
+      },
+      "initial_conditions": [],
+      "boundary_conditions": "none_assumed",
+      "laws": [
+        {
+          "id": "law",
+          "equation": {
+            "op": "eq",
+            "args": [
+              {
+                "op": "var",
+                "id": "final_energy"
+              },
+              {
+                "op": "sub",
+                "args": [
+                  {
+                    "op": "var",
+                    "id": "initial_energy"
+                  },
+                  {
+                    "op": "var",
+                    "id": "electric_work"
+                  }
+                ]
+              }
+            ]
+          },
+          "principles": [
+            "electric_potential_energy_change"
+          ]
+        }
+      ],
+      "steps": [
+        {
+          "id": "calculate",
+          "target": "final_energy",
+          "expression": {
+            "op": "sub",
+            "args": [
+              {
+                "op": "var",
+                "id": "initial_energy"
+              },
+              {
+                "op": "var",
+                "id": "electric_work"
+              }
+            ]
+          },
+          "principles": [
+            "electric_potential_energy_change"
+          ],
+          "law_id": "law",
+          "rewrite": "direct"
+        }
+      ],
+      "conclusions": [
+        "final_energy"
+      ]
+    },
+    {
+      "id": "uniform_field_from_potential_spacing",
+      "concept_id": "physics_bx3_rjb_cpt63",
+      "source_nodes": [
+        "physics_bx3_rjb_cpt63",
+        "physics_bx3_rjb_cpt61"
+      ],
+      "batch": 5,
+      "variant_of": "uniform_field_voltage",
+      "introduced_at": "physics_bx3_rjb_ch10_s3",
+      "stage": "high",
+      "status": "ready",
+      "display": {
+        "name_zh": "等势面间匀强电场分量",
+        "original_formula": "E=U/d（相邻等势线U相同）",
+        "notes_zh": "非匀强场只能在明确局部近似或取极限后使用；此规则要求匀强场。"
+      },
+      "object_model": "electrostatic",
+      "reference_frame": "declared",
+      "quantities": {
+        "potential_drop": {
+          "kind": "scalar",
+          "dimension": [
+            1,
+            2,
+            -3,
+            -1,
+            0,
+            0,
+            0
+          ],
+          "unit": "V",
+          "domain": "real",
+          "object": "body",
+          "frame": "not_applicable"
+        },
+        "normal_spacing": {
+          "kind": "scalar",
+          "dimension": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "unit": "m",
+          "domain": "positive",
+          "object": "body",
+          "frame": "not_applicable"
+        },
+        "field_component": {
+          "kind": "scalar",
+          "dimension": [
+            1,
+            1,
+            -3,
+            -1,
+            0,
+            0,
+            0
+          ],
+          "unit": "N/C",
+          "domain": "real",
+          "object": "body",
+          "frame": "not_applicable"
+        }
+      },
+      "conditions": [
+        {
+          "fact": "uniform_field",
+          "equals": true
+        },
+        {
+          "fact": "spacing_along_field_normal",
+          "equals": true
+        },
+        {
+          "fact": "oriented_potential_drop",
+          "equals": true
+        }
+      ],
+      "force_dependence": {
+        "mode": "not_used",
+        "allowed_dependencies": []
+      },
+      "initial_conditions": [],
+      "boundary_conditions": "none_assumed",
+      "laws": [
+        {
+          "id": "law",
+          "equation": {
+            "op": "eq",
+            "args": [
+              {
+                "op": "var",
+                "id": "field_component"
+              },
+              {
+                "op": "div",
+                "args": [
+                  {
+                    "op": "var",
+                    "id": "potential_drop"
+                  },
+                  {
+                    "op": "var",
+                    "id": "normal_spacing"
+                  }
+                ]
+              }
+            ]
+          },
+          "principles": [
+            "uniform_field_from_potential_spacing"
+          ]
+        }
+      ],
+      "steps": [
+        {
+          "id": "calculate",
+          "target": "field_component",
+          "expression": {
+            "op": "div",
+            "args": [
+              {
+                "op": "var",
+                "id": "potential_drop"
+              },
+              {
+                "op": "var",
+                "id": "normal_spacing"
+              }
+            ]
+          },
+          "principles": [
+            "uniform_field_from_potential_spacing"
+          ],
+          "law_id": "law",
+          "rewrite": "direct"
+        }
+      ],
+      "conclusions": [
+        "field_component"
+      ]
+    },
+    {
+      "id": "microscopic_current",
+      "concept_id": "physics_bx3_rjb_cpt95",
+      "source_nodes": [
+        "physics_bx3_rjb_cpt95"
+      ],
+      "batch": 5,
+      "variant_of": null,
+      "introduced_at": "physics_bx3_rjb_ch11_s1",
+      "stage": "high",
+      "status": "ready",
+      "display": {
+        "name_zh": "载流子漂移电流",
+        "original_formula": "I = n e S v",
+        "notes_zh": "仅在结构化条件已建立时执行；原文字段不参与求值。"
+      },
+      "object_model": "dc_circuit",
+      "reference_frame": "declared",
+      "quantities": {
+        "number_density": {
+          "kind": "scalar",
+          "dimension": [
+            0,
+            -3,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "unit": "1/m^3",
+          "domain": "nonnegative",
+          "object": "body",
+          "frame": "not_applicable"
+        },
+        "carrier_charge": {
+          "kind": "scalar",
+          "dimension": [
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0
+          ],
+          "unit": "C",
+          "domain": "real",
+          "object": "body",
+          "frame": "not_applicable"
+        },
+        "area": {
+          "kind": "scalar",
+          "dimension": [
+            0,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "unit": "m^2",
+          "domain": "positive",
+          "object": "body",
+          "frame": "not_applicable"
+        },
+        "drift_component": {
+          "kind": "scalar",
+          "dimension": [
+            0,
+            1,
+            -1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "unit": "m/s",
+          "domain": "real",
+          "object": "body",
+          "frame": "not_applicable"
+        },
+        "current": {
+          "kind": "scalar",
+          "dimension": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "unit": "A",
+          "domain": "real",
+          "object": "body",
+          "frame": "not_applicable"
+        }
+      },
+      "conditions": [
+        {
+          "fact": "single_carrier_species",
+          "equals": true
+        },
+        {
+          "fact": "uniform_carrier_density",
+          "equals": true
+        },
+        {
+          "fact": "uniform_cross_section",
+          "equals": true
+        },
+        {
+          "fact": "drift_component_along_oriented_normal",
+          "equals": true
+        }
+      ],
+      "force_dependence": {
+        "mode": "not_used",
+        "allowed_dependencies": []
+      },
+      "initial_conditions": [],
+      "boundary_conditions": "none_assumed",
+      "laws": [
+        {
+          "id": "law",
+          "equation": {
+            "op": "eq",
+            "args": [
+              {
+                "op": "var",
+                "id": "current"
+              },
+              {
+                "op": "mul",
+                "args": [
+                  {
+                    "op": "var",
+                    "id": "number_density"
+                  },
+                  {
+                    "op": "var",
+                    "id": "carrier_charge"
+                  },
+                  {
+                    "op": "var",
+                    "id": "area"
+                  },
+                  {
+                    "op": "var",
+                    "id": "drift_component"
+                  }
+                ]
+              }
+            ]
+          },
+          "principles": [
+            "microscopic_current"
+          ]
+        }
+      ],
+      "steps": [
+        {
+          "id": "calculate",
+          "target": "current",
+          "expression": {
+            "op": "mul",
+            "args": [
+              {
+                "op": "var",
+                "id": "number_density"
+              },
+              {
+                "op": "var",
+                "id": "carrier_charge"
+              },
+              {
+                "op": "var",
+                "id": "area"
+              },
+              {
+                "op": "var",
+                "id": "drift_component"
+              }
+            ]
+          },
+          "principles": [
+            "microscopic_current"
+          ],
+          "law_id": "law",
+          "rewrite": "direct"
+        }
+      ],
+      "conclusions": [
+        "current"
+      ]
+    },
+    {
+      "id": "meter_full_scale_voltage",
+      "concept_id": "physics_bx3_rjb_cpt125",
+      "source_nodes": [
+        "physics_bx3_rjb_cpt125"
+      ],
+      "batch": 5,
+      "variant_of": null,
+      "introduced_at": "physics_bx3_rjb_ch11_s4",
+      "stage": "high",
+      "status": "ready",
+      "display": {
+        "name_zh": "表头满偏电压",
+        "original_formula": "Ug = Ig * Rg",
+        "notes_zh": "仅在结构化条件已建立时执行；原文字段不参与求值。"
+      },
+      "object_model": "dc_circuit",
+      "reference_frame": "declared",
+      "quantities": {
+        "full_scale_current": {
+          "kind": "scalar",
+          "dimension": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "unit": "A",
+          "domain": "positive",
+          "object": "body",
+          "frame": "not_applicable"
+        },
+        "meter_resistance": {
+          "kind": "scalar",
+          "dimension": [
+            1,
+            2,
+            -3,
+            -2,
+            0,
+            0,
+            0
+          ],
+          "unit": "ohm",
+          "domain": "positive",
+          "object": "body",
+          "frame": "not_applicable"
+        },
+        "full_scale_voltage": {
+          "kind": "scalar",
+          "dimension": [
+            1,
+            2,
+            -3,
+            -1,
+            0,
+            0,
+            0
+          ],
+          "unit": "V",
+          "domain": "positive",
+          "object": "body",
+          "frame": "not_applicable"
+        }
+      },
+      "conditions": [
+        {
+          "fact": "linear_moving_coil_meter",
+          "equals": true
+        },
+        {
+          "fact": "steady_dc",
+          "equals": true
+        }
+      ],
+      "force_dependence": {
+        "mode": "not_used",
+        "allowed_dependencies": []
+      },
+      "initial_conditions": [],
+      "boundary_conditions": "none_assumed",
+      "laws": [
+        {
+          "id": "law",
+          "equation": {
+            "op": "eq",
+            "args": [
+              {
+                "op": "var",
+                "id": "full_scale_voltage"
+              },
+              {
+                "op": "mul",
+                "args": [
+                  {
+                    "op": "var",
+                    "id": "full_scale_current"
+                  },
+                  {
+                    "op": "var",
+                    "id": "meter_resistance"
+                  }
+                ]
+              }
+            ]
+          },
+          "principles": [
+            "meter_full_scale_voltage"
+          ]
+        }
+      ],
+      "steps": [
+        {
+          "id": "calculate",
+          "target": "full_scale_voltage",
+          "expression": {
+            "op": "mul",
+            "args": [
+              {
+                "op": "var",
+                "id": "full_scale_current"
+              },
+              {
+                "op": "var",
+                "id": "meter_resistance"
+              }
+            ]
+          },
+          "principles": [
+            "meter_full_scale_voltage"
+          ],
+          "law_id": "law",
+          "rewrite": "direct"
+        }
+      ],
+      "conclusions": [
+        "full_scale_voltage"
+      ]
+    },
+    {
+      "id": "ohmmeter_scale_reading",
+      "concept_id": "physics_bx3_rjb_cpt132",
+      "source_nodes": [
+        "physics_bx3_rjb_cpt132"
+      ],
+      "batch": 5,
+      "variant_of": null,
+      "introduced_at": "physics_bx3_rjb_ch11_s5",
+      "stage": "high",
+      "status": "ready",
+      "display": {
+        "name_zh": "欧姆表倍率读数",
+        "original_formula": "R = 读数 × 倍率",
+        "notes_zh": "仅在结构化条件已建立时执行；原文字段不参与求值。"
+      },
+      "object_model": "measurement",
+      "reference_frame": "declared",
+      "quantities": {
+        "base_reading": {
+          "kind": "scalar",
+          "dimension": [
+            1,
+            2,
+            -3,
+            -2,
+            0,
+            0,
+            0
+          ],
+          "unit": "ohm",
+          "domain": "nonnegative",
+          "object": "body",
+          "frame": "not_applicable"
+        },
+        "multiplier": {
+          "kind": "scalar",
+          "dimension": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "unit": "1",
+          "domain": "positive",
+          "object": "body",
+          "frame": "not_applicable"
+        },
+        "resistance": {
+          "kind": "scalar",
+          "dimension": [
+            1,
+            2,
+            -3,
+            -2,
+            0,
+            0,
+            0
+          ],
+          "unit": "ohm",
+          "domain": "nonnegative",
+          "object": "body",
+          "frame": "not_applicable"
+        }
+      },
+      "conditions": [
+        {
+          "fact": "ohmmeter_zero_adjusted",
+          "equals": true
+        },
+        {
+          "fact": "selected_range_matches_scale",
+          "equals": true
+        }
+      ],
+      "force_dependence": {
+        "mode": "not_used",
+        "allowed_dependencies": []
+      },
+      "initial_conditions": [],
+      "boundary_conditions": "none_assumed",
+      "laws": [
+        {
+          "id": "law",
+          "equation": {
+            "op": "eq",
+            "args": [
+              {
+                "op": "var",
+                "id": "resistance"
+              },
+              {
+                "op": "mul",
+                "args": [
+                  {
+                    "op": "var",
+                    "id": "base_reading"
+                  },
+                  {
+                    "op": "var",
+                    "id": "multiplier"
+                  }
+                ]
+              }
+            ]
+          },
+          "principles": [
+            "ohmmeter_scale_reading"
+          ]
+        }
+      ],
+      "steps": [
+        {
+          "id": "calculate",
+          "target": "resistance",
+          "expression": {
+            "op": "mul",
+            "args": [
+              {
+                "op": "var",
+                "id": "base_reading"
+              },
+              {
+                "op": "var",
+                "id": "multiplier"
+              }
+            ]
+          },
+          "principles": [
+            "ohmmeter_scale_reading"
+          ],
+          "law_id": "law",
+          "rewrite": "direct"
+        }
+      ],
+      "conclusions": [
+        "resistance"
+      ]
+    },
+    {
+      "id": "ohmmeter_unknown_resistance",
+      "concept_id": "physics_bx3_rjb_cpt155",
+      "source_nodes": [
+        "physics_bx3_rjb_cpt155"
+      ],
+      "batch": 5,
+      "variant_of": null,
+      "introduced_at": "physics_bx3_rjb_ch12_s2",
+      "stage": "high",
+      "status": "ready",
+      "display": {
+        "name_zh": "欧姆表电阻电流对应",
+        "original_formula": "Ix=E/(RΩ+Rx)；Rx=E/Ix−RΩ",
+        "notes_zh": "仅在结构化条件已建立时执行；原文字段不参与求值。"
+      },
+      "object_model": "dc_circuit",
+      "reference_frame": "declared",
+      "quantities": {
+        "emf": {
+          "kind": "scalar",
+          "dimension": [
+            1,
+            2,
+            -3,
+            -1,
+            0,
+            0,
+            0
+          ],
+          "unit": "V",
+          "domain": "positive",
+          "object": "body",
+          "frame": "not_applicable"
+        },
+        "current": {
+          "kind": "scalar",
+          "dimension": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "unit": "A",
+          "domain": "positive",
+          "object": "body",
+          "frame": "not_applicable"
+        },
+        "internal_resistance": {
+          "kind": "scalar",
+          "dimension": [
+            1,
+            2,
+            -3,
+            -2,
+            0,
+            0,
+            0
+          ],
+          "unit": "ohm",
+          "domain": "nonnegative",
+          "object": "body",
+          "frame": "not_applicable"
+        },
+        "unknown_resistance": {
+          "kind": "scalar",
+          "dimension": [
+            1,
+            2,
+            -3,
+            -2,
+            0,
+            0,
+            0
+          ],
+          "unit": "ohm",
+          "domain": "nonnegative",
+          "object": "body",
+          "frame": "not_applicable"
+        }
+      },
+      "conditions": [
+        {
+          "fact": "ohmmeter_zero_adjusted",
+          "equals": true
+        },
+        {
+          "fact": "single_source",
+          "equals": true
+        },
+        {
+          "fact": "ohmic_material",
+          "equals": true
+        },
+        {
+          "fact": "steady_dc",
+          "equals": true
+        }
+      ],
+      "force_dependence": {
+        "mode": "not_used",
+        "allowed_dependencies": []
+      },
+      "initial_conditions": [],
+      "boundary_conditions": "none_assumed",
+      "laws": [
+        {
+          "id": "law",
+          "equation": {
+            "op": "eq",
+            "args": [
+              {
+                "op": "var",
+                "id": "unknown_resistance"
+              },
+              {
+                "op": "sub",
+                "args": [
+                  {
+                    "op": "div",
+                    "args": [
+                      {
+                        "op": "var",
+                        "id": "emf"
+                      },
+                      {
+                        "op": "var",
+                        "id": "current"
+                      }
+                    ]
+                  },
+                  {
+                    "op": "var",
+                    "id": "internal_resistance"
+                  }
+                ]
+              }
+            ]
+          },
+          "principles": [
+            "ohmmeter_unknown_resistance"
+          ]
+        }
+      ],
+      "steps": [
+        {
+          "id": "calculate",
+          "target": "unknown_resistance",
+          "expression": {
+            "op": "sub",
+            "args": [
+              {
+                "op": "div",
+                "args": [
+                  {
+                    "op": "var",
+                    "id": "emf"
+                  },
+                  {
+                    "op": "var",
+                    "id": "current"
+                  }
+                ]
+              },
+              {
+                "op": "var",
+                "id": "internal_resistance"
+              }
+            ]
+          },
+          "principles": [
+            "ohmmeter_unknown_resistance"
+          ],
+          "law_id": "law",
+          "rewrite": "direct"
+        }
+      ],
+      "conclusions": [
+        "unknown_resistance"
+      ]
+    },
+    {
+      "id": "current_element_magnitude",
+      "concept_id": "physics_bx3_rjb_cpt173",
+      "source_nodes": [
+        "physics_bx3_rjb_cpt173"
+      ],
+      "batch": 5,
+      "variant_of": null,
+      "introduced_at": "physics_bx3_rjb_ch13_s2",
+      "stage": "high",
+      "status": "ready",
+      "display": {
+        "name_zh": "电流元大小",
+        "original_formula": "Il",
+        "notes_zh": "仅在结构化条件已建立时执行；原文字段不参与求值。"
+      },
+      "object_model": "magnetostatic",
+      "reference_frame": "declared",
+      "quantities": {
+        "current": {
+          "kind": "scalar",
+          "dimension": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "unit": "A",
+          "domain": "real",
+          "object": "body",
+          "frame": "not_applicable"
+        },
+        "length": {
+          "kind": "scalar",
+          "dimension": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "unit": "m",
+          "domain": "nonnegative",
+          "object": "body",
+          "frame": "not_applicable"
+        },
+        "current_element": {
+          "kind": "scalar",
+          "dimension": [
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "unit": "A*m",
+          "domain": "real",
+          "object": "body",
+          "frame": "not_applicable"
+        }
+      },
+      "conditions": [
+        {
+          "fact": "straight_current_segment",
+          "equals": true
+        },
+        {
+          "fact": "oriented_currents",
+          "equals": true
+        }
+      ],
+      "force_dependence": {
+        "mode": "not_used",
+        "allowed_dependencies": []
+      },
+      "initial_conditions": [],
+      "boundary_conditions": "none_assumed",
+      "laws": [
+        {
+          "id": "law",
+          "equation": {
+            "op": "eq",
+            "args": [
+              {
+                "op": "var",
+                "id": "current_element"
+              },
+              {
+                "op": "mul",
+                "args": [
+                  {
+                    "op": "var",
+                    "id": "current"
+                  },
+                  {
+                    "op": "var",
+                    "id": "length"
+                  }
+                ]
+              }
+            ]
+          },
+          "principles": [
+            "current_element_magnitude"
+          ]
+        }
+      ],
+      "steps": [
+        {
+          "id": "calculate",
+          "target": "current_element",
+          "expression": {
+            "op": "mul",
+            "args": [
+              {
+                "op": "var",
+                "id": "current"
+              },
+              {
+                "op": "var",
+                "id": "length"
+              }
+            ]
+          },
+          "principles": [
+            "current_element_magnitude"
+          ],
+          "law_id": "law",
+          "rewrite": "direct"
+        }
+      ],
+      "conclusions": [
+        "current_element"
+      ]
+    },
+    {
+      "id": "normal_magnetic_field_from_flux",
+      "concept_id": "physics_bx3_rjb_cpt178",
+      "source_nodes": [
+        "physics_bx3_rjb_cpt178"
+      ],
+      "batch": 5,
+      "variant_of": null,
+      "introduced_at": "physics_bx3_rjb_ch13_s2",
+      "stage": "high",
+      "status": "ready",
+      "display": {
+        "name_zh": "法向磁感应强度",
+        "original_formula": "B=Φ/S（S垂直于B）",
+        "notes_zh": "仅在结构化条件已建立时执行；原文字段不参与求值。"
+      },
+      "object_model": "magnetostatic",
+      "reference_frame": "declared",
+      "quantities": {
+        "flux": {
+          "kind": "scalar",
+          "dimension": [
+            1,
+            2,
+            -2,
+            -1,
+            0,
+            0,
+            0
+          ],
+          "unit": "Wb",
+          "domain": "real",
+          "object": "body",
+          "frame": "not_applicable"
+        },
+        "area": {
+          "kind": "scalar",
+          "dimension": [
+            0,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "unit": "m^2",
+          "domain": "positive",
+          "object": "body",
+          "frame": "not_applicable"
+        },
+        "normal_field": {
+          "kind": "scalar",
+          "dimension": [
+            1,
+            0,
+            -2,
+            -1,
+            0,
+            0,
+            0
+          ],
+          "unit": "T",
+          "domain": "real",
+          "object": "body",
+          "frame": "not_applicable"
+        }
+      },
+      "conditions": [
+        {
+          "fact": "uniform_magnetic_field",
+          "equals": true
+        },
+        {
+          "fact": "plane_surface",
+          "equals": true
+        },
+        {
+          "fact": "oriented_surface_normal",
+          "equals": true
+        }
+      ],
+      "force_dependence": {
+        "mode": "not_used",
+        "allowed_dependencies": []
+      },
+      "initial_conditions": [],
+      "boundary_conditions": "none_assumed",
+      "laws": [
+        {
+          "id": "law",
+          "equation": {
+            "op": "eq",
+            "args": [
+              {
+                "op": "var",
+                "id": "normal_field"
+              },
+              {
+                "op": "div",
+                "args": [
+                  {
+                    "op": "var",
+                    "id": "flux"
+                  },
+                  {
+                    "op": "var",
+                    "id": "area"
+                  }
+                ]
+              }
+            ]
+          },
+          "principles": [
+            "normal_magnetic_field_from_flux"
+          ]
+        }
+      ],
+      "steps": [
+        {
+          "id": "calculate",
+          "target": "normal_field",
+          "expression": {
+            "op": "div",
+            "args": [
+              {
+                "op": "var",
+                "id": "flux"
+              },
+              {
+                "op": "var",
+                "id": "area"
+              }
+            ]
+          },
+          "principles": [
+            "normal_magnetic_field_from_flux"
+          ],
+          "law_id": "law",
+          "rewrite": "direct"
+        }
+      ],
+      "conclusions": [
+        "normal_field"
+      ]
+    },
+    {
+      "id": "oil_film_molecular_size",
+      "concept_id": "physics_xzxbx3_rjb_cpt6",
+      "source_nodes": [
+        "physics_xzxbx3_rjb_cpt6"
+      ],
+      "batch": 5,
+      "variant_of": null,
+      "introduced_at": "physics_xzxbx3_rjb_ch1_s2",
+      "stage": "high",
+      "status": "ready",
+      "display": {
+        "name_zh": "单分子油膜厚度估算",
+        "original_formula": "d = V / S",
+        "notes_zh": "仅在结构化条件已建立时执行；原文字段不参与求值。"
+      },
+      "object_model": "measurement",
+      "reference_frame": "declared",
+      "quantities": {
+        "oil_volume": {
+          "kind": "scalar",
+          "dimension": [
+            0,
+            3,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "unit": "m^3",
+          "domain": "positive",
+          "object": "body",
+          "frame": "not_applicable"
+        },
+        "film_area": {
+          "kind": "scalar",
+          "dimension": [
+            0,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "unit": "m^2",
+          "domain": "positive",
+          "object": "body",
+          "frame": "not_applicable"
+        },
+        "thickness": {
+          "kind": "scalar",
+          "dimension": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "unit": "m",
+          "domain": "positive",
+          "object": "body",
+          "frame": "not_applicable"
+        }
+      },
+      "conditions": [
+        {
+          "fact": "monomolecular_film",
+          "equals": true
+        },
+        {
+          "fact": "oil_volume_excludes_solvent",
+          "equals": true
+        },
+        {
+          "fact": "uniform_film",
+          "equals": true
+        }
+      ],
+      "force_dependence": {
+        "mode": "not_used",
+        "allowed_dependencies": []
+      },
+      "initial_conditions": [],
+      "boundary_conditions": "none_assumed",
+      "laws": [
+        {
+          "id": "law",
+          "equation": {
+            "op": "eq",
+            "args": [
+              {
+                "op": "var",
+                "id": "thickness"
+              },
+              {
+                "op": "div",
+                "args": [
+                  {
+                    "op": "var",
+                    "id": "oil_volume"
+                  },
+                  {
+                    "op": "var",
+                    "id": "film_area"
+                  }
+                ]
+              }
+            ]
+          },
+          "principles": [
+            "oil_film_molecular_size"
+          ]
+        }
+      ],
+      "steps": [
+        {
+          "id": "calculate",
+          "target": "thickness",
+          "expression": {
+            "op": "div",
+            "args": [
+              {
+                "op": "var",
+                "id": "oil_volume"
+              },
+              {
+                "op": "var",
+                "id": "film_area"
+              }
+            ]
+          },
+          "principles": [
+            "oil_film_molecular_size"
+          ],
+          "law_id": "law",
+          "rewrite": "direct"
+        }
+      ],
+      "conclusions": [
+        "thickness"
+      ]
+    },
+    {
+      "id": "temperature_to_kelvin",
+      "concept_id": "physics_xzxbx3_rjb_cpt25",
+      "source_nodes": [
+        "physics_xzxbx3_rjb_cpt25"
+      ],
+      "batch": 5,
+      "variant_of": null,
+      "introduced_at": "physics_xzxbx3_rjb_ch2_s1",
+      "stage": "high",
+      "status": "ready",
+      "display": {
+        "name_zh": "绝对温标换算",
+        "original_formula": "T = t + 273.15",
+        "notes_zh": "仅在结构化条件已建立时执行；原文字段不参与求值。"
+      },
+      "object_model": "thermal_system",
+      "reference_frame": "declared",
+      "quantities": {
+        "temperature": {
+          "kind": "scalar",
+          "dimension": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "unit": "K",
+          "domain": "positive",
+          "object": "body",
+          "frame": "not_applicable"
+        },
+        "kelvin_temperature": {
+          "kind": "scalar",
+          "dimension": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "unit": "K",
+          "domain": "positive",
+          "object": "body",
+          "frame": "not_applicable"
+        }
+      },
+      "conditions": [],
+      "force_dependence": {
+        "mode": "not_used",
+        "allowed_dependencies": []
+      },
+      "initial_conditions": [],
+      "boundary_conditions": "none_assumed",
+      "laws": [
+        {
+          "id": "law",
+          "equation": {
+            "op": "eq",
+            "args": [
+              {
+                "op": "var",
+                "id": "kelvin_temperature"
+              },
+              {
+                "op": "var",
+                "id": "temperature"
+              }
+            ]
+          },
+          "principles": [
+            "temperature_to_kelvin"
+          ]
+        }
+      ],
+      "steps": [
+        {
+          "id": "calculate",
+          "target": "kelvin_temperature",
+          "expression": {
+            "op": "var",
+            "id": "temperature"
+          },
+          "principles": [
+            "temperature_to_kelvin"
+          ],
+          "law_id": "law",
+          "rewrite": "direct"
+        }
+      ],
+      "conclusions": [
+        "kelvin_temperature"
+      ]
+    },
+    {
+      "id": "ideal_rocket_velocity",
+      "concept_id": "physics_xzxbx1_rjb_cpt18",
+      "source_nodes": [
+        "physics_xzxbx1_rjb_cpt18"
+      ],
+      "batch": 5,
+      "variant_of": null,
+      "introduced_at": "physics_xzxbx1_rjb_ch1_s6",
+      "stage": "high",
+      "status": "ready",
+      "display": {
+        "name_zh": "理想火箭变质量速度增量",
+        "original_formula": "Δv = -(Δm/m)u",
+        "notes_zh": "原有限差分表达式仅为小质量变化的一阶近似。本模型使用理想条件下积分关系，质量变化端点和初速度显式给定。"
+      },
+      "object_model": "point_particle",
+      "reference_frame": "inertial",
+      "quantities": {
+        "initial_mass": {
+          "kind": "scalar",
+          "dimension": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "unit": "kg",
+          "domain": "positive",
+          "object": "body",
+          "frame": "not_applicable"
+        },
+        "final_mass": {
+          "kind": "scalar",
+          "dimension": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "unit": "kg",
+          "domain": "positive",
+          "object": "body",
+          "frame": "not_applicable"
+        },
+        "exhaust_speed": {
+          "kind": "scalar",
+          "dimension": [
+            0,
+            1,
+            -1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "unit": "m/s",
+          "domain": "positive",
+          "object": "body",
+          "frame": "not_applicable"
+        },
+        "initial_velocity": {
+          "kind": "scalar",
+          "dimension": [
+            0,
+            1,
+            -1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "unit": "m/s",
+          "domain": "real",
+          "object": "body",
+          "frame": "not_applicable"
+        },
+        "final_velocity": {
+          "kind": "scalar",
+          "dimension": [
+            0,
+            1,
+            -1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "unit": "m/s",
+          "domain": "real",
+          "object": "body",
+          "frame": "not_applicable"
+        },
+        "t0": {
+          "kind": "scalar",
+          "dimension": [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "unit": "s",
+          "domain": "real",
+          "object": "body",
+          "frame": "not_applicable"
+        }
+      },
+      "conditions": [
+        {
+          "fact": "no_external_impulse",
+          "equals": true
+        },
+        {
+          "fact": "one_dimensional_exhaust",
+          "equals": true
+        },
+        {
+          "fact": "constant_relative_exhaust_speed",
+          "equals": true
+        },
+        {
+          "fact": "exhaust_opposite_positive_axis",
+          "equals": true
+        }
+      ],
+      "force_dependence": {
+        "mode": "not_used",
+        "allowed_dependencies": []
+      },
+      "initial_conditions": [
+        {
+          "state": "velocity",
+          "quantity": "initial_velocity",
+          "time_quantity": "t0"
+        }
+      ],
+      "boundary_conditions": "none_assumed",
+      "laws": [
+        {
+          "id": "law",
+          "equation": {
+            "op": "eq",
+            "args": [
+              {
+                "op": "var",
+                "id": "final_velocity"
+              },
+              {
+                "op": "add",
+                "args": [
+                  {
+                    "op": "var",
+                    "id": "initial_velocity"
+                  },
+                  {
+                    "op": "mul",
+                    "args": [
+                      {
+                        "op": "var",
+                        "id": "exhaust_speed"
+                      },
+                      {
+                        "op": "log",
+                        "args": [
+                          {
+                            "op": "div",
+                            "args": [
+                              {
+                                "op": "var",
+                                "id": "initial_mass"
+                              },
+                              {
+                                "op": "var",
+                                "id": "final_mass"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          "principles": [
+            "ideal_rocket_velocity"
+          ]
+        }
+      ],
+      "steps": [
+        {
+          "id": "calculate",
+          "target": "final_velocity",
+          "expression": {
+            "op": "add",
+            "args": [
+              {
+                "op": "var",
+                "id": "initial_velocity"
+              },
+              {
+                "op": "mul",
+                "args": [
+                  {
+                    "op": "var",
+                    "id": "exhaust_speed"
+                  },
+                  {
+                    "op": "log",
+                    "args": [
+                      {
+                        "op": "div",
+                        "args": [
+                          {
+                            "op": "var",
+                            "id": "initial_mass"
+                          },
+                          {
+                            "op": "var",
+                            "id": "final_mass"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          "principles": [
+            "ideal_rocket_velocity"
+          ],
+          "law_id": "law",
+          "rewrite": "direct"
+        }
+      ],
+      "conclusions": [
+        "final_velocity"
+      ],
+      "constraints": [
+        {
+          "op": "le",
+          "args": [
+            {
+              "op": "var",
+              "id": "final_mass"
+            },
+            {
+              "op": "var",
+              "id": "initial_mass"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "alpha_decay_numbers",
+      "concept_id": "physics_xzxbx3_rjb_cpt124",
+      "source_nodes": [
+        "physics_xzxbx3_rjb_cpt124"
+      ],
+      "batch": 5,
+      "variant_of": null,
+      "introduced_at": "physics_xzxbx3_rjb_ch5_s2",
+      "stage": "high",
+      "status": "ready",
+      "display": {
+        "name_zh": "α衰变核子与电荷数",
+        "original_formula": "A → A-4 + 4/2 He",
+        "notes_zh": "只计算已允许衰变道的核子数和电荷数；不由此推断半衰期或衰变能。β负衰变显式保留电子反中微子。"
+      },
+      "object_model": "atomic_system",
+      "reference_frame": "declared",
+      "quantities": {
+        "parent_A": {
+          "kind": "scalar",
+          "dimension": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "unit": "1",
+          "domain": "positive_integer",
+          "object": "body",
+          "frame": "not_applicable"
+        },
+        "parent_Z": {
+          "kind": "scalar",
+          "dimension": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "unit": "1",
+          "domain": "nonnegative_integer",
+          "object": "body",
+          "frame": "not_applicable"
+        },
+        "daughter_A": {
+          "kind": "scalar",
+          "dimension": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "unit": "1",
+          "domain": "positive_integer",
+          "object": "body",
+          "frame": "not_applicable"
+        },
+        "daughter_Z": {
+          "kind": "scalar",
+          "dimension": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "unit": "1",
+          "domain": "nonnegative_integer",
+          "object": "body",
+          "frame": "not_applicable"
+        }
+      },
+      "conditions": [
+        {
+          "fact": "decay_channel_energetically_allowed",
+          "equals": true
+        },
+        {
+          "fact": "isolated_nuclear_decay",
+          "equals": true
+        }
+      ],
+      "force_dependence": {
+        "mode": "not_used",
+        "allowed_dependencies": []
+      },
+      "initial_conditions": [],
+      "boundary_conditions": "none_assumed",
+      "laws": [
+        {
+          "id": "law",
+          "equation": {
+            "op": "eq",
+            "args": [
+              {
+                "op": "var",
+                "id": "daughter_A"
+              },
+              {
+                "op": "sub",
+                "args": [
+                  {
+                    "op": "var",
+                    "id": "parent_A"
+                  },
+                  {
+                    "op": "number",
+                    "value": 4
+                  }
+                ]
+              }
+            ]
+          },
+          "principles": [
+            "alpha_decay_numbers"
+          ]
+        },
+        {
+          "id": "law_daughter_Z",
+          "equation": {
+            "op": "eq",
+            "args": [
+              {
+                "op": "var",
+                "id": "daughter_Z"
+              },
+              {
+                "op": "sub",
+                "args": [
+                  {
+                    "op": "var",
+                    "id": "parent_Z"
+                  },
+                  {
+                    "op": "number",
+                    "value": 2
+                  }
+                ]
+              }
+            ]
+          },
+          "principles": [
+            "alpha_decay_numbers"
+          ]
+        }
+      ],
+      "steps": [
+        {
+          "id": "calculate",
+          "target": "daughter_A",
+          "expression": {
+            "op": "sub",
+            "args": [
+              {
+                "op": "var",
+                "id": "parent_A"
+              },
+              {
+                "op": "number",
+                "value": 4
+              }
+            ]
+          },
+          "principles": [
+            "alpha_decay_numbers"
+          ],
+          "law_id": "law",
+          "rewrite": "direct"
+        },
+        {
+          "id": "compute_daughter_Z",
+          "target": "daughter_Z",
+          "expression": {
+            "op": "sub",
+            "args": [
+              {
+                "op": "var",
+                "id": "parent_Z"
+              },
+              {
+                "op": "number",
+                "value": 2
+              }
+            ]
+          },
+          "principles": [
+            "alpha_decay_numbers"
+          ],
+          "law_id": "law_daughter_Z",
+          "rewrite": "direct"
+        }
+      ],
+      "conclusions": [
+        "daughter_A",
+        "daughter_Z"
+      ],
+      "constraints": [
+        {
+          "op": "ge",
+          "args": [
+            {
+              "op": "var",
+              "id": "parent_A"
+            },
+            {
+              "op": "number",
+              "value": 5
+            }
+          ]
+        },
+        {
+          "op": "ge",
+          "args": [
+            {
+              "op": "var",
+              "id": "parent_Z"
+            },
+            {
+              "op": "number",
+              "value": 2
+            }
+          ]
+        },
+        {
+          "op": "ge",
+          "args": [
+            {
+              "op": "sub",
+              "args": [
+                {
+                  "op": "var",
+                  "id": "parent_A"
+                },
+                {
+                  "op": "var",
+                  "id": "parent_Z"
+                }
+              ]
+            },
+            {
+              "op": "number",
+              "value": 2
+            }
+          ]
+        }
+      ],
+      "reaction": {
+        "reactants": [
+          {
+            "species": "nucleus",
+            "nucleon_number": {
+              "op": "var",
+              "id": "parent_A"
+            },
+            "charge_number": {
+              "op": "var",
+              "id": "parent_Z"
+            },
+            "electron_lepton_number": {
+              "op": "number",
+              "value": 0
+            }
+          }
+        ],
+        "products": [
+          {
+            "species": "nucleus",
+            "nucleon_number": {
+              "op": "var",
+              "id": "daughter_A"
+            },
+            "charge_number": {
+              "op": "var",
+              "id": "daughter_Z"
+            },
+            "electron_lepton_number": {
+              "op": "number",
+              "value": 0
+            }
+          },
+          {
+            "species": "alpha",
+            "nucleon_number": {
+              "op": "number",
+              "value": 4
+            },
+            "charge_number": {
+              "op": "number",
+              "value": 2
+            },
+            "electron_lepton_number": {
+              "op": "number",
+              "value": 0
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "beta_minus_decay_numbers",
+      "concept_id": "physics_xzxbx3_rjb_cpt125",
+      "source_nodes": [
+        "physics_xzxbx3_rjb_cpt125"
+      ],
+      "batch": 5,
+      "variant_of": null,
+      "introduced_at": "physics_xzxbx3_rjb_ch5_s2",
+      "stage": "high",
+      "status": "ready",
+      "display": {
+        "name_zh": "β负衰变核子与电荷数",
+        "original_formula": "n → p + e⁻",
+        "notes_zh": "只计算已允许衰变道的核子数和电荷数；不由此推断半衰期或衰变能。β负衰变显式保留电子反中微子。"
+      },
+      "object_model": "atomic_system",
+      "reference_frame": "declared",
+      "quantities": {
+        "parent_A": {
+          "kind": "scalar",
+          "dimension": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "unit": "1",
+          "domain": "positive_integer",
+          "object": "body",
+          "frame": "not_applicable"
+        },
+        "parent_Z": {
+          "kind": "scalar",
+          "dimension": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "unit": "1",
+          "domain": "nonnegative_integer",
+          "object": "body",
+          "frame": "not_applicable"
+        },
+        "daughter_A": {
+          "kind": "scalar",
+          "dimension": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "unit": "1",
+          "domain": "positive_integer",
+          "object": "body",
+          "frame": "not_applicable"
+        },
+        "daughter_Z": {
+          "kind": "scalar",
+          "dimension": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "unit": "1",
+          "domain": "nonnegative_integer",
+          "object": "body",
+          "frame": "not_applicable"
+        }
+      },
+      "conditions": [
+        {
+          "fact": "decay_channel_energetically_allowed",
+          "equals": true
+        },
+        {
+          "fact": "isolated_nuclear_decay",
+          "equals": true
+        }
+      ],
+      "force_dependence": {
+        "mode": "not_used",
+        "allowed_dependencies": []
+      },
+      "initial_conditions": [],
+      "boundary_conditions": "none_assumed",
+      "laws": [
+        {
+          "id": "law",
+          "equation": {
+            "op": "eq",
+            "args": [
+              {
+                "op": "var",
+                "id": "daughter_A"
+              },
+              {
+                "op": "var",
+                "id": "parent_A"
+              }
+            ]
+          },
+          "principles": [
+            "beta_minus_decay_numbers"
+          ]
+        },
+        {
+          "id": "law_daughter_Z",
+          "equation": {
+            "op": "eq",
+            "args": [
+              {
+                "op": "var",
+                "id": "daughter_Z"
+              },
+              {
+                "op": "add",
+                "args": [
+                  {
+                    "op": "var",
+                    "id": "parent_Z"
+                  },
+                  {
+                    "op": "number",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          },
+          "principles": [
+            "beta_minus_decay_numbers"
+          ]
+        }
+      ],
+      "steps": [
+        {
+          "id": "calculate",
+          "target": "daughter_A",
+          "expression": {
+            "op": "var",
+            "id": "parent_A"
+          },
+          "principles": [
+            "beta_minus_decay_numbers"
+          ],
+          "law_id": "law",
+          "rewrite": "direct"
+        },
+        {
+          "id": "compute_daughter_Z",
+          "target": "daughter_Z",
+          "expression": {
+            "op": "add",
+            "args": [
+              {
+                "op": "var",
+                "id": "parent_Z"
+              },
+              {
+                "op": "number",
+                "value": 1
+              }
+            ]
+          },
+          "principles": [
+            "beta_minus_decay_numbers"
+          ],
+          "law_id": "law_daughter_Z",
+          "rewrite": "direct"
+        }
+      ],
+      "conclusions": [
+        "daughter_A",
+        "daughter_Z"
+      ],
+      "constraints": [
+        {
+          "op": "le",
+          "args": [
+            {
+              "op": "var",
+              "id": "parent_Z"
+            },
+            {
+              "op": "var",
+              "id": "parent_A"
+            }
+          ]
+        },
+        {
+          "op": "lt",
+          "args": [
+            {
+              "op": "var",
+              "id": "parent_Z"
+            },
+            {
+              "op": "var",
+              "id": "parent_A"
+            }
+          ]
+        }
+      ],
+      "reaction": {
+        "reactants": [
+          {
+            "species": "nucleus",
+            "nucleon_number": {
+              "op": "var",
+              "id": "parent_A"
+            },
+            "charge_number": {
+              "op": "var",
+              "id": "parent_Z"
+            },
+            "electron_lepton_number": {
+              "op": "number",
+              "value": 0
+            }
+          }
+        ],
+        "products": [
+          {
+            "species": "nucleus",
+            "nucleon_number": {
+              "op": "var",
+              "id": "daughter_A"
+            },
+            "charge_number": {
+              "op": "var",
+              "id": "daughter_Z"
+            },
+            "electron_lepton_number": {
+              "op": "number",
+              "value": 0
+            }
+          },
+          {
+            "species": "electron",
+            "nucleon_number": {
+              "op": "number",
+              "value": 0
+            },
+            "charge_number": {
+              "op": "number",
+              "value": -1
+            },
+            "electron_lepton_number": {
+              "op": "number",
+              "value": 1
+            }
+          },
+          {
+            "species": "electron_antineutrino",
+            "nucleon_number": {
+              "op": "number",
+              "value": 0
+            },
+            "charge_number": {
+              "op": "number",
+              "value": 0
+            },
+            "electron_lepton_number": {
+              "op": "number",
+              "value": -1
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "planar_velocity_direction",
+      "concept_id": "physics_bx2_rjb_cpt8",
+      "source_nodes": [
+        "physics_bx2_rjb_cpt8"
+      ],
+      "batch": 5,
+      "variant_of": "planar_speed_norm",
+      "introduced_at": "physics_bx2_rjb_ch5_s2",
+      "stage": "high",
+      "status": "ready",
+      "display": {
+        "name_zh": "平面速度方向角",
+        "original_formula": "v = √(vx² + vy²), tanθ = vy / vx",
+        "notes_zh": "仅在结构化条件已建立时执行；原文字段不参与求值。"
+      },
+      "object_model": "point_particle",
+      "reference_frame": "inertial",
+      "quantities": {
+        "vx": {
+          "kind": "scalar",
+          "dimension": [
+            0,
+            1,
+            -1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "unit": "m/s",
+          "domain": "real",
+          "object": "body",
+          "frame": "not_applicable"
+        },
+        "vy": {
+          "kind": "scalar",
+          "dimension": [
+            0,
+            1,
+            -1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "unit": "m/s",
+          "domain": "real",
+          "object": "body",
+          "frame": "not_applicable"
+        },
+        "direction": {
+          "kind": "scalar",
+          "dimension": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "unit": "rad",
+          "domain": "real",
+          "object": "body",
+          "frame": "not_applicable"
+        }
+      },
+      "conditions": [
+        {
+          "fact": "orthonormal_xy_axes",
+          "equals": true
+        },
+        {
+          "fact": "angle_from_positive_x",
+          "equals": true
+        }
+      ],
+      "force_dependence": {
+        "mode": "not_used",
+        "allowed_dependencies": []
+      },
+      "initial_conditions": [],
+      "boundary_conditions": "none_assumed",
+      "laws": [
+        {
+          "id": "law",
+          "equation": {
+            "op": "eq",
+            "args": [
+              {
+                "op": "var",
+                "id": "direction"
+              },
+              {
+                "op": "atan2",
+                "args": [
+                  {
+                    "op": "var",
+                    "id": "vy"
+                  },
+                  {
+                    "op": "var",
+                    "id": "vx"
+                  }
+                ]
+              }
+            ]
+          },
+          "principles": [
+            "planar_velocity_direction"
+          ]
+        }
+      ],
+      "steps": [
+        {
+          "id": "calculate",
+          "target": "direction",
+          "expression": {
+            "op": "atan2",
+            "args": [
+              {
+                "op": "var",
+                "id": "vy"
+              },
+              {
+                "op": "var",
+                "id": "vx"
+              }
+            ]
+          },
+          "principles": [
+            "planar_velocity_direction"
+          ],
+          "law_id": "law",
+          "rewrite": "direct"
+        }
+      ],
+      "conclusions": [
+        "direction"
+      ]
+    },
+    {
+      "id": "frequency_from_period",
+      "concept_id": "physics_bx2_rjb_cpt23",
+      "source_nodes": [
+        "physics_bx2_rjb_cpt23",
+        "physics_xzxbx2_rjb_cpt58",
+        "physics_xzxbx2_rjb_cpt61"
+      ],
+      "batch": 5,
+      "variant_of": "period_from_frequency",
+      "introduced_at": "physics_bx2_rjb_ch6_s1",
+      "stage": "high",
+      "status": "ready",
+      "display": {
+        "name_zh": "由周期求频率",
+        "original_formula": "T = 1/f",
+        "notes_zh": "仅在结构化条件已建立时执行；原文字段不参与求值。"
+      },
+      "object_model": "oscillator",
+      "reference_frame": "declared",
+      "quantities": {
+        "period": {
+          "kind": "scalar",
+          "dimension": [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "unit": "s",
+          "domain": "positive",
+          "object": "body",
+          "frame": "not_applicable"
+        },
+        "frequency": {
+          "kind": "scalar",
+          "dimension": [
+            0,
+            0,
+            -1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "unit": "Hz",
+          "domain": "positive",
+          "object": "body",
+          "frame": "not_applicable"
+        }
+      },
+      "conditions": [
+        {
+          "fact": "periodic_motion",
+          "equals": true
+        }
+      ],
+      "force_dependence": {
+        "mode": "not_used",
+        "allowed_dependencies": []
+      },
+      "initial_conditions": [],
+      "boundary_conditions": "none_assumed",
+      "laws": [
+        {
+          "id": "law",
+          "equation": {
+            "op": "eq",
+            "args": [
+              {
+                "op": "var",
+                "id": "frequency"
+              },
+              {
+                "op": "div",
+                "args": [
+                  {
+                    "op": "number",
+                    "value": 1
+                  },
+                  {
+                    "op": "var",
+                    "id": "period"
+                  }
+                ]
+              }
+            ]
+          },
+          "principles": [
+            "frequency_from_period"
+          ]
+        }
+      ],
+      "steps": [
+        {
+          "id": "calculate",
+          "target": "frequency",
+          "expression": {
+            "op": "div",
+            "args": [
+              {
+                "op": "number",
+                "value": 1
+              },
+              {
+                "op": "var",
+                "id": "period"
+              }
+            ]
+          },
+          "principles": [
+            "frequency_from_period"
+          ],
+          "law_id": "law",
+          "rewrite": "direct"
+        }
+      ],
+      "conclusions": [
+        "frequency"
+      ]
+    },
+    {
+      "id": "centripetal_force_angular",
+      "concept_id": "physics_bx2_rjb_cpt26",
+      "source_nodes": [
+        "physics_bx2_rjb_cpt26",
+        "physics_bx2_rjb_cpt29"
+      ],
+      "batch": 5,
+      "variant_of": "centripetal_force",
+      "introduced_at": "physics_bx2_rjb_ch6_s2",
+      "stage": "high",
+      "status": "ready",
+      "display": {
+        "name_zh": "用角速度计算向心力",
+        "original_formula": "F_n = mω^2 r 或 F_n = mv^2/r",
+        "notes_zh": "仅在结构化条件已建立时执行；原文字段不参与求值。"
+      },
+      "object_model": "point_particle",
+      "reference_frame": "inertial",
+      "quantities": {
+        "mass": {
+          "kind": "scalar",
+          "dimension": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "unit": "kg",
+          "domain": "positive",
+          "object": "body",
+          "frame": "not_applicable"
+        },
+        "omega": {
+          "kind": "scalar",
+          "dimension": [
+            0,
+            0,
+            -1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "unit": "rad/s",
+          "domain": "nonnegative",
+          "object": "body",
+          "frame": "not_applicable"
+        },
+        "radius": {
+          "kind": "scalar",
+          "dimension": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "unit": "m",
+          "domain": "positive",
+          "object": "body",
+          "frame": "not_applicable"
+        },
+        "force": {
+          "kind": "scalar",
+          "dimension": [
+            1,
+            1,
+            -2,
+            0,
+            0,
+            0,
+            0
+          ],
+          "unit": "N",
+          "domain": "nonnegative",
+          "object": "body",
+          "frame": "not_applicable"
+        }
+      },
+      "conditions": [
+        {
+          "fact": "circular_motion",
+          "equals": true
+        },
+        {
+          "fact": "angular_speed_radians",
+          "equals": true
+        },
+        {
+          "fact": "classical_regime",
+          "equals": true
+        }
+      ],
+      "force_dependence": {
+        "mode": "not_used",
+        "allowed_dependencies": []
+      },
+      "initial_conditions": [],
+      "boundary_conditions": "none_assumed",
+      "laws": [
+        {
+          "id": "law",
+          "equation": {
+            "op": "eq",
+            "args": [
+              {
+                "op": "var",
+                "id": "force"
+              },
+              {
+                "op": "mul",
+                "args": [
+                  {
+                    "op": "var",
+                    "id": "mass"
+                  },
+                  {
+                    "op": "pow",
+                    "args": [
+                      {
+                        "op": "var",
+                        "id": "omega"
+                      },
+                      {
+                        "op": "number",
+                        "value": 2
+                      }
+                    ]
+                  },
+                  {
+                    "op": "var",
+                    "id": "radius"
+                  }
+                ]
+              }
+            ]
+          },
+          "principles": [
+            "centripetal_force_angular"
+          ]
+        }
+      ],
+      "steps": [
+        {
+          "id": "calculate",
+          "target": "force",
+          "expression": {
+            "op": "mul",
+            "args": [
+              {
+                "op": "var",
+                "id": "mass"
+              },
+              {
+                "op": "pow",
+                "args": [
+                  {
+                    "op": "var",
+                    "id": "omega"
+                  },
+                  {
+                    "op": "number",
+                    "value": 2
+                  }
+                ]
+              },
+              {
+                "op": "var",
+                "id": "radius"
+              }
+            ]
+          },
+          "principles": [
+            "centripetal_force_angular"
+          ],
+          "law_id": "law",
+          "rewrite": "direct"
+        }
+      ],
+      "conclusions": [
+        "force"
+      ]
+    },
+    {
+      "id": "centripetal_acceleration_angular",
+      "concept_id": "physics_bx2_rjb_cpt30",
+      "source_nodes": [
+        "physics_bx2_rjb_cpt30"
+      ],
+      "batch": 5,
+      "variant_of": "centripetal_acceleration",
+      "introduced_at": "physics_bx2_rjb_ch6_s3",
+      "stage": "high",
+      "status": "ready",
+      "display": {
+        "name_zh": "用角速度计算向心加速度",
+        "original_formula": "a_n = v^2/r = ω^2 r",
+        "notes_zh": "仅在结构化条件已建立时执行；原文字段不参与求值。"
+      },
+      "object_model": "point_particle",
+      "reference_frame": "inertial",
+      "quantities": {
+        "omega": {
+          "kind": "scalar",
+          "dimension": [
+            0,
+            0,
+            -1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "unit": "rad/s",
+          "domain": "nonnegative",
+          "object": "body",
+          "frame": "not_applicable"
+        },
+        "radius": {
+          "kind": "scalar",
+          "dimension": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "unit": "m",
+          "domain": "positive",
+          "object": "body",
+          "frame": "not_applicable"
+        },
+        "acceleration": {
+          "kind": "scalar",
+          "dimension": [
+            0,
+            1,
+            -2,
+            0,
+            0,
+            0,
+            0
+          ],
+          "unit": "m/s^2",
+          "domain": "nonnegative",
+          "object": "body",
+          "frame": "not_applicable"
+        }
+      },
+      "conditions": [
+        {
+          "fact": "circular_motion",
+          "equals": true
+        },
+        {
+          "fact": "angular_speed_radians",
+          "equals": true
+        }
+      ],
+      "force_dependence": {
+        "mode": "not_used",
+        "allowed_dependencies": []
+      },
+      "initial_conditions": [],
+      "boundary_conditions": "none_assumed",
+      "laws": [
+        {
+          "id": "law",
+          "equation": {
+            "op": "eq",
+            "args": [
+              {
+                "op": "var",
+                "id": "acceleration"
+              },
+              {
+                "op": "mul",
+                "args": [
+                  {
+                    "op": "pow",
+                    "args": [
+                      {
+                        "op": "var",
+                        "id": "omega"
+                      },
+                      {
+                        "op": "number",
+                        "value": 2
+                      }
+                    ]
+                  },
+                  {
+                    "op": "var",
+                    "id": "radius"
+                  }
+                ]
+              }
+            ]
+          },
+          "principles": [
+            "centripetal_acceleration_angular"
+          ]
+        }
+      ],
+      "steps": [
+        {
+          "id": "calculate",
+          "target": "acceleration",
+          "expression": {
+            "op": "mul",
+            "args": [
+              {
+                "op": "pow",
+                "args": [
+                  {
+                    "op": "var",
+                    "id": "omega"
+                  },
+                  {
+                    "op": "number",
+                    "value": 2
+                  }
+                ]
+              },
+              {
+                "op": "var",
+                "id": "radius"
+              }
+            ]
+          },
+          "principles": [
+            "centripetal_acceleration_angular"
+          ],
+          "law_id": "law",
+          "rewrite": "direct"
+        }
+      ],
+      "conclusions": [
+        "acceleration"
+      ]
+    },
+    {
+      "id": "surface_circular_orbit_speed",
+      "concept_id": "physics_bx2_rjb_cpt48",
+      "source_nodes": [
+        "physics_bx2_rjb_cpt48"
+      ],
+      "batch": 5,
+      "variant_of": "circular_orbit_speed",
+      "introduced_at": "physics_bx2_rjb_ch7_s4",
+      "stage": "high",
+      "status": "ready",
+      "display": {
+        "name_zh": "由表面引力求近地圆轨道速度",
+        "original_formula": "v = sqrt(G M / R) 或 v = sqrt(g R)",
+        "notes_zh": "仅在结构化条件已建立时执行；原文字段不参与求值。"
+      },
+      "object_model": "two_body_system",
+      "reference_frame": "declared",
+      "quantities": {
+        "g": {
+          "kind": "scalar",
+          "dimension": [
+            0,
+            1,
+            -2,
+            0,
+            0,
+            0,
+            0
+          ],
+          "unit": "m/s^2",
+          "domain": "positive",
+          "object": "body",
+          "frame": "not_applicable"
+        },
+        "radius": {
+          "kind": "scalar",
+          "dimension": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "unit": "m",
+          "domain": "positive",
+          "object": "body",
+          "frame": "not_applicable"
+        },
+        "speed": {
+          "kind": "scalar",
+          "dimension": [
+            0,
+            1,
+            -1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "unit": "m/s",
+          "domain": "positive",
+          "object": "body",
+          "frame": "not_applicable"
+        }
+      },
+      "conditions": [
+        {
+          "fact": "spherical_central_body",
+          "equals": true
+        },
+        {
+          "fact": "surface_gravity_due_to_body",
+          "equals": true
+        },
+        {
+          "fact": "rotation_correction_negligible",
+          "equals": true
+        },
+        {
+          "fact": "no_drag",
+          "equals": true
+        },
+        {
+          "fact": "circular_gravity_orbit",
+          "equals": true
+        }
+      ],
+      "force_dependence": {
+        "mode": "not_used",
+        "allowed_dependencies": []
+      },
+      "initial_conditions": [],
+      "boundary_conditions": "none_assumed",
+      "laws": [
+        {
+          "id": "law",
+          "equation": {
+            "op": "eq",
+            "args": [
+              {
+                "op": "var",
+                "id": "speed"
+              },
+              {
+                "op": "sqrt",
+                "args": [
+                  {
+                    "op": "mul",
+                    "args": [
+                      {
+                        "op": "var",
+                        "id": "g"
+                      },
+                      {
+                        "op": "var",
+                        "id": "radius"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          "principles": [
+            "surface_circular_orbit_speed"
+          ]
+        }
+      ],
+      "steps": [
+        {
+          "id": "calculate",
+          "target": "speed",
+          "expression": {
+            "op": "sqrt",
+            "args": [
+              {
+                "op": "mul",
+                "args": [
+                  {
+                    "op": "var",
+                    "id": "g"
+                  },
+                  {
+                    "op": "var",
+                    "id": "radius"
+                  }
+                ]
+              }
+            ]
+          },
+          "principles": [
+            "surface_circular_orbit_speed"
+          ],
+          "law_id": "law",
+          "rewrite": "direct"
+        }
+      ],
+      "conclusions": [
+        "speed"
+      ]
+    },
+    {
+      "id": "harmonic_motion_phase",
+      "concept_id": "physics_xzxbx1_rjb_cpt24",
+      "source_nodes": [
+        "physics_xzxbx1_rjb_cpt24"
+      ],
+      "batch": 5,
+      "variant_of": "harmonic_motion_initial_state",
+      "introduced_at": "physics_xzxbx1_rjb_ch2_s1",
+      "stage": "high",
+      "status": "ready",
+      "display": {
+        "name_zh": "简谐运动振幅相位形式",
+        "original_formula": "x = A sin(ωt + φ)",
+        "notes_zh": "仅在结构化条件已建立时执行；原文字段不参与求值。"
+      },
+      "object_model": "oscillator",
+      "reference_frame": "inertial",
+      "quantities": {
+        "amplitude": {
+          "kind": "scalar",
+          "dimension": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "unit": "m",
+          "domain": "nonnegative",
+          "object": "body",
+          "frame": "not_applicable"
+        },
+        "omega": {
+          "kind": "scalar",
+          "dimension": [
+            0,
+            0,
+            -1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "unit": "rad/s",
+          "domain": "positive",
+          "object": "body",
+          "frame": "not_applicable"
+        },
+        "phase": {
+          "kind": "scalar",
+          "dimension": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "unit": "1",
+          "domain": "real",
+          "object": "body",
+          "frame": "not_applicable"
+        },
+        "t0": {
+          "kind": "scalar",
+          "dimension": [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "unit": "s",
+          "domain": "real",
+          "object": "body",
+          "frame": "not_applicable"
+        },
+        "t": {
+          "kind": "scalar",
+          "dimension": [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "unit": "s",
+          "domain": "real",
+          "object": "body",
+          "frame": "not_applicable"
+        },
+        "x0": {
+          "kind": "scalar",
+          "dimension": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "unit": "m",
+          "domain": "real",
+          "object": "body",
+          "frame": "not_applicable"
+        },
+        "v0": {
+          "kind": "scalar",
+          "dimension": [
+            0,
+            1,
+            -1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "unit": "m/s",
+          "domain": "real",
+          "object": "body",
+          "frame": "not_applicable"
+        },
+        "x": {
+          "kind": "scalar",
+          "dimension": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "unit": "m",
+          "domain": "real",
+          "object": "body",
+          "frame": "not_applicable"
+        }
+      },
+      "conditions": [
+        {
+          "fact": "linear_restoring_force",
+          "equals": true
+        },
+        {
+          "fact": "undamped",
+          "equals": true
+        },
+        {
+          "fact": "mass_constant",
+          "equals": true
+        },
+        {
+          "fact": "phase_at_initial_time",
+          "equals": true
+        }
+      ],
+      "force_dependence": {
+        "mode": "instantaneous",
+        "allowed_dependencies": [
+          "position"
+        ]
+      },
+      "initial_conditions": [
+        {
+          "state": "position",
+          "quantity": "x0",
+          "time_quantity": "t0"
+        },
+        {
+          "state": "velocity",
+          "quantity": "v0",
+          "time_quantity": "t0"
+        }
+      ],
+      "boundary_conditions": "none_assumed",
+      "laws": [
+        {
+          "id": "law",
+          "equation": {
+            "op": "eq",
+            "args": [
+              {
+                "op": "var",
+                "id": "x0"
+              },
+              {
+                "op": "mul",
+                "args": [
+                  {
+                    "op": "var",
+                    "id": "amplitude"
+                  },
+                  {
+                    "op": "sin",
+                    "args": [
+                      {
+                        "op": "var",
+                        "id": "phase"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          "principles": [
+            "harmonic_motion_phase"
+          ]
+        },
+        {
+          "id": "law_v0",
+          "equation": {
+            "op": "eq",
+            "args": [
+              {
+                "op": "var",
+                "id": "v0"
+              },
+              {
+                "op": "mul",
+                "args": [
+                  {
+                    "op": "var",
+                    "id": "amplitude"
+                  },
+                  {
+                    "op": "var",
+                    "id": "omega"
+                  },
+                  {
+                    "op": "cos",
+                    "args": [
+                      {
+                        "op": "var",
+                        "id": "phase"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          "principles": [
+            "harmonic_motion_phase"
+          ]
+        },
+        {
+          "id": "law_x",
+          "equation": {
+            "op": "eq",
+            "args": [
+              {
+                "op": "var",
+                "id": "x"
+              },
+              {
+                "op": "mul",
+                "args": [
+                  {
+                    "op": "var",
+                    "id": "amplitude"
+                  },
+                  {
+                    "op": "sin",
+                    "args": [
+                      {
+                        "op": "add",
+                        "args": [
+                          {
+                            "op": "mul",
+                            "args": [
+                              {
+                                "op": "var",
+                                "id": "omega"
+                              },
+                              {
+                                "op": "sub",
+                                "args": [
+                                  {
+                                    "op": "var",
+                                    "id": "t"
+                                  },
+                                  {
+                                    "op": "var",
+                                    "id": "t0"
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "op": "var",
+                            "id": "phase"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          "principles": [
+            "harmonic_motion_phase"
+          ]
+        }
+      ],
+      "steps": [
+        {
+          "id": "calculate",
+          "target": "x0",
+          "expression": {
+            "op": "mul",
+            "args": [
+              {
+                "op": "var",
+                "id": "amplitude"
+              },
+              {
+                "op": "sin",
+                "args": [
+                  {
+                    "op": "var",
+                    "id": "phase"
+                  }
+                ]
+              }
+            ]
+          },
+          "principles": [
+            "harmonic_motion_phase"
+          ],
+          "law_id": "law",
+          "rewrite": "direct"
+        },
+        {
+          "id": "compute_v0",
+          "target": "v0",
+          "expression": {
+            "op": "mul",
+            "args": [
+              {
+                "op": "var",
+                "id": "amplitude"
+              },
+              {
+                "op": "var",
+                "id": "omega"
+              },
+              {
+                "op": "cos",
+                "args": [
+                  {
+                    "op": "var",
+                    "id": "phase"
+                  }
+                ]
+              }
+            ]
+          },
+          "principles": [
+            "harmonic_motion_phase"
+          ],
+          "law_id": "law_v0",
+          "rewrite": "direct"
+        },
+        {
+          "id": "compute_x",
+          "target": "x",
+          "expression": {
+            "op": "mul",
+            "args": [
+              {
+                "op": "var",
+                "id": "amplitude"
+              },
+              {
+                "op": "sin",
+                "args": [
+                  {
+                    "op": "add",
+                    "args": [
+                      {
+                        "op": "mul",
+                        "args": [
+                          {
+                            "op": "var",
+                            "id": "omega"
+                          },
+                          {
+                            "op": "sub",
+                            "args": [
+                              {
+                                "op": "var",
+                                "id": "t"
+                              },
+                              {
+                                "op": "var",
+                                "id": "t0"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "op": "var",
+                        "id": "phase"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          "principles": [
+            "harmonic_motion_phase"
+          ],
+          "law_id": "law_x",
+          "rewrite": "direct"
+        }
+      ],
+      "conclusions": [
+        "x0",
+        "v0",
+        "x"
+      ]
+    },
+    {
+      "id": "linear_iv_resistance",
+      "concept_id": "physics_bx3_rjb_cpt97",
+      "source_nodes": [
+        "physics_bx3_rjb_cpt97"
+      ],
+      "batch": 5,
+      "variant_of": "measured_resistance",
+      "introduced_at": "physics_bx3_rjb_ch11_s2",
+      "stage": "high",
+      "status": "ready",
+      "display": {
+        "name_zh": "过原点线性伏安图斜率",
+        "original_formula": "U-I图像斜率k = U/I = R（针对线性、过原点直线情形）",
+        "notes_zh": "仅在结构化条件已建立时执行；原文字段不参与求值。"
+      },
+      "object_model": "ohmic_resistor",
+      "reference_frame": "declared",
+      "quantities": {
+        "voltage": {
+          "kind": "scalar",
+          "dimension": [
+            1,
+            2,
+            -3,
+            -1,
+            0,
+            0,
+            0
+          ],
+          "unit": "V",
+          "domain": "real",
+          "object": "body",
+          "frame": "not_applicable"
+        },
+        "current": {
+          "kind": "scalar",
+          "dimension": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "unit": "A",
+          "domain": "real",
+          "object": "body",
+          "frame": "not_applicable"
+        },
+        "resistance": {
+          "kind": "scalar",
+          "dimension": [
+            1,
+            2,
+            -3,
+            -2,
+            0,
+            0,
+            0
+          ],
+          "unit": "ohm",
+          "domain": "nonnegative",
+          "object": "body",
+          "frame": "not_applicable"
+        }
+      },
+      "conditions": [
+        {
+          "fact": "linear_iv_through_origin",
+          "equals": true
+        },
+        {
+          "fact": "passive_sign_convention",
+          "equals": true
+        }
+      ],
+      "force_dependence": {
+        "mode": "not_used",
+        "allowed_dependencies": []
+      },
+      "initial_conditions": [],
+      "boundary_conditions": "none_assumed",
+      "laws": [
+        {
+          "id": "law",
+          "equation": {
+            "op": "eq",
+            "args": [
+              {
+                "op": "var",
+                "id": "resistance"
+              },
+              {
+                "op": "div",
+                "args": [
+                  {
+                    "op": "var",
+                    "id": "voltage"
+                  },
+                  {
+                    "op": "var",
+                    "id": "current"
+                  }
+                ]
+              }
+            ]
+          },
+          "principles": [
+            "linear_iv_resistance"
+          ]
+        }
+      ],
+      "steps": [
+        {
+          "id": "calculate",
+          "target": "resistance",
+          "expression": {
+            "op": "div",
+            "args": [
+              {
+                "op": "var",
+                "id": "voltage"
+              },
+              {
+                "op": "var",
+                "id": "current"
+              }
+            ]
+          },
+          "principles": [
+            "linear_iv_resistance"
+          ],
+          "law_id": "law",
+          "rewrite": "direct"
+        }
+      ],
+      "conclusions": [
+        "resistance"
+      ],
+      "constraints": [
+        {
+          "op": "ne",
+          "args": [
+            {
+              "op": "var",
+              "id": "current"
+            },
+            {
+              "op": "literal",
+              "value": 0,
+              "unit": "A"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "internal_resistance_short_current",
+      "concept_id": "physics_bx3_rjb_cpt147",
+      "source_nodes": [
+        "physics_bx3_rjb_cpt147",
+        "physics_bx3_rjb_cpt157"
+      ],
+      "batch": 5,
+      "variant_of": "short_circuit_current",
+      "introduced_at": "physics_bx3_rjb_ch12_s2",
+      "stage": "high",
+      "status": "ready",
+      "display": {
+        "name_zh": "短路电流求内阻",
+        "original_formula": "[\"E = U + Ir\", \"U = -Ir + E\", \"r = E / I短\", \"r = |ΔU/ΔI|\"]",
+        "notes_zh": "仅在结构化条件已建立时执行；原文字段不参与求值。"
+      },
+      "object_model": "dc_circuit",
+      "reference_frame": "declared",
+      "quantities": {
+        "emf": {
+          "kind": "scalar",
+          "dimension": [
+            1,
+            2,
+            -3,
+            -1,
+            0,
+            0,
+            0
+          ],
+          "unit": "V",
+          "domain": "positive",
+          "object": "body",
+          "frame": "not_applicable"
+        },
+        "short_current": {
+          "kind": "scalar",
+          "dimension": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "unit": "A",
+          "domain": "positive",
+          "object": "body",
+          "frame": "not_applicable"
+        },
+        "internal_resistance": {
+          "kind": "scalar",
+          "dimension": [
+            1,
+            2,
+            -3,
+            -2,
+            0,
+            0,
+            0
+          ],
+          "unit": "ohm",
+          "domain": "positive",
+          "object": "body",
+          "frame": "not_applicable"
+        }
+      },
+      "conditions": [
+        {
+          "fact": "single_source",
+          "equals": true
+        },
+        {
+          "fact": "external_resistance_zero",
+          "equals": true
+        },
+        {
+          "fact": "ohmic_material",
+          "equals": true
+        }
+      ],
+      "force_dependence": {
+        "mode": "not_used",
+        "allowed_dependencies": []
+      },
+      "initial_conditions": [],
+      "boundary_conditions": "none_assumed",
+      "laws": [
+        {
+          "id": "law",
+          "equation": {
+            "op": "eq",
+            "args": [
+              {
+                "op": "var",
+                "id": "internal_resistance"
+              },
+              {
+                "op": "div",
+                "args": [
+                  {
+                    "op": "var",
+                    "id": "emf"
+                  },
+                  {
+                    "op": "var",
+                    "id": "short_current"
+                  }
+                ]
+              }
+            ]
+          },
+          "principles": [
+            "internal_resistance_short_current"
+          ]
+        }
+      ],
+      "steps": [
+        {
+          "id": "calculate",
+          "target": "internal_resistance",
+          "expression": {
+            "op": "div",
+            "args": [
+              {
+                "op": "var",
+                "id": "emf"
+              },
+              {
+                "op": "var",
+                "id": "short_current"
+              }
+            ]
+          },
+          "principles": [
+            "internal_resistance_short_current"
+          ],
+          "law_id": "law",
+          "rewrite": "direct"
+        }
+      ],
+      "conclusions": [
+        "internal_resistance"
+      ]
+    },
+    {
+      "id": "internal_resistance_iv_slope",
+      "concept_id": "physics_bx3_rjb_cpt147",
+      "source_nodes": [
+        "physics_bx3_rjb_cpt147",
+        "physics_bx3_rjb_cpt156"
+      ],
+      "batch": 5,
+      "variant_of": "terminal_voltage",
+      "introduced_at": "physics_bx3_rjb_ch12_s2",
+      "stage": "high",
+      "status": "ready",
+      "display": {
+        "name_zh": "电源伏安曲线斜率求内阻",
+        "original_formula": "[\"E = U + Ir\", \"U = -Ir + E\", \"r = E / I短\", \"r = |ΔU/ΔI|\"]",
+        "notes_zh": "仅在结构化条件已建立时执行；原文字段不参与求值。"
+      },
+      "object_model": "dc_circuit",
+      "reference_frame": "declared",
+      "quantities": {
+        "voltage_change": {
+          "kind": "scalar",
+          "dimension": [
+            1,
+            2,
+            -3,
+            -1,
+            0,
+            0,
+            0
+          ],
+          "unit": "V",
+          "domain": "real",
+          "object": "body",
+          "frame": "not_applicable"
+        },
+        "current_change": {
+          "kind": "scalar",
+          "dimension": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "unit": "A",
+          "domain": "real",
+          "object": "body",
+          "frame": "not_applicable"
+        },
+        "internal_resistance": {
+          "kind": "scalar",
+          "dimension": [
+            1,
+            2,
+            -3,
+            -2,
+            0,
+            0,
+            0
+          ],
+          "unit": "ohm",
+          "domain": "nonnegative",
+          "object": "body",
+          "frame": "not_applicable"
+        }
+      },
+      "conditions": [
+        {
+          "fact": "single_source",
+          "equals": true
+        },
+        {
+          "fact": "internal_resistance_constant",
+          "equals": true
+        },
+        {
+          "fact": "linear_source_iv_curve",
+          "equals": true
+        }
+      ],
+      "force_dependence": {
+        "mode": "not_used",
+        "allowed_dependencies": []
+      },
+      "initial_conditions": [],
+      "boundary_conditions": "none_assumed",
+      "laws": [
+        {
+          "id": "law",
+          "equation": {
+            "op": "eq",
+            "args": [
+              {
+                "op": "var",
+                "id": "internal_resistance"
+              },
+              {
+                "op": "abs",
+                "args": [
+                  {
+                    "op": "div",
+                    "args": [
+                      {
+                        "op": "var",
+                        "id": "voltage_change"
+                      },
+                      {
+                        "op": "var",
+                        "id": "current_change"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          "principles": [
+            "internal_resistance_iv_slope"
+          ]
+        }
+      ],
+      "steps": [
+        {
+          "id": "calculate",
+          "target": "internal_resistance",
+          "expression": {
+            "op": "abs",
+            "args": [
+              {
+                "op": "div",
+                "args": [
+                  {
+                    "op": "var",
+                    "id": "voltage_change"
+                  },
+                  {
+                    "op": "var",
+                    "id": "current_change"
+                  }
+                ]
+              }
+            ]
+          },
+          "principles": [
+            "internal_resistance_iv_slope"
+          ],
+          "law_id": "law",
+          "rewrite": "direct"
+        }
+      ],
+      "conclusions": [
+        "internal_resistance"
+      ],
+      "constraints": [
+        {
+          "op": "ne",
+          "args": [
+            {
+              "op": "var",
+              "id": "current_change"
+            },
+            {
+              "op": "literal",
+              "value": 0,
+              "unit": "A"
+            }
+          ]
+        },
+        {
+          "op": "le",
+          "args": [
+            {
+              "op": "mul",
+              "args": [
+                {
+                  "op": "var",
+                  "id": "voltage_change"
+                },
+                {
+                  "op": "var",
+                  "id": "current_change"
+                }
+              ]
+            },
+            {
+              "op": "literal",
+              "value": 0,
+              "unit": "W"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ohmmeter_current",
+      "concept_id": "physics_bx3_rjb_cpt155",
+      "source_nodes": [
+        "physics_bx3_rjb_cpt155"
+      ],
+      "batch": 5,
+      "variant_of": "ohmmeter_unknown_resistance",
+      "introduced_at": "physics_bx3_rjb_ch12_s2",
+      "stage": "high",
+      "status": "ready",
+      "display": {
+        "name_zh": "欧姆表电流刻度",
+        "original_formula": "Ix=E/(RΩ+Rx)；Rx=E/Ix−RΩ",
+        "notes_zh": "仅在结构化条件已建立时执行；原文字段不参与求值。"
+      },
+      "object_model": "dc_circuit",
+      "reference_frame": "declared",
+      "quantities": {
+        "emf": {
+          "kind": "scalar",
+          "dimension": [
+            1,
+            2,
+            -3,
+            -1,
+            0,
+            0,
+            0
+          ],
+          "unit": "V",
+          "domain": "positive",
+          "object": "body",
+          "frame": "not_applicable"
+        },
+        "internal_resistance": {
+          "kind": "scalar",
+          "dimension": [
+            1,
+            2,
+            -3,
+            -2,
+            0,
+            0,
+            0
+          ],
+          "unit": "ohm",
+          "domain": "positive",
+          "object": "body",
+          "frame": "not_applicable"
+        },
+        "unknown_resistance": {
+          "kind": "scalar",
+          "dimension": [
+            1,
+            2,
+            -3,
+            -2,
+            0,
+            0,
+            0
+          ],
+          "unit": "ohm",
+          "domain": "nonnegative",
+          "object": "body",
+          "frame": "not_applicable"
+        },
+        "current": {
+          "kind": "scalar",
+          "dimension": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "unit": "A",
+          "domain": "positive",
+          "object": "body",
+          "frame": "not_applicable"
+        }
+      },
+      "conditions": [
+        {
+          "fact": "ohmmeter_zero_adjusted",
+          "equals": true
+        },
+        {
+          "fact": "single_source",
+          "equals": true
+        },
+        {
+          "fact": "ohmic_material",
+          "equals": true
+        },
+        {
+          "fact": "steady_dc",
+          "equals": true
+        }
+      ],
+      "force_dependence": {
+        "mode": "not_used",
+        "allowed_dependencies": []
+      },
+      "initial_conditions": [],
+      "boundary_conditions": "none_assumed",
+      "laws": [
+        {
+          "id": "law",
+          "equation": {
+            "op": "eq",
+            "args": [
+              {
+                "op": "var",
+                "id": "current"
+              },
+              {
+                "op": "div",
+                "args": [
+                  {
+                    "op": "var",
+                    "id": "emf"
+                  },
+                  {
+                    "op": "add",
+                    "args": [
+                      {
+                        "op": "var",
+                        "id": "internal_resistance"
+                      },
+                      {
+                        "op": "var",
+                        "id": "unknown_resistance"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          "principles": [
+            "ohmmeter_current"
+          ]
+        }
+      ],
+      "steps": [
+        {
+          "id": "calculate",
+          "target": "current",
+          "expression": {
+            "op": "div",
+            "args": [
+              {
+                "op": "var",
+                "id": "emf"
+              },
+              {
+                "op": "add",
+                "args": [
+                  {
+                    "op": "var",
+                    "id": "internal_resistance"
+                  },
+                  {
+                    "op": "var",
+                    "id": "unknown_resistance"
+                  }
+                ]
+              }
+            ]
+          },
+          "principles": [
+            "ohmmeter_current"
+          ],
+          "law_id": "law",
+          "rewrite": "direct"
+        }
+      ],
+      "conclusions": [
+        "current"
       ]
     }
   ]

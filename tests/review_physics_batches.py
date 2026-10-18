@@ -32,6 +32,8 @@ def review(root, lie_root=None):
         if op=='sqrt':
             assert all(x%2==0 for x in dims[0]);return tuple(x//2 for x in dims[0])
         if op in {'sum','abs','norm','vector'}:return dims[0]
+        if op=='atan2':
+            assert dims[0]==dims[1];return zero
         assert dims[0]==zero
         return zero
     def exact_value(e,values):
@@ -55,9 +57,11 @@ def review(root, lie_root=None):
         if op=='cross':return a[0].cross(a[1])
         if op=='norm':return a[0].norm()
         if op=='vector':return sp.Matrix(a)
+        if op=='atan2':return sp.atan2(*a)
         if op=='abs':return sp.Abs(a[0])
         return getattr(sp,op)(a[0])
     checked=[]
+    nuclear_checks=0
     for r in b['rules']:
         for law in r['laws']:dimension(law['equation'],r['quantities'])
         for step in r['steps']:assert dimension(step['expression'],r['quantities'])==tuple(r['quantities'][step['target']]['dimension'])
@@ -69,12 +73,30 @@ def review(root, lie_root=None):
             v=entry['value'];kind=r['quantities'][k]['kind']
             values[k]=sp.Matrix([scalar(x) for x in v]) if kind=='vector' else [sp.Matrix([scalar(x) for x in row]) for row in v] if kind=='vector_list' else [scalar(x) for x in v] if kind=='scalar_list' else scalar(v)
         for step in r['steps']:values[step['target']]=exact_value(step['expression'],values)
+        if 'reaction' in r:
+            for field in ['nucleon_number','charge_number','electron_lepton_number']:
+                totals=[sum(exact_value(p[field],values) for p in r['reaction'][side]) for side in ['reactants','products']]
+                assert totals[0]==totals[1]
+            nuclear_checks+=1
         for k,v in case['expected'].items():
             want=sp.Matrix([sp.Rational(str(x)) for x in v]) if isinstance(v,list) else sp.Rational(str(v))
             difference=values[k]-want
             error=float(difference.norm()) if isinstance(difference,sp.MatrixBase) else abs(float(difference))
             assert error<=max(1e-12,1e-9*float(want.norm() if isinstance(want,sp.MatrixBase) else abs(want))),(r['id'],values[k],want)
         checked.append(r['id'])
+    catalog_path=root/'knowledge/physics/catalog.json'
+    declarations=json.loads(catalog_path.read_text())['records'] if catalog_path.exists() else []
+    unit_identities=0
+    for record in declarations:
+        if record['kind']=='unit_relation':
+            for equation in record['equations']:
+                dimension(equation,{})
+                left,right=equation['args']
+                assert exact_value(left,{})==exact_value(right,{})
+                unit_identities+=1
+        elif record['kind']=='constant':
+            dimension(record['expression'],{})
+            assert exact_value(record['expression'],{}).is_finite
     # Independent physical identities, not re-evaluation of the production AST.
     m,ax,ay,az=sp.symbols('m ax ay az',positive=True)
     assert sp.simplify((m*sp.Matrix([ax,ay,az])).dot(sp.Matrix([ax,ay,az]))-m*(ax**2+ay**2+az**2))==0
@@ -103,7 +125,7 @@ def review(root, lie_root=None):
                     assert result.unit.dimension==qty(dimension(e,r['quantities'])).unit.dimension
                 inspect(law['equation'])
         lie_verified=True
-    return {'reviewed_rule_count':len(checked),'rules':checked,'exact_numeric_examples':len(examples),'kinematic_derivative_identity':True,'lie_quantity_crosscheck':lie_verified,'review_scope':'independent exact arithmetic, dimensional relations and documented model conditions; not full LIE product acceptance'}
+    return {'reviewed_rule_count':len(checked),'rules':checked,'exact_numeric_examples':len(examples),'catalog_records':len(declarations),'exact_unit_identities':unit_identities,'nuclear_conservation_checks':nuclear_checks,'kinematic_derivative_identity':True,'lie_quantity_crosscheck':lie_verified,'review_scope':'independent exact arithmetic, dimensional relations and documented model conditions; not full LIE product acceptance'}
 
 
 if __name__=='__main__':

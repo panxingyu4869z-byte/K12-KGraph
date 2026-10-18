@@ -468,7 +468,36 @@
                     "isolated_energy_levels",
                     "momentum_magnitude",
                     "energy_is_total_energy",
-                    "mass_is_invariant_rest_mass"
+                    "mass_is_invariant_rest_mass",
+                    "same_reference_frame",
+                    "no_relative_slip",
+                    "tangential_equilibrium",
+                    "signed_tangential_axis",
+                    "point_inside_conducting_material",
+                    "closed_conducting_cavity",
+                    "cavity_contains_no_charge",
+                    "spacing_along_field_normal",
+                    "oriented_potential_drop",
+                    "single_carrier_species",
+                    "uniform_carrier_density",
+                    "drift_component_along_oriented_normal",
+                    "linear_moving_coil_meter",
+                    "ohmmeter_zero_adjusted",
+                    "selected_range_matches_scale",
+                    "straight_current_segment",
+                    "oriented_surface_normal",
+                    "monomolecular_film",
+                    "oil_volume_excludes_solvent",
+                    "uniform_film",
+                    "no_external_impulse",
+                    "one_dimensional_exhaust",
+                    "constant_relative_exhaust_speed",
+                    "exhaust_opposite_positive_axis",
+                    "decay_channel_energetically_allowed",
+                    "isolated_nuclear_decay",
+                    "angle_from_positive_x",
+                    "linear_iv_through_origin",
+                    "linear_source_iv_curve"
                   ]
                 },
                 "equals": {
@@ -673,6 +702,30 @@
                 "measurement"
               ]
             }
+          },
+          "reaction": {
+            "type": "object",
+            "properties": {
+              "reactants": {
+                "type": "array",
+                "minItems": 1,
+                "items": {
+                  "$ref": "#/$defs/particle"
+                }
+              },
+              "products": {
+                "type": "array",
+                "minItems": 1,
+                "items": {
+                  "$ref": "#/$defs/particle"
+                }
+              }
+            },
+            "required": [
+              "reactants",
+              "products"
+            ],
+            "additionalProperties": false
           }
         },
         "required": [
@@ -746,7 +799,8 @@
             "ge",
             "ne",
             "pi",
-            "literal"
+            "literal",
+            "atan2"
           ]
         }
       },
@@ -1600,8 +1654,67 @@
             ],
             "additionalProperties": false
           }
+        },
+        {
+          "if": {
+            "properties": {
+              "op": {
+                "const": "atan2"
+              }
+            }
+          },
+          "then": {
+            "type": "object",
+            "properties": {
+              "op": {
+                "const": "atan2"
+              },
+              "args": {
+                "type": "array",
+                "minItems": 2,
+                "maxItems": 2,
+                "items": {
+                  "$ref": "#/$defs/expr"
+                }
+              }
+            },
+            "required": [
+              "op",
+              "args"
+            ],
+            "additionalProperties": false
+          }
         }
       ]
+    },
+    "particle": {
+      "type": "object",
+      "properties": {
+        "species": {
+          "enum": [
+            "nucleus",
+            "alpha",
+            "electron",
+            "electron_antineutrino"
+          ]
+        },
+        "nucleon_number": {
+          "$ref": "#/$defs/expr"
+        },
+        "charge_number": {
+          "$ref": "#/$defs/expr"
+        },
+        "electron_lepton_number": {
+          "$ref": "#/$defs/expr"
+        }
+      },
+      "required": [
+        "species",
+        "nucleon_number",
+        "charge_number",
+        "electron_lepton_number"
+      ],
+      "additionalProperties": false
     }
   }
 }
